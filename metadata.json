@@ -1,0 +1,6 @@
+{
+  "name": "iMed Team",
+  "description": "Premium Evidence-Based Medical Education Platform in Uzbekistan - Transform clinical thinking with practicing expert physicians.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
