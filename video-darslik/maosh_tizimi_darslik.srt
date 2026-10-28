@@ -1,548 +1,548 @@
 1
-00:00:00,200 --> 00:00:08,048
+-1:-1:-1,-300 --> 00:00:05,975
 Assalomu alaykum! Bu darslikda sotuv menejeriga to‘g‘ri maosh tizimini tanlash va maoshni hisoblashni o‘rganamiz.
 
 2
-00:00:08,048 --> 00:00:14,776
+00:00:05,975 --> 00:00:10,828
 Darslik rahbar va HR xodimlari uchun. Korxona ichki akademiyasi, Sotuv moduli.
 
 3
-00:00:15,176 --> 00:00:18,376
+00:00:11,050 --> 00:00:12,807
 Bu darslik uch ishni qiladi.
 
 4
-00:00:18,376 --> 00:00:23,436
+00:00:12,807 --> 00:00:16,739
 Birinchi: korxonangizga mos maosh tizimini tanlashga yordam beradi.
 
 5
-00:00:23,436 --> 00:00:29,103
+00:00:16,739 --> 00:00:21,226
 Ikkinchi: xodimga tizimni bir daqiqada tushuntirish uchun tayyor matn beradi.
 
 6
-00:00:29,103 --> 00:00:35,285
+00:00:21,226 --> 00:00:25,296
 Uchinchi: oy oxirida maoshni o‘n daqiqada hisoblash tartibini beradi.
 
 7
-00:00:35,685 --> 00:00:39,291
+00:00:25,633 --> 00:00:28,738
 Boshlashdan oldin ikkita qoida. Istisnosiz.
 
 8
-00:00:39,291 --> 00:00:46,473
+00:00:28,738 --> 00:00:35,320
 Birinchi qoida: sotuv menejeriga faqat oklad berish tavsiya etilmaydi. Na yangi, na tajribali xodimga.
 
 9
-00:00:46,473 --> 00:00:56,473
+00:00:35,320 --> 00:00:42,981
 Ikkinchi qoida: maosh hech qachon faqat tushumdan ulushdan iborat bo‘lmasin. Doim aniq oklad bo‘ladi, ulush uning ustiga qo‘shiladi.
 
 10
-00:00:56,873 --> 00:01:00,176
+00:00:43,185 --> 00:00:46,188
 Avval asosiy atamalarni bilib olaylik.
 
 11
-00:01:00,176 --> 00:01:08,812
+00:00:46,188 --> 00:00:53,361
 KPI — xodim oy davomida bajarishi kerak bo‘lgan aniq raqam. Masalan, oyiga 60 million so‘m sotuv yoki kuniga 30 ta qo‘ng‘iroq.
 
 12
-00:01:08,812 --> 00:01:17,206
+00:00:53,361 --> 00:01:00,767
 CRM — kompyuterdagi mijozlar daftari. Kim qo‘ng‘iroq qildi, nima gaplashildi, kim sotib oldi — hammasi shu yerda yoziladi.
 
 13
-00:01:17,206 --> 00:01:24,448
+00:01:00,767 --> 00:01:07,475
 Lid — murojaat qilgan, lekin hali sotib olmagan odam. Bitim — mijoz rozi bo‘lib, pulini to‘lagan savdo.
 
 14
-00:01:24,448 --> 00:01:33,661
+00:01:07,475 --> 00:01:13,996
 Tushum — hisobingizga haqiqatan tushgan pul. 10 millionlik shartnomadan 4 million to‘langan bo‘lsa, tushum — 4 million.
 
 15
-00:01:34,061 --> 00:01:37,261
+00:01:14,215 --> 00:01:16,285
 Maosh qismlarini ham bilib olaylik.
 
 16
-00:01:37,261 --> 00:01:42,867
+00:01:16,285 --> 00:01:21,182
 Oklad — har oy kafolatlangan summa. Sotuv bo‘lsa ham, bo‘lmasa ham beriladi.
 
 17
-00:01:42,867 --> 00:01:50,958
+00:01:21,182 --> 00:01:28,452
 Bonus — KPI bajarilsa beriladigan qo‘shimcha pul. Bonus fondi esa bonusning eng ko‘p bo‘lishi mumkin bo‘lgan summasi.
 
 18
-00:01:50,958 --> 00:01:59,200
+00:01:28,452 --> 00:01:36,976
 Ulush — sotuvning foiz bilan belgilangan qismi. Masalan, 10 million tushumning 5 foizi — 500 ming so‘m.
 
 19
-00:01:59,600 --> 00:02:03,206
+00:01:37,236 --> 00:01:40,605
 Endi hisoblashda kerak bo‘ladigan atamalar.
 
 20
-00:02:03,206 --> 00:02:10,509
+00:01:40,605 --> 00:01:48,256
 Konversiya — 100 ta murojaatdan nechtasi sotib olgani. 100 tadan 20 tasi sotib olsa, konversiya 20 foiz.
 
 21
-00:02:10,509 --> 00:02:19,570
+00:01:48,256 --> 00:01:59,332
 Bajarilish foizi — haqiqiy raqamni maqsadga bo‘lib, 100 ga ko‘paytiramiz. Maqsad 60 million, bajarilgani 45 million bo‘lsa — 75 foiz.
 
 22
-00:02:19,570 --> 00:02:26,145
+00:01:59,332 --> 00:02:05,952
 Vazn — KPI maoshga qanchalik ta’sir qilishi. Hamma KPI vaznlari yig‘indisi 100 foiz bo‘ladi.
 
 23
-00:02:26,145 --> 00:02:33,600
+00:02:05,952 --> 00:02:11,168
 Eshik qoidasi — KPI bajarilishi 50 foizdan past bo‘lsa, shu KPI bo‘yicha bonus berilmaydi.
 
 24
-00:02:34,000 --> 00:02:41,364
+00:02:11,443 --> 00:02:18,116
 Yaxshi maosh tizimi to‘rtta savolga «ha» deb javob berishi kerak. Aks holda tizim bir-ikki oyda buziladi.
 
 25
-00:02:41,364 --> 00:02:48,606
+00:02:18,116 --> 00:02:25,587
 Birinchi: tushunarlimi? Xodim «bu oy qancha olaman» degan savolga bir daqiqada o‘zi javob bera oladimi?
 
 26
-00:02:48,606 --> 00:02:54,091
+00:02:25,587 --> 00:02:30,659
 Ikkinchi: xodim ta’sir qila oladimi? Maosh xodimning o‘z ishiga bog‘liqmi?
 
 27
-00:02:54,091 --> 00:02:59,758
+00:02:30,659 --> 00:02:36,452
 Uchinchi: korxonaga foydalimi? Xodim ko‘p ishlasa, korxona ham ko‘p topadimi?
 
 28
-00:02:59,758 --> 00:03:07,091
+00:02:36,452 --> 00:02:42,978
 To‘rtinchi: hisoblash osonmi? Rahbar oy oxirida maoshni 10–15 daqiqada hisoblay oladimi?
 
 29
-00:03:07,491 --> 00:03:10,691
+00:02:43,206 --> 00:02:45,848
 Maosh tizimining to‘rt varianti bor.
 
 30
-00:03:10,691 --> 00:03:18,115
+00:02:45,848 --> 00:02:52,902
 Birinchi variant — faqat oklad. Har oy bir xil summa, natijaga bog‘liq emas. Bu variant tavsiya etilmaydi.
 
 31
-00:03:18,115 --> 00:03:25,842
+00:02:52,902 --> 00:03:00,566
 Ikkinchi variant — oklad va KPI bonus. Barqaror daromad va nazorat birga. Lekin bonusning yuqori chegarasi bor.
 
 32
-00:03:25,842 --> 00:03:30,964
+00:03:00,566 --> 00:03:03,927
 Uchinchi variant — oklad va tushumdan ulush. Ko‘p sotsa, ko‘p oladi.
 
 33
-00:03:30,964 --> 00:03:38,600
+00:03:03,927 --> 00:03:10,177
 To‘rtinchi variant — oklad, ulush va tartib sharti. CRM tartibi yomon bo‘lsa, ulush kamayadi.
 
 34
-00:03:39,000 --> 00:03:43,212
+00:03:10,456 --> 00:03:14,138
 Qaysi variantni tanlash kerak? Vaziyatingizga qarang.
 
 35
-00:03:43,212 --> 00:03:50,455
+00:03:14,138 --> 00:03:20,854
 Mijozlar reklamadan o‘zi murojaat qiladi, bitim tez yopiladi — klinika, kurs, xizmat. Ikkinchi variant.
 
 36
-00:03:50,455 --> 00:03:56,242
+00:03:20,854 --> 00:03:25,109
 Mijozni xodim o‘zi topadi, bitim uzoq yopiladi, chek katta. To‘rtinchi variant.
 
 37
-00:03:56,242 --> 00:04:03,182
+00:03:25,109 --> 00:03:30,735
 CRM yo‘q yoki ma’lumotlar ishonchsiz bo‘lsa — uchinchi variant. Tushum kassa yoki bankdan olinadi.
 
 38
-00:04:03,182 --> 00:04:11,485
+00:03:30,735 --> 00:03:36,504
 Jamoa bo‘lib sotilsa yoki xodim yangi bo‘lsa — ikkinchi variant. Yangi xodimga maqsad yumshoq qo‘yiladi.
 
 39
-00:04:11,885 --> 00:04:15,085
+00:03:36,532 --> 00:03:38,915
 Umumiy tavsiya oddiy.
 
 40
-00:04:15,085 --> 00:04:22,509
+00:03:38,915 --> 00:03:46,719
 Ikkinchi variant bilan boshlang. Uch oydan keyin natijaga qarab uchinchi yoki to‘rtinchi variantga o‘ting.
 
 41
-00:04:22,509 --> 00:04:28,630
+00:03:46,719 --> 00:03:50,864
 Hech qachon faqat oklad bermang. Hech qachon okladsiz ulush bermang.
 
 42
-00:04:29,030 --> 00:04:36,394
+00:03:51,071 --> 00:03:55,998
 Ikkinchi va to‘rtinchi variantda maosh KPIga bog‘lanadi. Shuning uchun to‘g‘ri KPI tanlash eng muhim ish.
 
 43
-00:04:36,394 --> 00:04:42,242
+00:03:55,998 --> 00:04:01,253
 KPI uch turga bo‘linadi. Natija — oxirgi natija: tushum, bitim soni, konversiya.
 
 44
-00:04:42,242 --> 00:04:50,273
+00:04:01,253 --> 00:04:07,644
 Harakat — xodim nima qildi: qo‘ng‘iroqlar, uchrashuvlar, takliflar soni. Natija kelguncha ishni to‘xtatmaslik uchun.
 
 45
-00:04:50,273 --> 00:04:59,909
+00:04:07,644 --> 00:04:17,092
 Sifat — ish qanchalik toza bajarildi: CRM tozaligi, qayta aloqa, javob berish tezligi. Sifat bo‘lmasa, natija ham tez tugaydi.
 
 46
-00:05:00,309 --> 00:05:08,885
+00:04:17,142 --> 00:04:24,289
 Asosiy qoida: har bir xodimda Tushum va Konversiya — asosiy KPI. Ular doim birinchi turadi, ikkalasining vazni birga 60 foiz.
 
 47
-00:05:08,885 --> 00:05:16,248
+00:04:24,289 --> 00:04:31,834
 Qolgan 40 foizga bir-ikkita harakat va bir-ikkita sifat KPI qo‘shiladi. Jami 4–5 ta KPI, undan ko‘p emas.
 
 48
-00:05:16,248 --> 00:05:22,552
+00:04:31,834 --> 00:04:39,942
 Namuna: Tushum 40, Konversiya 20, CRM tozaligi 20, Qayta aloqa 20 foiz.
 
 49
-00:05:22,952 --> 00:05:26,152
+00:04:40,015 --> 00:04:42,430
 Yaxshi KPIning to‘rt sharti bor.
 
 50
-00:05:26,152 --> 00:05:32,788
+00:04:42,430 --> 00:04:47,359
 Xodim unga ta’sir qila oladi. Raqam CRM yoki hisobotda ko‘rinadi, xodimning so‘zi bilan emas.
 
 51
-00:05:32,788 --> 00:05:40,909
+00:04:47,359 --> 00:04:53,847
 Har oy oxirida aniq o‘lchanadi. Va hamma uni bir xil tushunadi: masalan, tushum — hisobga kelgan pul.
 
 52
-00:05:41,309 --> 00:05:47,945
+00:04:54,122 --> 00:05:00,586
 Vaziyatga qarab tayyor KPI to‘plamlari. Tushum va Konversiya hamma to‘plamda birinchi turadi.
 
 53
-00:05:47,945 --> 00:05:54,885
+00:05:00,586 --> 00:05:06,093
 Call-markaz, kiruvchi qo‘ng‘iroqlar: javob berish tezligi, qayta aloqa va CRM tozaligi qo‘shiladi.
 
 54
-00:05:54,885 --> 00:06:01,097
+00:05:06,093 --> 00:05:10,188
 Call-markaz, chiquvchi qo‘ng‘iroqlar: javob tezligi o‘rniga haqiqiy gaplashuvlar soni.
 
 55
-00:06:01,097 --> 00:06:08,642
+00:05:10,188 --> 00:05:17,211
 Yuzma-yuz, tez yopiladigan sotuv — do‘kon, klinika, kurs: o‘rtacha bitim summasi, qayta aloqa, CRM tozaligi.
 
 56
-00:06:08,642 --> 00:06:16,339
+00:05:17,211 --> 00:05:21,259
 Yuzma-yuz, uzoq yopiladigan qimmat mahsulot: uchrashuvlar soni, takliflar soni va qayta aloqa.
 
 57
-00:06:16,739 --> 00:06:19,939
+00:05:21,303 --> 00:05:23,559
 Maqsad raqamini qanday qo‘yamiz?
 
 58
-00:06:19,939 --> 00:06:26,697
+00:05:23,559 --> 00:05:30,429
 Ma’lumot bo‘lsa: oxirgi uch oyning o‘rtachasini olib, 1,1 ga ko‘paytiring. Bu — 10 foiz o‘sish.
 
 59
-00:06:26,697 --> 00:06:36,606
+00:05:30,429 --> 00:05:39,722
 Ma’lumot yo‘q bo‘lsa: eng yaxshi emas, o‘rtacha xodim raqamini oling. Maqsadni xodim bilan birga kelishing — u «bu mumkin» desa, maqsadga ishonadi.
 
 60
-00:06:36,606 --> 00:06:48,303
+00:05:39,722 --> 00:05:53,521
 Yangi xodim: birinchi 30 kun maqsad o‘rtachaning 50–70 foizi, eshik qoidasi yo‘q. 31–60 kun: 80–90 foiz, eshik 30 foiz. 61-kundan: to‘liq maqsad, eshik 50 foiz.
 
 61
-00:06:48,703 --> 00:06:54,855
+00:05:54,114 --> 00:06:00,164
 Maosh raqamga bog‘lanadi. Raqam esa biror joyda yozib borilishi kerak. Ikki yo‘l bor.
 
 62
-00:06:54,855 --> 00:07:02,158
+00:06:00,164 --> 00:06:07,173
 A yo‘li: CRM bor. Xodim har qo‘ng‘iroq va bitimni CRMga yozadi, oy oxirida hisobotdan raqamlarni olasiz.
 
 63
-00:07:02,158 --> 00:07:10,855
+00:06:07,173 --> 00:06:16,494
 B yo‘li: CRM yo‘q. Xodim har kuni kechqurun 5 daqiqada kunlik hisobot daftarini to‘ldiradi — daftar, Excel yoki Telegram guruh.
 
 64
-00:07:10,855 --> 00:07:21,279
+00:06:16,494 --> 00:06:24,654
 Tushumni faqat kassa yoki bank bilan solishtiring. Haftada bir marta rahbar uchta yozuvni tekshiradi — xodim buni biladi va to‘g‘ri yozadi.
 
 65
-00:07:21,679 --> 00:07:27,891
+00:06:25,022 --> 00:06:30,768
 Endi barcha variantlarni bitta namunada ko‘ramiz. Oylik reja — 60 million so‘m tushum.
 
 66
-00:07:27,891 --> 00:07:33,315
+00:06:30,768 --> 00:06:37,282
 To‘rt xodim. A — 27 million, rejaning 45 foizi. B — 60 million, 100 foiz.
 
 67
-00:07:33,315 --> 00:07:38,073
+00:06:37,282 --> 00:06:43,486
 C — 90 million, 150 foiz. D — 120 million, rejaning 200 foizi.
 
 68
-00:07:38,073 --> 00:07:44,921
+00:06:43,486 --> 00:06:49,804
 Boshqa maqsadlar: konversiya 20 foiz, CRM tozaligi 90 foiz, qayta aloqa 90 foiz.
 
 69
-00:07:45,321 --> 00:07:49,109
+00:06:49,839 --> 00:06:53,700
 Birinchi variant — faqat oklad. Nega u xavfli?
 
 70
-00:07:49,109 --> 00:07:56,291
+00:06:53,700 --> 00:07:00,344
 Har bir xodim 4 million so‘m oladi. Tushum 27 milliondan 120 milliongacha o‘zgardi, maosh esa bir xil.
 
 71
-00:07:56,291 --> 00:08:05,533
+00:07:00,344 --> 00:07:12,084
 A xodimda maosh tushumning 14,8 foizi, D xodimda atigi 3,3 foizi. Korxona A ga ortiqcha to‘laydi, D ni esa kam to‘lab ketkazib yuboradi.
 
 72
-00:08:05,533 --> 00:08:14,109
+00:07:12,084 --> 00:07:20,276
 Natija: eng yaxshi xodim ketadi, bo‘sh xodim qoladi. Rahbar esa har kuni «qo‘ng‘iroq qildingmi?» deb nazorat qilishga majbur.
 
 73
-00:08:14,109 --> 00:08:24,473
+00:07:20,276 --> 00:07:28,845
 Yangi xodimga ham faqat oklad bermang. U birinchi kundan «natija pul bermaydi» deb o‘rganib qoladi. Unga oklad va yengil KPI bonus bering.
 
 74
-00:08:24,873 --> 00:08:28,115
+00:07:29,128 --> 00:07:31,569
 Ikkinchi variant: oklad va KPI bonus.
 
 75
-00:08:28,115 --> 00:08:33,236
+00:07:31,569 --> 00:07:36,437
 Formula: Maosh teng Oklad qo‘shuv Bonus fondi ko‘paytiruv KPI balli.
 
 76
-00:08:33,236 --> 00:08:41,994
+00:07:36,437 --> 00:07:44,649
 KPI balli — har KPI bajarilish foizini vazniga ko‘paytirib, qo‘shib chiqamiz. Bajarilish 100 foizdan oshsa ham, 100 deb olinadi.
 
 77
-00:08:41,994 --> 00:08:50,115
+00:07:44,649 --> 00:07:51,363
 Namunada oklad 2,5 million, bonus fondi ham 2,5 million so‘m. Demak, eng ko‘p maosh — 5 million so‘m.
 
 78
-00:08:50,515 --> 00:08:57,030
+00:07:51,634 --> 00:07:57,375
 A xodim misolida hisoblaymiz. Birinchi qadam — har KPI bo‘yicha bajarilish foizini topamiz.
 
 79
-00:08:57,030 --> 00:09:04,212
+00:07:57,375 --> 00:08:05,603
 Tushum: 27 million bo‘linadi 60 millionga — 45 foiz. Bu 50 foizdan past, eshikdan o‘tmadi. Ball — nol.
 
 80
-00:09:04,212 --> 00:09:09,515
+00:08:05,603 --> 00:08:13,117
 Konversiya: 16 bo‘linadi 20 ga — 80 foiz. Vazni 20 foiz, demak ball 16.
 
 81
-00:09:09,515 --> 00:09:16,818
+00:08:13,117 --> 00:08:24,124
 CRM tozaligi: 72 bo‘linadi 90 ga — 80 foiz, ball 16. Qayta aloqa: 63 bo‘linadi 90 ga — 70 foiz, ball 14.
 
 82
-00:09:16,818 --> 00:09:23,424
+00:08:24,124 --> 00:08:33,553
 Hammasini qo‘shamiz: 0 + 16 + 16 + 14 = 46. A xodimning KPI balli — 46 foiz.
 
 83
-00:09:23,824 --> 00:09:30,218
+00:08:33,592 --> 00:08:41,763
 Ikkinchi qadam — bonus: 2 million 500 ming ko‘paytiruv 46 foiz — 1 million 150 ming so‘m.
 
 84
-00:09:30,218 --> 00:09:37,036
+00:08:41,763 --> 00:08:49,221
 Uchinchi qadam — maosh: 2 million 500 ming qo‘shuv 1 million 150 ming — 3 million 650 ming so‘m.
 
 85
-00:09:37,036 --> 00:09:44,642
+00:08:49,221 --> 00:08:55,683
 To‘rtinchi qadam — xodimga tushuntiring: «Tushum rejasining yarmiga yetmadingiz, shu qismdan bonus bo‘lmadi.»
 
 86
-00:09:44,642 --> 00:09:53,067
+00:08:55,683 --> 00:09:02,251
 «Qolgan KPIlar bo‘yicha yaxshi ishladingiz. Keyingi oy rejaning kamida yarmini bajarsangiz, bonus oshadi.»
 
 87
-00:09:53,467 --> 00:09:59,982
+00:09:02,480 --> 00:09:10,334
 To‘rt xodimning maoshi: A — 3 million 650 ming, B — 4 million 950 ming, C va D — 5 million.
 
 88
-00:09:59,982 --> 00:10:09,103
+00:09:10,334 --> 00:09:20,325
 Xavfi: D xodim A dan 4,4 baravar ko‘p tushum olib keldi, maoshi esa atigi 1,4 baravar ko‘p. Reja bajarilgach, qo‘shimcha rag‘bat yo‘q.
 
 89
-00:10:09,103 --> 00:10:17,345
+00:09:20,325 --> 00:09:25,796
 Rejadan ortiq ishlashni ham rag‘batlantirmoqchi bo‘lsangiz — uchinchi yoki to‘rtinchi variantga o‘ting.
 
 90
-00:10:17,745 --> 00:10:23,836
+00:09:25,973 --> 00:09:32,477
 Uchinchi variant: oklad va tushumdan ulush. Muhim: okladsiz, faqat ulush berilmaydi.
 
 91
-00:10:23,836 --> 00:10:33,988
+00:09:32,477 --> 00:09:41,883
 Birinchi sabab — Islom qoidalariga muvofiqlik: ish haqi oldindan aniq bo‘lishi kerak. Miqdori oldindan noma’lum daromad g‘arar — noaniqlik hisoblanadi.
 
 92
-00:10:33,988 --> 00:10:42,988
+00:09:41,883 --> 00:09:50,253
 Ikkinchi sabab — tushum kam oyda xodim daromadsiz qoladi. Uchinchisi — faqat ulush olgan xodim CRM va qayta aloqani tashlab qo‘yadi.
 
 93
-00:10:42,988 --> 00:10:50,473
+00:09:50,253 --> 00:09:57,808
 Tavsiya: oklad kutilgan umumiy maoshning 40–60 foizi bo‘lsin. Tushum — faqat hisobga haqiqatan tushgan pul.
 
 94
-00:10:50,473 --> 00:10:59,442
+00:09:57,808 --> 00:10:04,107
 Bu hujjat diniy hukm emas: shartnoma shartlarini ishonchli ulamo yoki shariat bo‘yicha mutaxassis bilan tekshiring.
 
 95
-00:10:59,842 --> 00:11:09,570
+00:10:04,236 --> 00:10:16,138
 Ulushni hisoblashning uch usuli bor. Namuna pog‘onalari: 50 milliongacha 5 foiz, 50 dan 100 milliongacha 8 foiz, 100 milliondan ortig‘i 10 foiz.
 
 96
-00:11:09,570 --> 00:11:17,236
+00:10:16,138 --> 00:10:25,570
 3-A. Bitta foiz: hamma tushumga 5 foiz. B xodim uchun 60 million × 5% = 3 million. Maosh — 5 million 500 ming.
 
 97
-00:11:17,236 --> 00:11:25,994
+00:10:25,570 --> 00:10:36,875
 3-B. Zinapoya: tushum qaysi pog‘onaga yetsa, butun tushumga shu foiz. 60 million × 8% = 4,8 million. Maosh — 7 million 300 ming.
 
 98
-00:11:25,994 --> 00:11:37,267
+00:10:36,875 --> 00:10:50,679
 3-C. Bosqichma-bosqich: birinchi 50 millionga 5 foiz — 2,5 million, qolgan 10 millionga 8 foiz — 800 ming. Ulush 3,3 million, maosh — 5 million 800 ming.
 
 99
-00:11:37,667 --> 00:11:46,182
+00:10:50,815 --> 00:11:00,800
 Zinapoya usulining xavfi — sakrash. Tushum 49,9 million bo‘lsa, ulush taxminan 2,5 million. 50,1 million bo‘lsa — 4 million.
 
 100
-00:11:46,182 --> 00:11:55,667
+00:11:00,800 --> 00:11:08,244
 Xodim oy oxirida to‘lovni keyingi oyga surib qo‘yishi mumkin. Bosqichma-bosqich usulda esa sakrash yo‘q — har bir so‘m adolatli hisoblanadi.
 
 101
-00:11:55,667 --> 00:12:03,424
+00:11:08,244 --> 00:11:13,155
 Shuning uchun «tushum» ta’rifini qat’iy yozing — hisobga kelgan pul — yoki 3-C usulini tanlang.
 
 102
-00:12:03,824 --> 00:12:12,279
+00:11:13,295 --> 00:11:20,574
 To‘rtinchi variant: oklad, ulush va tartib sharti. Formula: Maosh teng Oklad qo‘shuv Ulush ko‘paytiruv Sifat koeffitsienti.
 
 103
-00:12:12,279 --> 00:12:21,642
+00:11:20,574 --> 00:11:33,228
 Koeffitsient sifat KPIlarining eng pastiga qarab olinadi: 90 foiz va undan yuqori — 1,0. 70 dan 89 foizgacha — 0,8. 70 foizdan past — 0,5.
 
 104
-00:12:21,642 --> 00:12:30,097
+00:11:33,228 --> 00:11:45,046
 A xodim: ulush 27 million × 5% = 1 million 350 ming. CRM tozaligi 80, qayta aloqa 70 foiz. Eng pasti 70 — koeffitsient 0,8.
 
 105
-00:12:30,097 --> 00:12:39,188
+00:11:45,046 --> 00:11:54,506
 1 million 350 ming × 0,8 = 1 million 80 ming. Maosh: 2,5 million qo‘shuv 1 million 80 ming — 3 million 580 ming so‘m.
 
 106
-00:12:39,588 --> 00:12:43,861
+00:11:54,700 --> 00:11:58,093
 Endi barcha variantlarni bitta jadvalda solishtiramiz.
 
 107
-00:12:43,861 --> 00:12:50,921
+00:11:58,093 --> 00:12:07,243
 Faqat okladda D xodim — eng yaxshi sotuvchi — atigi 4 million oladi. Bu uning tushumining 3,3 foizi.
 
 108
-00:12:50,921 --> 00:12:58,709
+00:12:07,243 --> 00:12:14,150
 Ikkinchi variantda maosh 5 million bilan cheklanadi. Uchinchi va to‘rtinchi variantlarda ko‘p sotgan ko‘p oladi.
 
 109
-00:12:58,709 --> 00:13:05,588
+00:12:14,150 --> 00:12:22,342
 Korxona uchun asosiy tekshiruv — maosh tushumning necha foizi. Rahbar o‘z chegarasini belgilaydi.
 
 110
-00:13:05,588 --> 00:13:14,012
+00:12:22,342 --> 00:12:28,893
 Eng yaxshi oyda ham maosh shu chegaradan oshmasin, eng yomon oyda esa xodim yashay oladigan daromad olsin.
 
 111
-00:13:14,412 --> 00:13:19,836
+00:12:29,024 --> 00:12:34,790
 Har oy maoshni olti qadamda hisoblaysiz. Bitta xodimga 3–5 daqiqa ketadi.
 
 112
-00:13:19,836 --> 00:13:28,170
+00:12:34,790 --> 00:12:41,477
 Birinchi: raqamlarni oling. Ikkinchi: har KPI bajarilish foizini hisoblang — haqiqiy bo‘linadi maqsadga, ko‘pi bilan 100.
 
 113
-00:13:28,170 --> 00:13:35,715
+00:12:41,477 --> 00:12:47,760
 Uchinchi: eshik qoidasini tekshiring. To‘rtinchi: bajarilishni vazniga ko‘paytirib, qo‘shing — bu KPI balli.
 
 114
-00:13:35,715 --> 00:13:42,715
+00:12:47,760 --> 00:12:54,337
 Beshinchi: variantingiz formulasiga qo‘ying. Oltinchi: maoshni yozing va xodimga hisobini yuboring.
 
 115
-00:13:42,715 --> 00:13:53,442
+00:12:54,337 --> 00:13:02,316
 Teskari KPI: raqam kam bo‘lsa yaxshi bo‘lgan KPIda bajarilish = maqsad ÷ haqiqiy. Maqsad 5 daqiqa, javob 8 daqiqada berilgan bo‘lsa — 62,5 foiz.
 
 116
-00:13:53,842 --> 00:14:01,206
+00:13:02,431 --> 00:13:08,968
 Yana bir namuna: klinikadagi yuzma-yuz sotuvchi, ikkinchi variant. Oklad va bonus fondi — 2,5 milliondan.
 
 117
-00:14:01,206 --> 00:14:07,964
+00:13:08,968 --> 00:13:16,984
 Tushum 48 million, maqsad 60 — 80 foiz, ball 32. Konversiya 22, maqsad 25 — 88 foiz, ball 17,6.
 
 118
-00:14:07,964 --> 00:14:15,024
+00:13:16,984 --> 00:13:26,648
 Uchrashuvlar 22 ta, maqsad 30 — 73 foiz, ball 14,7. CRM tozaligi 95 foiz — 100 deb olinadi, ball 20.
 
 119
-00:14:15,024 --> 00:14:22,418
+00:13:26,648 --> 00:13:36,739
 KPI balli — 84,3. Bonus: 2 million 106 ming 667 so‘m. Maosh: 4 million 606 ming 667 so‘m.
 
 120
-00:14:22,818 --> 00:14:26,018
+00:13:36,984 --> 00:13:38,163
 Oy oxiri tartibi.
 
 121
-00:14:26,018 --> 00:14:34,715
+00:13:38,163 --> 00:13:46,959
 Oyning 1–3 sanasi: rahbar yoki HR har xodim raqamlarini oladi. 3–4 sana: hisoblash varag‘i yoki Excel hisoblagich to‘ldiriladi.
 
 122
-00:14:34,715 --> 00:14:42,139
+00:13:46,959 --> 00:13:53,435
 5-sanagacha: rahbar har xodimga o‘z hisobini yuboradi. E’tiroz uchun 3 kun bor — raqam birga tekshiriladi.
 
 123
-00:14:42,139 --> 00:14:49,473
+00:13:53,435 --> 00:13:58,416
 So‘ng buxgalter maoshni belgilangan sanada to‘laydi. To‘lov sanasi doim bir xil bo‘lsin.
 
 124
-00:14:49,873 --> 00:14:53,297
+00:13:58,523 --> 00:14:01,117
 Yangi xodimni maoshga qanday o‘tkazamiz?
 
 125
-00:14:53,297 --> 00:15:01,630
+00:14:01,117 --> 00:14:08,438
 Akademiya, 16 kun: xodim hali sotmaydi, o‘qiydi. Bu davr uchun oklad yoki o‘qish haqi korxona qaroriga ko‘ra belgilanadi.
 
 126
-00:15:01,630 --> 00:15:10,448
+00:14:08,438 --> 00:14:20,120
 Sotuvga chiqqandan 1–30 kun: ikkinchi variant, maqsad o‘rtachaning 50–70 foizi, eshik yo‘q. 31–60 kun: 80–90 foiz, eshik 30 foiz.
 
 127
-00:15:10,448 --> 00:15:17,509
+00:14:20,120 --> 00:14:27,981
 61–90 kun: tanlangan variant to‘liq, eshik 50 foiz. 90-kundan keyin maosh shartlari qayta ko‘riladi.
 
 128
-00:15:17,509 --> 00:15:27,448
+00:14:27,981 --> 00:14:39,267
 Qoida: maosh tizimi oy o‘rtasida o‘zgartirilmaydi. O‘zgarish keyingi oyning 1-sanasidan, yozma va xodim imzosi bilan kuchga kiradi.
 
 129
-00:15:27,848 --> 00:15:31,048
+00:14:39,473 --> 00:14:41,415
 Eng ko‘p uchraydigan xatolar.
 
 130
-00:15:31,048 --> 00:15:37,442
+00:14:41,415 --> 00:14:46,345
 Faqat oklad berish. Okladsiz, faqat ulush berish. «Tushum» nima ekanini yozib qo‘ymaslik.
 
 131
-00:15:37,442 --> 00:15:44,442
+00:14:46,345 --> 00:14:51,689
 KPI juda ko‘p — xodim hech birini ushlay olmaydi. Hisob og‘zaki. Oy o‘rtasida shartni o‘zgartirish.
 
 132
-00:15:44,442 --> 00:15:55,473
+00:14:51,689 --> 00:14:58,935
 Hamma xodimga bir xil shart. Ishonchsiz raqamlar — avval CRM tozaligini yo‘lga qo‘ying. Va maoshni kechiktirish — to‘lov sanasi doim bir xil bo‘lsin.
 
 133
-00:15:55,873 --> 00:16:05,479
+00:14:59,298 --> 00:15:10,145
 Tanlovingizni rahbar tasdiq varaqasiga yozing: variant, oklad, bonus yoki ulush, KPIlar va vaznlari, eshik qoidasi, tushum ta’rifi va sanalar.
 
 134
-00:16:05,479 --> 00:16:09,691
+00:15:10,145 --> 00:15:13,932
 Varaqni xodim imzolaydi, nusxa ikkalasida ham qoladi.
 
 135
-00:16:09,691 --> 00:16:21,327
+00:15:13,932 --> 00:15:24,355
 Barcha summalar bruto — soliqdan oldin. Shartnomaga yozishdan oldin buxgalter yoki yurist bilan, diniy masalada esa ishonchli mutaxassis bilan maslahatlashing.
 
 136
-00:16:21,727 --> 00:16:28,121
+00:15:24,399 --> 00:15:29,764
 Xulosa: oklad — xavfsizlik, natijaga bog‘liq qism — rag‘bat. Ikkalasi doim birga bo‘lsin.
 
 137
-00:16:28,121 --> 00:16:38,485
+00:15:29,764 --> 00:15:39,400
 Ikkinchi variant bilan boshlang, uch oydan keyin uchinchi yoki to‘rtinchi variantga o‘ting. Hisobni Excel hisoblagich o‘zi bajaradi. Omad!
 
