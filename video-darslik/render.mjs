@@ -3,7 +3,7 @@
 //        node render.mjs --stills dir   (one still per scene, for checking)
 import { createRequire } from 'node:module';
 import { spawn } from 'node:child_process';
-import { writeFileSync, mkdirSync, rmSync } from 'node:fs';
+import { writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
 
@@ -37,6 +37,7 @@ if (process.argv[2] === '--stills') {
 const out = path.resolve(process.argv[2] || 'maosh_tizimi_darslik.mp4');
 const fps = +(process.argv[3] || 30);
 const workers = +(process.argv[4] || 4);
+const audio = path.join(here, 'diktor.mp3'); // narration; silent track if missing
 const tmp = path.join(path.dirname(out), '.parts');
 rmSync(tmp, { recursive: true, force: true });
 mkdirSync(tmp, { recursive: true });
@@ -46,7 +47,7 @@ const probe = await openPage(browser);
 const total = await probe.evaluate(() => window.TOTAL);
 writeFileSync(out.replace(/\.mp4$/, '.srt'), await probe.evaluate(() => window.SRT()));
 await probe.close();
-const frames = Math.ceil(total * fps);
+const frames = Math.ceil(Math.min(total, +(process.env.END || total)) * fps);
 console.log(`duration ${total.toFixed(1)}s, ${frames} frames`);
 
 const per = Math.ceil(frames / workers);
@@ -71,6 +72,6 @@ const parts = await Promise.all(Array.from({ length: workers }, (_, w) => work(w
 await browser.close();
 writeFileSync(path.join(tmp, 'list.txt'), parts.map(p => `file '${p}'`).join('\n'));
 await new Promise(r => spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', path.join(tmp, 'list.txt'),
-  '-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo', '-shortest', '-c:v', 'copy', '-c:a', 'aac', '-movflags', '+faststart', out], { stdio: 'inherit' }).on('close', r));
+  ...(existsSync(audio) ? ['-i', audio] : ['-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo', '-shortest']), '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], { stdio: 'inherit' }).on('close', r));
 rmSync(tmp, { recursive: true, force: true });
 console.log('saved', out);

@@ -72,6 +72,7 @@ table.t td{padding:14px 18px;border-bottom:1px solid var(--line)}
 </style>
 </head>
 <body>
+<script src="vaqt.js"></script>
 <div id="stage">
   <div class="blob" id="b1" style="width:700px;height:700px;background:#1d4ed8"></div>
   <div class="blob" id="b2" style="width:600px;height:600px;background:#0d9488"></div>
@@ -663,7 +664,15 @@ add('Xulosa',[
 // ---------- timing ----------
 const segDur=txt=>Math.max(3.2, txt.length/16.5+1.0);
 let T=0;
-S.forEach((sc,i)=>{sc.start=T;sc.segStart=[];let t=0.5;sc.segs.forEach(s=>{sc.segStart.push(t);t+=segDur(s);});sc.dur=t+0.9;T+=sc.dur;});
+if(window.SEG_TIMES){
+ // timing follows the narration audio (vaqt.js)
+ const st=window.SEG_TIMES;let k=0;
+ S.forEach(sc=>{sc.first=k;k+=sc.segs.length;});
+ S.forEach((sc,i)=>{sc.start=i==0?0:(st[sc.first-1][1]+st[sc.first][0])/2;});
+ const end=st[st.length-1][1]+1.8;
+ S.forEach((sc,i)=>{sc.dur=(i+1<S.length?S[i+1].start:end)-sc.start;sc.segStart=sc.segs.map((_,j)=>st[sc.first+j][0]-sc.start);});
+ T=end;
+}else S.forEach((sc,i)=>{sc.start=T;sc.segStart=[];let t=0.5;sc.segs.forEach(s=>{sc.segStart.push(t);t+=segDur(s);});sc.dur=t+0.9;T+=sc.dur;});
 const TOTAL=T;
 
 // ---------- build DOM ----------
