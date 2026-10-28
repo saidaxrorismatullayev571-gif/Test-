@@ -1,0 +1,528 @@
+{
+"duration": 322.48,
+"paras": 23,
+"sents": [
+{
+"p": 0,
+"t": "Bitta savol: xodim rejadan ikki baravar ko‘p sotsa, u ham ikki baravar ko‘p maosh olishi kerakmi?",
+"a": 0.0,
+"b": 6.013
+},
+{
+"p": 0,
+"t": "Javob siz tanlagan maosh tizimiga bog‘liq.",
+"a": 6.562,
+"b": 9.112
+},
+{
+"p": 0,
+"t": "Bugun to‘rt variantni bitta misolda solishtiramiz.",
+"a": 9.622,
+"b": 12.172
+},
+{
+"p": 1,
+"t": "Misolimiz shunday.",
+"a": 13.202,
+"b": 14.052
+},
+{
+"p": 1,
+"t": "Oylik reja — oltmish million so‘m tushum.",
+"a": 14.592,
+"b": 16.492
+},
+{
+"p": 1,
+"t": "To‘rtta sotuvchi bor.",
+"a": 16.973,
+"b": 17.812
+},
+{
+"p": 1,
+"t": "Aziz yigirma yetti million sotdi — rejaning qirq besh foizi.",
+"a": 18.482,
+"b": 21.552
+},
+{
+"p": 1,
+"t": "Bobur oltmish million sotdi — roppa-rosa reja.",
+"a": 22.122,
+"b": 23.552
+},
+{
+"p": 2,
+"t": "Charos to‘qson million sotdi — bir yuz ellik foiz.",
+"a": 23.782,
+"b": 27.982
+},
+{
+"p": 2,
+"t": "Dilnoza esa bir yuz yigirma million — rejaning ikki baravari.",
+"a": 28.482,
+"b": 31.523
+},
+{
+"p": 2,
+"t": "Boshqa maqsadlar: konversiya yigirma foiz, CRM tozaligi va qayta aloqa to‘qson foizdan.",
+"a": 32.103,
+"b": 39.183
+},
+{
+"p": 3,
+"t": "Birinchi variant — faqat oklad.",
+"a": 39.373,
+"b": 40.013
+},
+{
+"p": 3,
+"t": "Hammaga to‘rt million so‘mdan.",
+"a": 40.503,
+"b": 42.003
+},
+{
+"p": 3,
+"t": "Hisoblash oson, tortishuv yo‘qdek ko‘rinadi.",
+"a": 42.583,
+"b": 45.713
+},
+{
+"p": 3,
+"t": "Lekin qarang: Aziz uchun maosh tushumning o‘n to‘rt foizidan ko‘p, Dilnoza uchun esa atigi uch foiz.",
+"a": 46.073,
+"b": 52.723
+},
+{
+"p": 4,
+"t": "Natija: Dilnoza «nega men ko‘proq ishlayman?» deb boshqa joyga ketadi.",
+"a": 52.913,
+"b": 56.093
+},
+{
+"p": 4,
+"t": "Aziz esa qoladi.",
+"a": 56.633,
+"b": 57.443
+},
+{
+"p": 4,
+"t": "Jamoada faqat tinch xodimlar qoladi, rahbar esa har kuni «qo‘ng‘iroq qildingmi?» deb nazorat qiladi.",
+"a": 58.043,
+"b": 63.393
+},
+{
+"p": 4,
+"t": "Shuning uchun bu variant tavsiya etilmaydi — hatto yangi xodimga ham.",
+"a": 63.763,
+"b": 67.403
+},
+{
+"p": 5,
+"t": "Ikkinchi variant — oklad va KPI bonus.",
+"a": 68.672,
+"b": 71.112
+},
+{
+"p": 5,
+"t": "Formula: maosh teng oklad qo‘shuv bonus fondi ko‘paytiruv KPI balli.",
+"a": 71.793,
+"b": 76.453
+},
+{
+"p": 5,
+"t": "Namunada oklad ikki million besh yuz ming, bonus fondi ham ikki million besh yuz ming.",
+"a": 77.133,
+"b": 81.252
+},
+{
+"p": 5,
+"t": "KPIlar to‘rtta: tushumning vazni qirq foiz, konversiya, CRM tozaligi va qayta aloqaniki yigirma foizdan.",
+"a": 81.782,
+"b": 87.759
+},
+{
+"p": 6,
+"t": "Azizning maoshini hisoblaymiz.",
+"a": 87.759,
+"b": 90.963
+},
+{
+"p": 6,
+"t": "Tushum: yigirma yettini oltmishga bo‘lamiz — qirq besh foiz.",
+"a": 91.303,
+"b": 94.853
+},
+{
+"p": 6,
+"t": "Bu ellikdan kam.",
+"a": 95.163,
+"b": 96.103
+},
+{
+"p": 6,
+"t": "Eshik yopiq — ball nol.",
+"a": 96.603,
+"b": 97.103
+},
+{
+"p": 6,
+"t": "Konversiya: o‘n oltini yigirmaga bo‘lamiz — sakson foiz.",
+"a": 97.472,
+"b": 102.062
+},
+{
+"p": 6,
+"t": "Vazni yigirma, demak ball o‘n olti.",
+"a": 102.392,
+"b": 104.422
+},
+{
+"p": 7,
+"t": "CRM tozaligi: yetmish ikkini to‘qsonga bo‘lamiz — sakson foiz, ball o‘n olti.",
+"a": 105.043,
+"b": 109.722
+},
+{
+"p": 7,
+"t": "Qayta aloqa: oltmish uchni to‘qsonga bo‘lamiz — yetmish foiz, ball o‘n to‘rt.",
+"a": 110.343,
+"b": 114.853
+},
+{
+"p": 7,
+"t": "Jami: nol, o‘n olti, o‘n olti va o‘n to‘rt.",
+"a": 115.532,
+"b": 118.172
+},
+{
+"p": 7,
+"t": "KPI balli — qirq olti.",
+"a": 118.693,
+"b": 120.023
+},
+{
+"p": 8,
+"t": "Bonus: ikki million besh yuz mingning qirq olti foizi — bir million bir yuz ellik ming.",
+"a": 120.933,
+"b": 127.112
+},
+{
+"p": 8,
+"t": "Maosh: ikki million besh yuz ming qo‘shuv bir million bir yuz ellik ming — uch million olti yuz ellik ming so‘m.",
+"a": 127.483,
+"b": 134.641
+},
+{
+"p": 9,
+"t": "Xuddi shunday hisoblasak, Bobur to‘rt million to‘qqiz yuz ellik ming, Charos va Dilnoza besh milliondan oladi.",
+"a": 134.641,
+"b": 141.552
+},
+{
+"p": 9,
+"t": "Muammo shu yerda: Dilnoza Azizdan to‘rt yarim baravar ko‘p sotdi, maoshi esa bir yarim baravarga ham yetmaydi.",
+"a": 142.172,
+"b": 147.892
+},
+{
+"p": 9,
+"t": "Rejadan oshgach, qo‘shimcha rag‘bat yo‘q.",
+"a": 148.142,
+"b": 150.022
+},
+{
+"p": 10,
+"t": "Uchinchi variant — oklad va tushumdan ulush.",
+"a": 150.722,
+"b": 153.093
+},
+{
+"p": 10,
+"t": "Muhim: okladsiz ulush yo‘q.",
+"a": 153.843,
+"b": 155.682
+},
+{
+"p": 10,
+"t": "Birinchidan, Islom qoidalariga ko‘ra ish haqi oldindan aniq bo‘lishi kerak, noaniq daromad g‘arar hisoblanadi.",
+"a": 156.112,
+"b": 161.942
+},
+{
+"p": 10,
+"t": "Ikkinchidan, tushum kam oyda xodim daromadsiz qolmasin.",
+"a": 162.572,
+"b": 165.562
+},
+{
+"p": 10,
+"t": "Oklad kutilgan maoshning qirq-oltmish foizi bo‘lsin.",
+"a": 166.242,
+"b": 169.022
+},
+{
+"p": 10,
+"t": "Bu diniy hukm emas — shartlarni ishonchli mutaxassis bilan tekshiring.",
+"a": 169.352,
+"b": 172.962
+},
+{
+"p": 11,
+"t": "Ulush uch usulda hisoblanadi.",
+"a": 173.722,
+"b": 174.142
+},
+{
+"p": 11,
+"t": "Namunadagi pog‘onalar: ellik milliongacha besh foiz, ellikdan yuz milliongacha sakkiz foiz, yuz milliondan ortig‘i o‘n foiz.",
+"a": 174.312,
+"b": 181.312
+},
+{
+"p": 11,
+"t": "Boburning oltmish millionini uch usulda hisoblaymiz.",
+"a": 181.582,
+"b": 185.762
+},
+{
+"p": 12,
+"t": "Birinchi usul — bitta foiz: oltmish millionning besh foizi — uch million.",
+"a": 185.762,
+"b": 191.623
+},
+{
+"p": 12,
+"t": "Maosh besh million besh yuz ming.",
+"a": 191.922,
+"b": 193.522
+},
+{
+"p": 12,
+"t": "Ikkinchi usul — zinapoya: tushum ikkinchi pog‘onada, butun summaga sakkiz foiz — to‘rt million sakkiz yuz ming.",
+"a": 194.322,
+"b": 199.172
+},
+{
+"p": 12,
+"t": "Maosh yetti million uch yuz ming.",
+"a": 199.382,
+"b": 200.602
+},
+{
+"p": 13,
+"t": "Uchinchi usul — bosqichma-bosqich: birinchi ellik millionga besh foiz — ikki million besh yuz ming, qolgan o‘n millionga sakkiz foiz — sakkiz yuz ming.",
+"a": 200.873,
+"b": 208.623
+},
+{
+"p": 13,
+"t": "Ulush uch million uch yuz ming, maosh besh million sakkiz yuz ming.",
+"a": 208.922,
+"b": 213.292
+},
+{
+"p": 14,
+"t": "Zinapoyaning xavfi — sakrash.",
+"a": 213.562,
+"b": 215.252
+},
+{
+"p": 14,
+"t": "Tushum qirq to‘qqiz million to‘qqiz yuz ming bo‘lsa, ulush taxminan ikki yarim million.",
+"a": 215.812,
+"b": 220.192
+},
+{
+"p": 14,
+"t": "Atigi ikki yuz ming ko‘p, ellik million bir yuz ming bo‘lsa — to‘rt million.",
+"a": 220.432,
+"b": 225.343
+},
+{
+"p": 14,
+"t": "Xodim to‘lovni keyingi oyga surib qo‘yishi mumkin.",
+"a": 225.642,
+"b": 228.772
+},
+{
+"p": 14,
+"t": "Shuning uchun bosqichma-bosqich usul adolatliroq.",
+"a": 229.082,
+"b": 230.701
+},
+{
+"p": 15,
+"t": "To‘rtinchi variant — oklad, ulush va tartib sharti.",
+"a": 230.701,
+"b": 233.082
+},
+{
+"p": 15,
+"t": "Ulush sifat koeffitsientiga ko‘paytiriladi.",
+"a": 233.272,
+"b": 235.123
+},
+{
+"p": 15,
+"t": "CRM tozaligi va qayta aloqaning eng pastini olamiz.",
+"a": 235.502,
+"b": 239.363
+},
+{
+"p": 15,
+"t": "To‘qson foiz va undan yuqori — bir.",
+"a": 239.363,
+"b": 241.152
+},
+{
+"p": 15,
+"t": "Yetmishdan sakson to‘qqizgacha — nol butun sakkiz.",
+"a": 241.522,
+"b": 245.373
+},
+{
+"p": 15,
+"t": "Yetmishdan past — nol butun besh.",
+"a": 245.642,
+"b": 246.502
+},
+{
+"p": 16,
+"t": "Aziz uchun hisoblaymiz: ulush yigirma yetti millionning besh foizi — bir million uch yuz ellik ming.",
+"a": 246.802,
+"b": 252.748
+},
+{
+"p": 16,
+"t": "Uning eng past sifat ko‘rsatkichi yetmish foiz, koeffitsient nol butun sakkiz.",
+"a": 252.748,
+"b": 257.322
+},
+{
+"p": 16,
+"t": "Ulush bir million sakson mingga tushadi.",
+"a": 257.662,
+"b": 259.173
+},
+{
+"p": 16,
+"t": "Maosh — uch million besh yuz sakson ming so‘m.",
+"a": 259.522,
+"b": 261.462
+},
+{
+"p": 17,
+"t": "Endi hammasini yonma-yon qo‘yamiz.",
+"a": 261.863,
+"b": 264.032
+},
+{
+"p": 17,
+"t": "Faqat okladda Dilnoza to‘rt million oladi.",
+"a": 264.912,
+"b": 268.04
+},
+{
+"p": 17,
+"t": "Ikkinchi variantda — besh million.",
+"a": 268.04,
+"b": 269.553
+},
+{
+"p": 17,
+"t": "Zinapoyada — o‘n to‘rt million besh yuz ming.",
+"a": 269.942,
+"b": 273.792
+},
+{
+"p": 17,
+"t": "Ko‘p sotgan ko‘p olishi uchinchi va to‘rtinchi variantlarda ko‘rinadi.",
+"a": 274.303,
+"b": 276.639
+},
+{
+"p": 18,
+"t": "Qaysini tanlash kerak?",
+"a": 276.639,
+"b": 277.642
+},
+{
+"p": 18,
+"t": "Mijozlar o‘zi murojaat qilsa va bitim tez yopilsa — ikkinchi variant.",
+"a": 278.363,
+"b": 282.433
+},
+{
+"p": 18,
+"t": "Mijozni xodim o‘zi topsa, bitim uzoq va chek katta bo‘lsa — to‘rtinchi.",
+"a": 282.652,
+"b": 286.796
+},
+{
+"p": 18,
+"t": "CRM bo‘lmasa — uchinchi.",
+"a": 286.796,
+"b": 287.962
+},
+{
+"p": 18,
+"t": "Jamoa bo‘lib sotilsa yoki xodim yangi bo‘lsa — ikkinchi.",
+"a": 288.502,
+"b": 291.695
+},
+{
+"p": 19,
+"t": "Umumiy tavsiya: ikkinchi variant bilan boshlang.",
+"a": 291.695,
+"b": 294.433
+},
+{
+"p": 19,
+"t": "Uch oydan keyin natijaga qarab uchinchi yoki to‘rtinchi variantga o‘ting.",
+"a": 294.822,
+"b": 298.382
+},
+{
+"p": 20,
+"t": "Savol: Charos to‘qson million sotdi.",
+"a": 298.592,
+"b": 300.993
+},
+{
+"p": 20,
+"t": "Zinapoya usulida ulushi qancha bo‘ladi?",
+"a": 301.472,
+"b": 303.053
+},
+{
+"p": 20,
+"t": "Pauza qiling yoki besh soniya o‘ylang.",
+"a": 303.392,
+"b": 306.332
+},
+{
+"p": 21,
+"t": "Javob: to‘qson million ikkinchi pog‘onada, demak sakkiz foiz.",
+"a": 306.553,
+"b": 312.032
+},
+{
+"p": 21,
+"t": "Ulush — yetti million ikki yuz ming so‘m.",
+"a": 312.493,
+"b": 314.493
+},
+{
+"p": 22,
+"t": "Ikkinchi qism tugadi.",
+"a": 315.373,
+"b": 316.282
+},
+{
+"p": 22,
+"t": "Uchinchi qismda to‘g‘ri KPI tanlashni va har oy maoshni o‘n daqiqada hisoblashni o‘rganamiz.",
+"a": 316.792,
+"b": 322.282
+}
+]
+}

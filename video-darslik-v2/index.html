@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<title>Maosh tizimi — video darslik</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <div class="blob" id="b1" style="width:760px;height:760px;background:#1d4ed8"></div>
+  <div class="blob" id="b2" style="width:640px;height:640px;background:#0d9488"></div>
+  <div class="blob" id="b3" style="width:520px;height:520px;background:#6d28d9;opacity:.22"></div>
+  <div id="dots"></div>
+  <div id="hud"><div class="brand">Maosh tizimi <b>·</b> <span class="mu" style="font-weight:600">Sotuv moduli 05.2</span></div><div class="part" id="part"></div></div>
+  <div id="bar"><i></i></div>
+  <div id="scenes"></div>
+  <div id="grain"></div>
+  <div id="vignette"></div>
+</div>
+<script>
+  const q = (location.search.match(/q=(\d)/) || [0, '1'])[1];
+  document.write(`<script src="build/timing${q}.js"><\/script><script src="engine.js"><\/script><script src="qism${q}.js"><\/script><script>BUILD()<\/script>`);
+</script>
+</body>
+</html>

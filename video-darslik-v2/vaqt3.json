@@ -1,0 +1,534 @@
+{
+"duration": 301.08,
+"paras": 19,
+"sents": [
+{
+"p": 0,
+"t": "Ikkita xodim bir xil sotdi.",
+"a": 0.0,
+"b": 1.593
+},
+{
+"p": 0,
+"t": "Lekin biri mijozlarga qayta qo‘ng‘iroq qiladi va CRMni toza yuritadi.",
+"a": 2.343,
+"b": 6.243
+},
+{
+"p": 0,
+"t": "Ikkinchisi esa yo‘q.",
+"a": 6.663,
+"b": 7.603
+},
+{
+"p": 0,
+"t": "Ular bir xil maosh olishi kerakmi?",
+"a": 8.322,
+"b": 10.012
+},
+{
+"p": 0,
+"t": "Javob to‘g‘ri tanlangan KPIda.",
+"a": 10.723,
+"b": 12.812
+},
+{
+"p": 1,
+"t": "KPI uch turga bo‘linadi.",
+"a": 14.132,
+"b": 15.432
+},
+{
+"p": 1,
+"t": "Natija — pul yoki bitim: tushum, bitim soni, konversiya.",
+"a": 16.062,
+"b": 21.502
+},
+{
+"p": 1,
+"t": "Harakat — xodim nima qildi: qo‘ng‘iroqlar, uchrashuvlar, takliflar soni.",
+"a": 22.512,
+"b": 27.342
+},
+{
+"p": 1,
+"t": "Sifat — ish qanchalik toza: CRM tozaligi, qayta aloqa, javob berish tezligi.",
+"a": 28.192,
+"b": 34.333
+},
+{
+"p": 2,
+"t": "Asosiy qoida: tushum va konversiya doim birinchi turadi.",
+"a": 35.513,
+"b": 38.973
+},
+{
+"p": 2,
+"t": "Ikkalasining vazni birga oltmish foiz, masalan qirq va yigirma.",
+"a": 39.463,
+"b": 43.193
+},
+{
+"p": 2,
+"t": "Qolgan qirq foizga bir-ikkita harakat va bir-ikkita sifat KPI qo‘shiladi.",
+"a": 44.053,
+"b": 49.293
+},
+{
+"p": 2,
+"t": "Jami to‘rt-beshta, undan ko‘p emas.",
+"a": 49.523,
+"b": 52.453
+},
+{
+"p": 3,
+"t": "Yaxshi KPIning to‘rt sharti bor.",
+"a": 52.453,
+"b": 53.483
+},
+{
+"p": 3,
+"t": "Xodim unga ta’sir qila oladi.",
+"a": 54.303,
+"b": 55.893
+},
+{
+"p": 3,
+"t": "Raqam CRM yoki hisobotda ko‘rinadi, xodimning so‘zida emas.",
+"a": 56.553,
+"b": 60.333
+},
+{
+"p": 3,
+"t": "Har oy aniq o‘lchanadi.",
+"a": 61.053,
+"b": 62.422
+},
+{
+"p": 3,
+"t": "Va hamma uni bir xil tushunadi.",
+"a": 63.023,
+"b": 64.623
+},
+{
+"p": 4,
+"t": "Vaziyatga qarab tayyor to‘plamlar.",
+"a": 65.953,
+"b": 69.355
+},
+{
+"p": 4,
+"t": "Kiruvchi qo‘ng‘iroqlar bilan ishlaydigan call-markazga: javob berish tezligi, qayta aloqa, CRM tozaligi.",
+"a": 69.355,
+"b": 76.518
+},
+{
+"p": 4,
+"t": "Bazaga o‘zi qo‘ng‘iroq qiladigan operatorga: haqiqiy gaplashuvlar soni.",
+"a": 76.518,
+"b": 82.612
+},
+{
+"p": 4,
+"t": "Klinika yoki do‘kondagi sotuvchiga: o‘rtacha bitim summasi.",
+"a": 82.963,
+"b": 85.362
+},
+{
+"p": 4,
+"t": "Qimmat, uzoq yopiladigan mahsulotga: uchrashuvlar va takliflar soni.",
+"a": 85.642,
+"b": 91.883
+},
+{
+"p": 5,
+"t": "Maqsad raqamini qanday qo‘yamiz?",
+"a": 92.903,
+"b": 94.317
+},
+{
+"p": 5,
+"t": "Ma’lumot bo‘lsa — oxirgi uch oyning o‘rtachasini bir butun o‘ndan birga ko‘paytiring.",
+"a": 94.317,
+"b": 99.103
+},
+{
+"p": 5,
+"t": "Bu o‘n foiz o‘sish.",
+"a": 100.222,
+"b": 101.763
+},
+{
+"p": 5,
+"t": "Ma’lumot yo‘q bo‘lsa — eng yaxshi emas, o‘rtacha xodim raqamini oling.",
+"a": 101.763,
+"b": 105.596
+},
+{
+"p": 5,
+"t": "Va maqsadni xodim bilan birga kelishing.",
+"a": 105.596,
+"b": 108.963
+},
+{
+"p": 6,
+"t": "Raqamlar qayerdan olinadi?",
+"a": 109.782,
+"b": 111.623
+},
+{
+"p": 6,
+"t": "CRM bo‘lsa — CRM hisobotidan.",
+"a": 112.163,
+"b": 113.103
+},
+{
+"p": 6,
+"t": "CRM bo‘lmasa — xodim har kuni kechqurun besh daqiqada kunlik hisobot to‘ldiradi.",
+"a": 113.383,
+"b": 116.773
+},
+{
+"p": 6,
+"t": "Tushumni esa doim kassa yoki bank bilan solishtiring.",
+"a": 117.413,
+"b": 123.623
+},
+{
+"p": 7,
+"t": "Endi oylik hisob.",
+"a": 124.523,
+"b": 125.963
+},
+{
+"p": 7,
+"t": "Olti qadam.",
+"a": 126.603,
+"b": 126.922
+},
+{
+"p": 7,
+"t": "Bir: raqamlarni oling.",
+"a": 127.303,
+"b": 128.992
+},
+{
+"p": 7,
+"t": "Ikki: har KPI bajarilishini hisoblang — haqiqiyni maqsadga bo‘lasiz, ko‘pi bilan yuz foiz.",
+"a": 129.522,
+"b": 133.852
+},
+{
+"p": 7,
+"t": "Uch: eshik qoidasini tekshiring.",
+"a": 134.052,
+"b": 137.914
+},
+{
+"p": 7,
+"t": "To‘rt: bajarilishni vazniga ko‘paytirib, qo‘shing.",
+"a": 137.914,
+"b": 142.292
+},
+{
+"p": 7,
+"t": "Besh: formulaga qo‘ying.",
+"a": 142.492,
+"b": 144.082
+},
+{
+"p": 7,
+"t": "Olti: xodimga hisobini yuboring.",
+"a": 144.812,
+"b": 146.982
+},
+{
+"p": 8,
+"t": "Bitta nozik joy — teskari KPI.",
+"a": 147.272,
+"b": 148.617
+},
+{
+"p": 8,
+"t": "Javob berish tezligida raqam kam bo‘lsa yaxshi.",
+"a": 148.617,
+"b": 152.562
+},
+{
+"p": 8,
+"t": "Bunda maqsadni haqiqiyga bo‘lamiz.",
+"a": 152.972,
+"b": 154.252
+},
+{
+"p": 8,
+"t": "Maqsad besh daqiqa, xodim sakkiz daqiqada javob berdi.",
+"a": 154.692,
+"b": 158.093
+},
+{
+"p": 8,
+"t": "Beshni sakkizga bo‘lamiz — oltmish ikki yarim foiz.",
+"a": 158.432,
+"b": 162.593
+},
+{
+"p": 9,
+"t": "Amaliy misol: klinikadagi sotuvchi.",
+"a": 163.123,
+"b": 164.343
+},
+{
+"p": 9,
+"t": "Tushum qirq sakkiz million, maqsad oltmish — sakson foiz, ball o‘ttiz ikki.",
+"a": 164.732,
+"b": 169.532
+},
+{
+"p": 9,
+"t": "Konversiya yigirma ikki, maqsad yigirma besh — sakson sakkiz foiz, ball o‘n yetti butun o‘ndan olti.",
+"a": 169.892,
+"b": 176.012
+},
+{
+"p": 10,
+"t": "Uchrashuvlar yigirma ikkita, maqsad o‘ttiz — yetmish uch foiz, ball o‘n to‘rt butun o‘ndan yetti.",
+"a": 176.432,
+"b": 182.562
+},
+{
+"p": 10,
+"t": "CRM tozaligi to‘qson besh — maqsaddan oshgani uchun yuz deb olinadi, ball yigirma.",
+"a": 182.942,
+"b": 187.512
+},
+{
+"p": 10,
+"t": "KPI balli — sakson to‘rt butun o‘ndan uch.",
+"a": 187.702,
+"b": 190.132
+},
+{
+"p": 10,
+"t": "Maosh — taxminan to‘rt million olti yuz ming so‘m.",
+"a": 190.352,
+"b": 194.152
+},
+{
+"p": 11,
+"t": "Oy oxiri tartibi.",
+"a": 194.593,
+"b": 195.638
+},
+{
+"p": 11,
+"t": "Oyning birinchi-uchinchi sanasida raqamlar olinadi.",
+"a": 195.638,
+"b": 199.582
+},
+{
+"p": 11,
+"t": "Uchinchi-to‘rtinchi sanada hisoblanadi.",
+"a": 199.972,
+"b": 201.022
+},
+{
+"p": 11,
+"t": "Beshinchi sanagacha har xodimga o‘z hisobi yuboriladi.",
+"a": 201.262,
+"b": 204.572
+},
+{
+"p": 11,
+"t": "E’tiroz uchun uch kun.",
+"a": 205.282,
+"b": 207.572
+},
+{
+"p": 11,
+"t": "Keyin maosh doim bir xil sanada to‘lanadi.",
+"a": 208.502,
+"b": 211.422
+},
+{
+"p": 12,
+"t": "Yangi xodim-chi?",
+"a": 212.072,
+"b": 212.634
+},
+{
+"p": 12,
+"t": "Unga ham faqat oklad bermang.",
+"a": 212.634,
+"b": 213.722
+},
+{
+"p": 12,
+"t": "Birinchi o‘ttiz kun — ikkinchi variant, maqsad o‘rtacha xodimning ellik-yetmish foizi, eshik qoidasi yo‘q.",
+"a": 214.093,
+"b": 219.982
+},
+{
+"p": 12,
+"t": "O‘ttiz birinchidan oltmishinchi kungacha — sakson-to‘qson foiz, eshik o‘ttiz foiz.",
+"a": 220.222,
+"b": 224.752
+},
+{
+"p": 12,
+"t": "Oltmish birinchi kundan — to‘liq maqsad.",
+"a": 225.373,
+"b": 228.001
+},
+{
+"p": 13,
+"t": "Va qat’iy qoida: maosh tizimi oy o‘rtasida o‘zgarmaydi.",
+"a": 228.001,
+"b": 231.375
+},
+{
+"p": 13,
+"t": "O‘zgarish faqat keyingi oyning birinchi sanasidan, yozma va xodim imzosi bilan kuchga kiradi.",
+"a": 231.375,
+"b": 237.152
+},
+{
+"p": 14,
+"t": "Eng ko‘p uchraydigan xatolar: faqat oklad berish.",
+"a": 237.892,
+"b": 242.702
+},
+{
+"p": 14,
+"t": "Okladsiz ulush.",
+"a": 243.272,
+"b": 243.834
+},
+{
+"p": 14,
+"t": "Tushum nima ekanini yozib qo‘ymaslik.",
+"a": 243.834,
+"b": 245.772
+},
+{
+"p": 14,
+"t": "KPI juda ko‘p.",
+"a": 246.312,
+"b": 247.642
+},
+{
+"p": 14,
+"t": "Hisob og‘zaki.",
+"a": 248.412,
+"b": 248.974
+},
+{
+"p": 14,
+"t": "Va maoshni kechiktirish.",
+"a": 248.974,
+"b": 249.352
+},
+{
+"p": 15,
+"t": "Oxirgi qadam — rahbar tasdiq varaqasi.",
+"a": 249.742,
+"b": 252.343
+},
+{
+"p": 15,
+"t": "Unga variant, oklad, bonus yoki ulush, KPIlar va vaznlari, eshik qoidasi, tushum ta’rifi va sanalar yoziladi.",
+"a": 252.692,
+"b": 259.842
+},
+{
+"p": 15,
+"t": "Xodim imzolaydi, nusxa ikkalasida qoladi.",
+"a": 260.082,
+"b": 262.442
+},
+{
+"p": 15,
+"t": "Summalar soliqdan oldin.",
+"a": 262.923,
+"b": 264.243
+},
+{
+"p": 15,
+"t": "Shartnomaga yozishdan oldin buxgalter yoki yurist bilan tekshiring.",
+"a": 264.712,
+"b": 267.743
+},
+{
+"p": 16,
+"t": "Oxirgi savol.",
+"a": 268.752,
+"b": 269.373
+},
+{
+"p": 16,
+"t": "Javob berish tezligi bo‘yicha maqsad — to‘rt daqiqa.",
+"a": 270.042,
+"b": 272.632
+},
+{
+"p": 16,
+"t": "Xodim olti daqiqada javob berdi.",
+"a": 272.892,
+"b": 274.882
+},
+{
+"p": 16,
+"t": "Bajarilish necha foiz?",
+"a": 275.282,
+"b": 276.483
+},
+{
+"p": 16,
+"t": "Pauza qiling yoki besh soniya o‘ylang.",
+"a": 277.322,
+"b": 280.252
+},
+{
+"p": 17,
+"t": "Javob: bu teskari KPI.",
+"a": 280.542,
+"b": 281.803
+},
+{
+"p": 17,
+"t": "To‘rtni oltiga bo‘lamiz — oltmish olti foiz atrofida.",
+"a": 282.282,
+"b": 286.604
+},
+{
+"p": 17,
+"t": "Ellikdan yuqori, demak eshikdan o‘tdi.",
+"a": 286.604,
+"b": 288.852
+},
+{
+"p": 18,
+"t": "Xulosa: oklad — xavfsizlik, natijaga bog‘liq qism — rag‘bat, KPI — tartib.",
+"a": 289.152,
+"b": 293.592
+},
+{
+"p": 18,
+"t": "Ikkinchi variant bilan boshlang, uch oydan keyin rivojlantiring.",
+"a": 294.102,
+"b": 297.173
+},
+{
+"p": 18,
+"t": "Hisobni Excel hisoblagich o‘zi bajaradi.",
+"a": 297.502,
+"b": 299.972
+},
+{
+"p": 18,
+"t": "Omad!",
+"a": 300.472,
+"b": 300.803
+}
+]
+}

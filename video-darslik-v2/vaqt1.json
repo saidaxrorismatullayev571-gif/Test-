@@ -1,0 +1,432 @@
+{
+"duration": 236.24,
+"paras": 16,
+"sents": [
+{
+"p": 0,
+"t": "Tasavvur qiling.",
+"a": 0.253,
+"b": 0.802
+},
+{
+"p": 0,
+"t": "Sizda to‘rtta sotuv menejeri bor.",
+"a": 1.242,
+"b": 3.123
+},
+{
+"p": 0,
+"t": "Biri oyiga yigirma yetti million so‘mlik sotuv qiladi, boshqasi bir yuz yigirma million.",
+"a": 3.653,
+"b": 9.412
+},
+{
+"p": 0,
+"t": "Lekin ikkalasi ham bir xil maosh oladi.",
+"a": 9.672,
+"b": 11.942
+},
+{
+"p": 0,
+"t": "Sizningcha, bir yildan keyin qaysi biri kompaniyada qoladi?",
+"a": 12.162,
+"b": 16.032
+},
+{
+"p": 1,
+"t": "Bu darslik sotuv menejeriga to‘g‘ri maosh tizimini tanlash va hisoblash haqida.",
+"a": 16.032,
+"b": 19.392
+},
+{
+"p": 1,
+"t": "U rahbar va HR xodimlari uchun.",
+"a": 20.062,
+"b": 22.002
+},
+{
+"p": 1,
+"t": "Darslik uch qismdan iborat.",
+"a": 22.852,
+"b": 24.012
+},
+{
+"p": 1,
+"t": "Birinchi qismda asoslarni o‘rganamiz: ikki oltin qoida, atamalar va yaxshi tizimning to‘rt sharti.",
+"a": 24.523,
+"b": 30.613
+},
+{
+"p": 2,
+"t": "Avval ikkita oltin qoida.",
+"a": 31.543,
+"b": 33.133
+},
+{
+"p": 2,
+"t": "Birinchi qoida: sotuv menejeriga faqat oklad bermang.",
+"a": 33.903,
+"b": 36.973
+},
+{
+"p": 2,
+"t": "Na yangi, na tajribali xodimga.",
+"a": 37.503,
+"b": 39.433
+},
+{
+"p": 2,
+"t": "Boshidagi savolning javobi ham shu: maosh bir xil bo‘lsa, eng kuchli sotuvchi birinchi bo‘lib ketadi.",
+"a": 40.093,
+"b": 45.353
+},
+{
+"p": 3,
+"t": "Ikkinchi qoida: maosh hech qachon faqat tushumdan ulushdan iborat bo‘lmasin.",
+"a": 46.183,
+"b": 50.763
+},
+{
+"p": 3,
+"t": "Doim aniq oklad bo‘ladi, ulush esa uning ustiga qo‘shiladi.",
+"a": 51.383,
+"b": 54.933
+},
+{
+"p": 3,
+"t": "Formula oddiy: aniq oklad, qo‘shuv natijaga bog‘liq qism.",
+"a": 55.553,
+"b": 58.283
+},
+{
+"p": 4,
+"t": "Endi darsda ishlatiladigan so‘zlarni bilib olaylik.",
+"a": 58.453,
+"b": 62.873
+},
+{
+"p": 4,
+"t": "KPI — xodim oy davomida bajarishi kerak bo‘lgan aniq raqam.",
+"a": 63.683,
+"b": 67.323
+},
+{
+"p": 4,
+"t": "«Yaxshi ishla» degan gap emas, aynan raqam.",
+"a": 67.903,
+"b": 69.222
+},
+{
+"p": 4,
+"t": "Masalan, oyiga oltmish million so‘m sotuv.",
+"a": 69.553,
+"b": 72.722
+},
+{
+"p": 4,
+"t": "CRM — mijozlar daftari, faqat kompyuterda.",
+"a": 73.623,
+"b": 75.373
+},
+{
+"p": 4,
+"t": "Kim qo‘ng‘iroq qildi, nima gaplashildi, kim sotib oldi — hammasi shu yerda yoziladi.",
+"a": 75.862,
+"b": 80.082
+},
+{
+"p": 5,
+"t": "Lid — murojaat qilgan, lekin hali sotib olmagan odam.",
+"a": 80.323,
+"b": 85.03
+},
+{
+"p": 5,
+"t": "Bitim — mijoz rozi bo‘lib, pulini to‘lagan savdo.",
+"a": 85.03,
+"b": 88.75
+},
+{
+"p": 5,
+"t": "Tushum esa hisobingizga haqiqatan tushgan pul.",
+"a": 88.75,
+"b": 92.084
+},
+{
+"p": 5,
+"t": "E’tibor bering: o‘n million so‘mlik shartnoma tuzildi, lekin to‘rt million to‘landi.",
+"a": 92.084,
+"b": 97.112
+},
+{
+"p": 5,
+"t": "Tushum — to‘rt million.",
+"a": 97.373,
+"b": 99.142
+},
+{
+"p": 5,
+"t": "Qolgan olti million hali tushum emas.",
+"a": 99.332,
+"b": 101.843
+},
+{
+"p": 6,
+"t": "Maosh uch xil qismdan yig‘iladi.",
+"a": 102.793,
+"b": 104.303
+},
+{
+"p": 6,
+"t": "Oklad — har oy kafolatlangan summa, sotuv bo‘lsa ham, bo‘lmasa ham beriladi.",
+"a": 105.062,
+"b": 109.263
+},
+{
+"p": 6,
+"t": "Bonus — KPI bajarilsa beriladigan qo‘shimcha pul.",
+"a": 110.103,
+"b": 112.713
+},
+{
+"p": 6,
+"t": "Bonus fondi — bonusning eng ko‘p bo‘lishi mumkin bo‘lgan summasi.",
+"a": 113.573,
+"b": 116.903
+},
+{
+"p": 6,
+"t": "Ulush esa sotuvning foizi: o‘n million tushumning besh foizi — besh yuz ming so‘m.",
+"a": 117.782,
+"b": 122.323
+},
+{
+"p": 7,
+"t": "Endi hisoblash atamalari.",
+"a": 123.252,
+"b": 124.593
+},
+{
+"p": 7,
+"t": "Konversiya — yuzta murojaatdan nechtasi sotib olgani.",
+"a": 125.752,
+"b": 129.212
+},
+{
+"p": 7,
+"t": "Yuz kishidan yigirma kishi sotib olsa, konversiya yigirma foiz.",
+"a": 129.602,
+"b": 133.012
+},
+{
+"p": 7,
+"t": "Bajarilish foizi — haqiqiy natijani maqsadga bo‘lib, yuzga ko‘paytiramiz.",
+"a": 133.632,
+"b": 137.992
+},
+{
+"p": 7,
+"t": "Maqsad oltmish million, xodim qirq besh million qildi.",
+"a": 138.482,
+"b": 141.282
+},
+{
+"p": 7,
+"t": "Qirq beshni oltmishga bo‘lamiz — yetmish besh foiz.",
+"a": 141.712,
+"b": 144.172
+},
+{
+"p": 8,
+"t": "Vazn — har bir KPI maoshga qanchalik ta’sir qilishi.",
+"a": 144.512,
+"b": 147.892
+},
+{
+"p": 8,
+"t": "Barcha vaznlar yig‘indisi doim yuz foiz.",
+"a": 148.292,
+"b": 149.638
+},
+{
+"p": 8,
+"t": "KPI balli — barcha KPI ballarining yig‘indisi, noldan yuzgacha.",
+"a": 149.638,
+"b": 154.343
+},
+{
+"p": 8,
+"t": "Va eng muhim qoida — eshik qoidasi.",
+"a": 154.732,
+"b": 155.832
+},
+{
+"p": 8,
+"t": "Agar biror KPI ellik foizdan kam bajarilsa, o‘sha KPI bo‘yicha bonus berilmaydi.",
+"a": 156.542,
+"b": 162.562
+},
+{
+"p": 8,
+"t": "Nol.",
+"a": 162.892,
+"b": 162.996
+},
+{
+"p": 9,
+"t": "Endi yaxshi maosh tizimining to‘rt sharti.",
+"a": 162.996,
+"b": 165.772
+},
+{
+"p": 9,
+"t": "Har biriga «ha» deb javob bera olishingiz kerak.",
+"a": 166.452,
+"b": 168.593
+},
+{
+"p": 9,
+"t": "Birinchi: tushunarlimi?",
+"a": 169.022,
+"b": 170.063
+},
+{
+"p": 9,
+"t": "Xodim «bu oy qancha olaman?» degan savolga bir daqiqada o‘zi javob bera oladimi?",
+"a": 170.063,
+"b": 175.822
+},
+{
+"p": 9,
+"t": "Ikkinchi: xodim ta’sir qila oladimi?",
+"a": 176.062,
+"b": 178.562
+},
+{
+"p": 9,
+"t": "Maosh uning o‘z ishiga bog‘liqmi?",
+"a": 179.262,
+"b": 182.722
+},
+{
+"p": 10,
+"t": "Uchinchi: korxonaga foydalimi?",
+"a": 183.402,
+"b": 185.202
+},
+{
+"p": 10,
+"t": "Xodim ko‘p ishlasa, korxona ham ko‘p topadimi?",
+"a": 185.662,
+"b": 187.852
+},
+{
+"p": 10,
+"t": "To‘rtinchi: hisoblash osonmi?",
+"a": 188.462,
+"b": 188.892
+},
+{
+"p": 10,
+"t": "Rahbar oy oxirida maoshni o‘n-o‘n besh daqiqada hisoblay oladimi?",
+"a": 189.373,
+"b": 194.093
+},
+{
+"p": 10,
+"t": "Bittasiga «yo‘q» bo‘lsa, tizim bir-ikki oyda buziladi.",
+"a": 194.602,
+"b": 197.392
+},
+{
+"p": 11,
+"t": "Keling, o‘zingizni tekshiring.",
+"a": 198.222,
+"b": 199.322
+},
+{
+"p": 11,
+"t": "Mijoz o‘n million so‘mlik shartnoma imzoladi va uch million to‘ladi.",
+"a": 199.873,
+"b": 203.322
+},
+{
+"p": 11,
+"t": "Tushum qancha?",
+"a": 203.882,
+"b": 204.612
+},
+{
+"p": 11,
+"t": "Videoni pauza qiling yoki besh soniya o‘ylang.",
+"a": 205.212,
+"b": 207.502
+},
+{
+"p": 12,
+"t": "Javob: uch million so‘m.",
+"a": 208.362,
+"b": 208.762
+},
+{
+"p": 12,
+"t": "Tushum — faqat hisobga haqiqatan tushgan pul.",
+"a": 209.212,
+"b": 212.812
+},
+{
+"p": 13,
+"t": "Ikkinchi savol.",
+"a": 213.562,
+"b": 214.123
+},
+{
+"p": 13,
+"t": "Xodim qayta aloqa KPIsini qirq foiz bajardi.",
+"a": 214.632,
+"b": 217.132
+},
+{
+"p": 13,
+"t": "Shu KPI bo‘yicha bonus oladimi?",
+"a": 217.623,
+"b": 219.202
+},
+{
+"p": 13,
+"t": "O‘ylab ko‘ring.",
+"a": 219.862,
+"b": 220.322
+},
+{
+"p": 14,
+"t": "Javob: yo‘q.",
+"a": 221.162,
+"b": 221.502
+},
+{
+"p": 14,
+"t": "Qirq foiz ellikdan kam.",
+"a": 221.952,
+"b": 223.892
+},
+{
+"p": 14,
+"t": "Eshik qoidasi ishlaydi — bu KPI bo‘yicha ball nol.",
+"a": 224.422,
+"b": 227.282
+},
+{
+"p": 15,
+"t": "Birinchi qism tugadi.",
+"a": 227.962,
+"b": 228.782
+},
+{
+"p": 15,
+"t": "Ikkinchi qismda maosh tizimining to‘rt variantini ko‘ramiz va to‘rtta xodim misolida qaysi biri adolatli ekanini hisoblaymiz.",
+"a": 229.302,
+"b": 236.002
+}
+]
+}
