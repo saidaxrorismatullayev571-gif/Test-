@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<title>Maosh tizimi — video darslik</title>
+<style>
+:root{
+  --bg1:#0a1222; --bg2:#101b33; --card:#15223f; --card2:#1b2b4f; --line:rgba(255,255,255,.09);
+  --tx:#eef3ff; --mu:#9aaccc; --teal:#2dd4bf; --green:#34d399; --amber:#fbbf24; --red:#f87171;
+  --blue:#60a5fa; --violet:#a78bfa; --pink:#f472b6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#000}
+body{width:1920px;height:1080px;overflow:hidden;font-family:Inter,"DejaVu Sans",sans-serif;color:var(--tx)}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:radial-gradient(1400px 900px at 20% 10%,#14254a 0,var(--bg1) 60%) ,var(--bg1)}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35}
+#grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:80px 80px}
+#top{position:absolute;left:0;right:0;top:0;height:96px;display:flex;align-items:center;gap:24px;padding:0 120px;z-index:5}
+#brand{font-weight:800;font-size:24px;letter-spacing:.02em}
+#brand b{color:var(--teal)}
+#sec{margin-left:auto;font-size:22px;color:var(--mu);font-weight:600;padding:10px 20px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03)}
+#prog{position:absolute;left:0;top:0;height:6px;background:linear-gradient(90deg,var(--teal),var(--blue));z-index:6}
+#cap{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);width:1560px;min-height:120px;display:flex;align-items:center;justify-content:center;z-index:7}
+#capbox{background:rgba(6,11,22,.82);border:1px solid var(--line);border-radius:22px;padding:22px 40px;font-size:34px;line-height:1.38;font-weight:500;text-align:center;max-width:1560px}
+.scene{position:absolute;inset:0;padding:128px 120px 210px;opacity:0;display:flex;flex-direction:column}
+.scene>.kicker{margin-top:auto}
+.scene>:last-child{margin-bottom:auto}
+.kicker{color:var(--teal);font-size:24px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:10px}
+h2{font-size:58px;line-height:1.08;font-weight:800;margin:0 0 34px;letter-spacing:-.01em}
+.row{display:flex;gap:28px}
+.col{display:flex;flex-direction:column;gap:22px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:26px;padding:28px 30px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.card h3{margin:0 0 10px;font-size:34px;font-weight:800}
+.card p{margin:0;font-size:25px;line-height:1.4;color:#c8d4ec}
+.mu{color:var(--mu)}
+.teal{color:var(--teal)}.green{color:var(--green)}.amber{color:var(--amber)}.red{color:var(--red)}.blue{color:var(--blue)}.violet{color:var(--violet)}
+.num{font-variant-numeric:tabular-nums}
+.badge{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:800;padding:8px 18px;font-size:22px}
+.circ{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:800;flex:none}
+.chip{display:inline-block;padding:8px 16px;border-radius:12px;font-size:22px;font-weight:600;background:rgba(255,255,255,.06);border:1px solid var(--line);margin:4px 6px 4px 0}
+.chip.k{background:rgba(52,211,153,.15);border-color:rgba(52,211,153,.5);color:#bff5dc}
+.eq{font-size:52px;font-weight:800;line-height:1.25}
+.eq .op{color:var(--mu);font-weight:500;margin:0 14px}
+.box{display:inline-block;padding:10px 24px;border-radius:18px;border:2px solid currentColor}
+.stamp{position:absolute;right:-14px;top:18px;transform:rotate(8deg);border:4px solid var(--red);color:var(--red);font-weight:900;font-size:22px;padding:6px 14px;border-radius:10px;background:rgba(20,8,12,.85);letter-spacing:.06em}
+.strike{position:absolute;left:4%;right:4%;top:50%;height:6px;background:var(--red);border-radius:4px;transform-origin:left center}
+table.t{border-collapse:separate;border-spacing:0;width:100%;font-size:27px}
+table.t th{color:var(--mu);font-weight:700;text-align:left;padding:12px 18px;font-size:22px;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--line)}
+table.t td{padding:14px 18px;border-bottom:1px solid var(--line)}
+.chart{position:relative;display:flex;align-items:flex-end;gap:40px;border-bottom:2px solid rgba(255,255,255,.25)}
+.bcol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
+.bar{width:100%;border-radius:14px 14px 4px 4px;position:relative}
+.bl{position:absolute;top:-44px;left:0;right:0;text-align:center;font-weight:800;font-size:28px;white-space:nowrap}
+.bx{position:absolute;bottom:-50px;left:0;right:0;text-align:center;font-weight:800;font-size:30px}
+.hline{position:absolute;left:0;right:0;border-top:3px dashed var(--amber)}
+.hline span{position:absolute;left:0;top:-40px;color:var(--amber);font-weight:700;font-size:24px;background:var(--bg1);padding:0 8px}
+.step{display:flex;gap:22px;align-items:flex-start}
+.arrow{font-size:46px;color:var(--mu);font-weight:300}
+.tl{position:relative;display:flex;gap:18px}
+.tl .card{flex:1;padding:22px 22px}
+.tl .card h3{font-size:28px}
+.tl .card p{font-size:22px}
+.dot{width:16px;height:16px;border-radius:50%;display:inline-block}
+.err{display:flex;gap:16px;align-items:flex-start}
+.x{flex:none;width:44px;height:44px;border-radius:50%;background:rgba(248,113,113,.18);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:24px}
+.ok{flex:none;width:44px;height:44px;border-radius:50%;background:rgba(52,211,153,.18);color:var(--green);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:26px}
+.legend{display:flex;gap:26px;font-size:22px;color:#c8d4ec;flex-wrap:wrap}
+.legend i{display:inline-block;width:18px;height:18px;border-radius:5px;margin-right:8px;vertical-align:-2px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="blob" id="b1" style="width:700px;height:700px;background:#1d4ed8"></div>
+  <div class="blob" id="b2" style="width:600px;height:600px;background:#0d9488"></div>
+  <div id="grid"></div>
+  <div id="prog"></div>
+  <div id="top"><div id="brand">Maosh tizimi <b>·</b> <span class="mu" style="font-weight:600">Sotuv moduli 05.2</span></div><div id="sec"></div></div>
+  <div id="scenes"></div>
+  <div id="cap"><div id="capbox"></div></div>
+</div>
+<script>
+// ---------- helpers ----------
+const A=(s,d=0,t='up',dur)=>`data-a="${t}" data-s="${s}" data-d="${d}"${dur!=null?` data-t="${dur}"`:''}`;
+const C=(v,s,d=0,dec=0,suf='')=>`<span class="num" ${A(s,d,'count',1.2)} data-v="${v}" data-dec="${dec}" data-suf="${suf}">0</span>`;
+const fmt=(v,dec=0)=>{const n=Math.abs(v).toFixed(dec);let [i,f]=n.split('.');i=i.replace(/\B(?=(\d{3})+(?!\d))/g,' ');return (v<0?'-':'')+i+(f?','+f:'');};
+const BAR=(h,color,s,d,label,x)=>`<div class="bcol"><div class="bar" style="background:${color};height:0" ${A(s,d,'hy',1)} data-h="${h}">${label?`<div class="bl">${label}</div>`:''}</div>${x?`<div class="bx">${x}</div>`:''}</div>`;
+
+// ---------- scenes ----------
+const S=[];
+const add=(sec,segs,html)=>S.push({sec,segs,html});
+
+add('Kirish',[
+ 'Assalomu alaykum! Bu darslikda sotuv menejeriga to‘g‘ri maosh tizimini tanlash va maoshni hisoblashni o‘rganamiz.',
+ 'Darslik rahbar va HR xodimlari uchun. Korxona ichki akademiyasi, Sotuv moduli.'
+],`<div style="margin:auto 0;display:flex;flex-direction:column;gap:30px">
+  <div ${A(0,0.2,'fade')} class="kicker">Video darslik · 05.2</div>
+  <div ${A(0,0.4)} style="font-size:104px;font-weight:900;line-height:1.02;letter-spacing:-.02em">Maosh tizimini<br><span style="background:linear-gradient(90deg,var(--teal),var(--blue));-webkit-background-clip:text;color:transparent">tanlash va hisoblash</span></div>
+  <div ${A(0,0.9)} style="font-size:36px;color:#c8d4ec">Sotuv menejeriga to‘g‘ri maosh berish</div>
+  <div ${A(1,0.1)} style="display:flex;gap:16px"><span class="chip k">Rahbar uchun</span><span class="chip k">HR uchun</span><span class="chip">Korxona ichki akademiyasi</span></div>
+</div>`);
+
+add('Darslik rejasi',[
+ 'Bu darslik uch ishni qiladi.',
+ 'Birinchi: korxonangizga mos maosh tizimini tanlashga yordam beradi.',
+ 'Ikkinchi: xodimga tizimni bir daqiqada tushuntirish uchun tayyor matn beradi.',
+ 'Uchinchi: oy oxirida maoshni o‘n daqiqada hisoblash tartibini beradi.'
+],`<div class="kicker" ${A(0,0,'fade')}>Reja</div><h2 ${A(0,0.1)}>Bu darslik 3 ishni qiladi</h2>
+<div class="g3" style="margin-top:20px">
+ ${[['1','Tanlash','Korxonangizga mos maosh tizimini tanlash','var(--teal)'],['2','Tushuntirish','Xodimga 1 daqiqada tushuntirish uchun tayyor matn','var(--blue)'],['3','Hisoblash','Oy oxirida maoshni 10 daqiqada hisoblash','var(--violet)']].map((c,i)=>`
+ <div class="card" ${A(i+1,0,'pop')} style="padding:40px 34px;min-height:360px">
+   <div class="circ" style="background:${c[3]};color:#08111f;width:84px;height:84px;font-size:42px">${c[0]}</div>
+   <h3 style="margin-top:30px;font-size:42px">${c[1]}</h3><p style="font-size:28px">${c[2]}</p></div>`).join('')}
+</div>`);
+
+add('Ikki qoida',[
+ 'Boshlashdan oldin ikkita qoida. Istisnosiz.',
+ 'Birinchi qoida: sotuv menejeriga faqat oklad berish tavsiya etilmaydi. Na yangi, na tajribali xodimga.',
+ 'Ikkinchi qoida: maosh hech qachon faqat tushumdan ulushdan iborat bo‘lmasin. Doim aniq oklad bo‘ladi, ulush uning ustiga qo‘shiladi.'
+],`<div class="kicker" ${A(0,0,'fade')}>Istisnosiz</div><h2 ${A(0,0.1)}>Ikki oltin qoida</h2>
+<div class="g2">
+ <div class="card" ${A(1,0,'left')} style="border-color:rgba(248,113,113,.45);min-height:300px;position:relative">
+   <div class="x" style="width:70px;height:70px;font-size:36px">✕</div>
+   <h3 style="margin-top:24px;font-size:44px">Faqat oklad</h3><p style="font-size:28px">Yangi xodimga ham, tajribali xodimga ham — <b class="red">yo‘q</b>.</p></div>
+ <div class="card" ${A(2,0,'right')} style="border-color:rgba(248,113,113,.45);min-height:300px">
+   <div class="x" style="width:70px;height:70px;font-size:36px">✕</div>
+   <h3 style="margin-top:24px;font-size:44px">Okladsiz, faqat ulush</h3><p style="font-size:28px">Maosh faqat tushumdan ulushdan iborat bo‘lmasin.</p></div>
+</div>
+<div ${A(2,1.6,'pop')} style="margin-top:30px;align-self:center" class="card"><span class="eq" style="font-size:44px"><span class="green">✓</span> <span class="teal">Aniq oklad</span><span class="op">+</span><span class="amber">natijaga bog‘liq qism</span></span></div>`);
+
+add('Atamalar lug‘ati',[
+ 'Avval asosiy atamalarni bilib olaylik.',
+ 'KPI — xodim oy davomida bajarishi kerak bo‘lgan aniq raqam. Masalan, oyiga 60 million so‘m sotuv yoki kuniga 30 ta qo‘ng‘iroq.',
+ 'CRM — kompyuterdagi mijozlar daftari. Kim qo‘ng‘iroq qildi, nima gaplashildi, kim sotib oldi — hammasi shu yerda yoziladi.',
+ 'Lid — murojaat qilgan, lekin hali sotib olmagan odam. Bitim — mijoz rozi bo‘lib, pulini to‘lagan savdo.',
+ 'Tushum — hisobingizga haqiqatan tushgan pul. 10 millionlik shartnomadan 4 million to‘langan bo‘lsa, tushum — 4 million.'
+],`<div class="kicker" ${A(0,0,'fade')}>1-bo‘lim</div><h2 ${A(0,0.1)}>Atamalar lug‘ati</h2>
+<div class="g4" style="grid-template-columns:1fr 1fr 1fr 1.25fr">
+ <div class="card" ${A(1,0,'pop')}><h3 class="teal">KPI</h3><p>Oy davomida bajariladigan <b>aniq raqam</b>.</p><p class="mu" style="margin-top:14px;font-size:22px">Oyiga 60 mln so‘m sotuv</p></div>
+ <div class="card" ${A(2,0,'pop')}><h3 class="blue">CRM</h3><p>Kompyuterdagi <b>mijozlar daftari</b>.</p><p class="mu" style="margin-top:14px;font-size:22px">amoCRM, Bitrix24, Excel</p></div>
+ <div class="card" ${A(3,0,'pop')}><h3 class="violet">Lid → Bitim</h3><p><b>Lid</b> — murojaat qilgan, hali sotib olmagan.</p><p style="margin-top:10px"><b>Bitim</b> — pul to‘langan savdo.</p></div>
+ <div class="card" ${A(4,0,'pop')}><h3 class="green">Tushum</h3><p>Hisobga <b>haqiqatan tushgan</b> pul.</p>
+   <div style="margin-top:22px;font-size:20px" class="mu">Shartnoma: 10 mln</div>
+   <div style="height:34px;border-radius:10px;background:rgba(255,255,255,.08);position:relative;overflow:hidden;margin-top:6px">
+     <div style="position:absolute;left:0;top:0;bottom:0;background:var(--green);width:0" ${A(4,0.8,'wx',1.2)} data-w="40"></div></div>
+   <div style="margin-top:8px;font-size:24px;font-weight:800" class="green" ${A(4,1.8,'fade')}>Tushum = 4 mln</div></div>
+</div>`);
+
+add('Atamalar lug‘ati',[
+ 'Maosh qismlarini ham bilib olaylik.',
+ 'Oklad — har oy kafolatlangan summa. Sotuv bo‘lsa ham, bo‘lmasa ham beriladi.',
+ 'Bonus — KPI bajarilsa beriladigan qo‘shimcha pul. Bonus fondi esa bonusning eng ko‘p bo‘lishi mumkin bo‘lgan summasi.',
+ 'Ulush — sotuvning foiz bilan belgilangan qismi. Masalan, 10 million tushumning 5 foizi — 500 ming so‘m.'
+],`<div class="kicker" ${A(0,0,'fade')}>1-bo‘lim</div><h2 ${A(0,0.1)}>Maosh nimadan iborat bo‘ladi?</h2>
+<div class="row" style="align-items:stretch;gap:36px">
+ <div style="width:330px;display:flex;flex-direction:column-reverse;gap:8px;height:520px">
+   <div ${A(1,0,'hy',1)} data-h="45" style="height:0;background:var(--teal);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:#06201c;overflow:hidden">OKLAD</div>
+   <div ${A(2,0,'hy',1)} data-h="27" style="height:0;background:var(--blue);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;color:#071a33;overflow:hidden">BONUS</div>
+   <div ${A(3,0,'hy',1)} data-h="24" style="height:0;background:var(--amber);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;color:#2a1c00;overflow:hidden">ULUSH</div>
+ </div>
+ <div class="col" style="flex:1;justify-content:center">
+  <div class="card" ${A(1,0.3,'right')}><h3 class="teal">Oklad</h3><p>Har oy <b>kafolatlangan</b> summa. Sotuv bo‘lsa ham, bo‘lmasa ham.</p></div>
+  <div class="card" ${A(2,0.3,'right')}><h3 class="blue">Bonus va bonus fondi</h3><p>KPI bajarilsa qo‘shimcha pul. <b>Bonus fondi</b> — bonusning eng ko‘p summasi.</p></div>
+  <div class="card" ${A(3,0.3,'right')}><h3 class="amber">Ulush (%)</h3><p>10 000 000 × 5% = <b class="amber">${C(500000,3,1)}</b> so‘m</p></div>
+ </div>
+</div>`);
+
+add('Atamalar lug‘ati',[
+ 'Endi hisoblashda kerak bo‘ladigan atamalar.',
+ 'Konversiya — 100 ta murojaatdan nechtasi sotib olgani. 100 tadan 20 tasi sotib olsa, konversiya 20 foiz.',
+ 'Bajarilish foizi — haqiqiy raqamni maqsadga bo‘lib, 100 ga ko‘paytiramiz. Maqsad 60 million, bajarilgani 45 million bo‘lsa — 75 foiz.',
+ 'Vazn — KPI maoshga qanchalik ta’sir qilishi. Hamma KPI vaznlari yig‘indisi 100 foiz bo‘ladi.',
+ 'Eshik qoidasi — KPI bajarilishi 50 foizdan past bo‘lsa, shu KPI bo‘yicha bonus berilmaydi.'
+],`<div class="kicker" ${A(0,0,'fade')}>1-bo‘lim</div><h2 ${A(0,0.1)}>Hisoblash atamalari</h2>
+<div class="g4">
+ <div class="card" ${A(1,0,'pop')}><h3 class="teal">Konversiya</h3>
+  <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:14px 0">${Array.from({length:100},(_,i)=>`<div style="aspect-ratio:1;border-radius:3px;background:${i<20?'var(--teal)':'rgba(255,255,255,.12)'}" ${i<20?A(1,0.6+i*0.05,'pop',0.3):''}></div>`).join('')}</div>
+  <p><b class="teal">20</b> / 100 = <b class="teal">20%</b></p></div>
+ <div class="card" ${A(2,0,'pop')}><h3 class="blue">Bajarilish %</h3><p style="font-size:24px">haqiqiy ÷ maqsad × 100</p>
+  <div style="margin-top:26px;font-size:30px;font-weight:800">45 ÷ 60 =</div><div style="font-size:72px;font-weight:900" class="blue">${C(75,2,0.8,0,'%')}</div></div>
+ <div class="card" ${A(3,0,'pop')}><h3 class="violet">Vazn</h3><p style="font-size:24px">Yig‘indi doim 100%</p>
+  <div style="display:flex;height:48px;border-radius:10px;overflow:hidden;margin-top:30px">
+   <div style="width:0;background:var(--teal)" ${A(3,0.5,'wx',0.7)} data-w="40"></div><div style="width:0;background:var(--blue)" ${A(3,1.0,'wx',0.5)} data-w="20"></div><div style="width:0;background:var(--violet)" ${A(3,1.4,'wx',0.5)} data-w="20"></div><div style="width:0;background:var(--amber)" ${A(3,1.8,'wx',0.5)} data-w="20"></div></div>
+  <p style="margin-top:14px;font-size:22px" class="mu">40 + 20 + 20 + 20 = 100</p></div>
+ <div class="card" ${A(4,0,'pop')} style="border-color:rgba(251,191,36,.45)"><h3 class="amber">Eshik qoidasi</h3><p style="font-size:24px">Bajarilish &lt; 50% → shu KPI bo‘yicha bonus <b>0</b></p>
+  <div style="position:relative;height:40px;border-radius:10px;background:rgba(255,255,255,.08);margin-top:34px">
+   <div style="position:absolute;left:50%;top:-12px;bottom:-12px;border-left:4px dashed var(--amber)"></div>
+   <div style="position:absolute;left:0;top:0;bottom:0;width:0;background:var(--red);border-radius:10px" ${A(4,0.6,'wx',1)} data-w="45"></div></div>
+  <p style="margin-top:14px;font-size:22px" class="mu">45% — eshikdan o‘tmadi</p></div>
+</div>`);
+
+add('4 shart',[
+ 'Yaxshi maosh tizimi to‘rtta savolga «ha» deb javob berishi kerak. Aks holda tizim bir-ikki oyda buziladi.',
+ 'Birinchi: tushunarlimi? Xodim «bu oy qancha olaman» degan savolga bir daqiqada o‘zi javob bera oladimi?',
+ 'Ikkinchi: xodim ta’sir qila oladimi? Maosh xodimning o‘z ishiga bog‘liqmi?',
+ 'Uchinchi: korxonaga foydalimi? Xodim ko‘p ishlasa, korxona ham ko‘p topadimi?',
+ 'To‘rtinchi: hisoblash osonmi? Rahbar oy oxirida maoshni 10–15 daqiqada hisoblay oladimi?'
+],`<div class="kicker" ${A(0,0,'fade')}>2-bo‘lim</div><h2 ${A(0,0.1)}>Yaxshi maosh tizimining 4 sharti</h2>
+<div class="g2" style="gap:24px">
+ ${[['Tushunarli','Xodim «qancha olaman?» savoliga 1 daqiqada javob beradi','Bo‘lmasa: har oy tortishuv'],['Xodim ta’sir qila oladi','Maosh xodimning o‘z ishiga bog‘liq','Bo‘lmasa: «baribir o‘zgarmaydi»'],['Korxonaga foydali','Xodim ko‘p ishlasa, korxona ham ko‘p topadi','Bo‘lmasa: zarar yoki yaxshi xodim ketadi'],['Hisoblash oson','Rahbar 10–15 daqiqada hisoblaydi','Bo‘lmasa: kechikish va xato']].map((c,i)=>`
+ <div class="card" ${A(i+1,0,'up')} style="display:flex;gap:24px;align-items:flex-start">
+  <div class="ok" style="width:62px;height:62px;font-size:34px" ${A(i+1,0.6,'pop')}>✓</div>
+  <div><h3 style="font-size:32px">${i+1}. ${c[0]}</h3><p>${c[1]}</p><p class="red" style="font-size:21px;margin-top:8px">${c[2]}</p></div></div>`).join('')}
+</div>`);
+
+add('4 variant',[
+ 'Maosh tizimining to‘rt varianti bor.',
+ 'Birinchi variant — faqat oklad. Har oy bir xil summa, natijaga bog‘liq emas. Bu variant tavsiya etilmaydi.',
+ 'Ikkinchi variant — oklad va KPI bonus. Barqaror daromad va nazorat birga. Lekin bonusning yuqori chegarasi bor.',
+ 'Uchinchi variant — oklad va tushumdan ulush. Ko‘p sotsa, ko‘p oladi.',
+ 'To‘rtinchi variant — oklad, ulush va tartib sharti. CRM tartibi yomon bo‘lsa, ulush kamayadi.'
+],`<div class="kicker" ${A(0,0,'fade')}>3-bo‘lim</div><h2 ${A(0,0.1)}>To‘rt variant — qisqacha</h2>
+<div class="g4">
+ ${[['1','Faqat oklad','Har oy bir xil summa. Natijaga bog‘liq emas.','var(--red)'],['2','Oklad + KPI bonus','KPI bajarilsa, bonus qo‘shiladi.','var(--blue)'],['3','Oklad + ulush','Tushumdan foiz. 3 usul: bitta foiz, zinapoya, bosqichma-bosqich.','var(--amber)'],['4','Oklad + ulush + tartib','CRM tartibi yomon bo‘lsa, ulush kamayadi.','var(--green)']].map((c,i)=>`
+ <div class="card" ${A(i+1,0,'pop')} style="position:relative;min-height:420px;border-top:6px solid ${c[3]}">
+  <div style="font-size:90px;font-weight:900;color:${c[3]};line-height:1">${c[0]}</div>
+  <h3 style="margin-top:20px">${c[1]}</h3><p>${c[2]}</p>
+  ${i==0?`<div class="strike" ${A(1,1.6,'sx',0.6)} style="transform:scaleX(0);top:140px"></div><div class="stamp" ${A(1,2.2,'pop')}>TAVSIYA ETILMAYDI</div>`:''}
+ </div>`).join('')}
+</div>`);
+
+add('Qaysi variant?',[
+ 'Qaysi variantni tanlash kerak? Vaziyatingizga qarang.',
+ 'Mijozlar reklamadan o‘zi murojaat qiladi, bitim tez yopiladi — klinika, kurs, xizmat. Ikkinchi variant.',
+ 'Mijozni xodim o‘zi topadi, bitim uzoq yopiladi, chek katta. To‘rtinchi variant.',
+ 'CRM yo‘q yoki ma’lumotlar ishonchsiz bo‘lsa — uchinchi variant. Tushum kassa yoki bankdan olinadi.',
+ 'Jamoa bo‘lib sotilsa yoki xodim yangi bo‘lsa — ikkinchi variant. Yangi xodimga maqsad yumshoq qo‘yiladi.'
+],`<div class="kicker" ${A(0,0,'fade')}>4-bo‘lim</div><h2 ${A(0,0.1)}>Vaziyatga qarab tanlang</h2>
+<div class="col" style="gap:18px">
+ ${[['Kiruvchi murojaatlar, bitim tez yopiladi','klinika, kurs, xizmat','2','var(--blue)'],['Mijozni o‘zi topadi, bitim uzoq, chek katta','B2B, qimmat mahsulot','4','var(--green)'],['CRM yo‘q yoki ma’lumot ishonchsiz','tushum kassa / bankdan','3','var(--amber)'],['Jamoa bo‘lib sotadi yoki xodim yangi','yumshoq maqsad bilan','2','var(--blue)']].map((c,i)=>`
+ <div class="card" ${A(i+1,0,'left')} style="display:flex;align-items:center;gap:30px;padding:22px 30px">
+  <div style="flex:1"><div style="font-size:32px;font-weight:700">${c[0]}</div><div class="mu" style="font-size:24px">${c[1]}</div></div>
+  <div class="arrow" ${A(i+1,0.4,'fade')}>→</div>
+  <div ${A(i+1,0.6,'pop')} class="badge" style="background:${c[3]};color:#08111f;font-size:30px;padding:12px 28px">${c[2]}-variant</div></div>`).join('')}
+</div>`);
+
+add('Qaysi variant?',[
+ 'Umumiy tavsiya oddiy.',
+ 'Ikkinchi variant bilan boshlang. Uch oydan keyin natijaga qarab uchinchi yoki to‘rtinchi variantga o‘ting.',
+ 'Hech qachon faqat oklad bermang. Hech qachon okladsiz ulush bermang.'
+],`<div class="kicker" ${A(0,0,'fade')}>Tavsiya</div><h2 ${A(0,0.1)}>Qayerdan boshlash kerak?</h2>
+<div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-top:30px">
+  <div class="card" ${A(1,0,'pop')} style="text-align:center;border-color:var(--blue);min-width:360px"><div class="mu" style="font-size:24px">Boshlang</div><div style="font-size:64px;font-weight:900" class="blue">2-variant</div><div style="font-size:24px">Oklad + KPI bonus</div></div>
+  <div style="width:300px;flex:none;position:relative"><div ${A(1,0.8,'wx',1.2)} data-w="100" style="height:6px;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:4px;width:0"></div><div ${A(1,1.2,'fade')} style="position:absolute;top:-52px;width:300px;text-align:center;font-size:28px;font-weight:800">3 oydan keyin</div></div>
+  <div class="card" ${A(1,1.8,'pop')} style="text-align:center;border-color:var(--green);min-width:360px"><div class="mu" style="font-size:24px">Natijaga qarab</div><div style="font-size:64px;font-weight:900" class="green">3 yoki 4</div><div style="font-size:24px">Oklad + ulush (+ tartib)</div></div>
+</div>
+<div class="row" style="justify-content:center;margin-top:50px;gap:30px">
+ <div class="card" ${A(2,0,'up')} style="display:flex;gap:18px;align-items:center"><div class="x">✕</div><span style="font-size:30px;font-weight:700">Faqat oklad</span></div>
+ <div class="card" ${A(2,0.5,'up')} style="display:flex;gap:18px;align-items:center"><div class="x">✕</div><span style="font-size:30px;font-weight:700">Okladsiz ulush</span></div>
+</div>`);
+
+add('KPI tanlash',[
+ 'Ikkinchi va to‘rtinchi variantda maosh KPIga bog‘lanadi. Shuning uchun to‘g‘ri KPI tanlash eng muhim ish.',
+ 'KPI uch turga bo‘linadi. Natija — oxirgi natija: tushum, bitim soni, konversiya.',
+ 'Harakat — xodim nima qildi: qo‘ng‘iroqlar, uchrashuvlar, takliflar soni. Natija kelguncha ishni to‘xtatmaslik uchun.',
+ 'Sifat — ish qanchalik toza bajarildi: CRM tozaligi, qayta aloqa, javob berish tezligi. Sifat bo‘lmasa, natija ham tez tugaydi.'
+],`<div class="kicker" ${A(0,0,'fade')}>5-bo‘lim</div><h2 ${A(0,0.1)}>KPIning 3 turi</h2>
+<div class="g3">
+ ${[['Natija','Pul yoki bitim','Tushum · Bitim soni · Konversiya','var(--green)','Asosiy maqsad'],['Harakat','Xodim nima qildi','Qo‘ng‘iroqlar · Uchrashuvlar · Takliflar','var(--blue)','Ishni to‘xtatmaslik uchun'],['Sifat','Ish qanchalik toza','CRM tozaligi · Qayta aloqa · Javob tezligi','var(--violet)','Tartibni ushlab turadi']].map((c,i)=>`
+ <div class="card" ${A(i+1,0,'pop')} style="min-height:400px;border-top:6px solid ${c[3]}">
+  <div class="badge" style="background:${c[3]};color:#08111f">${c[4]}</div>
+  <h3 style="margin-top:24px;font-size:48px;color:${c[3]}">${c[0]}</h3><p style="font-size:28px">${c[1]}</p>
+  <div style="margin-top:26px">${c[2].split(' · ').map(x=>`<span class="chip">${x}</span>`).join('')}</div></div>`).join('')}
+</div>`);
+
+add('KPI vazni',[
+ 'Asosiy qoida: har bir xodimda Tushum va Konversiya — asosiy KPI. Ular doim birinchi turadi, ikkalasining vazni birga 60 foiz.',
+ 'Qolgan 40 foizga bir-ikkita harakat va bir-ikkita sifat KPI qo‘shiladi. Jami 4–5 ta KPI, undan ko‘p emas.',
+ 'Namuna: Tushum 40, Konversiya 20, CRM tozaligi 20, Qayta aloqa 20 foiz.'
+],`<div class="kicker" ${A(0,0,'fade')}>5.6-bo‘lim</div><h2 ${A(0,0.1)}>KPIga vazn qo‘yish</h2>
+<div style="position:relative;margin-top:80px">
+ <div style="display:flex;height:150px;border-radius:22px;overflow:hidden;font-weight:800;font-size:32px">
+  <div ${A(0,1,'wx',1)} data-w="40" style="width:0;background:var(--teal);color:#05201c;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap">Tushum 40%</div>
+  <div ${A(0,1.8,'wx',0.8)} data-w="20" style="width:0;background:#5eead4;color:#05201c;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap">Konversiya 20%</div>
+  <div ${A(1,0.3,'wx',0.8)} data-w="20" style="width:0;background:var(--blue);color:#071a33;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap">CRM 20%</div>
+  <div ${A(1,1.0,'wx',0.8)} data-w="20" style="width:0;background:var(--violet);color:#160b33;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap">Qayta aloqa 20%</div>
+ </div>
+ <div ${A(0,2.6,'fade')} style="position:absolute;left:0;width:60%;top:-56px;text-align:center;font-size:30px;font-weight:800" class="teal">Asosiy KPI — 60%</div>
+ <div ${A(0,2.6,'fade')} style="position:absolute;left:0;width:60%;top:-14px;border-top:4px solid var(--teal)"></div>
+ <div ${A(1,1.6,'fade')} style="position:absolute;left:60%;width:40%;top:-56px;text-align:center;font-size:30px;font-weight:800" class="blue">Harakat + sifat — 40%</div>
+ <div ${A(1,1.6,'fade')} style="position:absolute;left:60.5%;width:39.5%;top:-14px;border-top:4px solid var(--blue)"></div>
+</div>
+<div class="g4" style="margin-top:50px">
+ ${[['Tushum','35–40%'],['Konversiya','20–25%'],['Harakat (1–2 ta)','15–25%'],['Sifat (1–2 ta)','15–20%']].map((c,i)=>`<div class="card" ${A(2,i*0.25,'up')} style="text-align:center"><div class="mu" style="font-size:24px">${c[0]}</div><div style="font-size:44px;font-weight:900">${c[1]}</div></div>`).join('')}
+</div>`);
+
+add('KPI tanlash',[
+ 'Yaxshi KPIning to‘rt sharti bor.',
+ 'Xodim unga ta’sir qila oladi. Raqam CRM yoki hisobotda ko‘rinadi, xodimning so‘zi bilan emas.',
+ 'Har oy oxirida aniq o‘lchanadi. Va hamma uni bir xil tushunadi: masalan, tushum — hisobga kelgan pul.'
+],`<div class="kicker" ${A(0,0,'fade')}>5.2-bo‘lim</div><h2 ${A(0,0.1)}>Yaxshi KPIning 4 sharti</h2>
+<div class="g4" style="margin-top:20px">
+ ${[['Ta’sir qila oladi','Raqam xodimning o‘z ishiga bog‘liq, reklama yoki narxga emas',1],['Raqam ko‘rinadi','CRM yoki kunlik hisobot ko‘rsatadi',1],['Oyda o‘lchanadi','Har oy oxirida aniq raqam',2],['Bitta ma’no','«Tushum» = hisobga kelgan pul',2]].map((c,i)=>`
+ <div class="card" ${A(c[2],(i%2)*0.6,'pop')} style="min-height:330px"><div class="ok" style="width:66px;height:66px;font-size:34px">✓</div><h3 style="margin-top:26px">${c[0]}</h3><p>${c[1]}</p></div>`).join('')}
+</div>`);
+
+add('Tayyor KPI to‘plamlari',[
+ 'Vaziyatga qarab tayyor KPI to‘plamlari. Tushum va Konversiya hamma to‘plamda birinchi turadi.',
+ 'Call-markaz, kiruvchi qo‘ng‘iroqlar: javob berish tezligi, qayta aloqa va CRM tozaligi qo‘shiladi.',
+ 'Call-markaz, chiquvchi qo‘ng‘iroqlar: javob tezligi o‘rniga haqiqiy gaplashuvlar soni.',
+ 'Yuzma-yuz, tez yopiladigan sotuv — do‘kon, klinika, kurs: o‘rtacha bitim summasi, qayta aloqa, CRM tozaligi.',
+ 'Yuzma-yuz, uzoq yopiladigan qimmat mahsulot: uchrashuvlar soni, takliflar soni va qayta aloqa.'
+],`<div class="kicker" ${A(0,0,'fade')}>5.5-bo‘lim</div><h2 ${A(0,0.1)}>Tayyor KPI to‘plamlari</h2>
+<div class="col" style="gap:16px">
+ ${[['Call-markaz · kiruvchi',['Javob berish tezligi','Qayta aloqa','CRM tozaligi']],['Call-markaz · chiquvchi',['Haqiqiy gaplashuv soni','Qayta aloqa','CRM tozaligi']],['Yuzma-yuz · tez yopiladi',['O‘rtacha bitim summasi','Qayta aloqa','CRM tozaligi']],['Yuzma-yuz · uzoq, qimmat',['Uchrashuvlar soni','Takliflar soni','Qayta aloqa']]].map((c,i)=>`
+ <div class="card" ${A(i+1,0,'left')} style="display:flex;align-items:center;gap:24px;padding:20px 28px">
+  <div style="width:400px;font-size:30px;font-weight:800">${c[0]}</div>
+  <div><span class="chip k">Tushum</span><span class="chip k">Konversiya</span>${c[1].map(x=>`<span class="chip">${x}</span>`).join('')}</div></div>`).join('')}
+</div>`);
+
+add('Maqsad raqami',[
+ 'Maqsad raqamini qanday qo‘yamiz?',
+ 'Ma’lumot bo‘lsa: oxirgi uch oyning o‘rtachasini olib, 1,1 ga ko‘paytiring. Bu — 10 foiz o‘sish.',
+ 'Ma’lumot yo‘q bo‘lsa: eng yaxshi emas, o‘rtacha xodim raqamini oling. Maqsadni xodim bilan birga kelishing — u «bu mumkin» desa, maqsadga ishonadi.',
+ 'Yangi xodim: birinchi 30 kun maqsad o‘rtachaning 50–70 foizi, eshik qoidasi yo‘q. 31–60 kun: 80–90 foiz, eshik 30 foiz. 61-kundan: to‘liq maqsad, eshik 50 foiz.'
+],`<div class="kicker" ${A(0,0,'fade')}>5.6-bo‘lim</div><h2 ${A(0,0.1)}>Maqsad raqamini qo‘yish</h2>
+<div class="g2" style="grid-template-columns:1.1fr 1fr">
+ <div class="card" ${A(1,0,'up')}>
+  <h3>3 oy o‘rtachasi × 1,1</h3>
+  <div class="chart" style="height:250px;gap:22px;margin:60px 10px 60px">
+   ${BAR(70,'rgba(96,165,250,.55)',1,0.4,'52','1-oy')}${BAR(80,'rgba(96,165,250,.55)',1,0.6,'60','2-oy')}${BAR(75,'rgba(96,165,250,.55)',1,0.8,'56','3-oy')}${BAR(82.5,'var(--green)',1,1.8,'62','Maqsad')}
+  </div>
+  <p class="mu" style="font-size:22px">O‘rtacha 56 mln × 1,1 ≈ <b class="green">62 mln</b></p>
+ </div>
+ <div class="col">
+  <div class="card" ${A(2,0,'right')}><h3 class="amber">Ma’lumot yo‘q?</h3><p>O‘rtacha xodim raqamini oling. Maqsadni xodim bilan <b>birga</b> kelishing.</p></div>
+  <div class="card" ${A(3,0,'right')}><h3 class="teal">Yangi xodim</h3>
+   <table class="t" style="font-size:24px"><tr><td>1–30 kun</td><td><b>50–70%</b></td><td class="mu">eshik yo‘q</td></tr><tr><td>31–60 kun</td><td><b>80–90%</b></td><td class="mu">eshik 30%</td></tr><tr><td style="border:0">61-kundan</td><td style="border:0"><b>100%</b></td><td class="mu" style="border:0">eshik 50%</td></tr></table></div>
+ </div>
+</div>`);
+
+add('Raqamlar qayerdan?',[
+ 'Maosh raqamga bog‘lanadi. Raqam esa biror joyda yozib borilishi kerak. Ikki yo‘l bor.',
+ 'A yo‘li: CRM bor. Xodim har qo‘ng‘iroq va bitimni CRMga yozadi, oy oxirida hisobotdan raqamlarni olasiz.',
+ 'B yo‘li: CRM yo‘q. Xodim har kuni kechqurun 5 daqiqada kunlik hisobot daftarini to‘ldiradi — daftar, Excel yoki Telegram guruh.',
+ 'Tushumni faqat kassa yoki bank bilan solishtiring. Haftada bir marta rahbar uchta yozuvni tekshiradi — xodim buni biladi va to‘g‘ri yozadi.'
+],`<div class="kicker" ${A(0,0,'fade')}>6-bo‘lim</div><h2 ${A(0,0.1)}>Raqamlarni qayerdan olamiz?</h2>
+<div class="g2">
+ <div class="card" ${A(1,0,'left')} style="min-height:300px"><div class="badge" style="background:var(--blue);color:#071a33">A yo‘li</div><h3 style="margin-top:20px;font-size:40px">CRM bor</h3><p>Har qo‘ng‘iroq va bitim CRMga yoziladi. Oy oxirida — CRM hisoboti.</p></div>
+ <div class="card" ${A(2,0,'right')} style="min-height:300px"><div class="badge" style="background:var(--amber);color:#2a1c00">B yo‘li</div><h3 style="margin-top:20px;font-size:40px">Kunlik hisobot daftari</h3><p>Har kuni kechqurun 5 daqiqa: qo‘ng‘iroq, bitim, tushum, qayta aloqa.</p></div>
+</div>
+<div class="card" ${A(3,0,'up')} style="margin-top:28px;display:flex;gap:40px;align-items:center">
+ <div style="display:flex;gap:14px;align-items:center"><div class="ok">✓</div><span style="font-size:28px">Tushum = <b>kassa / bank</b> bilan solishtiriladi</span></div>
+ <div style="display:flex;gap:14px;align-items:center"><div class="ok">✓</div><span style="font-size:28px">Haftada <b>3 ta yozuv</b> tekshiriladi</span></div>
+</div>`);
+
+add('Namuna: 4 xodim',[
+ 'Endi barcha variantlarni bitta namunada ko‘ramiz. Oylik reja — 60 million so‘m tushum.',
+ 'To‘rt xodim. A — 27 million, rejaning 45 foizi. B — 60 million, 100 foiz.',
+ 'C — 90 million, 150 foiz. D — 120 million, rejaning 200 foizi.',
+ 'Boshqa maqsadlar: konversiya 20 foiz, CRM tozaligi 90 foiz, qayta aloqa 90 foiz.'
+],`<div class="kicker" ${A(0,0,'fade')}>7-bo‘lim · namuna</div><h2 ${A(0,0.1)}>Reja: 60 mln so‘m. To‘rt xodim</h2>
+<div class="row" style="gap:50px;align-items:flex-end">
+ <div class="chart" style="height:440px;width:900px;margin-top:20px">
+  <div class="hline" style="bottom:50%" ${A(0,1.2,'fade')}><span>Reja 60 mln</span></div>
+  ${BAR(22.5,'var(--red)',1,0,'27 mln','A')}${BAR(50,'var(--blue)',1,0.9,'60 mln','B')}${BAR(75,'var(--teal)',2,0,'90 mln','C')}${BAR(100,'var(--green)',2,0.8,'120 mln','D')}
+ </div>
+ <div class="card" ${A(3,0,'right')} style="flex:1;padding:20px 24px">
+  <table class="t" style="font-size:25px"><tr><th></th><th>Konv.</th><th>CRM</th><th>Q.aloqa</th></tr>
+  <tr><td class="mu">Maqsad</td><td><b>20%</b></td><td><b>90%</b></td><td><b>90%</b></td></tr>
+  <tr><td><b class="red">A</b></td><td>16%</td><td>72%</td><td>63%</td></tr>
+  <tr><td><b class="blue">B</b></td><td>20%</td><td>81%</td><td>90%</td></tr>
+  <tr><td><b class="teal">C</b></td><td>24%</td><td>95%</td><td>99%</td></tr>
+  <tr><td style="border:0"><b class="green">D</b></td><td style="border:0">25%</td><td style="border:0">98%</td><td style="border:0">100%</td></tr></table>
+ </div>
+</div>`);
+
+add('1-variant: faqat oklad',[
+ 'Birinchi variant — faqat oklad. Nega u xavfli?',
+ 'Har bir xodim 4 million so‘m oladi. Tushum 27 milliondan 120 milliongacha o‘zgardi, maosh esa bir xil.',
+ 'A xodimda maosh tushumning 14,8 foizi, D xodimda atigi 3,3 foizi. Korxona A ga ortiqcha to‘laydi, D ni esa kam to‘lab ketkazib yuboradi.',
+ 'Natija: eng yaxshi xodim ketadi, bo‘sh xodim qoladi. Rahbar esa har kuni «qo‘ng‘iroq qildingmi?» deb nazorat qilishga majbur.',
+ 'Yangi xodimga ham faqat oklad bermang. U birinchi kundan «natija pul bermaydi» deb o‘rganib qoladi. Unga oklad va yengil KPI bonus bering.'
+],`<div class="kicker red" ${A(0,0,'fade')}>7.1 · tavsiya etilmaydi</div><h2 ${A(0,0.1)}>Faqat oklad: nega xavfli?</h2>
+<div class="row" style="gap:60px;align-items:flex-end">
+ <div style="flex:1">
+  <div class="mu" style="font-size:26px;margin-bottom:60px" ${A(1,0,'fade')}>Tushum</div>
+  <div class="chart" style="height:330px;gap:26px">${BAR(22.5,'rgba(255,255,255,.25)',1,0,'27','A')}${BAR(50,'rgba(255,255,255,.25)',1,0.2,'60','B')}${BAR(75,'rgba(255,255,255,.25)',1,0.4,'90','C')}${BAR(100,'rgba(255,255,255,.25)',1,0.6,'120','D')}</div>
+ </div>
+ <div style="flex:1">
+  <div class="mu" style="font-size:26px;margin-bottom:60px" ${A(1,1,'fade')}>Maosh (mln)</div>
+  <div class="chart" style="height:330px;gap:26px">${['A','B','C','D'].map((x,i)=>BAR(30,'var(--red)',1,1.4+i*0.15,'4',x)).join('')}</div>
+ </div>
+ <div class="col" style="width:420px;gap:16px">
+  ${[['A','14,8%','red'],['B','6,7%','amber'],['C','4,4%','amber'],['D','3,3%','red']].map((r,i)=>`<div class="card" ${A(2,i*0.3,'right')} style="display:flex;justify-content:space-between;padding:16px 26px;font-size:30px"><b>${r[0]}</b><span class="mu" style="font-size:22px;align-self:center">maosh / tushum</span><b class="${r[2]}">${r[1]}</b></div>`).join('')}
+ </div>
+</div>
+<div class="row" style="margin-top:56px;gap:20px">
+ <div class="card" ${A(3,0,'up')} style="flex:1;padding:18px 24px;display:flex;gap:14px;align-items:center"><div class="x">✕</div><span style="font-size:26px">Eng yaxshi xodim ketadi</span></div>
+ <div class="card" ${A(3,0.4,'up')} style="flex:1;padding:18px 24px;display:flex;gap:14px;align-items:center"><div class="x">✕</div><span style="font-size:26px">Bo‘sh xodim qoladi</span></div>
+ <div class="card" ${A(4,0,'up')} style="flex:1.2;padding:18px 24px;display:flex;gap:14px;align-items:center;border-color:var(--green)"><div class="ok">✓</div><span style="font-size:26px">Yangi xodimga: oklad + yengil KPI</span></div>
+</div>`);
+
+add('2-variant: oklad + KPI bonus',[
+ 'Ikkinchi variant: oklad va KPI bonus.',
+ 'Formula: Maosh teng Oklad qo‘shuv Bonus fondi ko‘paytiruv KPI balli.',
+ 'KPI balli — har KPI bajarilish foizini vazniga ko‘paytirib, qo‘shib chiqamiz. Bajarilish 100 foizdan oshsa ham, 100 deb olinadi.',
+ 'Namunada oklad 2,5 million, bonus fondi ham 2,5 million so‘m. Demak, eng ko‘p maosh — 5 million so‘m.'
+],`<div class="kicker" ${A(0,0,'fade')}>7.2-bo‘lim</div><h2 ${A(0,0.1)}>2-variant: Oklad + KPI bonus</h2>
+<div class="card" ${A(1,0,'pop')} style="text-align:center;padding:50px 30px;margin-top:10px">
+ <span class="eq" style="font-size:66px">Maosh<span class="op">=</span><span class="teal">Oklad</span><span class="op">+</span><span class="blue">Bonus fondi</span><span class="op">×</span><span class="amber">KPI balli</span></span></div>
+<div class="g3" style="margin-top:30px">
+ <div class="card" ${A(2,0,'up')}><h3 class="amber">KPI balli</h3><p>Σ (bajarilish % × vazn)<br>ko‘pi bilan 100%</p></div>
+ <div class="card" ${A(3,0,'up')}><h3 class="teal">Oklad</h3><div style="font-size:52px;font-weight:900">${C(2500000,3,0.3)}</div></div>
+ <div class="card" ${A(3,0.5,'up')}><h3 class="blue">Bonus fondi</h3><div style="font-size:52px;font-weight:900">${C(2500000,3,0.8)}</div></div>
+</div>`);
+
+{
+ const rows=[
+  ['Tushum','60 mln','27 mln','27 ÷ 60','45',40,'0',true,1],
+  ['Konversiya','20%','16%','16 ÷ 20','80',20,'16',false,2],
+  ['CRM tozaligi','90%','72%','72 ÷ 90','80',20,'16',false,3],
+  ['Qayta aloqa','90%','63%','63 ÷ 90','70',20,'14',false,3]];
+ add('2-variant: A xodim hisobi',[
+ 'A xodim misolida hisoblaymiz. Birinchi qadam — har KPI bo‘yicha bajarilish foizini topamiz.',
+ 'Tushum: 27 million bo‘linadi 60 millionga — 45 foiz. Bu 50 foizdan past, eshikdan o‘tmadi. Ball — nol.',
+ 'Konversiya: 16 bo‘linadi 20 ga — 80 foiz. Vazni 20 foiz, demak ball 16.',
+ 'CRM tozaligi: 72 bo‘linadi 90 ga — 80 foiz, ball 16. Qayta aloqa: 63 bo‘linadi 90 ga — 70 foiz, ball 14.',
+ 'Hammasini qo‘shamiz: 0 + 16 + 16 + 14 = 46. A xodimning KPI balli — 46 foiz.'
+ ],`<div class="kicker" ${A(0,0,'fade')}>7.2 · 1-qadam</div><h2 ${A(0,0.1)}>A xodim: KPI ballini hisoblaymiz</h2>
+ <div class="card" style="padding:16px 26px" ${A(0,0.4,'up')}>
+ <table class="t"><tr><th>KPI</th><th>Maqsad</th><th>Qildi</th><th>Hisob</th><th>Bajarilish</th><th>Eshik</th><th>Vazn</th><th>Ball</th></tr>
+ ${rows.map(r=>`<tr ${A(r[8],r[0]=='Qayta aloqa'?2.2:0,'left')}><td><b>${r[0]}</b></td><td class="mu">${r[1]}</td><td>${r[2]}</td><td class="mu">${r[3]}</td><td><b>${r[4]}%</b></td>
+  <td>${r[7]?'<span class="badge" style="background:rgba(248,113,113,.2);color:var(--red);font-size:20px">50% dan past</span>':'<span class="badge" style="background:rgba(52,211,153,.18);color:var(--green);font-size:20px">o‘tdi</span>'}</td><td>${r[5]}%</td>
+  <td style="font-size:34px;font-weight:900" class="${r[7]?'red':'green'}">${r[6]}</td></tr>`).join('')}
+ <tr ${A(4,0,'up')}><td colspan="7" style="border:0;text-align:right;font-size:30px;font-weight:800">KPI balli = 0 + 16 + 16 + 14 =</td><td style="border:0;font-size:46px;font-weight:900" class="amber">${C(46,4,0.6,0,'%')}</td></tr>
+ </table></div>`);
+}
+
+add('2-variant: A xodim hisobi',[
+ 'Ikkinchi qadam — bonus: 2 million 500 ming ko‘paytiruv 46 foiz — 1 million 150 ming so‘m.',
+ 'Uchinchi qadam — maosh: 2 million 500 ming qo‘shuv 1 million 150 ming — 3 million 650 ming so‘m.',
+ 'To‘rtinchi qadam — xodimga tushuntiring: «Tushum rejasining yarmiga yetmadingiz, shu qismdan bonus bo‘lmadi.»',
+ '«Qolgan KPIlar bo‘yicha yaxshi ishladingiz. Keyingi oy rejaning kamida yarmini bajarsangiz, bonus oshadi.»'
+],`<div class="kicker" ${A(0,0,'fade')}>7.2 · 2–4-qadamlar</div><h2 ${A(0,0.1)}>Bonus va maosh</h2>
+<div class="col" style="gap:26px">
+ <div class="card" ${A(0,0.3,'left')}><div class="mu" style="font-size:24px">2-qadam · Bonus</div><span class="eq">2 500 000<span class="op">×</span><span class="amber">46%</span><span class="op">=</span><span class="blue">${C(1150000,0,1.2)}</span></span></div>
+ <div class="card" ${A(1,0,'left')}><div class="mu" style="font-size:24px">3-qadam · Maosh</div><span class="eq"><span class="teal">2 500 000</span><span class="op">+</span><span class="blue">1 150 000</span><span class="op">=</span><span class="green box">${C(3650000,1,0.8)} so‘m</span></span></div>
+ <div class="card" ${A(2,0,'up')} style="border-left:6px solid var(--violet)"><div class="mu" style="font-size:24px">4-qadam · Xodimga aytiladi</div><p style="font-size:28px;font-style:italic;margin-top:8px">«Tushum rejasining yarmiga ham yetmadingiz — shu qismdan bonus bo‘lmadi. Konversiya, CRM va qayta aloqa bo‘yicha yaxshi ishladingiz — 1 150 000 so‘m bonus.»</p></div>
+</div>`);
+
+add('2-variant: natija va xavf',[
+ 'To‘rt xodimning maoshi: A — 3 million 650 ming, B — 4 million 950 ming, C va D — 5 million.',
+ 'Xavfi: D xodim A dan 4,4 baravar ko‘p tushum olib keldi, maoshi esa atigi 1,4 baravar ko‘p. Reja bajarilgach, qo‘shimcha rag‘bat yo‘q.',
+ 'Rejadan ortiq ishlashni ham rag‘batlantirmoqchi bo‘lsangiz — uchinchi yoki to‘rtinchi variantga o‘ting.'
+],`<div class="kicker" ${A(0,0,'fade')}>7.2 · natija</div><h2 ${A(0,0.1)}>2-variant: to‘rt xodim maoshi</h2>
+<div class="row" style="gap:60px;align-items:flex-end">
+ <div class="chart" style="height:420px;width:900px;margin-top:40px">
+  <div class="hline" style="bottom:${5/6*100}%" ${A(1,0,'fade')}><span>Eng ko‘p: 5 mln</span></div>
+  ${BAR(3.65/6*100,'var(--blue)',0,0.5,'3,65','A')}${BAR(4.95/6*100,'var(--blue)',0,0.8,'4,95','B')}${BAR(5/6*100,'var(--blue)',0,1.1,'5,0','C')}${BAR(5/6*100,'var(--blue)',0,1.4,'5,0','D')}
+ </div>
+ <div class="col" style="flex:1">
+  <div class="card" ${A(1,0.3,'right')}><div class="mu" style="font-size:24px">D / A — tushum</div><div style="font-size:72px;font-weight:900" class="green">${C(4.4,1,0.6,1,'×')}</div></div>
+  <div class="card" ${A(1,1.0,'right')}><div class="mu" style="font-size:24px">D / A — maosh</div><div style="font-size:72px;font-weight:900" class="red">${C(1.4,1,1.3,1,'×')}</div></div>
+  <div class="card" ${A(2,0,'up')} style="border-color:var(--amber)"><p>Rejadan ortiq ishlashga rag‘bat kerakmi? → <b class="amber">3 yoki 4-variant</b></p></div>
+ </div>
+</div>`);
+
+add('3-variant: oklad + ulush',[
+ 'Uchinchi variant: oklad va tushumdan ulush. Muhim: okladsiz, faqat ulush berilmaydi.',
+ 'Birinchi sabab — Islom qoidalariga muvofiqlik: ish haqi oldindan aniq bo‘lishi kerak. Miqdori oldindan noma’lum daromad g‘arar — noaniqlik hisoblanadi.',
+ 'Ikkinchi sabab — tushum kam oyda xodim daromadsiz qoladi. Uchinchisi — faqat ulush olgan xodim CRM va qayta aloqani tashlab qo‘yadi.',
+ 'Tavsiya: oklad kutilgan umumiy maoshning 40–60 foizi bo‘lsin. Tushum — faqat hisobga haqiqatan tushgan pul.',
+ 'Bu hujjat diniy hukm emas: shartnoma shartlarini ishonchli ulamo yoki shariat bo‘yicha mutaxassis bilan tekshiring.'
+],`<div class="kicker" ${A(0,0,'fade')}>7.3-bo‘lim</div><h2 ${A(0,0.1)}>Okladsiz ulush — yo‘q</h2>
+<div class="card" ${A(0,0.6,'pop')} style="text-align:center;padding:30px"><span class="eq" style="font-size:58px">Maosh<span class="op">=</span><span class="teal">Oklad</span><span class="op">+</span><span class="amber">Ulush</span></span></div>
+<div class="g3" style="margin-top:26px">
+ <div class="card" ${A(1,0,'up')}><div class="badge" style="background:rgba(167,139,250,.2);color:var(--violet)">1</div><h3 style="margin-top:14px">Islom qoidalari</h3><p>Ish haqi oldindan aniq bo‘lsin. Noaniq daromad — g‘arar.</p></div>
+ <div class="card" ${A(2,0,'up')}><div class="badge" style="background:rgba(96,165,250,.2);color:var(--blue)">2</div><h3 style="margin-top:14px">Amaliy</h3><p>Tushum kam oyda xodim daromadsiz qolmaydi.</p></div>
+ <div class="card" ${A(2,0.8,'up')}><div class="badge" style="background:rgba(52,211,153,.2);color:var(--green)">3</div><h3 style="margin-top:14px">Sifat</h3><p>CRM va qayta aloqa tashlab qo‘yilmaydi.</p></div>
+</div>
+<div class="card" ${A(3,0,'up')} style="margin-top:26px;display:flex;gap:40px;align-items:center;padding:20px 30px">
+ <span style="font-size:30px">Oklad ≈ <b class="teal">40–60%</b> umumiy maoshdan</span><span class="mu" style="font-size:24px">Bu hujjat diniy hukm emas — mutaxassis bilan tekshiring.</span></div>`);
+
+add('3-variant: ulushning 3 usuli',[
+ 'Ulushni hisoblashning uch usuli bor. Namuna pog‘onalari: 50 milliongacha 5 foiz, 50 dan 100 milliongacha 8 foiz, 100 milliondan ortig‘i 10 foiz.',
+ '3-A. Bitta foiz: hamma tushumga 5 foiz. B xodim uchun 60 million × 5% = 3 million. Maosh — 5 million 500 ming.',
+ '3-B. Zinapoya: tushum qaysi pog‘onaga yetsa, butun tushumga shu foiz. 60 million × 8% = 4,8 million. Maosh — 7 million 300 ming.',
+ '3-C. Bosqichma-bosqich: birinchi 50 millionga 5 foiz — 2,5 million, qolgan 10 millionga 8 foiz — 800 ming. Ulush 3,3 million, maosh — 5 million 800 ming.'
+],`<div class="kicker" ${A(0,0,'fade')}>7.3 · B xodim, tushum 60 mln</div><h2 ${A(0,0.1)}>Ulushning 3 usuli</h2>
+<div style="display:flex;height:70px;border-radius:16px;overflow:hidden;font-size:26px;font-weight:800;margin-bottom:28px">
+ <div ${A(0,0.8,'wx',0.6)} data-w="40" style="width:0;background:rgba(45,212,191,.85);color:#05201c;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden">0–50 mln · 5%</div>
+ <div ${A(0,1.4,'wx',0.6)} data-w="40" style="width:0;background:rgba(251,191,36,.9);color:#2a1c00;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden">50–100 mln · 8%</div>
+ <div ${A(0,2.0,'wx',0.6)} data-w="20" style="width:0;background:rgba(248,113,113,.9);color:#2a0606;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden">100+ · 10%</div>
+</div>
+<div class="g3">
+ <div class="card" ${A(1,0,'pop')}><h3 class="teal">3-A · Bitta foiz</h3><p>60 000 000 × 5%</p><div style="font-size:26px;margin-top:14px">Ulush: <b>${C(3000000,1,0.6)}</b></div><div style="font-size:40px;font-weight:900;margin-top:8px" class="green">${C(5500000,1,1.2)}</div><p class="mu" style="font-size:20px">Eng oddiy</p></div>
+ <div class="card" ${A(2,0,'pop')}><h3 class="amber">3-B · Zinapoya</h3><p>60 000 000 × 8%</p><div style="font-size:26px;margin-top:14px">Ulush: <b>${C(4800000,2,0.6)}</b></div><div style="font-size:40px;font-weight:900;margin-top:8px" class="green">${C(7300000,2,1.2)}</div><p class="mu" style="font-size:20px">Kuchli rag‘bat, lekin sakrash bor</p></div>
+ <div class="card" ${A(3,0,'pop')}><h3 class="violet">3-C · Bosqichma-bosqich</h3><p>50 mln × 5% + 10 mln × 8%</p><div style="font-size:26px;margin-top:14px">Ulush: <b>${C(3300000,3,0.6)}</b></div><div style="font-size:40px;font-weight:900;margin-top:8px" class="green">${C(5800000,3,1.2)}</div><p class="mu" style="font-size:20px">Sakrash yo‘q, adolatli</p></div>
+</div>`);
+
+{
+ // SVG chart: ulush vs tushum for 3-B (step) and 3-C (continuous)
+ const W=1100,H=440,X=v=>v/120*W,Y=v=>H-v/12.5*H;
+ const b=x=>x*(x<=50?0.05:x<=100?0.08:0.10), c=x=>x<=50?x*0.05:x<=100?2.5+(x-50)*0.08:6.5+(x-100)*0.1;
+ const path=(f,breaks)=>{let d='';let started=false;for(let x=0;x<=120;x+=0.5){if(breaks&&breaks.includes(x)){d+=`M${X(x+0.001)},${Y(f(x+0.001))} `;continue;}d+=(started?'L':'M')+X(x)+','+Y(f(x))+' ';started=true;}return d;};
+ const grid=[0,2.5,5,7.5,10,12.5].map(v=>`<line x1="0" x2="${W}" y1="${Y(v)}" y2="${Y(v)}" stroke="rgba(255,255,255,.08)"/><text x="-14" y="${Y(v)+8}" fill="#9aaccc" font-size="22" text-anchor="end">${fmt(v,v%1?1:0)}</text>`).join('')+[0,20,40,60,80,100,120].map(v=>`<text x="${X(v)}" y="${H+36}" fill="#9aaccc" font-size="22" text-anchor="middle">${v}</text>`).join('');
+ add('3-B: sakrash xavfi',[
+ 'Zinapoya usulining xavfi — sakrash. Tushum 49,9 million bo‘lsa, ulush taxminan 2,5 million. 50,1 million bo‘lsa — 4 million.',
+ 'Xodim oy oxirida to‘lovni keyingi oyga surib qo‘yishi mumkin. Bosqichma-bosqich usulda esa sakrash yo‘q — har bir so‘m adolatli hisoblanadi.',
+ 'Shuning uchun «tushum» ta’rifini qat’iy yozing — hisobga kelgan pul — yoki 3-C usulini tanlang.'
+ ],`<div class="kicker amber" ${A(0,0,'fade')}>7.3 · xavf</div><h2 ${A(0,0.1)}>3-B: pog‘ona chegarasida sakrash</h2>
+ <div class="row" style="gap:40px;align-items:flex-start">
+ <svg width="${W+120}" height="${H+70}" viewBox="-90 -10 ${W+120} ${H+70}" style="overflow:visible">
+  ${grid}
+  <path d="${path(c)}" fill="none" stroke="var(--violet)" stroke-width="7" stroke-linecap="round" ${A(1,0.3,'draw',2.4)}/>
+  <path d="${path(b,[50,100])}" fill="none" stroke="var(--amber)" stroke-width="7" stroke-linecap="round" ${A(0,0.6,'draw',2.4)}/>
+  <line x1="${X(50)}" x2="${X(50)}" y1="${Y(2.5)}" y2="${Y(4)}" stroke="var(--red)" stroke-width="4" stroke-dasharray="8 8" ${A(0,3,'fade')}/>
+  <circle cx="${X(50)}" cy="${Y(3.25)}" r="42" fill="none" stroke="var(--red)" stroke-width="4" ${A(0,3.2,'pop')}/>
+  <text x="${X(50)-56}" y="${Y(3.25)-30}" text-anchor="end" fill="var(--red)" font-size="28" font-weight="800" ${A(0,3.4,'fade')}>2,5 → 4,0 mln</text>
+  <text x="${W/2}" y="${H+66}" fill="#9aaccc" font-size="22" text-anchor="middle">Tushum, mln so‘m</text>
+ </svg>
+ <div class="col" style="flex:1;margin-top:20px">
+  <div class="legend col" style="gap:14px"><span><i style="background:var(--amber)"></i>3-B · Zinapoya</span><span ${A(1,0.3,'fade')}><i style="background:var(--violet)"></i>3-C · Bosqichma-bosqich</span></div>
+  <div class="card" ${A(2,0,'up')} style="margin-top:30px;border-color:var(--teal)"><p><b class="teal">Yechim:</b> «tushum» = hisobga kelgan pul, yoki <b>3-C</b>.</p></div>
+ </div></div>`);
+}
+
+add('4-variant: tartib sharti',[
+ 'To‘rtinchi variant: oklad, ulush va tartib sharti. Formula: Maosh teng Oklad qo‘shuv Ulush ko‘paytiruv Sifat koeffitsienti.',
+ 'Koeffitsient sifat KPIlarining eng pastiga qarab olinadi: 90 foiz va undan yuqori — 1,0. 70 dan 89 foizgacha — 0,8. 70 foizdan past — 0,5.',
+ 'A xodim: ulush 27 million × 5% = 1 million 350 ming. CRM tozaligi 80, qayta aloqa 70 foiz. Eng pasti 70 — koeffitsient 0,8.',
+ '1 million 350 ming × 0,8 = 1 million 80 ming. Maosh: 2,5 million qo‘shuv 1 million 80 ming — 3 million 580 ming so‘m.'
+],`<div class="kicker" ${A(0,0,'fade')}>7.4-bo‘lim</div><h2 ${A(0,0.1)}>4-variant: Oklad + ulush + tartib</h2>
+<div class="card" ${A(0,0.6,'pop')} style="text-align:center;padding:24px"><span class="eq" style="font-size:52px">Maosh<span class="op">=</span><span class="teal">Oklad</span><span class="op">+</span><span class="amber">Ulush</span><span class="op">×</span><span class="green">Sifat koef.</span></span></div>
+<div class="row" style="gap:28px;margin-top:26px">
+ <div class="card" ${A(1,0,'left')} style="width:640px;padding:18px 26px">
+  <table class="t"><tr><th>Eng past sifat KPI</th><th>Koef.</th></tr>
+  <tr ${A(1,0.4,'left')}><td>90% va yuqori</td><td class="green" style="font-weight:900;font-size:34px">1,0</td></tr>
+  <tr ${A(1,1.0,'left')}><td>70–89%</td><td class="amber" style="font-weight:900;font-size:34px">0,8</td></tr>
+  <tr ${A(1,1.6,'left')}><td style="border:0">70% dan past</td><td class="red" style="font-weight:900;font-size:34px;border:0">0,5</td></tr></table></div>
+ <div class="col" style="flex:1;gap:18px">
+  <div class="card" ${A(2,0,'right')} style="padding:20px 28px"><div class="mu" style="font-size:22px">A xodim · ulush</div><div style="font-size:34px;font-weight:800">27 000 000 × 5% = <span class="amber">${C(1350000,2,0.5)}</span></div><div style="font-size:26px;margin-top:6px">CRM 80% · Qayta aloqa <b class="amber">70%</b> → koef. <b class="amber">0,8</b></div></div>
+  <div class="card" ${A(3,0,'right')} style="padding:20px 28px"><div style="font-size:34px;font-weight:800">1 350 000 × 0,8 = <span class="blue">${C(1080000,3,0.5)}</span></div><div style="font-size:40px;font-weight:900;margin-top:8px">Maosh: <span class="green box">${C(3580000,3,1.2)} so‘m</span></div></div>
+ </div>
+</div>`);
+
+{
+ const data=[['A','27',[4,3.65,3.85,3.85,3.85,3.58]],['B','60',[4,4.95,5.5,7.3,5.8,5.5]],['C','90',[4,5,7,9.7,8.2,7]],['D','120',[4,5,8.5,14.5,11,8.5]]];
+ const cols=['#94a3b8','var(--blue)','var(--teal)','var(--amber)','var(--violet)','var(--green)'];
+ const names=['1 · Faqat oklad','2 · Oklad + KPI','3-A · Bitta foiz','3-B · Zinapoya','3-C · Bosqichma','4 · Ulush + tartib'];
+ add('Solishtirish',[
+ 'Endi barcha variantlarni bitta jadvalda solishtiramiz.',
+ 'Faqat okladda D xodim — eng yaxshi sotuvchi — atigi 4 million oladi. Bu uning tushumining 3,3 foizi.',
+ 'Ikkinchi variantda maosh 5 million bilan cheklanadi. Uchinchi va to‘rtinchi variantlarda ko‘p sotgan ko‘p oladi.',
+ 'Korxona uchun asosiy tekshiruv — maosh tushumning necha foizi. Rahbar o‘z chegarasini belgilaydi.',
+ 'Eng yaxshi oyda ham maosh shu chegaradan oshmasin, eng yomon oyda esa xodim yashay oladigan daromad olsin.'
+ ],`<div class="kicker" ${A(0,0,'fade')}>9-bo‘lim</div><h2 ${A(0,0.1)}>Barcha variant — to‘rt xodim (mln so‘m)</h2>
+ <div class="legend" ${A(0,0.4,'fade')} style="margin-bottom:46px">${names.map((n,i)=>`<span><i style="background:${cols[i]}"></i>${n}</span>`).join('')}</div>
+ <div class="chart" style="height:370px;gap:46px;margin:0 10px">
+  ${data.map((g,gi)=>`<div class="bcol" style="flex-direction:row;align-items:flex-end;gap:8px">${g[2].map((v,i)=>`<div style="flex:1;height:100%;display:flex;align-items:flex-end"><div class="bar" style="background:${cols[i]};height:0;border-radius:8px 8px 2px 2px${gi==3&&i==0?';box-shadow:0 0 0 4px var(--red)':''}" ${A(gi==3&&i==0?1:0,0.5+gi*0.35+i*0.08,'hy',0.8)} data-h="${v/15*100}"><div class="bl" style="font-size:19px;top:-30px">${fmt(v,v%1?(String(v).split('.')[1].length):0)}</div></div></div>`).join('')}<div class="bx" style="bottom:-56px">${g[0]} <span class="mu" style="font-size:22px;font-weight:600">· ${g[1]} mln</span></div></div>`).join('')}
+ </div>
+ <div class="row" style="margin-top:66px;gap:20px">
+  <div class="card" ${A(3,0,'up')} style="flex:1;padding:16px 26px;font-size:27px">Maosh / tushum ≤ <b class="amber">sizning chegarangiz</b>?</div>
+  <div class="card" ${A(4,0,'up')} style="flex:1;padding:16px 26px;font-size:27px">Eng yomon oyda xodim <b class="teal">yashay oladimi</b>?</div>
+ </div>`);
+}
+
+add('Oylik hisoblash tartibi',[
+ 'Har oy maoshni olti qadamda hisoblaysiz. Bitta xodimga 3–5 daqiqa ketadi.',
+ 'Birinchi: raqamlarni oling. Ikkinchi: har KPI bajarilish foizini hisoblang — haqiqiy bo‘linadi maqsadga, ko‘pi bilan 100.',
+ 'Uchinchi: eshik qoidasini tekshiring. To‘rtinchi: bajarilishni vazniga ko‘paytirib, qo‘shing — bu KPI balli.',
+ 'Beshinchi: variantingiz formulasiga qo‘ying. Oltinchi: maoshni yozing va xodimga hisobini yuboring.',
+ 'Teskari KPI: raqam kam bo‘lsa yaxshi bo‘lgan KPIda bajarilish = maqsad ÷ haqiqiy. Maqsad 5 daqiqa, javob 8 daqiqada berilgan bo‘lsa — 62,5 foiz.'
+],`<div class="kicker" ${A(0,0,'fade')}>8-bo‘lim</div><h2 ${A(0,0.1)}>Har oy — 6 qadam</h2>
+<div class="g3" style="gap:20px">
+ ${[['Raqamlarni oling','CRM yoki kunlik hisobot',1],['Bajarilish %','haqiqiy ÷ maqsad × 100 (≤ 100)',1],['Eshik qoidasi','< 50% → ball 0',2],['KPI balli','Σ bajarilish × vazn',2],['Formulaga qo‘ying','2, 3 yoki 4-variant',3],['Maoshni yuboring','Xodimga hisob bilan',3]].map((c,i)=>`
+ <div class="card" ${A(c[2],(i%2)*0.9,'pop')} style="display:flex;gap:20px;align-items:center;padding:24px"><div class="circ" style="background:var(--teal);color:#05201c">${i+1}</div><div><h3 style="font-size:30px;margin:0">${c[0]}</h3><p style="font-size:22px">${c[1]}</p></div></div>`).join('')}
+</div>
+<div class="card" ${A(4,0,'up')} style="margin-top:24px;border-color:var(--amber);display:flex;gap:30px;align-items:center;padding:20px 30px">
+ <span class="badge" style="background:var(--amber);color:#2a1c00">Teskari KPI</span><span style="font-size:30px">maqsad ÷ haqiqiy: <b>5 ÷ 8 × 100 =</b> <b class="amber">${C(62.5,4,0.8,1,'%')}</b></span><span class="mu" style="font-size:22px">masalan, javob berish tezligi</span></div>`);
+
+add('Namuna: klinika sotuvchisi',[
+ 'Yana bir namuna: klinikadagi yuzma-yuz sotuvchi, ikkinchi variant. Oklad va bonus fondi — 2,5 milliondan.',
+ 'Tushum 48 million, maqsad 60 — 80 foiz, ball 32. Konversiya 22, maqsad 25 — 88 foiz, ball 17,6.',
+ 'Uchrashuvlar 22 ta, maqsad 30 — 73 foiz, ball 14,7. CRM tozaligi 95 foiz — 100 deb olinadi, ball 20.',
+ 'KPI balli — 84,3. Bonus: 2 million 106 ming 667 so‘m. Maosh: 4 million 606 ming 667 so‘m.'
+],`<div class="kicker" ${A(0,0,'fade')}>8-bo‘lim · namuna</div><h2 ${A(0,0.1)}>Klinika sotuvchisi · 2-variant</h2>
+<div class="row" style="gap:28px">
+ <div class="card" style="flex:1.5;padding:14px 24px" ${A(0,0.5,'up')}>
+ <table class="t"><tr><th>KPI</th><th>Vazn</th><th>Maqsad</th><th>Haqiqiy</th><th>Bajarilish</th><th>Ball</th></tr>
+ ${[['Tushum','40','60 mln','48 mln','80%','32,0',1],['Konversiya','20','25%','22%','88%','17,6',1],['Uchrashuvlar','20','30','22','73%','14,7',2],['CRM tozaligi','20','90%','95%','100%','20,0',2]].map((r,i)=>`<tr ${A(r[6],(i%2)*1.6,'left')}><td><b>${r[0]}</b></td><td>${r[1]}%</td><td class="mu">${r[2]}</td><td>${r[3]}</td><td><b>${r[4]}</b></td><td class="green" style="font-weight:900;font-size:32px">${r[5]}</td></tr>`).join('')}
+ </table></div>
+ <div class="col" style="flex:1">
+  <div class="card" ${A(3,0,'right')}><div class="mu" style="font-size:22px">KPI balli</div><div style="font-size:64px;font-weight:900" class="amber">${C(84.3,3,0.3,1)}</div></div>
+  <div class="card" ${A(3,0.6,'right')}><div class="mu" style="font-size:22px">Bonus</div><div style="font-size:44px;font-weight:900" class="blue">${C(2106667,3,0.9)}</div></div>
+  <div class="card" ${A(3,1.2,'right')} style="border-color:var(--green)"><div class="mu" style="font-size:22px">Maosh</div><div style="font-size:48px;font-weight:900" class="green">${C(4606667,3,1.5)}</div></div>
+ </div>
+</div>`);
+
+add('Oy oxiri tartibi',[
+ 'Oy oxiri tartibi.',
+ 'Oyning 1–3 sanasi: rahbar yoki HR har xodim raqamlarini oladi. 3–4 sana: hisoblash varag‘i yoki Excel hisoblagich to‘ldiriladi.',
+ '5-sanagacha: rahbar har xodimga o‘z hisobini yuboradi. E’tiroz uchun 3 kun bor — raqam birga tekshiriladi.',
+ 'So‘ng buxgalter maoshni belgilangan sanada to‘laydi. To‘lov sanasi doim bir xil bo‘lsin.'
+],`<div class="kicker" ${A(0,0,'fade')}>8-bo‘lim</div><h2 ${A(0,0.1)}>Oy oxiri tartibi</h2>
+<div style="position:relative;margin-top:40px">
+ <div style="position:absolute;left:0;right:0;top:44px;height:6px;background:rgba(255,255,255,.1);border-radius:4px"></div>
+ <div style="position:absolute;left:0;top:44px;height:6px;width:0;background:linear-gradient(90deg,var(--teal),var(--green));border-radius:4px" ${A(1,0,'wx',8)} data-w="100"></div>
+ <div class="tl">
+ ${[['1–3 sana','Raqamlarni olish','Rahbar yoki HR',1,0],['3–4 sana','Varaq / Excel to‘ldirish','Rahbar yoki HR',1,2.5],['5-sanagacha','Hisobni xodimga yuborish','Rahbar',2,0],['+3 kun','E’tirozlarni tekshirish','Rahbar va xodim',2,1.5],['To‘lov sanasi','Maoshni to‘lash','Buxgalter',3,0]].map((c,i)=>`
+ <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:26px" ${A(c[3],c[4],'up')}>
+  <div class="circ" style="background:var(--teal);color:#05201c;width:96px;height:96px;font-size:40px;z-index:1">${i+1}</div>
+  <div class="card" style="width:100%;text-align:center;padding:24px 18px"><div class="teal" style="font-size:28px;font-weight:900">${c[0]}</div><h3 style="font-size:28px;margin-top:10px">${c[1]}</h3><p class="mu" style="font-size:22px">${c[2]}</p></div></div>`).join('')}
+ </div></div>`);
+
+add('Yangi xodim',[
+ 'Yangi xodimni maoshga qanday o‘tkazamiz?',
+ 'Akademiya, 16 kun: xodim hali sotmaydi, o‘qiydi. Bu davr uchun oklad yoki o‘qish haqi korxona qaroriga ko‘ra belgilanadi.',
+ 'Sotuvga chiqqandan 1–30 kun: ikkinchi variant, maqsad o‘rtachaning 50–70 foizi, eshik yo‘q. 31–60 kun: 80–90 foiz, eshik 30 foiz.',
+ '61–90 kun: tanlangan variant to‘liq, eshik 50 foiz. 90-kundan keyin maosh shartlari qayta ko‘riladi.',
+ 'Qoida: maosh tizimi oy o‘rtasida o‘zgartirilmaydi. O‘zgarish keyingi oyning 1-sanasidan, yozma va xodim imzosi bilan kuchga kiradi.'
+],`<div class="kicker" ${A(0,0,'fade')}>10-bo‘lim</div><h2 ${A(0,0.1)}>Yangi xodim: bosqichma-bosqich</h2>
+<div class="tl">
+ ${[['Akademiya','16 kun','O‘qiydi, hali sotmaydi','Oklad / o‘qish haqi','var(--mu)',1,0],['1–30 kun','2-variant','Maqsad 50–70%','Eshik yo‘q','var(--blue)',2,0],['31–60 kun','2-variant','Maqsad 80–90%','Eshik 30%','var(--teal)',2,2.2],['61–90 kun','Tanlangan variant','To‘liq maqsad','Eshik 50%','var(--green)',3,0],['90+ kun','Qayta ko‘rish','Kerak bo‘lsa 3 yoki 4-variant','','var(--amber)',3,1.6]].map(c=>`
+ <div class="card" ${A(c[5],c[6],'up')} style="border-top:6px solid ${c[4]};min-height:320px"><div style="font-size:30px;font-weight:900;color:${c[4]}">${c[0]}</div><h3 style="margin-top:14px">${c[1]}</h3><p>${c[2]}</p>${c[3]?`<div class="chip" style="margin-top:14px">${c[3]}</div>`:''}</div>`).join('')}
+</div>
+<div class="card" ${A(4,0,'up')} style="margin-top:26px;border-color:var(--amber);padding:20px 30px;font-size:28px"><b class="amber">Qoida:</b> shart oy o‘rtasida o‘zgarmaydi — faqat keyingi oy 1-sanasidan, <b>yozma va imzo bilan</b>.</div>`);
+
+add('Eng ko‘p xatolar',[
+ 'Eng ko‘p uchraydigan xatolar.',
+ 'Faqat oklad berish. Okladsiz, faqat ulush berish. «Tushum» nima ekanini yozib qo‘ymaslik.',
+ 'KPI juda ko‘p — xodim hech birini ushlay olmaydi. Hisob og‘zaki. Oy o‘rtasida shartni o‘zgartirish.',
+ 'Hamma xodimga bir xil shart. Ishonchsiz raqamlar — avval CRM tozaligini yo‘lga qo‘ying. Va maoshni kechiktirish — to‘lov sanasi doim bir xil bo‘lsin.'
+],`<div class="kicker red" ${A(0,0,'fade')}>11-bo‘lim</div><h2 ${A(0,0.1)}>Eng ko‘p uchraydigan xatolar</h2>
+<div class="g3" style="gap:18px">
+ ${[['Faqat oklad','Kamida 2-variant'],['Okladsiz ulush','Doim oklad + ulush'],['«Tushum» yozilmagan','= hisobga kelgan pul'],['KPI juda ko‘p','4–5 ta yetarli'],['Hisob og‘zaki','Yozma, imzo bilan'],['Oy o‘rtasida o‘zgarish','Keyingi oy 1-sanasidan'],['Hammaga bir xil shart','Yangi xodimga yumshoq maqsad'],['Ishonchsiz raqamlar','Avval CRM tozaligi'],['Maosh kechikadi','Sana doim bir xil']].map((c,i)=>`
+ <div class="card" ${A(1+Math.floor(i/3),(i%3)*0.9,'pop')} style="padding:20px 24px"><div class="err"><div class="x">✕</div><div><div style="font-size:28px;font-weight:800">${c[0]}</div><div class="green" style="font-size:23px;margin-top:4px">→ ${c[1]}</div></div></div></div>`).join('')}
+</div>`);
+
+add('Tasdiq varaqasi',[
+ 'Tanlovingizni rahbar tasdiq varaqasiga yozing: variant, oklad, bonus yoki ulush, KPIlar va vaznlari, eshik qoidasi, tushum ta’rifi va sanalar.',
+ 'Varaqni xodim imzolaydi, nusxa ikkalasida ham qoladi.',
+ 'Barcha summalar bruto — soliqdan oldin. Shartnomaga yozishdan oldin buxgalter yoki yurist bilan, diniy masalada esa ishonchli mutaxassis bilan maslahatlashing.'
+],`<div class="kicker" ${A(0,0,'fade')}>12-bo‘lim</div><h2 ${A(0,0.1)}>Rahbar tasdiq varaqasi</h2>
+<div class="row" style="gap:40px">
+ <div class="card" ${A(0,0.4,'up')} style="flex:1.3;padding:18px 30px">
+  ${['Tanlangan variant (2 / 3 / 4)','Oklad (so‘m)','Bonus fondi yoki ulush usuli','KPIlar va vaznlari','Eshik qoidasi','«Tushum» ta’rifi','Hisob va to‘lov sanasi','Kuchga kirish sanasi'].map((f,i)=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:26px"><span>${f}</span><span class="green" style="font-weight:900;font-size:28px" ${A(0,1.2+i*0.45,'pop')}>✓</span></div>`).join('')}
+ </div>
+ <div class="col" style="flex:1">
+  <div class="card" ${A(1,0,'right')} style="display:flex;gap:20px;align-items:center"><div style="font-size:40px">✍</div><p style="font-size:28px">Rahbar va xodim <b>imzosi</b>. Nusxa ikkalasida.</p></div>
+  <div class="card" ${A(2,0,'right')} style="border-color:var(--amber)"><h3 class="amber">Eslatma</h3><p>Summalar <b>bruto</b>. Buxgalter yoki yurist bilan tekshiring. Bu hujjat yuridik maslahat ham, diniy hukm ham emas.</p></div>
+ </div>
+</div>`);
+
+add('Xulosa',[
+ 'Xulosa: oklad — xavfsizlik, natijaga bog‘liq qism — rag‘bat. Ikkalasi doim birga bo‘lsin.',
+ 'Ikkinchi variant bilan boshlang, uch oydan keyin uchinchi yoki to‘rtinchi variantga o‘ting. Hisobni Excel hisoblagich o‘zi bajaradi. Omad!'
+],`<div style="margin:auto 0;display:flex;flex-direction:column;gap:34px;align-items:center;text-align:center">
+ <div class="kicker" ${A(0,0,'fade')}>Xulosa</div>
+ <div ${A(0,0.3,'pop')} class="eq" style="font-size:80px"><span class="teal">Oklad</span><span class="op">+</span><span class="amber">Natija</span></div>
+ <div ${A(0,1.0)} style="font-size:34px;color:#c8d4ec">xavfsizlik &nbsp;·&nbsp; rag‘bat &nbsp;·&nbsp; tartib</div>
+ <div class="row" style="gap:24px;margin-top:20px">
+  <div class="card" ${A(1,0,'up')} style="font-size:30px;padding:22px 34px"><b class="blue">2-variant</b> bilan boshlang</div>
+  <div class="card" ${A(1,0.5,'up')} style="font-size:30px;padding:22px 34px">3 oydan keyin → <b class="green">3 yoki 4</b></div>
+  <div class="card" ${A(1,1.0,'up')} style="font-size:30px;padding:22px 34px"><b class="violet">Excel</b> hisoblagich</div>
+ </div>
+ <div ${A(1,2.5,'pop')} style="font-size:64px;font-weight:900;margin-top:20px;background:linear-gradient(90deg,var(--teal),var(--blue));-webkit-background-clip:text;color:transparent">Omad!</div>
+</div>`);
+
+// ---------- timing ----------
+const segDur=txt=>Math.max(3.2, txt.length/16.5+1.0);
+let T=0;
+S.forEach((sc,i)=>{sc.start=T;sc.segStart=[];let t=0.5;sc.segs.forEach(s=>{sc.segStart.push(t);t+=segDur(s);});sc.dur=t+0.9;T+=sc.dur;});
+const TOTAL=T;
+
+// ---------- build DOM ----------
+const root=document.getElementById('scenes');
+S.forEach((sc,i)=>{const d=document.createElement('div');d.className='scene';d.innerHTML=sc.html;root.appendChild(d);sc.el=d;
+ sc.anims=[...d.querySelectorAll('[data-a]')].map(el=>({el,a:el.dataset.a,s:+el.dataset.s,d:+el.dataset.d,t:el.dataset.t?+el.dataset.t:(el.dataset.a=='count'?1.2:0.7)}));
+ sc.anims.forEach(o=>{if(o.a=='draw'){o.len=o.el.getTotalLength();o.el.style.strokeDasharray=o.len;}});
+});
+
+const clamp=x=>x<0?0:x>1?1:x;
+const eo=x=>1-Math.pow(1-x,3);
+const back=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+const capbox=document.getElementById('capbox'),secEl=document.getElementById('sec'),prog=document.getElementById('prog');
+let lastCap=null,lastScene=null;
+
+function render(t){
+ // background
+ document.getElementById('b1').style.transform=`translate(${-200+Math.sin(t*0.07)*160}px,${-250+Math.cos(t*0.05)*120}px)`;
+ document.getElementById('b2').style.transform=`translate(${1350+Math.cos(t*0.06)*180}px,${520+Math.sin(t*0.08)*140}px)`;
+ prog.style.width=(t/TOTAL*100)+'%';
+ let idx=S.findIndex(sc=>t>=sc.start&&t<sc.start+sc.dur); if(idx<0) idx=S.length-1;
+ const sc=S[idx], lt=t-sc.start;
+ if(lastScene!==idx){S.forEach((o,j)=>{if(j!==idx)o.el.style.opacity=0;});secEl.textContent=sc.sec;lastScene=idx;}
+ const fin=clamp(lt/0.45), fout=clamp((sc.dur-lt)/0.45);
+ sc.el.style.opacity=Math.min(fin,fout);
+ sc.el.style.transform=`scale(${1+0.015*(1-fin)})`;
+ for(const o of sc.anims){
+  const st=sc.segStart[o.s]+o.d; const raw=clamp((lt-st)/o.t); const p=eo(raw); const el=o.el;
+  switch(o.a){
+   case 'up': el.style.opacity=p; el.style.transform=`translateY(${(1-p)*40}px)`; break;
+   case 'fade': el.style.opacity=p; break;
+   case 'left': el.style.opacity=p; el.style.transform=`translateX(${-(1-p)*70}px)`; break;
+   case 'right': el.style.opacity=p; el.style.transform=`translateX(${(1-p)*70}px)`; break;
+   case 'pop': el.style.opacity=clamp(raw*2); el.style.transform=`scale(${0.6+0.4*back(raw)})`; break;
+   case 'wx': el.style.width=(p*+el.dataset.w)+'%'; break;
+   case 'hy': el.style.height=(p*+el.dataset.h)+'%'; break;
+   case 'sx': el.style.transform=`scaleX(${p})`; break;
+   case 'draw': el.style.strokeDashoffset=o.len*(1-p); break;
+   case 'count': {const dec=+el.dataset.dec; el.textContent=fmt(p*+el.dataset.v,dec)+(el.dataset.suf||''); el.style.opacity=raw>0?1:0.25; break;}
+  }
+ }
+ // caption
+ let si=0; for(let k=0;k<sc.segStart.length;k++) if(lt>=sc.segStart[k]-0.3) si=k;
+ const key=idx+':'+si; if(key!==lastCap){capbox.textContent=sc.segs[si];lastCap=key;}
+ const cst=sc.segStart[si]-0.3; capbox.style.opacity=Math.min(clamp((lt-cst)/0.3), fout<1&&si==sc.segs.length-1?Math.max(fout,0):1);
+}
+window.TOTAL=TOTAL; window.render=render;
+window.SRT=()=>{const ts=x=>{const h=Math.floor(x/3600),m=Math.floor(x%3600/60),s=Math.floor(x%60),ms=Math.round((x%1)*1000);return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')},${String(ms).padStart(3,'0')}`;};
+ let n=1,out='';S.forEach(sc=>sc.segs.forEach((s,k)=>{const a=sc.start+sc.segStart[k]-0.3,b=k+1<sc.segs.length?sc.start+sc.segStart[k+1]-0.3:sc.start+sc.dur-0.2;out+=`${n++}\n${ts(a)} --> ${ts(b)}\n${s}\n\n`;}));return out;};
+window.CHAPTERS=()=>S.map(sc=>[sc.start,sc.sec]);
+// live preview when opened in a browser
+if(!/render=1/.test(location.search)){const t0=performance.now();(function loop(){render(((performance.now()-t0)/1000)%TOTAL);requestAnimationFrame(loop);})();}
+</script>
+</body>
+</html>
