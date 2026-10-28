@@ -1,135 +1,67 @@
-Quyidagi matnni o‘zbek tilida, professional o‘qituvchi kabi xotirjam, aniq va o‘rtacha tezlikda o‘qing. Har bir "* * *" belgisida 3 soniya jim turing, belgining o‘zini o‘qimang.
-
 Assalomu alaykum! Bu darslikda sotuv menejeriga to‘g‘ri maosh tizimini tanlash va maoshni hisoblashni o‘rganamiz. Darslik rahbar va HR xodimlari uchun. Korxona ichki akademiyasi, Sotuv moduli.
-
-* * *
 
 Bu darslik uch ishni qiladi. Birinchi: korxonangizga mos maosh tizimini tanlashga yordam beradi. Ikkinchi: xodimga tizimni bir daqiqada tushuntirish uchun tayyor matn beradi. Uchinchi: oy oxirida maoshni o‘n daqiqada hisoblash tartibini beradi.
 
-* * *
-
 Boshlashdan oldin ikkita qoida. Istisnosiz. Birinchi qoida: sotuv menejeriga faqat oklad berish tavsiya etilmaydi. Na yangi, na tajribali xodimga. Ikkinchi qoida: maosh hech qachon faqat tushumdan ulushdan iborat bo‘lmasin. Doim aniq oklad bo‘ladi, ulush uning ustiga qo‘shiladi.
-
-* * *
 
 Avval asosiy atamalarni bilib olaylik. KPI — xodim oy davomida bajarishi kerak bo‘lgan aniq raqam. Masalan, oyiga 60 million so‘m sotuv yoki kuniga 30 ta qo‘ng‘iroq. CRM — kompyuterdagi mijozlar daftari. Kim qo‘ng‘iroq qildi, nima gaplashildi, kim sotib oldi — hammasi shu yerda yoziladi. Lid — murojaat qilgan, lekin hali sotib olmagan odam. Bitim — mijoz rozi bo‘lib, pulini to‘lagan savdo. Tushum — hisobingizga haqiqatan tushgan pul. 10 millionlik shartnomadan 4 million to‘langan bo‘lsa, tushum — 4 million.
 
-* * *
-
 Maosh qismlarini ham bilib olaylik. Oklad — har oy kafolatlangan summa. Sotuv bo‘lsa ham, bo‘lmasa ham beriladi. Bonus — KPI bajarilsa beriladigan qo‘shimcha pul. Bonus fondi esa bonusning eng ko‘p bo‘lishi mumkin bo‘lgan summasi. Ulush — sotuvning foiz bilan belgilangan qismi. Masalan, 10 million tushumning 5 foizi — 500 ming so‘m.
-
-* * *
 
 Endi hisoblashda kerak bo‘ladigan atamalar. Konversiya — 100 ta murojaatdan nechtasi sotib olgani. 100 tadan 20 tasi sotib olsa, konversiya 20 foiz. Bajarilish foizi — haqiqiy raqamni maqsadga bo‘lib, 100 ga ko‘paytiramiz. Maqsad 60 million, bajarilgani 45 million bo‘lsa — 75 foiz. Vazn — KPI maoshga qanchalik ta’sir qilishi. Hamma KPI vaznlari yig‘indisi 100 foiz bo‘ladi. Eshik qoidasi — KPI bajarilishi 50 foizdan past bo‘lsa, shu KPI bo‘yicha bonus berilmaydi.
 
-* * *
-
 Yaxshi maosh tizimi to‘rtta savolga «ha» deb javob berishi kerak. Aks holda tizim bir-ikki oyda buziladi. Birinchi: tushunarlimi? Xodim «bu oy qancha olaman» degan savolga bir daqiqada o‘zi javob bera oladimi? Ikkinchi: xodim ta’sir qila oladimi? Maosh xodimning o‘z ishiga bog‘liqmi? Uchinchi: korxonaga foydalimi? Xodim ko‘p ishlasa, korxona ham ko‘p topadimi? To‘rtinchi: hisoblash osonmi? Rahbar oy oxirida maoshni 10–15 daqiqada hisoblay oladimi?
-
-* * *
 
 Maosh tizimining to‘rt varianti bor. Birinchi variant — faqat oklad. Har oy bir xil summa, natijaga bog‘liq emas. Bu variant tavsiya etilmaydi. Ikkinchi variant — oklad va KPI bonus. Barqaror daromad va nazorat birga. Lekin bonusning yuqori chegarasi bor. Uchinchi variant — oklad va tushumdan ulush. Ko‘p sotsa, ko‘p oladi. To‘rtinchi variant — oklad, ulush va tartib sharti. CRM tartibi yomon bo‘lsa, ulush kamayadi.
 
-* * *
-
 Qaysi variantni tanlash kerak? Vaziyatingizga qarang. Mijozlar reklamadan o‘zi murojaat qiladi, bitim tez yopiladi — klinika, kurs, xizmat. Ikkinchi variant. Mijozni xodim o‘zi topadi, bitim uzoq yopiladi, chek katta. To‘rtinchi variant. CRM yo‘q yoki ma’lumotlar ishonchsiz bo‘lsa — uchinchi variant. Tushum kassa yoki bankdan olinadi. Jamoa bo‘lib sotilsa yoki xodim yangi bo‘lsa — ikkinchi variant. Yangi xodimga maqsad yumshoq qo‘yiladi.
-
-* * *
 
 Umumiy tavsiya oddiy. Ikkinchi variant bilan boshlang. Uch oydan keyin natijaga qarab uchinchi yoki to‘rtinchi variantga o‘ting. Hech qachon faqat oklad bermang. Hech qachon okladsiz ulush bermang.
 
-* * *
-
 Ikkinchi va to‘rtinchi variantda maosh KPIga bog‘lanadi. Shuning uchun to‘g‘ri KPI tanlash eng muhim ish. KPI uch turga bo‘linadi. Natija — oxirgi natija: tushum, bitim soni, konversiya. Harakat — xodim nima qildi: qo‘ng‘iroqlar, uchrashuvlar, takliflar soni. Natija kelguncha ishni to‘xtatmaslik uchun. Sifat — ish qanchalik toza bajarildi: CRM tozaligi, qayta aloqa, javob berish tezligi. Sifat bo‘lmasa, natija ham tez tugaydi.
-
-* * *
 
 Asosiy qoida: har bir xodimda Tushum va Konversiya — asosiy KPI. Ular doim birinchi turadi, ikkalasining vazni birga 60 foiz. Qolgan 40 foizga bir-ikkita harakat va bir-ikkita sifat KPI qo‘shiladi. Jami 4–5 ta KPI, undan ko‘p emas. Namuna: Tushum 40, Konversiya 20, CRM tozaligi 20, Qayta aloqa 20 foiz.
 
-* * *
-
 Yaxshi KPIning to‘rt sharti bor. Xodim unga ta’sir qila oladi. Raqam CRM yoki hisobotda ko‘rinadi, xodimning so‘zi bilan emas. Har oy oxirida aniq o‘lchanadi. Va hamma uni bir xil tushunadi: masalan, tushum — hisobga kelgan pul.
-
-* * *
 
 Vaziyatga qarab tayyor KPI to‘plamlari. Tushum va Konversiya hamma to‘plamda birinchi turadi. Call-markaz, kiruvchi qo‘ng‘iroqlar: javob berish tezligi, qayta aloqa va CRM tozaligi qo‘shiladi. Call-markaz, chiquvchi qo‘ng‘iroqlar: javob tezligi o‘rniga haqiqiy gaplashuvlar soni. Yuzma-yuz, tez yopiladigan sotuv — do‘kon, klinika, kurs: o‘rtacha bitim summasi, qayta aloqa, CRM tozaligi. Yuzma-yuz, uzoq yopiladigan qimmat mahsulot: uchrashuvlar soni, takliflar soni va qayta aloqa.
 
-* * *
-
 Maqsad raqamini qanday qo‘yamiz? Ma’lumot bo‘lsa: oxirgi uch oyning o‘rtachasini olib, 1,1 ga ko‘paytiring. Bu — 10 foiz o‘sish. Ma’lumot yo‘q bo‘lsa: eng yaxshi emas, o‘rtacha xodim raqamini oling. Maqsadni xodim bilan birga kelishing — u «bu mumkin» desa, maqsadga ishonadi. Yangi xodim: birinchi 30 kun maqsad o‘rtachaning 50–70 foizi, eshik qoidasi yo‘q. 31–60 kun: 80–90 foiz, eshik 30 foiz. 61-kundan: to‘liq maqsad, eshik 50 foiz.
-
-* * *
 
 Maosh raqamga bog‘lanadi. Raqam esa biror joyda yozib borilishi kerak. Ikki yo‘l bor. A yo‘li: CRM bor. Xodim har qo‘ng‘iroq va bitimni CRMga yozadi, oy oxirida hisobotdan raqamlarni olasiz. B yo‘li: CRM yo‘q. Xodim har kuni kechqurun 5 daqiqada kunlik hisobot daftarini to‘ldiradi — daftar, Excel yoki Telegram guruh. Tushumni faqat kassa yoki bank bilan solishtiring. Haftada bir marta rahbar uchta yozuvni tekshiradi — xodim buni biladi va to‘g‘ri yozadi.
 
-* * *
-
 Endi barcha variantlarni bitta namunada ko‘ramiz. Oylik reja — 60 million so‘m tushum. To‘rt xodim. A — 27 million, rejaning 45 foizi. B — 60 million, 100 foiz. C — 90 million, 150 foiz. D — 120 million, rejaning 200 foizi. Boshqa maqsadlar: konversiya 20 foiz, CRM tozaligi 90 foiz, qayta aloqa 90 foiz.
-
-* * *
 
 Birinchi variant — faqat oklad. Nega u xavfli? Har bir xodim 4 million so‘m oladi. Tushum 27 milliondan 120 milliongacha o‘zgardi, maosh esa bir xil. A xodimda maosh tushumning 14,8 foizi, D xodimda atigi 3,3 foizi. Korxona A ga ortiqcha to‘laydi, D ni esa kam to‘lab ketkazib yuboradi. Natija: eng yaxshi xodim ketadi, bo‘sh xodim qoladi. Rahbar esa har kuni «qo‘ng‘iroq qildingmi?» deb nazorat qilishga majbur. Yangi xodimga ham faqat oklad bermang. U birinchi kundan «natija pul bermaydi» deb o‘rganib qoladi. Unga oklad va yengil KPI bonus bering.
 
-* * *
-
 Ikkinchi variant: oklad va KPI bonus. Formula: Maosh teng Oklad qo‘shuv Bonus fondi ko‘paytiruv KPI balli. KPI balli — har KPI bajarilish foizini vazniga ko‘paytirib, qo‘shib chiqamiz. Bajarilish 100 foizdan oshsa ham, 100 deb olinadi. Namunada oklad 2,5 million, bonus fondi ham 2,5 million so‘m. Demak, eng ko‘p maosh — 5 million so‘m.
-
-* * *
 
 A xodim misolida hisoblaymiz. Birinchi qadam — har KPI bo‘yicha bajarilish foizini topamiz. Tushum: 27 million bo‘linadi 60 millionga — 45 foiz. Bu 50 foizdan past, eshikdan o‘tmadi. Ball — nol. Konversiya: 16 bo‘linadi 20 ga — 80 foiz. Vazni 20 foiz, demak ball 16. CRM tozaligi: 72 bo‘linadi 90 ga — 80 foiz, ball 16. Qayta aloqa: 63 bo‘linadi 90 ga — 70 foiz, ball 14. Hammasini qo‘shamiz: 0 + 16 + 16 + 14 = 46. A xodimning KPI balli — 46 foiz.
 
-* * *
-
 Ikkinchi qadam — bonus: 2 million 500 ming ko‘paytiruv 46 foiz — 1 million 150 ming so‘m. Uchinchi qadam — maosh: 2 million 500 ming qo‘shuv 1 million 150 ming — 3 million 650 ming so‘m. To‘rtinchi qadam — xodimga tushuntiring: «Tushum rejasining yarmiga yetmadingiz, shu qismdan bonus bo‘lmadi.» «Qolgan KPIlar bo‘yicha yaxshi ishladingiz. Keyingi oy rejaning kamida yarmini bajarsangiz, bonus oshadi.»
-
-* * *
 
 To‘rt xodimning maoshi: A — 3 million 650 ming, B — 4 million 950 ming, C va D — 5 million. Xavfi: D xodim A dan 4,4 baravar ko‘p tushum olib keldi, maoshi esa atigi 1,4 baravar ko‘p. Reja bajarilgach, qo‘shimcha rag‘bat yo‘q. Rejadan ortiq ishlashni ham rag‘batlantirmoqchi bo‘lsangiz — uchinchi yoki to‘rtinchi variantga o‘ting.
 
-* * *
-
 Uchinchi variant: oklad va tushumdan ulush. Muhim: okladsiz, faqat ulush berilmaydi. Birinchi sabab — Islom qoidalariga muvofiqlik: ish haqi oldindan aniq bo‘lishi kerak. Miqdori oldindan noma’lum daromad g‘arar — noaniqlik hisoblanadi. Ikkinchi sabab — tushum kam oyda xodim daromadsiz qoladi. Uchinchisi — faqat ulush olgan xodim CRM va qayta aloqani tashlab qo‘yadi. Tavsiya: oklad kutilgan umumiy maoshning 40–60 foizi bo‘lsin. Tushum — faqat hisobga haqiqatan tushgan pul. Bu hujjat diniy hukm emas: shartnoma shartlarini ishonchli ulamo yoki shariat bo‘yicha mutaxassis bilan tekshiring.
-
-* * *
 
 Ulushni hisoblashning uch usuli bor. Namuna pog‘onalari: 50 milliongacha 5 foiz, 50 dan 100 milliongacha 8 foiz, 100 milliondan ortig‘i 10 foiz. 3-A. Bitta foiz: hamma tushumga 5 foiz. B xodim uchun 60 million × 5% = 3 million. Maosh — 5 million 500 ming. 3-B. Zinapoya: tushum qaysi pog‘onaga yetsa, butun tushumga shu foiz. 60 million × 8% = 4,8 million. Maosh — 7 million 300 ming. 3-C. Bosqichma-bosqich: birinchi 50 millionga 5 foiz — 2,5 million, qolgan 10 millionga 8 foiz — 800 ming. Ulush 3,3 million, maosh — 5 million 800 ming.
 
-* * *
-
 Zinapoya usulining xavfi — sakrash. Tushum 49,9 million bo‘lsa, ulush taxminan 2,5 million. 50,1 million bo‘lsa — 4 million. Xodim oy oxirida to‘lovni keyingi oyga surib qo‘yishi mumkin. Bosqichma-bosqich usulda esa sakrash yo‘q — har bir so‘m adolatli hisoblanadi. Shuning uchun «tushum» ta’rifini qat’iy yozing — hisobga kelgan pul — yoki 3-C usulini tanlang.
-
-* * *
 
 To‘rtinchi variant: oklad, ulush va tartib sharti. Formula: Maosh teng Oklad qo‘shuv Ulush ko‘paytiruv Sifat koeffitsienti. Koeffitsient sifat KPIlarining eng pastiga qarab olinadi: 90 foiz va undan yuqori — 1,0. 70 dan 89 foizgacha — 0,8. 70 foizdan past — 0,5. A xodim: ulush 27 million × 5% = 1 million 350 ming. CRM tozaligi 80, qayta aloqa 70 foiz. Eng pasti 70 — koeffitsient 0,8. 1 million 350 ming × 0,8 = 1 million 80 ming. Maosh: 2,5 million qo‘shuv 1 million 80 ming — 3 million 580 ming so‘m.
 
-* * *
-
 Endi barcha variantlarni bitta jadvalda solishtiramiz. Faqat okladda D xodim — eng yaxshi sotuvchi — atigi 4 million oladi. Bu uning tushumining 3,3 foizi. Ikkinchi variantda maosh 5 million bilan cheklanadi. Uchinchi va to‘rtinchi variantlarda ko‘p sotgan ko‘p oladi. Korxona uchun asosiy tekshiruv — maosh tushumning necha foizi. Rahbar o‘z chegarasini belgilaydi. Eng yaxshi oyda ham maosh shu chegaradan oshmasin, eng yomon oyda esa xodim yashay oladigan daromad olsin.
-
-* * *
 
 Har oy maoshni olti qadamda hisoblaysiz. Bitta xodimga 3–5 daqiqa ketadi. Birinchi: raqamlarni oling. Ikkinchi: har KPI bajarilish foizini hisoblang — haqiqiy bo‘linadi maqsadga, ko‘pi bilan 100. Uchinchi: eshik qoidasini tekshiring. To‘rtinchi: bajarilishni vazniga ko‘paytirib, qo‘shing — bu KPI balli. Beshinchi: variantingiz formulasiga qo‘ying. Oltinchi: maoshni yozing va xodimga hisobini yuboring. Teskari KPI: raqam kam bo‘lsa yaxshi bo‘lgan KPIda bajarilish = maqsad ÷ haqiqiy. Maqsad 5 daqiqa, javob 8 daqiqada berilgan bo‘lsa — 62,5 foiz.
 
-* * *
-
 Yana bir namuna: klinikadagi yuzma-yuz sotuvchi, ikkinchi variant. Oklad va bonus fondi — 2,5 milliondan. Tushum 48 million, maqsad 60 — 80 foiz, ball 32. Konversiya 22, maqsad 25 — 88 foiz, ball 17,6. Uchrashuvlar 22 ta, maqsad 30 — 73 foiz, ball 14,7. CRM tozaligi 95 foiz — 100 deb olinadi, ball 20. KPI balli — 84,3. Bonus: 2 million 106 ming 667 so‘m. Maosh: 4 million 606 ming 667 so‘m.
-
-* * *
 
 Oy oxiri tartibi. Oyning 1–3 sanasi: rahbar yoki HR har xodim raqamlarini oladi. 3–4 sana: hisoblash varag‘i yoki Excel hisoblagich to‘ldiriladi. 5-sanagacha: rahbar har xodimga o‘z hisobini yuboradi. E’tiroz uchun 3 kun bor — raqam birga tekshiriladi. So‘ng buxgalter maoshni belgilangan sanada to‘laydi. To‘lov sanasi doim bir xil bo‘lsin.
 
-* * *
-
 Yangi xodimni maoshga qanday o‘tkazamiz? Akademiya, 16 kun: xodim hali sotmaydi, o‘qiydi. Bu davr uchun oklad yoki o‘qish haqi korxona qaroriga ko‘ra belgilanadi. Sotuvga chiqqandan 1–30 kun: ikkinchi variant, maqsad o‘rtachaning 50–70 foizi, eshik yo‘q. 31–60 kun: 80–90 foiz, eshik 30 foiz. 61–90 kun: tanlangan variant to‘liq, eshik 50 foiz. 90-kundan keyin maosh shartlari qayta ko‘riladi. Qoida: maosh tizimi oy o‘rtasida o‘zgartirilmaydi. O‘zgarish keyingi oyning 1-sanasidan, yozma va xodim imzosi bilan kuchga kiradi.
-
-* * *
 
 Eng ko‘p uchraydigan xatolar. Faqat oklad berish. Okladsiz, faqat ulush berish. «Tushum» nima ekanini yozib qo‘ymaslik. KPI juda ko‘p — xodim hech birini ushlay olmaydi. Hisob og‘zaki. Oy o‘rtasida shartni o‘zgartirish. Hamma xodimga bir xil shart. Ishonchsiz raqamlar — avval CRM tozaligini yo‘lga qo‘ying. Va maoshni kechiktirish — to‘lov sanasi doim bir xil bo‘lsin.
 
-* * *
-
 Tanlovingizni rahbar tasdiq varaqasiga yozing: variant, oklad, bonus yoki ulush, KPIlar va vaznlari, eshik qoidasi, tushum ta’rifi va sanalar. Varaqni xodim imzolaydi, nusxa ikkalasida ham qoladi. Barcha summalar bruto — soliqdan oldin. Shartnomaga yozishdan oldin buxgalter yoki yurist bilan, diniy masalada esa ishonchli mutaxassis bilan maslahatlashing.
-
-* * *
 
 Xulosa: oklad — xavfsizlik, natijaga bog‘liq qism — rag‘bat. Ikkalasi doim birga bo‘lsin. Ikkinchi variant bilan boshlang, uch oydan keyin uchinchi yoki to‘rtinchi variantga o‘ting. Hisobni Excel hisoblagich o‘zi bajaradi. Omad!
