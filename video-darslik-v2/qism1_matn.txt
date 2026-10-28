@@ -1,0 +1,31 @@
+Tasavvur qiling. Sizda to‘rtta sotuv menejeri bor. Biri oyiga yigirma yetti million so‘mlik sotuv qiladi, boshqasi bir yuz yigirma million. Lekin ikkalasi ham bir xil maosh oladi. Sizningcha, bir yildan keyin qaysi biri kompaniyada qoladi?
+
+Bu darslik sotuv menejeriga to‘g‘ri maosh tizimini tanlash va hisoblash haqida. U rahbar va HR xodimlari uchun. Darslik uch qismdan iborat. Birinchi qismda asoslarni o‘rganamiz: ikki oltin qoida, atamalar va yaxshi tizimning to‘rt sharti.
+
+Avval ikkita oltin qoida. Birinchi qoida: sotuv menejeriga faqat oklad bermang. Na yangi, na tajribali xodimga. Boshidagi savolning javobi ham shu: maosh bir xil bo‘lsa, eng kuchli sotuvchi birinchi bo‘lib ketadi.
+
+Ikkinchi qoida: maosh hech qachon faqat tushumdan ulushdan iborat bo‘lmasin. Doim aniq oklad bo‘ladi, ulush esa uning ustiga qo‘shiladi. Formula oddiy: aniq oklad, qo‘shuv natijaga bog‘liq qism.
+
+Endi darsda ishlatiladigan so‘zlarni bilib olaylik. KPI — xodim oy davomida bajarishi kerak bo‘lgan aniq raqam. «Yaxshi ishla» degan gap emas, aynan raqam. Masalan, oyiga oltmish million so‘m sotuv. CRM — mijozlar daftari, faqat kompyuterda. Kim qo‘ng‘iroq qildi, nima gaplashildi, kim sotib oldi — hammasi shu yerda yoziladi.
+
+Lid — murojaat qilgan, lekin hali sotib olmagan odam. Bitim — mijoz rozi bo‘lib, pulini to‘lagan savdo. Tushum esa hisobingizga haqiqatan tushgan pul. E’tibor bering: o‘n million so‘mlik shartnoma tuzildi, lekin to‘rt million to‘landi. Tushum — to‘rt million. Qolgan olti million hali tushum emas.
+
+Maosh uch xil qismdan yig‘iladi. Oklad — har oy kafolatlangan summa, sotuv bo‘lsa ham, bo‘lmasa ham beriladi. Bonus — KPI bajarilsa beriladigan qo‘shimcha pul. Bonus fondi — bonusning eng ko‘p bo‘lishi mumkin bo‘lgan summasi. Ulush esa sotuvning foizi: o‘n million tushumning besh foizi — besh yuz ming so‘m.
+
+Endi hisoblash atamalari. Konversiya — yuzta murojaatdan nechtasi sotib olgani. Yuz kishidan yigirma kishi sotib olsa, konversiya yigirma foiz. Bajarilish foizi — haqiqiy natijani maqsadga bo‘lib, yuzga ko‘paytiramiz. Maqsad oltmish million, xodim qirq besh million qildi. Qirq beshni oltmishga bo‘lamiz — yetmish besh foiz.
+
+Vazn — har bir KPI maoshga qanchalik ta’sir qilishi. Barcha vaznlar yig‘indisi doim yuz foiz. KPI balli — barcha KPI ballarining yig‘indisi, noldan yuzgacha. Va eng muhim qoida — eshik qoidasi. Agar biror KPI ellik foizdan kam bajarilsa, o‘sha KPI bo‘yicha bonus berilmaydi. Nol.
+
+Endi yaxshi maosh tizimining to‘rt sharti. Har biriga «ha» deb javob bera olishingiz kerak. Birinchi: tushunarlimi? Xodim «bu oy qancha olaman?» degan savolga bir daqiqada o‘zi javob bera oladimi? Ikkinchi: xodim ta’sir qila oladimi? Maosh uning o‘z ishiga bog‘liqmi?
+
+Uchinchi: korxonaga foydalimi? Xodim ko‘p ishlasa, korxona ham ko‘p topadimi? To‘rtinchi: hisoblash osonmi? Rahbar oy oxirida maoshni o‘n-o‘n besh daqiqada hisoblay oladimi? Bittasiga «yo‘q» bo‘lsa, tizim bir-ikki oyda buziladi.
+
+Keling, o‘zingizni tekshiring. Mijoz o‘n million so‘mlik shartnoma imzoladi va uch million to‘ladi. Tushum qancha? Videoni pauza qiling yoki besh soniya o‘ylang.
+
+Javob: uch million so‘m. Tushum — faqat hisobga haqiqatan tushgan pul.
+
+Ikkinchi savol. Xodim qayta aloqa KPIsini qirq foiz bajardi. Shu KPI bo‘yicha bonus oladimi? O‘ylab ko‘ring.
+
+Javob: yo‘q. Qirq foiz ellikdan kam. Eshik qoidasi ishlaydi — bu KPI bo‘yicha ball nol.
+
+Birinchi qism tugadi. Ikkinchi qismda maosh tizimining to‘rt variantini ko‘ramiz va to‘rtta xodim misolida qaysi biri adolatli ekanini hisoblaymiz.

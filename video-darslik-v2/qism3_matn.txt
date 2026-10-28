@@ -1,0 +1,37 @@
+Ikkita xodim bir xil sotdi. Lekin biri mijozlarga qayta qo‘ng‘iroq qiladi va CRMni toza yuritadi. Ikkinchisi esa yo‘q. Ular bir xil maosh olishi kerakmi? Javob to‘g‘ri tanlangan KPIda.
+
+KPI uch turga bo‘linadi. Natija — pul yoki bitim: tushum, bitim soni, konversiya. Harakat — xodim nima qildi: qo‘ng‘iroqlar, uchrashuvlar, takliflar soni. Sifat — ish qanchalik toza: CRM tozaligi, qayta aloqa, javob berish tezligi.
+
+Asosiy qoida: tushum va konversiya doim birinchi turadi. Ikkalasining vazni birga oltmish foiz, masalan qirq va yigirma. Qolgan qirq foizga bir-ikkita harakat va bir-ikkita sifat KPI qo‘shiladi. Jami to‘rt-beshta, undan ko‘p emas.
+
+Yaxshi KPIning to‘rt sharti bor. Xodim unga ta’sir qila oladi. Raqam CRM yoki hisobotda ko‘rinadi, xodimning so‘zida emas. Har oy aniq o‘lchanadi. Va hamma uni bir xil tushunadi.
+
+Vaziyatga qarab tayyor to‘plamlar. Kiruvchi qo‘ng‘iroqlar bilan ishlaydigan call-markazga: javob berish tezligi, qayta aloqa, CRM tozaligi. Bazaga o‘zi qo‘ng‘iroq qiladigan operatorga: haqiqiy gaplashuvlar soni. Klinika yoki do‘kondagi sotuvchiga: o‘rtacha bitim summasi. Qimmat, uzoq yopiladigan mahsulotga: uchrashuvlar va takliflar soni.
+
+Maqsad raqamini qanday qo‘yamiz? Ma’lumot bo‘lsa — oxirgi uch oyning o‘rtachasini bir butun o‘ndan birga ko‘paytiring. Bu o‘n foiz o‘sish. Ma’lumot yo‘q bo‘lsa — eng yaxshi emas, o‘rtacha xodim raqamini oling. Va maqsadni xodim bilan birga kelishing.
+
+Raqamlar qayerdan olinadi? CRM bo‘lsa — CRM hisobotidan. CRM bo‘lmasa — xodim har kuni kechqurun besh daqiqada kunlik hisobot to‘ldiradi. Tushumni esa doim kassa yoki bank bilan solishtiring.
+
+Endi oylik hisob. Olti qadam. Bir: raqamlarni oling. Ikki: har KPI bajarilishini hisoblang — haqiqiyni maqsadga bo‘lasiz, ko‘pi bilan yuz foiz. Uch: eshik qoidasini tekshiring. To‘rt: bajarilishni vazniga ko‘paytirib, qo‘shing. Besh: formulaga qo‘ying. Olti: xodimga hisobini yuboring.
+
+Bitta nozik joy — teskari KPI. Javob berish tezligida raqam kam bo‘lsa yaxshi. Bunda maqsadni haqiqiyga bo‘lamiz. Maqsad besh daqiqa, xodim sakkiz daqiqada javob berdi. Beshni sakkizga bo‘lamiz — oltmish ikki yarim foiz.
+
+Amaliy misol: klinikadagi sotuvchi. Tushum qirq sakkiz million, maqsad oltmish — sakson foiz, ball o‘ttiz ikki. Konversiya yigirma ikki, maqsad yigirma besh — sakson sakkiz foiz, ball o‘n yetti butun o‘ndan olti.
+
+Uchrashuvlar yigirma ikkita, maqsad o‘ttiz — yetmish uch foiz, ball o‘n to‘rt butun o‘ndan yetti. CRM tozaligi to‘qson besh — maqsaddan oshgani uchun yuz deb olinadi, ball yigirma. KPI balli — sakson to‘rt butun o‘ndan uch. Maosh — taxminan to‘rt million olti yuz ming so‘m.
+
+Oy oxiri tartibi. Oyning birinchi-uchinchi sanasida raqamlar olinadi. Uchinchi-to‘rtinchi sanada hisoblanadi. Beshinchi sanagacha har xodimga o‘z hisobi yuboriladi. E’tiroz uchun uch kun. Keyin maosh doim bir xil sanada to‘lanadi.
+
+Yangi xodim-chi? Unga ham faqat oklad bermang. Birinchi o‘ttiz kun — ikkinchi variant, maqsad o‘rtacha xodimning ellik-yetmish foizi, eshik qoidasi yo‘q. O‘ttiz birinchidan oltmishinchi kungacha — sakson-to‘qson foiz, eshik o‘ttiz foiz. Oltmish birinchi kundan — to‘liq maqsad.
+
+Va qat’iy qoida: maosh tizimi oy o‘rtasida o‘zgarmaydi. O‘zgarish faqat keyingi oyning birinchi sanasidan, yozma va xodim imzosi bilan kuchga kiradi.
+
+Eng ko‘p uchraydigan xatolar: faqat oklad berish. Okladsiz ulush. Tushum nima ekanini yozib qo‘ymaslik. KPI juda ko‘p. Hisob og‘zaki. Va maoshni kechiktirish.
+
+Oxirgi qadam — rahbar tasdiq varaqasi. Unga variant, oklad, bonus yoki ulush, KPIlar va vaznlari, eshik qoidasi, tushum ta’rifi va sanalar yoziladi. Xodim imzolaydi, nusxa ikkalasida qoladi. Summalar soliqdan oldin. Shartnomaga yozishdan oldin buxgalter yoki yurist bilan tekshiring.
+
+Oxirgi savol. Javob berish tezligi bo‘yicha maqsad — to‘rt daqiqa. Xodim olti daqiqada javob berdi. Bajarilish necha foiz? Pauza qiling yoki besh soniya o‘ylang.
+
+Javob: bu teskari KPI. To‘rtni oltiga bo‘lamiz — oltmish olti foiz atrofida. Ellikdan yuqori, demak eshikdan o‘tdi.
+
+Xulosa: oklad — xavfsizlik, natijaga bog‘liq qism — rag‘bat, KPI — tartib. Ikkinchi variant bilan boshlang, uch oydan keyin rivojlantiring. Hisobni Excel hisoblagich o‘zi bajaradi. Omad!

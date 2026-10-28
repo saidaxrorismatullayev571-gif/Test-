@@ -1,0 +1,45 @@
+Bitta savol: xodim rejadan ikki baravar ko‘p sotsa, u ham ikki baravar ko‘p maosh olishi kerakmi? Javob siz tanlagan maosh tizimiga bog‘liq. Bugun to‘rt variantni bitta misolda solishtiramiz.
+
+Misolimiz shunday. Oylik reja — oltmish million so‘m tushum. To‘rtta sotuvchi bor. Aziz yigirma yetti million sotdi — rejaning qirq besh foizi. Bobur oltmish million sotdi — roppa-rosa reja.
+
+Charos to‘qson million sotdi — bir yuz ellik foiz. Dilnoza esa bir yuz yigirma million — rejaning ikki baravari. Boshqa maqsadlar: konversiya yigirma foiz, CRM tozaligi va qayta aloqa to‘qson foizdan.
+
+Birinchi variant — faqat oklad. Hammaga to‘rt million so‘mdan. Hisoblash oson, tortishuv yo‘qdek ko‘rinadi. Lekin qarang: Aziz uchun maosh tushumning o‘n to‘rt foizidan ko‘p, Dilnoza uchun esa atigi uch foiz.
+
+Natija: Dilnoza «nega men ko‘proq ishlayman?» deb boshqa joyga ketadi. Aziz esa qoladi. Jamoada faqat tinch xodimlar qoladi, rahbar esa har kuni «qo‘ng‘iroq qildingmi?» deb nazorat qiladi. Shuning uchun bu variant tavsiya etilmaydi — hatto yangi xodimga ham.
+
+Ikkinchi variant — oklad va KPI bonus. Formula: maosh teng oklad qo‘shuv bonus fondi ko‘paytiruv KPI balli. Namunada oklad ikki million besh yuz ming, bonus fondi ham ikki million besh yuz ming. KPIlar to‘rtta: tushumning vazni qirq foiz, konversiya, CRM tozaligi va qayta aloqaniki yigirma foizdan.
+
+Azizning maoshini hisoblaymiz. Tushum: yigirma yettini oltmishga bo‘lamiz — qirq besh foiz. Bu ellikdan kam. Eshik yopiq — ball nol. Konversiya: o‘n oltini yigirmaga bo‘lamiz — sakson foiz. Vazni yigirma, demak ball o‘n olti.
+
+CRM tozaligi: yetmish ikkini to‘qsonga bo‘lamiz — sakson foiz, ball o‘n olti. Qayta aloqa: oltmish uchni to‘qsonga bo‘lamiz — yetmish foiz, ball o‘n to‘rt. Jami: nol, o‘n olti, o‘n olti va o‘n to‘rt. KPI balli — qirq olti.
+
+Bonus: ikki million besh yuz mingning qirq olti foizi — bir million bir yuz ellik ming. Maosh: ikki million besh yuz ming qo‘shuv bir million bir yuz ellik ming — uch million olti yuz ellik ming so‘m.
+
+Xuddi shunday hisoblasak, Bobur to‘rt million to‘qqiz yuz ellik ming, Charos va Dilnoza besh milliondan oladi. Muammo shu yerda: Dilnoza Azizdan to‘rt yarim baravar ko‘p sotdi, maoshi esa bir yarim baravarga ham yetmaydi. Rejadan oshgach, qo‘shimcha rag‘bat yo‘q.
+
+Uchinchi variant — oklad va tushumdan ulush. Muhim: okladsiz ulush yo‘q. Birinchidan, Islom qoidalariga ko‘ra ish haqi oldindan aniq bo‘lishi kerak, noaniq daromad g‘arar hisoblanadi. Ikkinchidan, tushum kam oyda xodim daromadsiz qolmasin. Oklad kutilgan maoshning qirq-oltmish foizi bo‘lsin. Bu diniy hukm emas — shartlarni ishonchli mutaxassis bilan tekshiring.
+
+Ulush uch usulda hisoblanadi. Namunadagi pog‘onalar: ellik milliongacha besh foiz, ellikdan yuz milliongacha sakkiz foiz, yuz milliondan ortig‘i o‘n foiz. Boburning oltmish millionini uch usulda hisoblaymiz.
+
+Birinchi usul — bitta foiz: oltmish millionning besh foizi — uch million. Maosh besh million besh yuz ming. Ikkinchi usul — zinapoya: tushum ikkinchi pog‘onada, butun summaga sakkiz foiz — to‘rt million sakkiz yuz ming. Maosh yetti million uch yuz ming.
+
+Uchinchi usul — bosqichma-bosqich: birinchi ellik millionga besh foiz — ikki million besh yuz ming, qolgan o‘n millionga sakkiz foiz — sakkiz yuz ming. Ulush uch million uch yuz ming, maosh besh million sakkiz yuz ming.
+
+Zinapoyaning xavfi — sakrash. Tushum qirq to‘qqiz million to‘qqiz yuz ming bo‘lsa, ulush taxminan ikki yarim million. Atigi ikki yuz ming ko‘p, ellik million bir yuz ming bo‘lsa — to‘rt million. Xodim to‘lovni keyingi oyga surib qo‘yishi mumkin. Shuning uchun bosqichma-bosqich usul adolatliroq.
+
+To‘rtinchi variant — oklad, ulush va tartib sharti. Ulush sifat koeffitsientiga ko‘paytiriladi. CRM tozaligi va qayta aloqaning eng pastini olamiz. To‘qson foiz va undan yuqori — bir. Yetmishdan sakson to‘qqizgacha — nol butun sakkiz. Yetmishdan past — nol butun besh.
+
+Aziz uchun hisoblaymiz: ulush yigirma yetti millionning besh foizi — bir million uch yuz ellik ming. Uning eng past sifat ko‘rsatkichi yetmish foiz, koeffitsient nol butun sakkiz. Ulush bir million sakson mingga tushadi. Maosh — uch million besh yuz sakson ming so‘m.
+
+Endi hammasini yonma-yon qo‘yamiz. Faqat okladda Dilnoza to‘rt million oladi. Ikkinchi variantda — besh million. Zinapoyada — o‘n to‘rt million besh yuz ming. Ko‘p sotgan ko‘p olishi uchinchi va to‘rtinchi variantlarda ko‘rinadi.
+
+Qaysini tanlash kerak? Mijozlar o‘zi murojaat qilsa va bitim tez yopilsa — ikkinchi variant. Mijozni xodim o‘zi topsa, bitim uzoq va chek katta bo‘lsa — to‘rtinchi. CRM bo‘lmasa — uchinchi. Jamoa bo‘lib sotilsa yoki xodim yangi bo‘lsa — ikkinchi.
+
+Umumiy tavsiya: ikkinchi variant bilan boshlang. Uch oydan keyin natijaga qarab uchinchi yoki to‘rtinchi variantga o‘ting.
+
+Savol: Charos to‘qson million sotdi. Zinapoya usulida ulushi qancha bo‘ladi? Pauza qiling yoki besh soniya o‘ylang.
+
+Javob: to‘qson million ikkinchi pog‘onada, demak sakkiz foiz. Ulush — yetti million ikki yuz ming so‘m.
+
+Ikkinchi qism tugadi. Uchinchi qismda to‘g‘ri KPI tanlashni va har oy maoshni o‘n daqiqada hisoblashni o‘rganamiz.
