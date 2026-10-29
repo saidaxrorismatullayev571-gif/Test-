@@ -54,6 +54,8 @@ Brend zastavka/treyler (`/intro`, `/promo`, `/trailer`, `/phone`) — `BREND_PRO
 
 Yana: `pov-carousel`, `match-cut` (qotgan so‘z), `screen-push-digital`, `shoulder-zoom` — `EFFECT_STACK20_REEL.md`. AI video (Google Flow / Omni / Veo) uchun referensdan prompt — `AE_VS_OMNI_REEL.md`. Kuchli CTA (ulashish + izoh + bepul qo‘llanma + obuna tugmasi) — `RAW_HASIL_EDIT_REEL.md`. Jarayon sxemasi va «51 pauza kesildi» isboti — `CAPCUT_ORNIGA_REEL.md`.
 
+Yana: `graph` (neon naychalar + 3D shisha sanagich), `notify` (iPhone qulf ekrani bildirishnomalari), `stack` (3D devor) — `GRAPH_NOTIFY_STACK_REEL.md`. Yorug‘ krem + coral bo‘lingan ekran, yelpig‘ich kartalar, taymer halqasi — `YOUTUBE_AGENT_REEL.md`. Ssenariy → raskadrovka → TTS → sahnalar quvuri — `MOTION_DIZAYNER_ORNIGA_REEL.md`.
+
 ## Montaj quvuri va qoidalar fayli (15-namuna, `MONTAJ_5_QADAM_REEL.md`)
 Talking-head montaji tartibi:
 1. ASR yoki `align.py` bilan so‘z vaqtlari.
