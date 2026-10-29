@@ -42,6 +42,7 @@ END=60 PY=$PY node render.mjs 1 30 4           # 60 s sinov
 - 100 MB dan katta videolarni git ga qo‘shmang (`out/`, `build/`, `audio_in/` — .gitignore).
 
 ## 5. Ishlash qoidalari (render tezligi)
+- **Motion blur (ixtiyoriy, 30-namuna usuli):** 2× fps’da render qilib (`node render.mjs 1 60 4`), so‘ng juft kadrlarni aralashtirib asl fps’ga tushiring: `ffmpeg -i in.mp4 -vf "tblend=all_mode=average,framestep=2" -r 30 out.mp4`. Render vaqti 2× oshadi — avval qisqa bo‘lakda sinang.
 - Katta elementlarga CSS `filter: blur`, `backdrop-filter`, `mix-blend-mode` qo‘ymang — fon uchun radial-gradient bloblar.
 - Ekranda to‘liq subtitr bermang (Mayer tamoyillari): kalit so‘z, raqam, diagramma, signal.
 - Tashqi shrift/CDN yuklamang — Chromium tarmoqsiz ishlaydi.

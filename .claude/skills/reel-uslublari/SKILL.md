@@ -56,6 +56,8 @@ Yana: `pov-carousel`, `match-cut` (qotgan so‘z), `screen-push-digital`, `shoul
 
 Yana: `graph` (neon naychalar + 3D shisha sanagich), `notify` (iPhone qulf ekrani bildirishnomalari), `stack` (3D devor) — `GRAPH_NOTIFY_STACK_REEL.md`. Yorug‘ krem + coral bo‘lingan ekran, yelpig‘ich kartalar, taymer halqasi — `YOUTUBE_AGENT_REEL.md`. Ssenariy → raskadrovka → TTS → sahnalar quvuri — `MOTION_DIZAYNER_ORNIGA_REEL.md`.
 
+Versiya chiplari va kamayuvchi tuzatishlar diagrammasi — `VERSIYALAR_V1V3_REEL.md`. Jamoa metaforasi va test checklist’i — `GSTACK_JAMOA_REEL.md`. Jarayon reeli (STEP 01–06, referens → brend, kadr sanagichi) — `REFERENSDAN_3D_HTML_REEL.md`.
+
 ## Montaj quvuri va qoidalar fayli (15-namuna, `MONTAJ_5_QADAM_REEL.md`)
 Talking-head montaji tartibi:
 1. ASR yoki `align.py` bilan so‘z vaqtlari.
