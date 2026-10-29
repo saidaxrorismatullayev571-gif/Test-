@@ -38,6 +38,9 @@ Render tezligi qoidalari video-darslik skill’dagidek: katta blur/backdrop-filt
 ### /cta-yakun
 - Oxirgi 3–4 s: video xiralashadi (`gblur=20`, `brightness`), markazda katta CTA ("Izohga «SO‘Z» deb yozing"), ostida rangli plashka bilan taklif, pastda profil nomi/ikonka. Elementlar 150 ms oraliq bilan `up`.
 
+## Neon Jamoa formati (foydalanuvchi namunasi)
+Rollar/jamoa/jarayon haqidagi reel uchun: fotorealistik qahramonlar neon kartalarda, 3D kirish, «AI» glitch, daraxt sxema va yuguruvchi nuqta, holat chiplari, tasdiqlash chati, CTA poster. To‘liq tahlil, vaqt jadvali va prompt andozasi: `video-darslik-v3/uslub_namunalar/NEON_JAMOA.md`.
+
 ## Uslub qoidalari
 - Xavfsiz zona: yuqoridan 220 px, pastdan 380 px (Instagram/TikTok interfeysi yopadi).
 - Bir kadrda bitta asosiy fokus; subtitr va sarlavha bir vaqtda chiqmasin.

@@ -209,6 +209,16 @@ Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham
 
 ---
 
+## 6. Neon Jamoa (AI xodimlar, 9:16 reel)
+*Manba: foydalanuvchi yuborgan namuna reel (720×1280, 25 fps, 25 s, ovozli). Kadrlar: `uslub_namunalar/neon_jamoa_*.jpg`. To‘liq tahlil: `uslub_namunalar/NEON_JAMOA.md`.*
+
+- **G‘oya:** fotorealistik «AI xodim» qahramonlar neon ramkali kartalarda — jamoa, tashkiliy sxema, vazifa holati, tasdiqlash, CTA.
+- **Fon:** deyarli qora to‘q ko‘k `#070B1F`, ingichka katak to‘r (cyan, ~6%), markazda ko‘k radial nur.
+- **Rang:** asosiy cyan `#2ED3EA`; har rolning o‘z neon rangi — direktor cyan, targetolog yashil-teal `#22C08A`, kontentchi to‘q sariq `#F5A524`, sotuvchi binafsha `#9B7BFF`.
+- **Shrift:** qalin, yumaloq geometrik sans (Gilroy/Montserrat ExtraBold). Sarlavha ikki qator: 1-qator oq, 2-qator cyan.
+- **Qahramonlar:** belidan yuqori, studiyaviy portret, to‘q ko‘k fon, rol rangida kontur nur. Har biri o‘z ishiga oid gologramma UI ushlaydi.
+- **Imzo harakatlar:** kartaning 3D aylanib kirishi, «AI» glitch, chiziq bo‘ylab yuguruvchi nuqta, holat chiplari, tegib tasdiqlash.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
@@ -218,5 +228,6 @@ Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham
 | Murakkab mavzuni xotirjam tushuntirish | Qog‘oz va Siyoh |
 | Jarayon va bosqichlarni ko‘rsatish (onboarding) | Izometrik Ofis |
 | Kompaniya brendi, milliy ruh, taqdimot | Atlas Naqsh |
+| Reel, reklama, «AI jamoa» / rollar va jarayon | Neon Jamoa |
 
 Har bir uslubning namunaviy kadri `uslub_namunalar/` papkasida (bir xil sahna — «2-variant: Azizning KPI balli» — 6 xil uslubda).
