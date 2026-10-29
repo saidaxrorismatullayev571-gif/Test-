@@ -50,6 +50,8 @@ Kalit so‘z `#FFE45C` neon glow (`text-shadow: 0 0 12px #FFD43B, 0 0 28px #FFB8
 
 Yana: `freeze-frame` (stiker kontur + ism tegi), `tier-list`, `glass-graph` — `CLAUDE_EFFECTS_RED_REEL.md`. O‘zbekcha 11 ta effekt va UI matnlari (`match-cut`, `apple-ui-toggles`, `pull-back-reveal`, `phone-mockup`, `nle-timeline`, `jiggle-delete`, `creator-list`, `ui-world` …) — `KUN_EFFEKTI_UZ_REEL.md`. O‘zbekcha overlay matnlarini shu lug‘atdan oling.
 
+Brend zastavka/treyler (`/intro`, `/promo`, `/trailer`, `/phone`) — `BREND_PROMO_REEL.md`. Kino titr kartalari, foto bulut, ikki darajali sarlavha (`/cinematic`, `/cluster`, `/split`) — `SPLIT_CLUSTER_CINEMATIC_REEL.md`. Glass-explainer (qadam + VS solishtirish), depth-ui, cutout-grid, image-cluster — `EDITING_TEMPLATE_REEL.md`.
+
 ## Montaj quvuri va qoidalar fayli (15-namuna, `MONTAJ_5_QADAM_REEL.md`)
 Talking-head montaji tartibi:
 1. ASR yoki `align.py` bilan so‘z vaqtlari.
