@@ -12,6 +12,8 @@ Foydalanuvchi bilan **o‘zbek tilida** gaplashing. Matnlarni copy-paste uchun t
 - Raqamlarni **so‘z bilan** yozing ("ikki million besh yuz ming so‘m"), qavs ishlatmang, misollarda ism bering (Aziz, Bobur, Charos, Dilnoza).
 - Ovoz: Google AI Studio → Generate speech (Gemini TTS). Foydalanuvchi MP3 yuboradi (30 MB dan katta bo‘lsa MP3 ga o‘girib yoki Drive orqali).
 
+- **Soddalashtirish (dumbify) qoidasi** (34-namuna): jargonni (KPI, konversiya, CRM…) birinchi aytilganda 6–7-sinf o‘quvchisi tushunadigan tilda izohlang; har bo‘lim oxirida «Muammo · Yechim · Natija» xulosasi.
+
 ## 2. Loyiha tuzilmasi
 `video-darslik-v3/atlas/` ni yangi papkaga nusxalang (build/, out/ siz). Fayllar:
 - `qism1_matn.txt` — diktor matni; `audio_in/qism1.mp3` — ovoz.
