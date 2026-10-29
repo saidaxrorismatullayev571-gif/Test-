@@ -2,7 +2,7 @@
 
 **Holat:** g‘oya bosqichida, hali boshlanmagan (foydalanuvchi qarori: «hozir bo‘lmasa ham, kelajakda ko‘taramiz»).
 **Yozilgan sana:** 2026-10-29.
-**Eslatish qoidasi:** foydalanuvchi bilan yangi video, reel, kontent, Instagram, HR yoki darslik haqida gap ochilganda — shu rejani qisqa eslating («HR profil rejasi turibdi, boshlaymizmi?»). Ish tugagan paytlarda ham bir marta eslatish mumkin. Majburlamang.
+**Eslatish qoidasi:** bu — **alohida loyiha**. Hozirgi videodarslik ishlariga aralashtirilmaydi: darslik ustida ishlayotganda eslatilmaydi va taklif qilinmaydi. Faqat foydalanuvchi o‘zi Instagram/HR profil yoki uzoq muddatli rejalar haqida gap ochsa, yoki so‘rasa ochiladi.
 
 ## Maqsad
 Instagram’da HR yo‘nalishida yangi profil. **Har kuni bittadan reel.** Kontent manbai — foydalanuvchining NotebookLM’dagi darsliklari va materiallari.
