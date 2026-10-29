@@ -1,0 +1,211 @@
+Assalomu alaykum, hurmatli rahbarlar va inson resurslari mutaxassislari! Korxona ichki akademiyasining sotuv moduliga xush kelibsiz. Bugungi videodarsimizning mavzusi — sotuv menejeriga to'g'ri maosh tizimini tanlash va hisoblash.
+
+Ushbu amaliy darsimiz sizga uchta eng muhim vazifani hal qilishda yordam beradi. Birinchisi — aynan sizning korxonangizga mos keladigan maosh tizimini xatosiz tanlash. Ikkinchisi — yangi yoki mavjud xodimga o'sha tizimni atigi bir daqiqa ichida tushunarli qilib yetkazish. Va uchinchisi — oy oxirida har bir xodimning maoshini o'n daqiqada aniq hisoblab chiqish.
+
+Agar siz ilgari Key-Pi-Ay va Si-Ar-Em nima ekanligini eshitmagan bo'lsangiz ham, hech qanday tashvishga o'rin yo'q. Hozir biz barcha asosiy atamalarni eng oddiy tilda ko'rib chiqamiz. Undan keyin barcha formulalar va jadvallar sizga yuz foiz tushunarli bo'ladi.
+
+Darsni boshlashdan oldin, har bir rahbar bilishi shart bo'lgan ikkita temir qoidani eslab qoling.
+
+Birinchi qoida: sotuv menejeriga hech qachon faqat qat'iy oklad berish tavsiya etilmaydi. Yangi xodimga ham, tajribali xodimga ham faqat oklad berish — biznes uchun eng katta xavf.
+
+Ikkinchi qoida: sotuvchining maoshi hech qachon faqat tushumdan beriladigan ulushdan, ya'ni quruq foizning o'zidan iborat bo'lmasligi kerak. Maoshda doim oldindan aniq belgilangan bazaviy oklad bo'lishi, bonus va ulush esa uning ustiga qo'shilishi shart.
+
+Endi qo'llanma davomida ishlatiladigan asosiy tushunchalar bilan tanishib olamiz.
+
+Key-Pi-Ay — bu xodim oy davomida bajarishi kerak bo'lgan aniq o'lchanadigan raqam. Shunchaki «yaxshi ishla» degan quruq gap emas, balki aniq me'yor. Masalan, oyiga oltmish million so'm sotuv qilish yoki kuniga o'ttizta qo'ng'iroq qilish.
+
+Si-Ar-Em — bu kompyuterdagi elektron mijozlar daftari. Kim qo'ng'iroq qildi, kim bilan nima gaplashildi, kim sotib oldi va kimga qachon qayta qo'ng'iroq qilish kerak — barchasi shu dasturda yoziladi. Bunga Amo-Si-Ar-Em yoki Bitriks-yigirma to'rt dasturlari misol bo'ladi. Agar korxonada Si-Ar-Em bo'lmasa, oddiy kunlik hisobot daftari yoki Eksel jadvalidan foydalanish ham mumkin.
+
+Lid — bu sizning reklamangizni ko'rib murojaat qilgan, ammo hali xarid qilmagan potensial mijoz.
+
+Bitim — bu mijoz sotib olishga rozi bo'lgan va pulini to'lagan savdo.
+
+Tushum — bu sizning bank hisobingizga yoki kassangizga haqiqatan kelib tushgan pul. Diqqat qiling: shartnoma imzolangan bo'lsa-yu, lekin pul hali kelmagan bo'lsa — bu tushum hisoblanmaydi. Masalan, o'n million so'mlik shartnoma tuzildi, ammo mijoz to'rt million so'm to'ladi. Demak, tushum — to'rt million so'm.
+
+Reja — bu oy uchun belgilangan maqsad raqami, odatda oylik tushum rejasi. Masalan, oltmish million so'm.
+
+Oklad — bu sotuv bo'lsa ham, bo'lmasa ham xodimga har oy kafolatlangan summa.
+
+Bonus — bu okladdan tashqari, Key-Pi-Ay ko'rsatkichlari bajarilsa beriladigan qo'shimcha pul.
+
+Bonus fondi — bu xodim barcha Key-Pi-Ay ko'rsatkichlarini yuz foiz bajargan taqdirda olishi mumkin bo'lgan eng yuqori bonus summasi. Masalan, ikki yarim million so'm.
+
+Ulush — bu sotuv tushumining xodimga foiz hisobida beriladigan qismi. Masalan, o'n million so'm tushumning besh foizi — besh yuz ming so'm bo'ladi.
+
+Pog'onali ulush — bunda tushum oshgan sari ulush foizi ham oshib boradi. Masalan, ellik million so'mgacha besh foiz, ellik milliondan yuz million so'mgacha sakkiz foiz, yuz million so'mdan ortig'iga esa o'n foiz.
+
+Konversiya — bu yuzta murojaatdan nechtasi haqiqiy xarid bilan yakunlanganini ko'rsatadigan foiz. Masalan, yuzta liddan yigirmatasi sotib olsa, konversiya yigirma foiz bo'ladi. Bu sotuvchi mahoratini ko'rsatadigan eng muhim ko'rsatkichlardan biri.
+
+Qayta aloqa — bu mijozga va'da qilingan vaqtda qayta qo'ng'iroq qilish yoki xabar yozish intizomi.
+
+Si-Ar-Em tozaligi — bu mijoz kartochkalarining necha foizi to'liq va xatosiz to'ldirilganini bildiradi. Agar yuzta kartochkadan to'qsontasi to'liq yozilgan bo'lsa, tozalik to'qson foiz bo'ladi.
+
+Bajarilish foizi — bu xodim maqsadning necha foizini bajarganini ko'rsatadi. Uni topish uchun haqiqiy raqamni maqsad raqamiga bo'lib, yuzga ko'paytiramiz. Masalan, maqsad oltmish million so'm, xodim qirq besh million so'm savdo qildi. Bajarilish foizi — yetmish besh foiz.
+
+Vazn — bu har bir Key-Pi-Ay ko'rsatkichining bonusga qanchalik ta'sir qilishi. Barcha ko'rsatkichlar vazni qo'shilganda yuz foiz bo'lishi shart.
+
+Key-Pi-Ay balli — bu barcha ko'rsatkichlar bo'yicha to'plangan ballar yig'indisi bo'lib, noldan yuzgacha o'lchanadi. Agar xodim qirq olti ball to'plasa, u bonus fondining qirq olti foizini oladi.
+
+Eshik qoidasi — bu eng muhim himoya mexanizmi. Agar biror Key-Pi-Ay bajarilishi ellik foizdan past bo'lsa, o'sha ko'rsatkich bo'yicha ball nolga tenglashtiriladi va bonus berilmaydi.
+
+Maoshning tushumga nisbati — bu xodimga to'langan maosh u olib kelgan tushumning necha foizini tashkil etishini ko'rsatadi. Masalan, oltmish million so'm tushum keltirgan xodim besh million so'm maosh olsa, bu nisbat sakkiz butun o'ndan uch foiz bo'ladi.
+
+Bruto — bu soliq va ushlanmalardan oldingi summa. Qo'llanmamizdagi barcha raqamlar bruto shaklida berilgan.
+
+Qaysi maosh tizimini tanlamang, u muvaffaqiyatli ishlashi uchun to'rtta shartga javob berishi kerak. Aks holda tizim bir-ikki oy ichida buziladi.
+
+Birinchi shart — tushunarlilik. Xodim «bu oy qancha maosh olaman?» degan savolga bir daqiqa ichida o'zi javob topa olishi kerak. Bo'lmasa, xodim rahbarga ishonmaydi va har oy tortishuv chiqadi.
+
+Ikkinchi shart — xodimning ta'sir qila olishi. Maosh xodimning o'z mehnatiga bog'liq bo'lishi shart. Aks holda u «baribir hech narsa o'zgarmaydi» deb harakat qilishni to'xtatadi.
+
+Uchinchi shart — korxona uchun foydalilik. Xodim ko'p ishlasa, korxona ham ko'p daromad topishi va maosh tushumning ko'tara oladigan chegarasida bo'lishi lozim.
+
+To'rtinchi shart — hisoblash osonligi. Rahbar oy oxirida maoshni o'n-o'n besh daqiqada qiynalmay hisoblay olishi kerak.
+
+Endi maosh tizimining to'rtta asosiy variantini qisqacha ko'rib chiqamiz.
+
+Birinchi variant — faqat oklad. Bunda har oy natijadan qat'i nazar bir xil summa to'lanadi. Bu variant tavsiya etilmaydi, chunki ko'p ishlagan ham, kam ishlagan ham bir xil pul oladi. Oqibatda eng kuchli sotuvchi ketadi, korxonada esa faqat sust xodimlar qoladi.
+
+Ikkinchi variant — oklad plyus Key-Pi-Ay bonus. Bunda oklad kichikroq bo'ladi, ammo Key-Pi-Ay bajarilsa ustiga bonus qo'shiladi. Bu barqarorlik va nazoratni birlashtiradi. Kamchiligi shundaki, bonusning yuqori chegarasi bor: reja yuz foizdan oshib ketsa ham, bonus fondidan ortiqcha pul to'lanmaydi.
+
+Uchinchi variant — oklad plyus tushumdan ulush. Bunda oklad ustiga tushumdan foiz beriladi. Ko'p sotgan xodim ko'p pul oladi. Biroq xavfli tomoni bor: xodim faqat sotuv ketidan quvib, Si-Ar-Em to'ldirish va qayta aloqa kabi sifat ishlariga e'tibor bermay qo'yishi mumkin.
+
+To'rtinchi variant — oklad plyus ulush va tartib sharti. Bu uchinchi variantning takomillashgan shakli: agar xodimning Si-Ar-Em va qayta aloqa intizomi yomon bo'lsa, uning ulushi kamaytiriladi. Bu variant barqarorlik, yuqori savdo va temir intizomni bitta tizimga birlashtiradi.
+
+Xo'sh, sizning biznesingizga qaysi variant mos keladi? Buni aniqlash uchun oltita savolga javob beramiz.
+
+Birinchi savol: mijoz reklamadan o'zi murojaat qiladimi va xodim faqat kiruvchi murojaatni yopadimi? Agar «ha» bo'lsa — ikkinchi variantni tanlang. Agar xodim mijozni o'zi qidirib topsa — uchinchi yoki to'rtinchi variantni tanlang.
+
+Ikkinchi savol: bitim odatda yetti kundan tez yopiladimi? Tez yopilsa — ikkinchi variant. Uzoq davom etadigan savdolarda esa to'rtinchi yoki uchinchi variant mos keladi.
+
+Uchinchi savol: oylik tushum oydan oyga o'ttiz foizdan ko'proq o'zgarib turadimi? Agar tebranish katta bo'lsa — oklad qismi ko'proq bo'lgan ikkinchi yoki to'rtinchi variantni tanlang. Tebranish kichik bo'lsa, uchinchi variant ham bo'ladi.
+
+To'rtinchi savol: tushum aynan shu xodimning shaxsiy mehnatimi yoki jamoa bo'lib sotiladimi? Agar yakka o'zi sotsa — ulushli uchinchi yoki to'rtinchi variant. Agar bir mijoz ustida bir necha kishi ishlasa — ikkinchi variantni tanlang, chunki jamoaviy savdoda ulush adolatsiz chiqadi.
+
+Beshinchi savol: rahbar oy oxirida hisob-kitobga o'n-o'n besh daqiqa vaqt ajrata oladimi? Ajrata olsa — to'rtinchi variant juda mos. Ajrata olmasa — ikkinchi yoki uchinchi variantni tanlang.
+
+Oltinchi savol: korxonada Si-Ar-Em yoki kunlik hisobot daftari to'g'ri yuritiladimi? Agar to'g'ri yuritilsa, istalgan variant ishlaydi. Agar hali hisobot tizimi yo'q bo'lsa — vaqtincha uchinchi variantni, ya'ni oklad plyus kassa tushumidan ulushni tanlang va darhol kunlik hisobot daftarini yo'lga qo'ying.
+
+Umumiy amaliy tavsiya shunday: avval ikkinchi variant bilan ishni boshlang. Uch oydan keyin tizim izga tushgach, natijaga qarab uchinchi yoki to'rtinchi variantga o'ting.
+
+Ikkinchi va to'rtinchi variantlarda maosh Key-Pi-Ayga bog'lanadi. Shuning uchun ko'rsatkichlarni to'g'ri tanlash hal qiluvchi ahamiyatga ega.
+
+Barcha Key-Pi-Ay ko'rsatkichlari uch turga bo'linadi. Birinchisi — natija ko'rsatkichlari: tushum, bitimlar soni va konversiya. Ikkinchisi — harakat ko'rsatkichlari: qo'ng'iroqlar soni, uchrashuvlar soni va yuborilgan takliflar soni. Uchinchisi — sifat ko'rsatkichlari: Si-Ar-Em tozaligi, qayta aloqa bajarilishi va murojaatga javob berish tezligi.
+
+Asosiy oltin qoida: har bir sotuvchida tushum va konversiya doim birinchi o'rinda turadi. Ularning umumiy vazni oltmish foiz — masalan, tushum qirq foiz va konversiya yigirma foiz. Qolgan qirq foizga bitta-ikkita harakat va sifat ko'rsatkichi qo'shiladi. Masalan, uchrashuvlar soni yigirma foiz va Si-Ar-Em tozaligi yigirma foiz. Bir xodimga ko'pi bilan to'rtta yoki beshta Key-Pi-Ay bog'lanadi. Undan ko'p bo'lsa, xodim e'tiborini yo'qotadi.
+
+Maqsad raqamini qanday belgilaymiz? Agar xodim eski bo'lsa va sizda statistika bo'lsa, oxirgi uch oyning o'rtacha natijasini oling va uni bir butun o'ndan birga ko'paytiring, ya'ni o'n foiz o'sish qo'ying. Agar ma'lumot yo'q bo'lsa, eng kuchli xodimning emas, o'rtacha xodimning natijasini asos qilib oling va maqsadni xodim bilan kelishib belgilang.
+
+Yangi ishga kirgan xodim uchun birinchi o'ttiz kunda tushum va konversiya maqsadini o'rtacha xodim rejasining ellik-yetmish foizi qilib yumshoq qo'ying va eshik qoidasini vaqtincha o'chirib turing. Ya'ni birinchi oyda qancha bajarsa, shunga yarasha bonus olsin. O'ttiz birinchi kundan oltmishinchi kungacha maqsadni sakson-to'qson foizga ko'tarib, eshik qoidasini o'ttiz foiz qilib belgilang. Oltmish birinchi kundan boshlab xodim to'liq rejaga va ellik foizlik eshik qoidasiga o'tadi.
+
+Maosh aniq raqamga bog'langanidan keyin, o'sha raqamlar har kuni yozib borilishi shart. Buning ikkita yo'li bor.
+
+Birinchi yo'l — Si-Ar-Em tizimi. Xodim har bir qo'ng'iroq va bitimni dasturga kiritib boradi, oy oxirida esa tayyor hisobot olinadi.
+
+Ikkinchi yo'l — agar korxonada Si-Ar-Em bo'lmasa, kunlik hisobot daftari tutiladi. Xodim har kuni kechqurun besh daqiqa vaqt ajratib, sana, qo'ng'iroq yoki uchrashuvlar soni, takliflar, bitimlar, tushum va qayta aloqa ustunlarini to'ldiradi. Bunda Si-Ar-Em tozaligi o'rniga hisobot o'z vaqtida topshirilgan kunlar ulushi hisoblanadi. Masalan, yigirma olti ish kunidan yigirma to'rttasida vaqtida topshirsa — to'qson ikki foiz bo'ladi.
+
+Muhim qoida: tushum raqamini hech qachon xodimning og'zaki so'ziga ishonib yozmang. Uni faqat kassa yoki bank ko'chirmasi bilan solishtirib tasdiqlang. Shuningdek, rahbar haftada bir marta tasodifiy uchta yozuvni tanlab, mijozga qo'ng'iroq qilib tekshiradi. Xodim buni bilgani uchun daftarni doim halol to'ldiradi.
+
+Endi barcha to'rtta variantni bitta aniq misolda solishtirib ko'ramiz.
+
+Tasavvur qiling: korxonaning bir oylik tushum rejasi — oltmish million so'm. Konversiya maqsadi — yigirma foiz, Si-Ar-Em tozaligi maqsadi — to'qson foiz, qayta aloqa maqsadi — to'qson foiz.
+
+Bizda to'rtta sotuvchi bor. Aziz oy davomida yigirma yetti million so'm tushum qildi, ya'ni rejani atigi qirq besh foizga bajardi. Uning konversiyasi o'n olti foiz, Si-Ar-Em tozaligi yetmish ikki foiz, qayta aloqasi oltmish uch foiz. Bobur oltmish million so'm tushum qilib, rejani yuz foizga bajardi. Charos to'qson million so'm tushum bilan rejani bir yuz ellik foizga bajardi. Dilnoza esa bir yuz yigirma million so'm tushum keltirib, rejani ikki yuz foizga bajardi.
+
+Keling, har bir variantda ushbu to'rt xodim qancha maosh olishini hisoblaymiz.
+
+Birinchi variant — faqat oklad. Bu variant tavsiya etilmaydi, lekin solishtirish uchun ko'rib chiqamiz. Faraz qilaylik, barcha xodimlarga bir xil — to'rt million so'm oklad belgilangan. Natijaga qarang: Aziz yigirma yetti million so'm, Dilnoza esa undan to'rt yarim baravar ko'p — bir yuz yigirma million so'm tushum olib keldi. Ammo ikkalasi ham bir xil — to'rt million so'm maosh oldi.
+
+Azizning maoshi tushumning o'n to'rt butun o'ndan sakkiz foizini tashkil etdi, eng kuchli xodim Dilnozaning maoshi esa atigi uch butun o'ndan uch foiz. Oqibatda korxona sust xodimga ortiqcha pul to'laydi, eng kuchli sotuvchini esa adolatsizlik sababli yo'qotadi.
+
+Ikkinchi variant — oklad plyus Key-Pi-Ay bonus. Bu variantda oklad ikki yarim million so'm, bonus fondi ham ikki yarim million so'm. Formula: maosh teng oklad qo'shuv bonus fondi ko'paytiruv Key-Pi-Ay balli.
+
+Hisoblash to'rt qadamda bajariladi. Keling, buni Aziz misolida ko'ramiz.
+
+Birinchi qadam — har bir ko'rsatkichning bajarilish foizini topamiz va ellik foizlik eshik qoidasini tekshiramiz. Tushum: yigirma yetti millionni oltmish millionga bo'lib, yuzga ko'paytirsak — qirq besh foiz chiqadi. Bu ellik foizlik eshikdan past, shuning uchun tushum bo'yicha ball — nol. Konversiya: o'n olti foizni yigirma foizga bo'lsak — sakson foiz. Eshikdan o'tdi. Sakson foizni yigirma foizlik vaznga ko'paytirsak — o'n olti ball. Si-Ar-Em tozaligi: yetmish ikki foizni to'qson foizga bo'lsak — sakson foiz, bu ham o'n olti ball. Qayta aloqa: oltmish uch foizni to'qson foizga bo'lsak — yetmish foiz, bu o'n to'rt ball. Hamma ballarni qo'shamiz: nol, o'n olti, o'n olti va o'n to'rt — jami qirq olti ball.
+
+Ikkinchi qadam — bonusni hisoblaymiz. Ikki yarim million so'm bonus fondining qirq olti foizi — bir million bir yuz ellik ming so'm.
+
+Uchinchi qadam — maoshni hisoblaymiz. Ikki yarim million so'm oklad ustiga bir million bir yuz ellik ming so'm bonus qo'shilsa, Aziz jami uch million olti yuz ellik ming so'm maosh oladi.
+
+To'rtinchi qadam — xodimga tushuntiramiz. Azizga shunday deyiladi: tushum rejasining yarmiga yetmadingiz, shuning uchun tushum qismidan bonus bo'lmadi. Konversiya, Si-Ar-Em va qayta aloqa bo'yicha esa yaxshi ishladingiz, shuning uchun bonus oldingiz.
+
+Xuddi shu tartibda hisoblasak, rejani to'liq bajargan Bobur to'qson sakkiz ball to'plab, to'rt million to'qqiz yuz ellik ming so'm oladi. Charos va Dilnoza esa yuz ball to'plab, eng ko'p mumkin bo'lgan besh million so'mdan maosh oladi. Bu variantning kamchiligi shu yerda ko'rinadi: Dilnoza Azizdan to'rt yarim baravar ko'p sotdi, maoshi esa bir yarim baravarga ham yetmaydi.
+
+Uchinchi variant — oklad plyus tushumdan ulush. Avvalo muhim eslatma: nima uchun hech qachon okladsiz, faqat tushumdan ulush berilmaydi? Birinchidan, islom moliyasi qoidalariga ko'ra, yollanma xodimning ish haqi oldindan aniq bo'lishi kerak. Faqat tushumga bog'langan, miqdori noma'lum to'lovda noaniqlik, ya'ni g'arar bor. Shuning uchun doim oldindan aniq oklad belgilanadi, ulush esa uning ustiga qo'shiladi. Bu diniy hukm emas — shartlarni ishonchli mutaxassis bilan tekshirib oling. Ikkinchidan, amaliy jihatdan ham savdo past bo'lgan oyda xodim daromadsiz qolib, kompaniyani tark etadi.
+
+Bu variantda oklad ikki yarim million so'm. Ulushni hisoblashning esa uch xil usuli bor.
+
+Birinchi usul — bitta o'zgarmas foiz. Masalan, barcha tushumdan besh foiz.
+
+Ikkinchi usul — zinapoya. Tushum ellik million so'mgacha bo'lsa — besh foiz. Ellik milliondan yuz million so'mgacha bo'lsa — butun summaga sakkiz foiz. Yuz million so'mdan oshsa — butun summaga o'n foiz.
+
+Uchinchi usul — bosqichma-bosqich. Bunda har bir pog'onadagi summaga o'z foizi qo'llanadi: dastlabki ellik million so'mga besh foiz, keyingi ellik million so'mga sakkiz foiz, yuz milliondan oshgan qismiga esa o'n foiz.
+
+Keling, oltmish million so'm tushum keltirgan Bobur misolida uchala usulni solishtiramiz.
+
+Birinchi usulda: oltmish millionning besh foizi — uch million so'm ulush. Ikki yarim million oklad bilan jami maosh — besh million besh yuz ming so'm.
+
+Ikkinchi usul — zinapoyada: oltmish million so'm ikkinchi pog'onaga chiqqani uchun butun summaga sakkiz foiz qo'llanadi — to'rt million sakkiz yuz ming so'm ulush. Oklad bilan jami maosh — yetti million uch yuz ming so'm.
+
+Uchinchi usul — bosqichma-bosqich hisoblashda: birinchi ellik millionning besh foizi — ikki yarim million so'm, qolgan o'n millionning sakkiz foizi — sakkiz yuz ming so'm. Jami ulush — uch million uch yuz ming so'm, oklad bilan birga maosh — besh million sakkiz yuz ming so'm.
+
+To'rtinchi variant — oklad plyus ulush va tartib sharti. Formula: maosh teng oklad qo'shuv ulush ko'paytiruv sifat koeffitsienti.
+
+Sifat koeffitsienti Si-Ar-Em tozaligi va qayta aloqa bajarilishining eng pastiga qarab belgilanadi. Agar ikkalasi ham to'qson foiz va undan yuqori bo'lsa — koeffitsient bir, ya'ni ulush to'liq to'lanadi. Agar eng pasti yetmish foizdan sakson to'qqiz foizgacha bo'lsa — koeffitsient nol butun o'ndan sakkiz, ya'ni ulushning sakson foizi to'lanadi. Agar yetmish foizdan past bo'lsa — koeffitsient nol butun o'ndan besh, ya'ni ulushning faqat yarmi to'lanadi.
+
+Aziz misolida ko'ramiz. Uning tushumi yigirma yetti million so'm, besh foizlik ulushi — bir million uch yuz ellik ming so'm. Uning Si-Ar-Em tozaligi bajarilishi sakson foiz, qayta aloqasi esa yetmish foiz. Eng pasti yetmish foiz bo'lgani uchun koeffitsient nol butun o'ndan sakkiz. Bir million uch yuz ellik mingni nol butun o'ndan sakkizga ko'paytirsak — bir million sakson ming so'm ulush chiqadi. Ikki yarim million so'm oklad bilan Aziz uch million besh yuz sakson ming so'm oladi. Tartibni a'lo bajargan va bir yuz yigirma million tushum keltirgan Dilnoza esa sakkiz million besh yuz ming so'm maosh oladi.
+
+Endi har oy maoshni qanday hisoblashni ko'ramiz. Bu olti qadamdan iborat bo'lib, bitta xodimga atigi uch-besh daqiqa vaqt ketadi.
+
+Birinchi qadam: Si-Ar-Em yoki kunlik hisobot daftaridan haqiqiy raqamlarni olasiz.
+
+Ikkinchi qadam: har bir Key-Pi-Ay bo'yicha bajarilish foizini hisoblaysiz. Yuz foizdan oshsa, yuz deb olinadi. Eslatma: agar javob berish tezligi kabi teskari Key-Pi-Ay bo'lsa, ya'ni raqam qancha kichik bo'lsa shuncha yaxshi bo'lsa, maqsadni haqiqiy natijaga bo'lib, yuzga ko'paytirasiz. Masalan, maqsad besh daqiqa, xodim sakkiz daqiqada javob berdi. Beshni sakkizga bo'lsak — oltmish ikki yarim foiz.
+
+Uchinchi qadam: ellik foizlik eshik qoidasini tekshirasiz.
+
+To'rtinchi qadam: bajarilish foizini vaznga ko'paytirib, hammasini qo'shasiz va Key-Pi-Ay ballini chiqarasiz.
+
+Beshinchi qadam: natijani tanlangan variant formulasiga qo'yasiz.
+
+Oltinchi qadam: maoshni yozasiz va hisob varag'ini xodimga yuborasiz.
+
+Oy oxiridagi tartib esa quyidagicha. Oyning birinchi-uchinchi sanalarida rahbar yoki inson resurslari mutaxassisi raqamlarni yig'adi. Uchinchi-to'rtinchi sanalarda hisoblash jadvali to'ldiriladi. Beshinchi sanagacha har bir xodimga o'z hisob varag'i yuboriladi. Xodimda e'tiroz bo'lsa, uch kun ichida birgalikda tekshiriladi. So'ng buxgalteriya maoshni belgilangan sanada to'laydi.
+
+Yangi xodimning maoshi bosqichma-bosqich shakllanadi.
+
+Birinchi bosqich — o'n olti kunlik ichki akademiya. Bu vaqtda xodim hali sotmaydi, faqat mahsulot va skriptlarni o'rganadi. Imtihondan o'tgan xodimgina sotuvga chiqadi.
+
+Ikkinchi bosqich — sotuvga chiqqandan keyingi birinchi o'ttiz kun. Xodimga ikkinchi variant, ya'ni oklad plyus Key-Pi-Ay bonus qo'llanadi. Maqsad o'rtacha xodim rejasining ellik-yetmish foizi qilib belgilanadi, eshik qoidasi qo'llanmaydi. Xodim birinchi kundanoq natija pul keltirishini his qiladi.
+
+Uchinchi bosqich — o'ttiz birinchi kundan oltmishinchi kungacha. Maqsad o'rtacha xodim natijasining sakson-to'qson foiziga ko'tariladi, eshik qoidasi o'ttiz foiz bo'ladi.
+
+To'rtinchi bosqich — oltmish birinchi kundan to'qsoninchi kungacha. Xodim to'liq rejaga va ellik foizlik eshik qoidasiga o'tadi. To'qsoninchi kundan keyin natijaga qarab uchinchi yoki to'rtinchi variantga o'tkazish masalasi ko'rib chiqiladi.
+
+Muhim qoida: maosh tizimi hech qachon oyning o'rtasida o'zgartirilmaydi. Har qanday o'zgarish faqat keyingi oyning birinchi sanasidan, xodimni oldindan yozma xabardor qilib va imzosini olib, kuchga kiradi.
+
+Darsimiz yakunida rahbarlar eng ko'p yo'l qo'yadigan to'qqizta xatoni sanab o'tamiz.
+
+Birinchi xato — xodimga faqat qat'iy oklad berish.
+
+Ikkinchi xato — okladsiz, faqat tushumdan foiz va'da qilish.
+
+Uchinchi xato — tushum nima ekanini boshidan yozma belgilamaslik. Natijada pul kassaga tushmasdan turib, shartnoma uchun bonus talab qilinadi.
+
+To'rtinchi xato — xodimga beshtadan ko'p Key-Pi-Ay yuklash.
+
+Beshinchi xato — maosh shartlarini og'zaki aytish. Har oy «men boshqacha tushungandim» degan nizo chiqmasligi uchun hammasi yozma bo'lishi shart.
+
+Oltinchi xato — oy o'rtasida qoidalar va foizlarni o'zgartirish.
+
+Yettinchi xato — yangi xodimga ham, tajribali xodimga ham bir xil reja qo'yish.
+
+Sakkizinchi xato — Si-Ar-Em yoki kunlik hisobot tekshirilmasdan, ishonchsiz raqamlar asosida maosh hisoblash.
+
+To'qqizinchi xato — maoshni belgilangan sanadan kechiktirib to'lash. To'lov kechiksa, eng mukammal tizimga ham ishonch yo'qoladi.
+
+Shuning uchun qo'llanmada maxsus rahbar tasdiq varaqasi berilgan. Unda xodimning ism-sharifi, tanlangan variant, oklad summasi, bonus fondi yoki ulush foizlari, Key-Pi-Ay vaznlari, eshik qoidasi, tushum ta'rifi hamda maosh to'lanadigan sana yoziladi. Varaqani rahbar va xodim imzolaydi. Bir nusxasi rahbarda, ikkinchisi xodimda qoladi.
+
+Esda tuting: qo'llanmadagi barcha summalar soliqdan oldingi summalar. Maosh shartlarini mehnat shartnomasiga yozishdan oldin buxgalter yoki yurist bilan tekshiring.
+
+Hurmatli rahbarlar! Shu bilan sotuv menejeriga maosh tizimini tanlash va hisoblash bo'yicha amaliy darsimiz yakunlandi. Ushbu tizimni korxonangizda bugunoq joriy qiling va savdo jamoangiz samaradorligini yangi bosqichga olib chiqing!

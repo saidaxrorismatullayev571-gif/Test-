@@ -66,7 +66,7 @@ Rang ma’nosi butun videoda o‘zgarmaydi: oklad doim teal, bonus doim ko‘k, 
 
 - Uslub: flat, oddiy geometriya (bosh, soch, yelka), yuz: ko‘z + qosh + og‘iz.
 - Har doim «tirik»: 3–4 soniyada bir ko‘z yumish (0,12 s), nafas olish (±2,5 px vertikal), kayfiyat og‘iz shakli orqali (−1 xafa … +1 xursand), kayfiyat 0,5 s davomida silliq o‘zgaradi.
-- Diktor «A xodim» desa, ekranda doim **A** harfi bilan nishon ko‘rinsin (ism ixtiyoriy, kichik yozuvda).
+- Yakuniy diktor matnida xodimlar ismi bilan aytiladi (Aziz, Bobur, Charos, Dilnoza). Ekranda ism bilan birga kichik A, B, C, D nishoni ham ko‘rinsin, «uch usul» esa «birinchi, ikkinchi, uchinchi usul» deb aytiladi (ekranda 3-A, 3-B, 3-C).
 
 ### 1.6 Ikonalar va grafikalar
 - Ikonalar: chiziqli, 3 px qalinlik, yumaloq uchlar (Lucide uslubi). Emoji ishlatilmasin (render muhitida turlicha chiqadi).
