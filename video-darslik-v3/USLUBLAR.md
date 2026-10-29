@@ -260,6 +260,22 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 
 *(5-namuna — 22 ta Claude effekti — 8-overlay to‘plamini to‘ldiradi: `uslub_namunalar/CLAUDE_EFFECTS22_REEL.md`.)*
 
+## 11. Neon Aurora (eskizdan neon UI)
+*Manba: 7-namuna. Tahlil: `uslub_namunalar/ESKIZDAN_NEON_REEL.md`.*
+
+- **Rang va shakl:** qora fon, gradient neon nurlar (ko‘k, pushti, sariq, binafsha), glow chegaralar.
+- **Harakat:** suyuq morf o‘tishlar.
+- **Format:** «eskiz → natija» yonma-yon.
+
+## 12. Editorial bir so‘z (raw / finished)
+*Manba: 8-namuna. Tahlil: `uslub_namunalar/RAW_FINISHED_REEL.md`.*
+
+- **Rang:** oq va navy.
+- **Ritm:** bir so‘z — bir kadr.
+- **Bezak:** xrom 3D ikonkalar; kalit so‘z `[ qavsda ]`.
+
+*(9-namuna — bo‘lingan ekran va progress dok — uslub emas, kompozitsiya: `uslub_namunalar/SPLIT_TOOL_STACK_REEL.md`.)*
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
@@ -274,5 +290,7 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 | Spiker reeliga jonli overlay, AI vosita namoyishi | Claude effektlari |
 | Shaxsiy brend, mutaxassis/spiker taqdimoti | Oq minimal + lime |
 | Xizmatni «oldin/keyin» bilan sotish | Before / After |
+| AI/dizayn imkoniyati, «g‘oya → natija» | Neon Aurora |
+| Qisqa fikr, iqtibos, podkast parchasi | Editorial bir so‘z |
 
 Har bir uslubning namunaviy kadri `uslub_namunalar/` papkasida (bir xil sahna — «2-variant: Azizning KPI balli» — 6 xil uslubda).

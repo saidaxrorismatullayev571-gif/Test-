@@ -48,6 +48,13 @@ Qo‘shimcha 6 ta (`kallaway-split`, `over-the-shoulder`, `backdrop-word`, `glas
 ## Neon sariq glow subtitr va Before/After (foydalanuvchi namunasi)
 Kalit so‘z `#FFE45C` neon glow (`text-shadow: 0 0 12px #FFD43B, 0 0 28px #FFB800`) yoki to‘q sariq plashka; oddiy so‘zlar oq, kichik, blur-in. Before/After kompozitsiyasi va flat-lay B-roll: `video-darslik-v3/uslub_namunalar/BEFORE_AFTER_REEL.md`.
 
+## Kompozitsiyalar (foydalanuvchi namunalari)
+- **Yonma-yon «eskiz → natija»** (Neon Aurora): `ESKIZDAN_NEON_REEL.md`.
+- **«raw / finished», bir so‘z = bir kadr:** `RAW_FINISHED_REEL.md`.
+- **Bo‘lingan ekran** (UI tepada, spiker pastda, progress dok, toggle’lar): `SPLIT_TOOL_STACK_REEL.md`.
+
+Uchala fayl ham `video-darslik-v3/uslub_namunalar/` papkasida.
+
 ## Lavanda Glass formati (foydalanuvchi namunasi)
 AI mahsulot demosi uchun yorug‘ motion: dumaloq avatar + holat badgi, izometrik «AI zavod», platforma ikonkalari orbitasi, o‘sish sanagichi, gradient CTA kartasi. Tahlil: `video-darslik-v3/uslub_namunalar/KONTENT_ZAVOD_REEL.md`. Reel tuzilmasi: spiker (selfi) → ekrandagi demo → spiker isboti → izohga kalit so‘z CTA.
 
