@@ -1,0 +1,1644 @@
+{
+"duration": 1480.56,
+"paras": 106,
+"sents": [
+{
+"p": 0,
+"t": "Assalomu alaykum, hurmatli rahbarlar va inson resurslari mutaxassislari!",
+"a": 0.343,
+"b": 4.612
+},
+{
+"p": 0,
+"t": "Korxona ichki akademiyasining sotuv moduliga xush kelibsiz.",
+"a": 4.893,
+"b": 7.732
+},
+{
+"p": 0,
+"t": "Bugungi videodarsimizning mavzusi — sotuv menejeriga to'g'ri maosh tizimini tanlash va hisoblash.",
+"a": 7.913,
+"b": 15.442
+},
+{
+"p": 1,
+"t": "Ushbu amaliy darsimiz sizga uchta eng muhim vazifani hal qilishda yordam beradi.",
+"a": 16.032,
+"b": 20.652
+},
+{
+"p": 1,
+"t": "Birinchisi — aynan sizning korxonangizga mos keladigan maosh tizimini xatosiz tanlash.",
+"a": 21.392,
+"b": 26.642
+},
+{
+"p": 1,
+"t": "Ikkinchisi — yangi yoki mavjud xodimga o'sha tizimni atigi bir daqiqa ichida tushunarli qilib yetkazish.",
+"a": 27.242,
+"b": 33.672
+},
+{
+"p": 1,
+"t": "Va uchinchisi — oy oxirida har bir xodimning maoshini o'n daqiqada aniq hisoblab chiqish.",
+"a": 34.113,
+"b": 39.533
+},
+{
+"p": 2,
+"t": "Agar siz ilgari Key-Pi-Ay va Si-Ar-Em nima ekanligini eshitmagan bo'lsangiz ham, hech qanday tashvishga o'rin yo'q.",
+"a": 40.073,
+"b": 46.983
+},
+{
+"p": 2,
+"t": "Hozir biz barcha asosiy atamalarni eng oddiy tilda ko'rib chiqamiz.",
+"a": 47.153,
+"b": 49.043
+},
+{
+"p": 2,
+"t": "Undan keyin barcha formulalar va jadvallar sizga yuz foiz tushunarli bo'ladi.",
+"a": 49.343,
+"b": 56.053
+},
+{
+"p": 3,
+"t": "Darsni boshlashdan oldin, har bir rahbar bilishi shart bo'lgan ikkita temir qoidani eslab qoling.",
+"a": 56.643,
+"b": 61.203
+},
+{
+"p": 4,
+"t": "Birinchi qoida: sotuv menejeriga hech qachon faqat qat'iy oklad berish tavsiya etilmaydi.",
+"a": 61.453,
+"b": 68.103
+},
+{
+"p": 4,
+"t": "Yangi xodimga ham, tajribali xodimga ham faqat oklad berish — biznes uchun eng katta xavf.",
+"a": 68.343,
+"b": 72.282
+},
+{
+"p": 5,
+"t": "Ikkinchi qoida: sotuvchining maoshi hech qachon faqat tushumdan beriladigan ulushdan, ya'ni quruq foizning o'zidan iborat bo'lmasligi kerak.",
+"a": 72.543,
+"b": 81.362
+},
+{
+"p": 5,
+"t": "Maoshda doim oldindan aniq belgilangan bazaviy oklad bo'lishi, bonus va ulush esa uning ustiga qo'shilishi shart.",
+"a": 81.603,
+"b": 88.18
+},
+{
+"p": 6,
+"t": "Endi qo'llanma davomida ishlatiladigan asosiy tushunchalar bilan tanishib olamiz.",
+"a": 88.18,
+"b": 93.58
+},
+{
+"p": 7,
+"t": "Key-Pi-Ay — bu xodim oy davomida bajarishi kerak bo'lgan aniq o'lchanadigan raqam.",
+"a": 93.58,
+"b": 99.963
+},
+{
+"p": 7,
+"t": "Shunchaki «yaxshi ishla» degan quruq gap emas, balki aniq me'yor.",
+"a": 100.183,
+"b": 103.3
+},
+{
+"p": 7,
+"t": "Masalan, oyiga oltmish million so'm sotuv qilish yoki kuniga o'ttizta qo'ng'iroq qilish.",
+"a": 103.3,
+"b": 109.1
+},
+{
+"p": 8,
+"t": "Si-Ar-Em — bu kompyuterdagi elektron mijozlar daftari.",
+"a": 109.1,
+"b": 112.953
+},
+{
+"p": 8,
+"t": "Kim qo'ng'iroq qildi, kim bilan nima gaplashildi, kim sotib oldi va kimga qachon qayta qo'ng'iroq qilish kerak — barchasi shu dasturda yoziladi.",
+"a": 113.433,
+"b": 121.594
+},
+{
+"p": 8,
+"t": "Bunga Amo-Si-Ar-Em yoki Bitriks-yigirma to'rt dasturlari misol bo'ladi.",
+"a": 121.594,
+"b": 126.566
+},
+{
+"p": 8,
+"t": "Agar korxonada Si-Ar-Em bo'lmasa, oddiy kunlik hisobot daftari yoki Eksel jadvalidan foydalanish ham mumkin.",
+"a": 126.566,
+"b": 132.382
+},
+{
+"p": 9,
+"t": "Lid — bu sizning reklamangizni ko'rib murojaat qilgan, ammo hali xarid qilmagan potensial mijoz.",
+"a": 132.722,
+"b": 140.009
+},
+{
+"p": 10,
+"t": "Bitim — bu mijoz sotib olishga rozi bo'lgan va pulini to'lagan savdo.",
+"a": 140.009,
+"b": 146.031
+},
+{
+"p": 11,
+"t": "Tushum — bu sizning bank hisobingizga yoki kassangizga haqiqatan kelib tushgan pul.",
+"a": 146.031,
+"b": 152.402
+},
+{
+"p": 11,
+"t": "Diqqat qiling: shartnoma imzolangan bo'lsa-yu, lekin pul hali kelmagan bo'lsa — bu tushum hisoblanmaydi.",
+"a": 152.402,
+"b": 159.762
+},
+{
+"p": 11,
+"t": "Masalan, o'n million so'mlik shartnoma tuzildi, ammo mijoz to'rt million so'm to'ladi.",
+"a": 160.052,
+"b": 164.292
+},
+{
+"p": 11,
+"t": "Demak, tushum — to'rt million so'm.",
+"a": 164.532,
+"b": 166.362
+},
+{
+"p": 12,
+"t": "Reja — bu oy uchun belgilangan maqsad raqami, odatda oylik tushum rejasi.",
+"a": 166.682,
+"b": 172.722
+},
+{
+"p": 12,
+"t": "Masalan, oltmish million so'm.",
+"a": 173.002,
+"b": 174.672
+},
+{
+"p": 13,
+"t": "Oklad — bu sotuv bo'lsa ham, bo'lmasa ham xodimga har oy kafolatlangan summa.",
+"a": 174.952,
+"b": 180.605
+},
+{
+"p": 14,
+"t": "Bonus — bu okladdan tashqari, Key-Pi-Ay ko'rsatkichlari bajarilsa beriladigan qo'shimcha pul.",
+"a": 180.605,
+"b": 187.478
+},
+{
+"p": 15,
+"t": "Bonus fondi — bu xodim barcha Key-Pi-Ay ko'rsatkichlarini yuz foiz bajargan taqdirda olishi mumkin bo'lgan eng yuqori bonus summasi.",
+"a": 187.478,
+"b": 196.255
+},
+{
+"p": 15,
+"t": "Masalan, ikki yarim million so'm.",
+"a": 196.255,
+"b": 198.932
+},
+{
+"p": 16,
+"t": "Ulush — bu sotuv tushumining xodimga foiz hisobida beriladigan qismi.",
+"a": 199.373,
+"b": 204.67
+},
+{
+"p": 16,
+"t": "Masalan, o'n million so'm tushumning besh foizi — besh yuz ming so'm bo'ladi.",
+"a": 204.67,
+"b": 210.242
+},
+{
+"p": 17,
+"t": "Pog'onali ulush — bunda tushum oshgan sari ulush foizi ham oshib boradi.",
+"a": 210.552,
+"b": 215.828
+},
+{
+"p": 17,
+"t": "Masalan, ellik million so'mgacha besh foiz, ellik milliondan yuz million so'mgacha sakkiz foiz, yuz million so'mdan ortig'iga esa o'n foiz.",
+"a": 215.828,
+"b": 223.252
+},
+{
+"p": 18,
+"t": "Konversiya — bu yuzta murojaatdan nechtasi haqiqiy xarid bilan yakunlanganini ko'rsatadigan foiz.",
+"a": 223.552,
+"b": 231.539
+},
+{
+"p": 18,
+"t": "Masalan, yuzta liddan yigirmatasi sotib olsa, konversiya yigirma foiz bo'ladi.",
+"a": 231.539,
+"b": 236.046
+},
+{
+"p": 18,
+"t": "Bu sotuvchi mahoratini ko'rsatadigan eng muhim ko'rsatkichlardan biri.",
+"a": 236.046,
+"b": 240.528
+},
+{
+"p": 19,
+"t": "Qayta aloqa — bu mijozga va'da qilingan vaqtda qayta qo'ng'iroq qilish yoki xabar yozish intizomi.",
+"a": 240.528,
+"b": 247.219
+},
+{
+"p": 20,
+"t": "Si-Ar-Em tozaligi — bu mijoz kartochkalarining necha foizi to'liq va xatosiz to'ldirilganini bildiradi.",
+"a": 247.219,
+"b": 255.098
+},
+{
+"p": 20,
+"t": "Agar yuzta kartochkadan to'qsontasi to'liq yozilgan bo'lsa, tozalik to'qson foiz bo'ladi.",
+"a": 255.098,
+"b": 259.637
+},
+{
+"p": 21,
+"t": "Bajarilish foizi — bu xodim maqsadning necha foizini bajarganini ko'rsatadi.",
+"a": 259.637,
+"b": 264.983
+},
+{
+"p": 21,
+"t": "Uni topish uchun haqiqiy raqamni maqsad raqamiga bo'lib, yuzga ko'paytiramiz.",
+"a": 265.152,
+"b": 271.474
+},
+{
+"p": 21,
+"t": "Masalan, maqsad oltmish million so'm, xodim qirq besh million so'm savdo qildi.",
+"a": 271.474,
+"b": 276.373
+},
+{
+"p": 21,
+"t": "Bajarilish foizi — yetmish besh foiz.",
+"a": 276.683,
+"b": 278.952
+},
+{
+"p": 22,
+"t": "Vazn — bu har bir Key-Pi-Ay ko'rsatkichining bonusga qanchalik ta'sir qilishi.",
+"a": 279.402,
+"b": 284.947
+},
+{
+"p": 22,
+"t": "Barcha ko'rsatkichlar vazni qo'shilganda yuz foiz bo'lishi shart.",
+"a": 284.947,
+"b": 287.202
+},
+{
+"p": 23,
+"t": "Key-Pi-Ay balli — bu barcha ko'rsatkichlar bo'yicha to'plangan ballar yig'indisi bo'lib, noldan yuzgacha o'lchanadi.",
+"a": 287.702,
+"b": 296.094
+},
+{
+"p": 23,
+"t": "Agar xodim qirq olti ball to'plasa, u bonus fondining qirq olti foizini oladi.",
+"a": 296.094,
+"b": 301.892
+},
+{
+"p": 24,
+"t": "Eshik qoidasi — bu eng muhim himoya mexanizmi.",
+"a": 302.212,
+"b": 304.623
+},
+{
+"p": 24,
+"t": "Agar biror Key-Pi-Ay bajarilishi ellik foizdan past bo'lsa, o'sha ko'rsatkich bo'yicha ball nolga tenglashtiriladi va bonus berilmaydi.",
+"a": 305.312,
+"b": 314.897
+},
+{
+"p": 25,
+"t": "Maoshning tushumga nisbati — bu xodimga to'langan maosh u olib kelgan tushumning necha foizini tashkil etishini ko'rsatadi.",
+"a": 314.897,
+"b": 323.93
+},
+{
+"p": 25,
+"t": "Masalan, oltmish million so'm tushum keltirgan xodim besh million so'm maosh olsa, bu nisbat sakkiz butun o'ndan uch foiz bo'ladi.",
+"a": 323.93,
+"b": 332.012
+},
+{
+"p": 26,
+"t": "Bruto — bu soliq va ushlanmalardan oldingi summa.",
+"a": 332.183,
+"b": 335.912
+},
+{
+"p": 26,
+"t": "Qo'llanmamizdagi barcha raqamlar bruto shaklida berilgan.",
+"a": 336.183,
+"b": 338.873
+},
+{
+"p": 27,
+"t": "Qaysi maosh tizimini tanlamang, u muvaffaqiyatli ishlashi uchun to'rtta shartga javob berishi kerak.",
+"a": 339.192,
+"b": 347.132
+},
+{
+"p": 27,
+"t": "Aks holda tizim bir-ikki oy ichida buziladi.",
+"a": 347.392,
+"b": 350.837
+},
+{
+"p": 28,
+"t": "Birinchi shart — tushunarlilik.",
+"a": 350.837,
+"b": 352.433
+},
+{
+"p": 28,
+"t": "Xodim «bu oy qancha maosh olaman?» degan savolga bir daqiqa ichida o'zi javob topa olishi kerak.",
+"a": 353.222,
+"b": 360.231
+},
+{
+"p": 28,
+"t": "Bo'lmasa, xodim rahbarga ishonmaydi va har oy tortishuv chiqadi.",
+"a": 360.231,
+"b": 364.141
+},
+{
+"p": 29,
+"t": "Ikkinchi shart — xodimning ta'sir qila olishi.",
+"a": 364.141,
+"b": 365.993
+},
+{
+"p": 29,
+"t": "Maosh xodimning o'z mehnatiga bog'liq bo'lishi shart.",
+"a": 366.722,
+"b": 371.147
+},
+{
+"p": 29,
+"t": "Aks holda u «baribir hech narsa o'zgarmaydi» deb harakat qilishni to'xtatadi.",
+"a": 371.147,
+"b": 376.572
+},
+{
+"p": 30,
+"t": "Uchinchi shart — korxona uchun foydalilik.",
+"a": 376.762,
+"b": 378.123
+},
+{
+"p": 30,
+"t": "Xodim ko'p ishlasa, korxona ham ko'p daromad topishi va maosh tushumning ko'tara oladigan chegarasida bo'lishi lozim.",
+"a": 378.873,
+"b": 385.342
+},
+{
+"p": 31,
+"t": "To'rtinchi shart — hisoblash osonligi.",
+"a": 385.632,
+"b": 387.9
+},
+{
+"p": 31,
+"t": "Rahbar oy oxirida maoshni o'n-o'n besh daqiqada qiynalmay hisoblay olishi kerak.",
+"a": 387.9,
+"b": 395.312
+},
+{
+"p": 32,
+"t": "Endi maosh tizimining to'rtta asosiy variantini qisqacha ko'rib chiqamiz.",
+"a": 395.312,
+"b": 400.398
+},
+{
+"p": 33,
+"t": "Birinchi variant — faqat oklad.",
+"a": 400.398,
+"b": 401.483
+},
+{
+"p": 33,
+"t": "Bunda har oy natijadan qat'i nazar bir xil summa to'lanadi.",
+"a": 401.752,
+"b": 405.373
+},
+{
+"p": 33,
+"t": "Bu variant tavsiya etilmaydi, chunki ko'p ishlagan ham, kam ishlagan ham bir xil pul oladi.",
+"a": 405.972,
+"b": 412.019
+},
+{
+"p": 33,
+"t": "Oqibatda eng kuchli sotuvchi ketadi, korxonada esa faqat sust xodimlar qoladi.",
+"a": 412.019,
+"b": 417.334
+},
+{
+"p": 34,
+"t": "Ikkinchi variant — oklad plyus Key-Pi-Ay bonus.",
+"a": 417.334,
+"b": 419.54
+},
+{
+"p": 34,
+"t": "Bunda oklad kichikroq bo'ladi, ammo Key-Pi-Ay bajarilsa ustiga bonus qo'shiladi.",
+"a": 419.54,
+"b": 425.993
+},
+{
+"p": 34,
+"t": "Bu barqarorlik va nazoratni birlashtiradi.",
+"a": 425.993,
+"b": 429.262
+},
+{
+"p": 34,
+"t": "Kamchiligi shundaki, bonusning yuqori chegarasi bor: reja yuz foizdan oshib ketsa ham, bonus fondidan ortiqcha pul to'lanmaydi.",
+"a": 429.772,
+"b": 435.572
+},
+{
+"p": 35,
+"t": "Uchinchi variant — oklad plyus tushumdan ulush.",
+"a": 435.803,
+"b": 437.882
+},
+{
+"p": 35,
+"t": "Bunda oklad ustiga tushumdan foiz beriladi.",
+"a": 438.123,
+"b": 442.762
+},
+{
+"p": 35,
+"t": "Ko'p sotgan xodim ko'p pul oladi.",
+"a": 442.942,
+"b": 444.123
+},
+{
+"p": 35,
+"t": "Biroq xavfli tomoni bor: xodim faqat sotuv ketidan quvib, Si-Ar-Em to'ldirish va qayta aloqa kabi sifat ishlariga e'tibor bermay qo'yishi mumkin.",
+"a": 444.692,
+"b": 454.606
+},
+{
+"p": 36,
+"t": "To'rtinchi variant — oklad plyus ulush va tartib sharti.",
+"a": 454.606,
+"b": 456.793
+},
+{
+"p": 36,
+"t": "Bu uchinchi variantning takomillashgan shakli: agar xodimning Si-Ar-Em va qayta aloqa intizomi yomon bo'lsa, uning ulushi kamaytiriladi.",
+"a": 456.793,
+"b": 467.452
+},
+{
+"p": 36,
+"t": "Bu variant barqarorlik, yuqori savdo va temir intizomni bitta tizimga birlashtiradi.",
+"a": 467.452,
+"b": 472.668
+},
+{
+"p": 37,
+"t": "Xo'sh, sizning biznesingizga qaysi variant mos keladi?",
+"a": 472.668,
+"b": 475.438
+},
+{
+"p": 37,
+"t": "Buni aniqlash uchun oltita savolga javob beramiz.",
+"a": 475.438,
+"b": 479.892
+},
+{
+"p": 38,
+"t": "Birinchi savol: mijoz reklamadan o'zi murojaat qiladimi va xodim faqat kiruvchi murojaatni yopadimi?",
+"a": 480.363,
+"b": 486.492
+},
+{
+"p": 38,
+"t": "Agar «ha» bo'lsa — ikkinchi variantni tanlang.",
+"a": 486.492,
+"b": 489.022
+},
+{
+"p": 38,
+"t": "Agar xodim mijozni o'zi qidirib topsa — uchinchi yoki to'rtinchi variantni tanlang.",
+"a": 489.592,
+"b": 495.032
+},
+{
+"p": 39,
+"t": "Ikkinchi savol: bitim odatda yetti kundan tez yopiladimi?",
+"a": 495.233,
+"b": 497.252
+},
+{
+"p": 39,
+"t": "Tez yopilsa — ikkinchi variant.",
+"a": 498.012,
+"b": 500.374
+},
+{
+"p": 39,
+"t": "Uzoq davom etadigan savdolarda esa to'rtinchi yoki uchinchi variant mos keladi.",
+"a": 500.374,
+"b": 506.334
+},
+{
+"p": 40,
+"t": "Uchinchi savol: oylik tushum oydan oyga o'ttiz foizdan ko'proq o'zgarib turadimi?",
+"a": 506.334,
+"b": 511.817
+},
+{
+"p": 40,
+"t": "Agar tebranish katta bo'lsa — oklad qismi ko'proq bo'lgan ikkinchi yoki to'rtinchi variantni tanlang.",
+"a": 511.817,
+"b": 517.924
+},
+{
+"p": 40,
+"t": "Tebranish kichik bo'lsa, uchinchi variant ham bo'ladi.",
+"a": 517.924,
+"b": 521.843
+},
+{
+"p": 41,
+"t": "To'rtinchi savol: tushum aynan shu xodimning shaxsiy mehnatimi yoki jamoa bo'lib sotiladimi?",
+"a": 521.843,
+"b": 528.048
+},
+{
+"p": 41,
+"t": "Agar yakka o'zi sotsa — ulushli uchinchi yoki to'rtinchi variant.",
+"a": 528.048,
+"b": 532.294
+},
+{
+"p": 41,
+"t": "Agar bir mijoz ustida bir necha kishi ishlasa — ikkinchi variantni tanlang, chunki jamoaviy savdoda ulush adolatsiz chiqadi.",
+"a": 532.294,
+"b": 540.664
+},
+{
+"p": 42,
+"t": "Beshinchi savol: rahbar oy oxirida hisob-kitobga o'n-o'n besh daqiqa vaqt ajrata oladimi?",
+"a": 540.664,
+"b": 546.7
+},
+{
+"p": 42,
+"t": "Ajrata olsa — to'rtinchi variant juda mos.",
+"a": 546.7,
+"b": 550.029
+},
+{
+"p": 42,
+"t": "Ajrata olmasa — ikkinchi yoki uchinchi variantni tanlang.",
+"a": 550.029,
+"b": 553.666
+},
+{
+"p": 43,
+"t": "Oltinchi savol: korxonada Si-Ar-Em yoki kunlik hisobot daftari to'g'ri yuritiladimi?",
+"a": 553.666,
+"b": 559.78
+},
+{
+"p": 43,
+"t": "Agar to'g'ri yuritilsa, istalgan variant ishlaydi.",
+"a": 559.78,
+"b": 562.513
+},
+{
+"p": 43,
+"t": "Agar hali hisobot tizimi yo'q bo'lsa — vaqtincha uchinchi variantni, ya'ni oklad plyus kassa tushumidan ulushni tanlang va darhol kunlik hisobot daftarini yo'lga qo'ying.",
+"a": 562.723,
+"b": 573.184
+},
+{
+"p": 44,
+"t": "Umumiy amaliy tavsiya shunday: avval ikkinchi variant bilan ishni boshlang.",
+"a": 573.184,
+"b": 578.753
+},
+{
+"p": 44,
+"t": "Uch oydan keyin tizim izga tushgach, natijaga qarab uchinchi yoki to'rtinchi variantga o'ting.",
+"a": 579.113,
+"b": 583.871
+},
+{
+"p": 45,
+"t": "Ikkinchi va to'rtinchi variantlarda maosh Key-Pi-Ayga bog'lanadi.",
+"a": 583.871,
+"b": 587.363
+},
+{
+"p": 45,
+"t": "Shuning uchun ko'rsatkichlarni to'g'ri tanlash hal qiluvchi ahamiyatga ega.",
+"a": 587.773,
+"b": 592.385
+},
+{
+"p": 46,
+"t": "Barcha Key-Pi-Ay ko'rsatkichlari uch turga bo'linadi.",
+"a": 592.385,
+"b": 595.463
+},
+{
+"p": 46,
+"t": "Birinchisi — natija ko'rsatkichlari: tushum, bitimlar soni va konversiya.",
+"a": 596.442,
+"b": 601.442
+},
+{
+"p": 46,
+"t": "Ikkinchisi — harakat ko'rsatkichlari: qo'ng'iroqlar soni, uchrashuvlar soni va yuborilgan takliflar soni.",
+"a": 601.803,
+"b": 606.463
+},
+{
+"p": 46,
+"t": "Uchinchisi — sifat ko'rsatkichlari: Si-Ar-Em tozaligi, qayta aloqa bajarilishi va murojaatga javob berish tezligi.",
+"a": 606.783,
+"b": 615.533
+},
+{
+"p": 47,
+"t": "Asosiy oltin qoida: har bir sotuvchida tushum va konversiya doim birinchi o'rinda turadi.",
+"a": 615.533,
+"b": 621.003
+},
+{
+"p": 47,
+"t": "Ularning umumiy vazni oltmish foiz — masalan, tushum qirq foiz va konversiya yigirma foiz.",
+"a": 621.303,
+"b": 627.504
+},
+{
+"p": 47,
+"t": "Qolgan qirq foizga bitta-ikkita harakat va sifat ko'rsatkichi qo'shiladi.",
+"a": 627.504,
+"b": 633.054
+},
+{
+"p": 47,
+"t": "Masalan, uchrashuvlar soni yigirma foiz va Si-Ar-Em tozaligi yigirma foiz.",
+"a": 633.054,
+"b": 636.963
+},
+{
+"p": 47,
+"t": "Bir xodimga ko'pi bilan to'rtta yoki beshta Key-Pi-Ay bog'lanadi.",
+"a": 637.133,
+"b": 641.473
+},
+{
+"p": 47,
+"t": "Undan ko'p bo'lsa, xodim e'tiborini yo'qotadi.",
+"a": 641.923,
+"b": 644.522
+},
+{
+"p": 48,
+"t": "Maqsad raqamini qanday belgilaymiz?",
+"a": 644.522,
+"b": 645.703
+},
+{
+"p": 48,
+"t": "Agar xodim eski bo'lsa va sizda statistika bo'lsa, oxirgi uch oyning o'rtacha natijasini oling va uni bir butun o'ndan birga ko'paytiring, ya'ni o'n foiz o'sish qo'ying.",
+"a": 646.023,
+"b": 658.141
+},
+{
+"p": 48,
+"t": "Agar ma'lumot yo'q bo'lsa, eng kuchli xodimning emas, o'rtacha xodimning natijasini asos qilib oling va maqsadni xodim bilan kelishib belgilang.",
+"a": 658.141,
+"b": 667.113
+},
+{
+"p": 49,
+"t": "Yangi ishga kirgan xodim uchun birinchi o'ttiz kunda tushum va konversiya maqsadini o'rtacha xodim rejasining ellik-yetmish foizi qilib yumshoq qo'ying va eshik qoidasini vaqtincha o'chirib turing.",
+"a": 667.303,
+"b": 680.453
+},
+{
+"p": 49,
+"t": "Ya'ni birinchi oyda qancha bajarsa, shunga yarasha bonus olsin.",
+"a": 680.663,
+"b": 685.953
+},
+{
+"p": 49,
+"t": "O'ttiz birinchi kundan oltmishinchi kungacha maqsadni sakson-to'qson foizga ko'tarib, eshik qoidasini o'ttiz foiz qilib belgilang.",
+"a": 686.213,
+"b": 693.723
+},
+{
+"p": 49,
+"t": "Oltmish birinchi kundan boshlab xodim to'liq rejaga va ellik foizlik eshik qoidasiga o'tadi.",
+"a": 693.933,
+"b": 699.033
+},
+{
+"p": 50,
+"t": "Maosh aniq raqamga bog'langanidan keyin, o'sha raqamlar har kuni yozib borilishi shart.",
+"a": 699.213,
+"b": 704.822
+},
+{
+"p": 50,
+"t": "Buning ikkita yo'li bor.",
+"a": 705.553,
+"b": 707.215
+},
+{
+"p": 51,
+"t": "Birinchi yo'l — Si-Ar-Em tizimi.",
+"a": 707.215,
+"b": 708.864
+},
+{
+"p": 51,
+"t": "Xodim har bir qo'ng'iroq va bitimni dasturga kiritib boradi, oy oxirida esa tayyor hisobot olinadi.",
+"a": 708.864,
+"b": 717.071
+},
+{
+"p": 52,
+"t": "Ikkinchi yo'l — agar korxonada Si-Ar-Em bo'lmasa, kunlik hisobot daftari tutiladi.",
+"a": 717.071,
+"b": 723.203
+},
+{
+"p": 52,
+"t": "Xodim har kuni kechqurun besh daqiqa vaqt ajratib, sana, qo'ng'iroq yoki uchrashuvlar soni, takliflar, bitimlar, tushum va qayta aloqa ustunlarini to'ldiradi.",
+"a": 723.513,
+"b": 731.613
+},
+{
+"p": 52,
+"t": "Bunda Si-Ar-Em tozaligi o'rniga hisobot o'z vaqtida topshirilgan kunlar ulushi hisoblanadi.",
+"a": 731.893,
+"b": 738.683
+},
+{
+"p": 52,
+"t": "Masalan, yigirma olti ish kunidan yigirma to'rttasida vaqtida topshirsa — to'qson ikki foiz bo'ladi.",
+"a": 739.103,
+"b": 744.513
+},
+{
+"p": 53,
+"t": "Muhim qoida: tushum raqamini hech qachon xodimning og'zaki so'ziga ishonib yozmang.",
+"a": 744.983,
+"b": 749.643
+},
+{
+"p": 53,
+"t": "Uni faqat kassa yoki bank ko'chirmasi bilan solishtirib tasdiqlang.",
+"a": 749.853,
+"b": 755.578
+},
+{
+"p": 53,
+"t": "Shuningdek, rahbar haftada bir marta tasodifiy uchta yozuvni tanlab, mijozga qo'ng'iroq qilib tekshiradi.",
+"a": 755.578,
+"b": 761.763
+},
+{
+"p": 53,
+"t": "Xodim buni bilgani uchun daftarni doim halol to'ldiradi.",
+"a": 762.373,
+"b": 764.603
+},
+{
+"p": 54,
+"t": "Endi barcha to'rtta variantni bitta aniq misolda solishtirib ko'ramiz.",
+"a": 764.843,
+"b": 770.863
+},
+{
+"p": 55,
+"t": "Tasavvur qiling: korxonaning bir oylik tushum rejasi — oltmish million so'm.",
+"a": 771.072,
+"b": 774.871
+},
+{
+"p": 55,
+"t": "Konversiya maqsadi — yigirma foiz, Si-Ar-Em tozaligi maqsadi — to'qson foiz, qayta aloqa maqsadi — to'qson foiz.",
+"a": 774.871,
+"b": 782.503
+},
+{
+"p": 56,
+"t": "Bizda to'rtta sotuvchi bor.",
+"a": 782.773,
+"b": 784.318
+},
+{
+"p": 56,
+"t": "Aziz oy davomida yigirma yetti million so'm tushum qildi, ya'ni rejani atigi qirq besh foizga bajardi.",
+"a": 784.318,
+"b": 792.113
+},
+{
+"p": 56,
+"t": "Uning konversiyasi o'n olti foiz, Si-Ar-Em tozaligi yetmish ikki foiz, qayta aloqasi oltmish uch foiz.",
+"a": 792.562,
+"b": 798.253
+},
+{
+"p": 56,
+"t": "Bobur oltmish million so'm tushum qilib, rejani yuz foizga bajardi.",
+"a": 798.483,
+"b": 802.753
+},
+{
+"p": 56,
+"t": "Charos to'qson million so'm tushum bilan rejani bir yuz ellik foizga bajardi.",
+"a": 803.113,
+"b": 809.213
+},
+{
+"p": 56,
+"t": "Dilnoza esa bir yuz yigirma million so'm tushum keltirib, rejani ikki yuz foizga bajardi.",
+"a": 809.683,
+"b": 814.453
+},
+{
+"p": 57,
+"t": "Keling, har bir variantda ushbu to'rt xodim qancha maosh olishini hisoblaymiz.",
+"a": 815.173,
+"b": 820.163
+},
+{
+"p": 58,
+"t": "Birinchi variant — faqat oklad.",
+"a": 820.893,
+"b": 822.056
+},
+{
+"p": 58,
+"t": "Bu variant tavsiya etilmaydi, lekin solishtirish uchun ko'rib chiqamiz.",
+"a": 822.056,
+"b": 827.423
+},
+{
+"p": 58,
+"t": "Faraz qilaylik, barcha xodimlarga bir xil — to'rt million so'm oklad belgilangan.",
+"a": 828.003,
+"b": 831.433
+},
+{
+"p": 58,
+"t": "Natijaga qarang: Aziz yigirma yetti million so'm, Dilnoza esa undan to'rt yarim baravar ko'p — bir yuz yigirma million so'm tushum olib keldi.",
+"a": 831.822,
+"b": 840.192
+},
+{
+"p": 58,
+"t": "Ammo ikkalasi ham bir xil — to'rt million so'm maosh oldi.",
+"a": 840.473,
+"b": 844.572
+},
+{
+"p": 59,
+"t": "Azizning maoshi tushumning o'n to'rt butun o'ndan sakkiz foizini tashkil etdi, eng kuchli xodim Dilnozaning maoshi esa atigi uch butun o'ndan uch foiz.",
+"a": 844.572,
+"b": 854.473
+},
+{
+"p": 59,
+"t": "Oqibatda korxona sust xodimga ortiqcha pul to'laydi, eng kuchli sotuvchini esa adolatsizlik sababli yo'qotadi.",
+"a": 854.923,
+"b": 862.42
+},
+{
+"p": 60,
+"t": "Ikkinchi variant — oklad plyus Key-Pi-Ay bonus.",
+"a": 862.42,
+"b": 865.273
+},
+{
+"p": 60,
+"t": "Bu variantda oklad ikki yarim million so'm, bonus fondi ham ikki yarim million so'm.",
+"a": 865.593,
+"b": 871.183
+},
+{
+"p": 60,
+"t": "Formula: maosh teng oklad qo'shuv bonus fondi ko'paytiruv Key-Pi-Ay balli.",
+"a": 871.442,
+"b": 878.513
+},
+{
+"p": 61,
+"t": "Hisoblash to'rt qadamda bajariladi.",
+"a": 878.793,
+"b": 880.442
+},
+{
+"p": 61,
+"t": "Keling, buni Aziz misolida ko'ramiz.",
+"a": 880.653,
+"b": 884.533
+},
+{
+"p": 62,
+"t": "Birinchi qadam — har bir ko'rsatkichning bajarilish foizini topamiz va ellik foizlik eshik qoidasini tekshiramiz.",
+"a": 884.883,
+"b": 891.033
+},
+{
+"p": 62,
+"t": "Tushum: yigirma yetti millionni oltmish millionga bo'lib, yuzga ko'paytirsak — qirq besh foiz chiqadi.",
+"a": 891.322,
+"b": 897.572
+},
+{
+"p": 62,
+"t": "Bu ellik foizlik eshikdan past, shuning uchun tushum bo'yicha ball — nol.",
+"a": 897.822,
+"b": 902.524
+},
+{
+"p": 62,
+"t": "Konversiya: o'n olti foizni yigirma foizga bo'lsak — sakson foiz.",
+"a": 902.524,
+"b": 907.905
+},
+{
+"p": 62,
+"t": "Eshikdan o'tdi.",
+"a": 907.905,
+"b": 909.173
+},
+{
+"p": 62,
+"t": "Sakson foizni yigirma foizlik vaznga ko'paytirsak — o'n olti ball.",
+"a": 909.543,
+"b": 912.68
+},
+{
+"p": 62,
+"t": "Si-Ar-Em tozaligi: yetmish ikki foizni to'qson foizga bo'lsak — sakson foiz, bu ham o'n olti ball.",
+"a": 912.68,
+"b": 918.456
+},
+{
+"p": 62,
+"t": "Qayta aloqa: oltmish uch foizni to'qson foizga bo'lsak — yetmish foiz, bu o'n to'rt ball.",
+"a": 918.456,
+"b": 924.59
+},
+{
+"p": 62,
+"t": "Hamma ballarni qo'shamiz: nol, o'n olti, o'n olti va o'n to'rt — jami qirq olti ball.",
+"a": 924.59,
+"b": 930.143
+},
+{
+"p": 63,
+"t": "Ikkinchi qadam — bonusni hisoblaymiz.",
+"a": 930.312,
+"b": 934.043
+},
+{
+"p": 63,
+"t": "Ikki yarim million so'm bonus fondining qirq olti foizi — bir million bir yuz ellik ming so'm.",
+"a": 935.533,
+"b": 940.895
+},
+{
+"p": 64,
+"t": "Uchinchi qadam — maoshni hisoblaymiz.",
+"a": 940.895,
+"b": 942.572
+},
+{
+"p": 64,
+"t": "Ikki yarim million so'm oklad ustiga bir million bir yuz ellik ming so'm bonus qo'shilsa, Aziz jami uch million olti yuz ellik ming so'm maosh oladi.",
+"a": 943.143,
+"b": 952.051
+},
+{
+"p": 65,
+"t": "To'rtinchi qadam — xodimga tushuntiramiz.",
+"a": 952.051,
+"b": 954.263
+},
+{
+"p": 65,
+"t": "Azizga shunday deyiladi: tushum rejasining yarmiga yetmadingiz, shuning uchun tushum qismidan bonus bo'lmadi.",
+"a": 955.263,
+"b": 963.723
+},
+{
+"p": 65,
+"t": "Konversiya, Si-Ar-Em va qayta aloqa bo'yicha esa yaxshi ishladingiz, shuning uchun bonus oldingiz.",
+"a": 964.053,
+"b": 970.322
+},
+{
+"p": 66,
+"t": "Xuddi shu tartibda hisoblasak, rejani to'liq bajargan Bobur to'qson sakkiz ball to'plab, to'rt million to'qqiz yuz ellik ming so'm oladi.",
+"a": 971.113,
+"b": 978.903
+},
+{
+"p": 66,
+"t": "Charos va Dilnoza esa yuz ball to'plab, eng ko'p mumkin bo'lgan besh million so'mdan maosh oladi.",
+"a": 979.173,
+"b": 984.603
+},
+{
+"p": 66,
+"t": "Bu variantning kamchiligi shu yerda ko'rinadi: Dilnoza Azizdan to'rt yarim baravar ko'p sotdi, maoshi esa bir yarim baravarga ham yetmaydi.",
+"a": 984.973,
+"b": 993.113
+},
+{
+"p": 67,
+"t": "Uchinchi variant — oklad plyus tushumdan ulush.",
+"a": 994.043,
+"b": 999.613
+},
+{
+"p": 67,
+"t": "Avvalo muhim eslatma: nima uchun hech qachon okladsiz, faqat tushumdan ulush berilmaydi?",
+"a": 1000.053,
+"b": 1005.949
+},
+{
+"p": 67,
+"t": "Birinchidan, islom moliyasi qoidalariga ko'ra, yollanma xodimning ish haqi oldindan aniq bo'lishi kerak.",
+"a": 1005.949,
+"b": 1014.533
+},
+{
+"p": 67,
+"t": "Faqat tushumga bog'langan, miqdori noma'lum to'lovda noaniqlik, ya'ni g'arar bor.",
+"a": 1014.763,
+"b": 1019.429
+},
+{
+"p": 67,
+"t": "Shuning uchun doim oldindan aniq oklad belgilanadi, ulush esa uning ustiga qo'shiladi.",
+"a": 1019.429,
+"b": 1024.193
+},
+{
+"p": 67,
+"t": "Bu diniy hukm emas — shartlarni ishonchli mutaxassis bilan tekshirib oling.",
+"a": 1024.382,
+"b": 1029.643
+},
+{
+"p": 67,
+"t": "Ikkinchidan, amaliy jihatdan ham savdo past bo'lgan oyda xodim daromadsiz qolib, kompaniyani tark etadi.",
+"a": 1029.643,
+"b": 1036.661
+},
+{
+"p": 68,
+"t": "Bu variantda oklad ikki yarim million so'm.",
+"a": 1036.661,
+"b": 1039.273
+},
+{
+"p": 68,
+"t": "Ulushni hisoblashning esa uch xil usuli bor.",
+"a": 1039.513,
+"b": 1042.713
+},
+{
+"p": 69,
+"t": "Birinchi usul — bitta o'zgarmas foiz.",
+"a": 1042.943,
+"b": 1046.663
+},
+{
+"p": 69,
+"t": "Masalan, barcha tushumdan besh foiz.",
+"a": 1047.132,
+"b": 1048.466
+},
+{
+"p": 70,
+"t": "Ikkinchi usul — zinapoya.",
+"a": 1048.466,
+"b": 1049.632
+},
+{
+"p": 70,
+"t": "Tushum ellik million so'mgacha bo'lsa — besh foiz.",
+"a": 1049.933,
+"b": 1054.303
+},
+{
+"p": 70,
+"t": "Ellik milliondan yuz million so'mgacha bo'lsa — butun summaga sakkiz foiz.",
+"a": 1054.622,
+"b": 1057.803
+},
+{
+"p": 70,
+"t": "Yuz million so'mdan oshsa — butun summaga o'n foiz.",
+"a": 1058.043,
+"b": 1061.69
+},
+{
+"p": 71,
+"t": "Uchinchi usul — bosqichma-bosqich.",
+"a": 1061.69,
+"b": 1063.622
+},
+{
+"p": 71,
+"t": "Bunda har bir pog'onadagi summaga o'z foizi qo'llanadi: dastlabki ellik million so'mga besh foiz, keyingi ellik million so'mga sakkiz foiz, yuz milliondan oshgan qismiga esa o'n foiz.",
+"a": 1063.903,
+"b": 1075.273
+},
+{
+"p": 72,
+"t": "Keling, oltmish million so'm tushum keltirgan Bobur misolida uchala usulni solishtiramiz.",
+"a": 1075.562,
+"b": 1081.842
+},
+{
+"p": 73,
+"t": "Birinchi usulda: oltmish millionning besh foizi — uch million so'm ulush.",
+"a": 1082.092,
+"b": 1086.602
+},
+{
+"p": 73,
+"t": "Ikki yarim million oklad bilan jami maosh — besh million besh yuz ming so'm.",
+"a": 1087.253,
+"b": 1092.223
+},
+{
+"p": 74,
+"t": "Ikkinchi usul — zinapoyada: oltmish million so'm ikkinchi pog'onaga chiqqani uchun butun summaga sakkiz foiz qo'llanadi — to'rt million sakkiz yuz ming so'm ulush.",
+"a": 1092.443,
+"b": 1104.023
+},
+{
+"p": 74,
+"t": "Oklad bilan jami maosh — yetti million uch yuz ming so'm.",
+"a": 1104.303,
+"b": 1106.553
+},
+{
+"p": 75,
+"t": "Uchinchi usul — bosqichma-bosqich hisoblashda: birinchi ellik millionning besh foizi — ikki yarim million so'm, qolgan o'n millionning sakkiz foizi — sakkiz yuz ming so'm.",
+"a": 1106.812,
+"b": 1118.322
+},
+{
+"p": 75,
+"t": "Jami ulush — uch million uch yuz ming so'm, oklad bilan birga maosh — besh million sakkiz yuz ming so'm.",
+"a": 1118.923,
+"b": 1126.723
+},
+{
+"p": 76,
+"t": "To'rtinchi variant — oklad plyus ulush va tartib sharti.",
+"a": 1126.903,
+"b": 1130.125
+},
+{
+"p": 76,
+"t": "Formula: maosh teng oklad qo'shuv ulush ko'paytiruv sifat koeffitsienti.",
+"a": 1130.125,
+"b": 1134.332
+},
+{
+"p": 77,
+"t": "Sifat koeffitsienti Si-Ar-Em tozaligi va qayta aloqa bajarilishining eng pastiga qarab belgilanadi.",
+"a": 1134.533,
+"b": 1142.943
+},
+{
+"p": 77,
+"t": "Agar ikkalasi ham to'qson foiz va undan yuqori bo'lsa — koeffitsient bir, ya'ni ulush to'liq to'lanadi.",
+"a": 1143.153,
+"b": 1150.043
+},
+{
+"p": 77,
+"t": "Agar eng pasti yetmish foizdan sakson to'qqiz foizgacha bo'lsa — koeffitsient nol butun o'ndan sakkiz, ya'ni ulushning sakson foizi to'lanadi.",
+"a": 1150.503,
+"b": 1159.352
+},
+{
+"p": 77,
+"t": "Agar yetmish foizdan past bo'lsa — koeffitsient nol butun o'ndan besh, ya'ni ulushning faqat yarmi to'lanadi.",
+"a": 1159.653,
+"b": 1166.203
+},
+{
+"p": 78,
+"t": "Aziz misolida ko'ramiz.",
+"a": 1166.203,
+"b": 1167.557
+},
+{
+"p": 78,
+"t": "Uning tushumi yigirma yetti million so'm, besh foizlik ulushi — bir million uch yuz ellik ming so'm.",
+"a": 1167.557,
+"b": 1174.913
+},
+{
+"p": 78,
+"t": "Uning Si-Ar-Em tozaligi bajarilishi sakson foiz, qayta aloqasi esa yetmish foiz.",
+"a": 1175.163,
+"b": 1179.568
+},
+{
+"p": 78,
+"t": "Eng pasti yetmish foiz bo'lgani uchun koeffitsient nol butun o'ndan sakkiz.",
+"a": 1179.568,
+"b": 1184.491
+},
+{
+"p": 78,
+"t": "Bir million uch yuz ellik mingni nol butun o'ndan sakkizga ko'paytirsak — bir million sakson ming so'm ulush chiqadi.",
+"a": 1184.491,
+"b": 1190.862
+},
+{
+"p": 78,
+"t": "Ikki yarim million so'm oklad bilan Aziz uch million besh yuz sakson ming so'm oladi.",
+"a": 1190.862,
+"b": 1197.602
+},
+{
+"p": 78,
+"t": "Tartibni a'lo bajargan va bir yuz yigirma million tushum keltirgan Dilnoza esa sakkiz million besh yuz ming so'm maosh oladi.",
+"a": 1197.803,
+"b": 1203.793
+},
+{
+"p": 79,
+"t": "Endi har oy maoshni qanday hisoblashni ko'ramiz.",
+"a": 1203.983,
+"b": 1206.712
+},
+{
+"p": 79,
+"t": "Bu olti qadamdan iborat bo'lib, bitta xodimga atigi uch-besh daqiqa vaqt ketadi.",
+"a": 1206.712,
+"b": 1212.089
+},
+{
+"p": 80,
+"t": "Birinchi qadam: Si-Ar-Em yoki kunlik hisobot daftaridan haqiqiy raqamlarni olasiz.",
+"a": 1212.089,
+"b": 1217.673
+},
+{
+"p": 81,
+"t": "Ikkinchi qadam: har bir Key-Pi-Ay bo'yicha bajarilish foizini hisoblaysiz.",
+"a": 1217.842,
+"b": 1222.714
+},
+{
+"p": 81,
+"t": "Yuz foizdan oshsa, yuz deb olinadi.",
+"a": 1222.714,
+"b": 1225.293
+},
+{
+"p": 81,
+"t": "Eslatma: agar javob berish tezligi kabi teskari Key-Pi-Ay bo'lsa, ya'ni raqam qancha kichik bo'lsa shuncha yaxshi bo'lsa, maqsadni haqiqiy natijaga bo'lib, yuzga ko'paytirasiz.",
+"a": 1225.832,
+"b": 1235.34
+},
+{
+"p": 81,
+"t": "Masalan, maqsad besh daqiqa, xodim sakkiz daqiqada javob berdi.",
+"a": 1235.34,
+"b": 1240.132
+},
+{
+"p": 81,
+"t": "Beshni sakkizga bo'lsak — oltmish ikki yarim foiz.",
+"a": 1240.403,
+"b": 1243.372
+},
+{
+"p": 82,
+"t": "Uchinchi qadam: ellik foizlik eshik qoidasini tekshirasiz.",
+"a": 1243.963,
+"b": 1247.743
+},
+{
+"p": 83,
+"t": "To'rtinchi qadam: bajarilish foizini vaznga ko'paytirib, hammasini qo'shasiz va Key-Pi-Ay ballini chiqarasiz.",
+"a": 1248.423,
+"b": 1254.263
+},
+{
+"p": 84,
+"t": "Beshinchi qadam: natijani tanlangan variant formulasiga qo'yasiz.",
+"a": 1254.263,
+"b": 1258.748
+},
+{
+"p": 85,
+"t": "Oltinchi qadam: maoshni yozasiz va hisob varag'ini xodimga yuborasiz.",
+"a": 1258.748,
+"b": 1263.223
+},
+{
+"p": 86,
+"t": "Oy oxiridagi tartib esa quyidagicha.",
+"a": 1263.433,
+"b": 1264.933
+},
+{
+"p": 86,
+"t": "Oyning birinchi-uchinchi sanalarida rahbar yoki inson resurslari mutaxassisi raqamlarni yig'adi.",
+"a": 1265.443,
+"b": 1270.643
+},
+{
+"p": 86,
+"t": "Uchinchi-to'rtinchi sanalarda hisoblash jadvali to'ldiriladi.",
+"a": 1270.943,
+"b": 1274.987
+},
+{
+"p": 86,
+"t": "Beshinchi sanagacha har bir xodimga o'z hisob varag'i yuboriladi.",
+"a": 1274.987,
+"b": 1279.1
+},
+{
+"p": 86,
+"t": "Xodimda e'tiroz bo'lsa, uch kun ichida birgalikda tekshiriladi.",
+"a": 1279.1,
+"b": 1282.393
+},
+{
+"p": 86,
+"t": "So'ng buxgalteriya maoshni belgilangan sanada to'laydi.",
+"a": 1282.572,
+"b": 1287.037
+},
+{
+"p": 87,
+"t": "Yangi xodimning maoshi bosqichma-bosqich shakllanadi.",
+"a": 1287.037,
+"b": 1289.493
+},
+{
+"p": 88,
+"t": "Birinchi bosqich — o'n olti kunlik ichki akademiya.",
+"a": 1289.903,
+"b": 1292.793
+},
+{
+"p": 88,
+"t": "Bu vaqtda xodim hali sotmaydi, faqat mahsulot va skriptlarni o'rganadi.",
+"a": 1293.803,
+"b": 1297.572
+},
+{
+"p": 88,
+"t": "Imtihondan o'tgan xodimgina sotuvga chiqadi.",
+"a": 1297.983,
+"b": 1302.092
+},
+{
+"p": 89,
+"t": "Ikkinchi bosqich — sotuvga chiqqandan keyingi birinchi o'ttiz kun.",
+"a": 1302.403,
+"b": 1305.353
+},
+{
+"p": 89,
+"t": "Xodimga ikkinchi variant, ya'ni oklad plyus Key-Pi-Ay bonus qo'llanadi.",
+"a": 1305.353,
+"b": 1309.072
+},
+{
+"p": 89,
+"t": "Maqsad o'rtacha xodim rejasining ellik-yetmish foizi qilib belgilanadi, eshik qoidasi qo'llanmaydi.",
+"a": 1309.273,
+"b": 1317.213
+},
+{
+"p": 89,
+"t": "Xodim birinchi kundanoq natija pul keltirishini his qiladi.",
+"a": 1317.582,
+"b": 1320.502
+},
+{
+"p": 90,
+"t": "Uchinchi bosqich — o'ttiz birinchi kundan oltmishinchi kungacha.",
+"a": 1320.502,
+"b": 1324.403
+},
+{
+"p": 90,
+"t": "Maqsad o'rtacha xodim natijasining sakson-to'qson foiziga ko'tariladi, eshik qoidasi o'ttiz foiz bo'ladi.",
+"a": 1325.153,
+"b": 1331.407
+},
+{
+"p": 91,
+"t": "To'rtinchi bosqich — oltmish birinchi kundan to'qsoninchi kungacha.",
+"a": 1331.407,
+"b": 1335.395
+},
+{
+"p": 91,
+"t": "Xodim to'liq rejaga va ellik foizlik eshik qoidasiga o'tadi.",
+"a": 1335.395,
+"b": 1339.733
+},
+{
+"p": 91,
+"t": "To'qsoninchi kundan keyin natijaga qarab uchinchi yoki to'rtinchi variantga o'tkazish masalasi ko'rib chiqiladi.",
+"a": 1340.463,
+"b": 1348.115
+},
+{
+"p": 92,
+"t": "Muhim qoida: maosh tizimi hech qachon oyning o'rtasida o'zgartirilmaydi.",
+"a": 1348.115,
+"b": 1352.693
+},
+{
+"p": 92,
+"t": "Har qanday o'zgarish faqat keyingi oyning birinchi sanasidan, xodimni oldindan yozma xabardor qilib va imzosini olib, kuchga kiradi.",
+"a": 1352.993,
+"b": 1360.572
+},
+{
+"p": 93,
+"t": "Darsimiz yakunida rahbarlar eng ko'p yo'l qo'yadigan to'qqizta xatoni sanab o'tamiz.",
+"a": 1360.913,
+"b": 1368.023
+},
+{
+"p": 94,
+"t": "Birinchi xato — xodimga faqat qat'iy oklad berish.",
+"a": 1368.913,
+"b": 1371.832
+},
+{
+"p": 95,
+"t": "Ikkinchi xato — okladsiz, faqat tushumdan foiz va'da qilish.",
+"a": 1371.832,
+"b": 1374.948
+},
+{
+"p": 96,
+"t": "Uchinchi xato — tushum nima ekanini boshidan yozma belgilamaslik.",
+"a": 1374.948,
+"b": 1379.243
+},
+{
+"p": 96,
+"t": "Natijada pul kassaga tushmasdan turib, shartnoma uchun bonus talab qilinadi.",
+"a": 1379.622,
+"b": 1386.703
+},
+{
+"p": 97,
+"t": "To'rtinchi xato — xodimga beshtadan ko'p Key-Pi-Ay yuklash.",
+"a": 1386.953,
+"b": 1389.523
+},
+{
+"p": 98,
+"t": "Beshinchi xato — maosh shartlarini og'zaki aytish.",
+"a": 1389.523,
+"b": 1393.372
+},
+{
+"p": 98,
+"t": "Har oy «men boshqacha tushungandim» degan nizo chiqmasligi uchun hammasi yozma bo'lishi shart.",
+"a": 1393.803,
+"b": 1400.166
+},
+{
+"p": 99,
+"t": "Oltinchi xato — oy o'rtasida qoidalar va foizlarni o'zgartirish.",
+"a": 1400.166,
+"b": 1406.632
+},
+{
+"p": 100,
+"t": "Yettinchi xato — yangi xodimga ham, tajribali xodimga ham bir xil reja qo'yish.",
+"a": 1407.632,
+"b": 1412.523
+},
+{
+"p": 101,
+"t": "Sakkizinchi xato — Si-Ar-Em yoki kunlik hisobot tekshirilmasdan, ishonchsiz raqamlar asosida maosh hisoblash.",
+"a": 1412.852,
+"b": 1420.193
+},
+{
+"p": 102,
+"t": "To'qqizinchi xato — maoshni belgilangan sanadan kechiktirib to'lash.",
+"a": 1420.572,
+"b": 1424.683
+},
+{
+"p": 102,
+"t": "To'lov kechiksa, eng mukammal tizimga ham ishonch yo'qoladi.",
+"a": 1425.163,
+"b": 1427.632
+},
+{
+"p": 103,
+"t": "Shuning uchun qo'llanmada maxsus rahbar tasdiq varaqasi berilgan.",
+"a": 1427.893,
+"b": 1431.749
+},
+{
+"p": 103,
+"t": "Unda xodimning ism-sharifi, tanlangan variant, oklad summasi, bonus fondi yoki ulush foizlari, Key-Pi-Ay vaznlari, eshik qoidasi, tushum ta'rifi hamda maosh to'lanadigan sana yoziladi.",
+"a": 1431.749,
+"b": 1446.6
+},
+{
+"p": 103,
+"t": "Varaqani rahbar va xodim imzolaydi.",
+"a": 1446.6,
+"b": 1450.342
+},
+{
+"p": 103,
+"t": "Bir nusxasi rahbarda, ikkinchisi xodimda qoladi.",
+"a": 1450.783,
+"b": 1453.632
+},
+{
+"p": 104,
+"t": "Esda tuting: qo'llanmadagi barcha summalar soliqdan oldingi summalar.",
+"a": 1454.983,
+"b": 1459.553
+},
+{
+"p": 104,
+"t": "Maosh shartlarini mehnat shartnomasiga yozishdan oldin buxgalter yoki yurist bilan tekshiring.",
+"a": 1460.013,
+"b": 1465.533
+},
+{
+"p": 105,
+"t": "Hurmatli rahbarlar!",
+"a": 1466.072,
+"b": 1466.993
+},
+{
+"p": 105,
+"t": "Shu bilan sotuv menejeriga maosh tizimini tanlash va hisoblash bo'yicha amaliy darsimiz yakunlandi.",
+"a": 1467.223,
+"b": 1472.903
+},
+{
+"p": 105,
+"t": "Ushbu tizimni korxonangizda bugunoq joriy qiling va savdo jamoangiz samaradorligini yangi bosqichga olib chiqing!",
+"a": 1473.382,
+"b": 1480.303
+}
+]
+}
