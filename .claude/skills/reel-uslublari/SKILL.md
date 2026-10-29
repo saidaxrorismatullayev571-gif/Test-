@@ -48,6 +48,18 @@ Qo‘shimcha 6 ta (`kallaway-split`, `over-the-shoulder`, `backdrop-word`, `glas
 ## Neon sariq glow subtitr va Before/After (foydalanuvchi namunasi)
 Kalit so‘z `#FFE45C` neon glow (`text-shadow: 0 0 12px #FFD43B, 0 0 28px #FFB800`) yoki to‘q sariq plashka; oddiy so‘zlar oq, kichik, blur-in. Before/After kompozitsiyasi va flat-lay B-roll: `video-darslik-v3/uslub_namunalar/BEFORE_AFTER_REEL.md`.
 
+Yana: `freeze-frame` (stiker kontur + ism tegi), `tier-list`, `glass-graph` — `CLAUDE_EFFECTS_RED_REEL.md`. O‘zbekcha 11 ta effekt va UI matnlari (`match-cut`, `apple-ui-toggles`, `pull-back-reveal`, `phone-mockup`, `nle-timeline`, `jiggle-delete`, `creator-list`, `ui-world` …) — `KUN_EFFEKTI_UZ_REEL.md`. O‘zbekcha overlay matnlarini shu lug‘atdan oling.
+
+## Montaj quvuri va qoidalar fayli (15-namuna, `MONTAJ_5_QADAM_REEL.md`)
+Talking-head montaji tartibi:
+1. ASR yoki `align.py` bilan so‘z vaqtlari.
+2. Dubl va pauzalarni kesish (pauza nafas bilan birga kesiladi).
+3. Bir so‘zli subtitr.
+4. Emotsional so‘zlarda yuzga yaqinlashtirish (punch-in).
+5. Motion overlay.
+
+Foydalanuvchining har bir tuzatishini shu skill’ga **qoida** qilib yozing — bu bizning «TALKING_HEAD.md» imiz.
+
 ## Kompozitsiyalar (foydalanuvchi namunalari)
 - **Yonma-yon «eskiz → natija»** (Neon Aurora): `ESKIZDAN_NEON_REEL.md`.
 - **«raw / finished», bir so‘z = bir kadr:** `RAW_FINISHED_REEL.md`.
