@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<title>Uslub namunalari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Caveat:wght@700&family=Space+Grotesk:wght@500;700&family=Archivo+Black&family=Nunito:wght@600;800;900&family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;700;800&display=block" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{width:1920px;height:1080px;overflow:hidden}
+#f{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:Inter,sans-serif}
+.hud{position:absolute;left:110px;right:110px;top:30px;display:flex;justify-content:space-between;font-size:22px;font-weight:700}
+.wrap{position:absolute;left:120px;right:120px;top:140px;bottom:80px;display:flex;flex-direction:column}
+.kick{font-size:24px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin-bottom:12px}
+h2{margin:0 0 34px;font-size:66px;line-height:1.05}
+.row{display:flex;gap:36px;align-items:stretch;flex:1}
+.card{padding:24px 30px}
+table{border-collapse:collapse;width:100%;font-size:28px}
+th{text-align:left;font-size:19px;text-transform:uppercase;letter-spacing:.08em;padding:10px 14px}
+td{padding:13px 14px}
+.ball{font-weight:900;font-size:36px}
+.tower{display:flex;flex-direction:column-reverse;gap:10px;width:260px;height:430px}
+.blk{display:flex;align-items:center;justify-content:center;font-weight:900;font-size:26px;flex:none}
+.total{font-weight:900;font-size:56px;margin-top:14px;white-space:nowrap}
+.gate{position:relative;height:46px;border-radius:12px;margin-top:22px}
+.gate i{position:absolute;left:0;top:0;bottom:0;width:45%;border-radius:12px}
+.gate b{position:absolute;left:50%;top:-14px;bottom:-14px;border-left:4px dashed}
+.gate span{position:absolute;left:calc(50% + 12px);top:-40px;font-size:20px;font-weight:800}
+.note{position:absolute}
+
+/* ---------- 0 Tungi Fintech ---------- */
+.s0{background:radial-gradient(900px 700px at 15% 0%,#173070 0,transparent 70%),radial-gradient(800px 700px at 95% 90%,rgba(13,148,136,.45) 0,transparent 70%),#070d1c;color:#f1f5ff}
+.s0 .hud{color:#f1f5ff}.s0 .hud span{color:#9fb0d0}
+.s0 .kick{color:#2ee6c5}.s0 h2{font-weight:850}.s0 h2 em{font-style:normal;color:#ffc24b}
+.s0 .card{background:linear-gradient(180deg,rgba(30,46,86,.78),rgba(22,34,64,.72));border:1px solid rgba(255,255,255,.1);border-radius:28px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.s0 th{color:#9fb0d0;border-bottom:1px solid rgba(255,255,255,.1)}.s0 td{border-bottom:1px solid rgba(255,255,255,.08)}
+.s0 .ok{color:#3ddc97}.s0 .bad{color:#ff6b6b}
+.s0 .o{background:linear-gradient(180deg,#5ff3d8,#2ee6c5);color:#05201c;border-radius:16px}
+.s0 .b{background:linear-gradient(180deg,#8cc4ff,#5aa8ff);color:#071a33;border-radius:16px}
+.s0 .total{color:#3ddc97}.s0 .gate{background:rgba(255,255,255,.08)}.s0 .gate i{background:#ff6b6b}.s0 .gate b{border-color:#ffc24b}.s0 .gate span{color:#ffc24b}
+
+/* ---------- 1 Qog'oz va Siyoh ---------- */
+.s1{background:#f4eee3;color:#1f1b16}
+.s1::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(42,111,151,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(42,111,151,.07) 1px,transparent 1px);background-size:44px 44px}
+.s1 .hud{font-family:Fraunces,serif;color:#1f1b16}.s1 .hud span{color:#6b6257;font-family:Inter}
+.s1 .kick{color:#d1495b;font-family:Inter}
+.s1 h2{font-family:Fraunces,serif;font-weight:800;font-size:76px}.s1 h2 em{font-style:italic;color:#2a6f97;background:linear-gradient(transparent 62%,rgba(233,162,59,.55) 62%)}
+.s1 .card{background:#fbf7f0;border:2.5px solid #1f1b16;border-radius:6px;box-shadow:0 3px 0 #e2d8c6,0 16px 30px rgba(60,40,10,.12);transform:rotate(-.6deg)}
+.s1 .card+.card{transform:rotate(.8deg)}
+.s1 th{color:#6b6257;border-bottom:2px solid #1f1b16;font-family:Inter}.s1 td{border-bottom:1.5px dashed #b9ad98}
+.s1 .ok{color:#5b8e3e}.s1 .bad{color:#d1495b}
+.s1 .o{background:repeating-linear-gradient(-45deg,#2a6f97 0 6px,#3a84ad 6px 12px);color:#fff;border:2.5px solid #1f1b16}
+.s1 .b{background:repeating-linear-gradient(-45deg,#2a9d8f 0 6px,#38b0a1 6px 12px);color:#fff;border:2.5px solid #1f1b16}
+.s1 .total{font-family:Fraunces,serif;color:#5b8e3e}
+.s1 .gate{background:#efe6d6;border:2.5px solid #1f1b16}.s1 .gate i{background:repeating-linear-gradient(-45deg,#d1495b 0 6px,#e06070 6px 12px)}.s1 .gate b{border-color:#1f1b16}.s1 .gate span{color:#1f1b16;font-family:Caveat,cursive;font-size:30px}
+.s1 .hand{font-family:Caveat,cursive;color:#d1495b;font-size:40px}
+
+/* ---------- 2 Pop Stiker ---------- */
+.s2{background:radial-gradient(#f0c94a 2.2px,transparent 2.4px) 0 0/26px 26px,#ffe66d;color:#111}
+.s2 .hud{font-family:"Space Grotesk";color:#111}.s2 .hud span{background:#111;color:#ffe66d;padding:4px 14px;border-radius:999px}
+.s2 .kick{display:inline-block;align-self:flex-start;background:#ff006e;color:#fff;border:4px solid #111;box-shadow:5px 5px 0 #111;padding:6px 14px;transform:rotate(-2deg);font-family:"Space Grotesk";letter-spacing:.06em}
+.s2 h2{font-family:"Archivo Black";font-size:74px;font-weight:400}.s2 h2 em{font-style:normal;background:#3a86ff;color:#fff;padding:0 14px;border:4px solid #111;box-shadow:6px 6px 0 #111;display:inline-block;transform:rotate(1.5deg)}
+.s2 .card{background:#fff;border:4px solid #111;border-radius:18px;box-shadow:10px 10px 0 #111}
+.s2 th{color:#111;border-bottom:4px solid #111;font-family:"Space Grotesk"}.s2 td{border-bottom:2px solid #111;font-family:"Space Grotesk";font-weight:700}
+.s2 .ok{color:#06a37a}.s2 .bad{color:#ff006e}
+.s2 .o{background:#3a86ff;color:#fff;border:4px solid #111;border-radius:12px;box-shadow:6px 6px 0 #111}
+.s2 .b{background:#8338ec;color:#fff;border:4px solid #111;border-radius:12px;box-shadow:6px 6px 0 #111}
+.s2 .total{font-family:"Archivo Black";font-weight:400;background:#06d6a0;border:4px solid #111;box-shadow:8px 8px 0 #111;padding:4px 18px;border-radius:14px;transform:rotate(-2deg);display:inline-block}
+.s2 .gate{background:#fff;border:4px solid #111}.s2 .gate i{background:#ff006e;border-radius:8px}.s2 .gate b{border-color:#111;border-left-width:6px}.s2 .gate span{color:#111;font-family:"Space Grotesk"}
+.s2 .sticker{position:absolute;font-family:"Archivo Black";background:#ff8500;color:#fff;border:4px solid #111;box-shadow:6px 6px 0 #111;border-radius:999px;padding:12px 22px;font-size:30px;transform:rotate(8deg)}
+
+/* ---------- 3 Keynote Oq ---------- */
+.s3{background:radial-gradient(700px 520px at 74% 52%,rgba(94,92,230,.14),transparent 70%),#f5f5f7;color:#1d1d1f}
+.s3 .hud{color:#1d1d1f;font-weight:600}.s3 .hud span{color:#6e6e73}
+.s3 .kick{color:#6e6e73;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:28px}
+.s3 h2{font-family:"Inter Display",Inter;font-weight:700;font-size:84px;letter-spacing:-.03em}.s3 h2 em{font-style:normal;background:linear-gradient(90deg,#0071e3,#bf5af2);-webkit-background-clip:text;color:transparent}
+.s3 .card{background:#fff;border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.08)}
+.s3 th{color:#6e6e73;border-bottom:1px solid #e5e5ea;font-weight:600}.s3 td{border-bottom:1px solid #f0f0f3}
+.s3 .ok{color:#30d158}.s3 .bad{color:#ff3b30}
+.s3 .o{background:linear-gradient(180deg,rgba(0,113,227,.85),rgba(0,113,227,.65));color:#fff;border-radius:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.s3 .b{background:linear-gradient(180deg,rgba(94,92,230,.8),rgba(94,92,230,.6));color:#fff;border-radius:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.s3 .total{font-family:"Inter Display";font-weight:700;font-size:64px;letter-spacing:-.02em;background:linear-gradient(90deg,#1d1d1f,#30d158);-webkit-background-clip:text;color:transparent}
+.s3 .gate{background:#e9e9ee;height:10px;border-radius:5px}.s3 .gate i{background:#ff3b30;border-radius:5px}.s3 .gate b{border-left:2px solid #1d1d1f;top:-18px;bottom:-18px}.s3 .gate span{color:#1d1d1f;font-weight:600}
+.s3 .giant{position:absolute;right:120px;top:120px;font-family:"Inter Display";font-weight:800;font-size:300px;letter-spacing:-.05em;background:linear-gradient(135deg,#0071e3,#bf5af2);-webkit-background-clip:text;color:transparent;opacity:.12}
+
+/* ---------- 4 Izometrik Ofis ---------- */
+.s4{background:linear-gradient(160deg,#e9eeff,#f7f4ff);color:#1e2140;font-family:Nunito,sans-serif}
+.s4 .floor{position:absolute;inset:0;opacity:.5}
+.s4 .hud{color:#1e2140;font-weight:900}.s4 .hud span{color:#6a6f99}
+.s4 .kick{color:#7c6cf2;font-weight:900}
+.s4 h2{font-weight:900;font-size:68px}.s4 h2 em{font-style:normal;color:#ffb648}
+.s4 .card{background:#fff;border-radius:24px;box-shadow:0 12px 0 #c9d1f0,0 30px 40px rgba(60,70,140,.15)}
+.s4 th{color:#6a6f99;border-bottom:2px solid #e3e8fb;font-weight:900}.s4 td{border-bottom:2px solid #f0f3fd;font-weight:700}
+.s4 .ok{color:#3ccf91}.s4 .bad{color:#ff6f7d}
+.s4 .total{color:#3ccf91;font-weight:900}
+.s4 .gate{background:#e3e8fb;border-radius:999px}.s4 .gate i{background:#ff6f7d;border-radius:999px}.s4 .gate b{border-color:#7c6cf2}.s4 .gate span{color:#7c6cf2;font-weight:900}
+
+/* ---------- 5 Atlas Naqsh ---------- */
+.s5{background:#1a1946;color:#fff7e6;font-family:Manrope,sans-serif}
+.s5 .ikat{position:absolute;inset:0;opacity:.09;background:
+ radial-gradient(ellipse 60px 120px at 50% 50%,#d4a437 0 40%,transparent 42%) 0 0/180px 240px,
+ radial-gradient(ellipse 30px 70px at 50% 50%,#1fa3a3 0 40%,transparent 42%) 90px 120px/180px 240px,
+ repeating-linear-gradient(90deg,transparent 0 86px,#b565a7 86px 94px)}
+.s5 .hud{font-family:"Cormorant Garamond",serif;font-size:28px;color:#d4a437}.s5 .hud span{color:#c9bfa6;font-family:Manrope;font-size:20px}
+.s5 .kick{color:#d4a437;font-family:Manrope}
+.s5 h2{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:82px}.s5 h2 em{font-style:normal;background:linear-gradient(90deg,#f3d27a,#d4a437,#f3d27a);-webkit-background-clip:text;color:transparent}
+.s5 .card{position:relative;background:#f6eedc;color:#1e1b4b;border:1.5px solid #d4a437;border-radius:4px;box-shadow:0 0 0 6px #1a1946,0 0 0 7.5px rgba(212,164,55,.6),0 30px 50px rgba(0,0,0,.35)}
+.s5 .card::before,.s5 .card::after{content:"✦";position:absolute;color:#d4a437;font-size:26px;top:-17px;left:-12px;background:#1a1946;padding:0 2px}
+.s5 .card::after{left:auto;right:-12px}
+.s5 th{color:#7a6d52;border-bottom:1.5px solid #d4a437}.s5 td{border-bottom:1px solid #e6d8b8;font-weight:700}
+.s5 .ok{color:#3f8a4c}.s5 .bad{color:#c8463d}
+.s5 .o{background:#1fa3a3;color:#fff7e6;border:2px solid #d4a437;border-radius:40px 40px 6px 6px}
+.s5 .b{background:#3e7cc4;color:#fff7e6;border:2px solid #d4a437;border-radius:40px 40px 6px 6px}
+.s5 .total{font-family:Manrope;font-weight:800;color:#1e1b4b}
+.s5 .gate{background:#e9dcbf;border:1.5px solid #d4a437}.s5 .gate i{background:#c8463d}.s5 .gate b{border-color:#1e1b4b}.s5 .gate span{color:#7a6d52}
+</style>
+</head>
+<body>
+<div id="f"></div>
+<script>
+const S = +(location.search.match(/s=(\d)/) || [0, 0])[1];
+const NAMES = ['Tungi Fintech', 'Qog‘oz va Siyoh', 'Pop Stiker', 'Keynote Oq', 'Izometrik Ofis', 'Atlas Naqsh'];
+const skin = '#e9b98f', hair = '#2b1d14';
+const shirt = ['#ff6b6b', '#d1495b', '#ff006e', '#ff3b30', '#ff6f7d', '#c8463d'][S];
+const stroke = S === 2 ? 'stroke="#111" stroke-width="5"' : S === 1 ? 'stroke="#1f1b16" stroke-width="3"' : '';
+const avatar = (w) => S === 3
+  ? `<svg width="${w}" height="${w}" viewBox="0 0 150 150"><circle cx="75" cy="55" r="34" fill="#1d1d1f"/><path d="M15 150 Q20 98 75 96 Q130 98 135 150Z" fill="#1d1d1f"/></svg>`
+  : `<svg width="${w}" height="${w * 1.13}" viewBox="0 0 150 170">
+  <path d="M18 170 Q22 122 75 118 Q128 122 132 170Z" fill="${shirt}" ${stroke}/>
+  ${S === 5 ? '<path d="M40 142 L110 142 L104 170 L46 170Z" fill="#d4a437" opacity=".9"/>' : ''}
+  <ellipse cx="75" cy="66" rx="46" ry="50" fill="${skin}" ${stroke}/>
+  ${S === 5 ? '<path d="M30 40 Q75 -2 120 40 L120 34 Q75 6 30 34Z" fill="#1e1b4b"/><path d="M32 40 Q75 4 118 40 Q75 26 32 40Z" fill="#1e1b4b"/><circle cx="75" cy="20" r="3" fill="#d4a437"/>'
+    : `<path d="M28 58 Q30 18 75 16 Q120 18 122 58 Q110 36 75 36 Q40 36 28 58Z" fill="${hair}" ${stroke}/>`}
+  <ellipse cx="57" cy="70" rx="${S === 2 ? 8 : 5.5}" ry="${S === 2 ? 9 : 6.5}" fill="#1b1b24"/><ellipse cx="93" cy="70" rx="${S === 2 ? 8 : 5.5}" ry="${S === 2 ? 9 : 6.5}" fill="#1b1b24"/>
+  ${S === 2 ? '<circle cx="60" cy="67" r="2.5" fill="#fff"/><circle cx="96" cy="67" r="2.5" fill="#fff"/>' : ''}
+  <path d="M58 94 Q75 104 92 94" stroke="#7a2b2b" stroke-width="4.5" fill="none" stroke-linecap="round"/></svg>`;
+
+// isometric tower for style 4
+const iso = () => {
+  const cube = (x, y, h, top, left, right, label) => `
+   <polygon points="${x},${y - h} ${x + 90},${y - h - 52} ${x + 180},${y - h} ${x + 90},${y - h + 52}" fill="${top}"/>
+   <polygon points="${x},${y - h} ${x + 90},${y - h + 52} ${x + 90},${y + 52} ${x},${y}" fill="${left}"/>
+   <polygon points="${x + 90},${y - h + 52} ${x + 180},${y - h} ${x + 180},${y} ${x + 90},${y + 52}" fill="${right}"/>
+   <text x="${x + 45}" y="${y - h / 2 + 34}" font-family="Nunito" font-weight="900" font-size="24" fill="#fff">${label}</text>`;
+  return `<svg width="300" height="470" viewBox="-20 -60 260 520">
+   <polygon points="0,400 110,336 220,400 110,464" fill="#dfe5fb"/>
+   ${cube(20, 400, 170, '#8fb3f5', '#5b8def', '#4877d6', 'OKLAD')}
+   ${cube(20, 230, 80, '#a79cf6', '#7c6cf2', '#6555da', 'BONUS')}
+  </svg>`;
+};
+
+const tower = S === 4 ? iso() : `<div class="tower"><div class="blk o" style="height:${430 * 2.5 / 3.65 - 10}px">OKLAD 2,5</div><div class="blk b" style="height:${430 * 1.15 / 3.65 - 10}px">BONUS 1,15</div></div>`;
+const rows = [['Tushum', '27 ÷ 60', '45%', 0, 1], ['Konversiya', '16 ÷ 20', '80%', 16], ['CRM', '72 ÷ 90', '80%', 16], ['Qayta aloqa', '63 ÷ 90', '70%', 14]];
+
+document.getElementById('f').className = 's' + S;
+document.getElementById('f').innerHTML = `
+${S === 4 ? `<svg class="floor" width="1920" height="1080"><defs><pattern id="iso" width="120" height="69.3" patternUnits="userSpaceOnUse"><path d="M0 34.6 L60 0 L120 34.6 L60 69.3Z" fill="none" stroke="#c9d1f0" stroke-width="1.5"/></pattern></defs><rect width="1920" height="1080" fill="url(#iso)"/></svg>` : ''}
+${S === 5 ? '<div class="ikat"></div>' : ''}
+${S === 3 ? '<div class="giant">46</div>' : ''}
+<div class="hud"><div>Maosh tizimi <span>· ${NAMES[S]}</span></div><span>7-bob · 2-variant</span></div>
+<div class="wrap">
+ <div class="kick">2-variant · Aziz hisobi</div>
+ <h2>Azizning <em>KPI balli — 46</em></h2>
+ <div class="row">
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:flex-end;width:200px">${avatar(170)}<div style="font-weight:800;font-size:30px;margin-top:6px">Aziz</div><div style="opacity:.7;font-size:20px">27 mln sotdi</div></div>
+  <div class="card" style="flex:1">
+   <table><tr><th>KPI</th><th>Hisob</th><th>Bajarilish</th><th>Ball</th></tr>
+   ${rows.map((r) => `<tr><td><b>${r[0]}</b></td><td style="opacity:.75">${r[1]}</td><td><b class="${r[4] ? 'bad' : ''}">${r[2]}</b></td><td class="ball ${r[4] ? 'bad' : 'ok'}">${r[3]}</td></tr>`).join('')}
+   </table>
+   <div class="gate"><i></i><b></b><span>eshik 50%</span></div>
+  </div>
+  <div class="card" style="width:420px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end">
+   ${tower}
+   <div class="total">3 650 000</div>
+  </div>
+ </div>
+</div>
+${S === 1 ? '<div class="note hand" style="left:820px;top:735px;transform:rotate(-3deg)">↑ eshik yopiq — ball 0!</div>' : ''}
+${S === 2 ? '<div class="sticker" style="right:150px;top:150px">+1 150 000!</div>' : ''}`;
+</script>
+</body>
+</html>
