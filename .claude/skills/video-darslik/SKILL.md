@@ -47,7 +47,7 @@ END=60 PY=$PY node render.mjs 1 30 4           # 60 s sinov
 - Tashqi shrift/CDN yuklamang — Chromium tarmoqsiz ishlaydi.
 
 ## 6. Uslublar
-Katalog: `video-darslik-v3/USLUBLAR.md` (0 Tungi Fintech, 1 Qog‘oz va Siyoh, 2 Pop Stiker, 3 Keynote Oq, 4 Izometrik Ofis, 5 Atlas Naqsh, 6 Neon Jamoa).
+Katalog: `video-darslik-v3/USLUBLAR.md` (0 Tungi Fintech, 1 Qog‘oz va Siyoh, 2 Pop Stiker, 3 Keynote Oq, 4 Izometrik Ofis, 5 Atlas Naqsh, 6 Neon Jamoa, 7 Lavanda Glass).
 **Foydalanuvchining ustuvor istagi:** odamlar/qahramonlar Neon Jamoa formatida bo‘lsin — fotorealistik «AI xodim» portretlari, neon ramkali kartalar, rol ranglari, gologramma UI. Batafsil: `video-darslik-v3/uslub_namunalar/NEON_JAMOA.md`. Yangi video boshlaganda shu formatni taklif qiling (oddiy SVG avatar o‘rniga). Atlas Naqsh tayyor: `video-darslik-v3/atlas/style.css`, palitra va sahna rejalari `REJA_ATLAS_NAQSH.md`. Yangi uslub uchun `style.css` ni qayta yozing, `atlas.js` dagi helperlarni (card, glass, niche, stamp, tower, gate, rosette) moslang.
 
 ## 7. Diktor klon (ixtiyoriy)

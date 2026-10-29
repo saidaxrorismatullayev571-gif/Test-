@@ -18,10 +18,12 @@ Foydalanuvchi bilan **o‘zbek tilida** gaplashing. Kirish — foydalanuvchining
 Render tezligi qoidalari video-darslik skill’dagidek: katta blur/backdrop-filter yo‘q, shriftlar lokal (`video-darslik-v3/atlas/fonts`).
 
 ## Uslublar
-### /kinetik-subtitr
-- Ekranning pastki-o‘rta uchdan birida, bir vaqtda 1–3 so‘z. Joriy so‘z katta (90–120 px, qalin, Manrope 800), urg‘uli so‘zlar (raqam, fe’l, "o‘chirdim" kabi) rangli (#F28C28 yoki brend rangi) va 1.15× `pop`.
-- Har so‘z: 80 ms ichida pastdan +20 px va opacity 0→1; gap tugaganda 120 ms fade.
-- Soya: `text-shadow: 0 4px 18px rgba(0,0,0,.55)` — har qanday fonda o‘qilsin.
+### /kinetik-subtitr (ikki darajali — foydalanuvchi namunasi, `video-darslik-v3/uslub_namunalar/KONTENT_ZAVOD_REEL.md`)
+- **Oddiy so‘zlar:** oq, qalin, kichik (1080 kenglikda ~30px, Inter Semibold), oddiy registr. Ibora so‘zma-so‘z to‘lib boradi («Threads» → «Threads Facebook»). Plashka yo‘q, faqat soya `0 2px 10px rgba(0,0,0,.6)`.
+- **Urg‘u so‘zlar:** KATTA HARF, tor shrift (Bebas Neue / Oswald), ~3× katta (~66px), 1–3 qator. Rang oq yoki sariq `#F5C518` — eng emotsional yoki «siz» haqidagi gaplarda. Pop: scale 1.1→1, 120 ms. Ekranda 0,6–1,0 s turadi. Taxminan har 3–4 s da bittadan.
+- **Joyi:** markaz, balandlikning ~68% ida. Ko‘p qatorli urg‘u yuqoriga o‘sadi.
+- Urg‘u so‘zlarni foydalanuvchi bilan kelishing yoki o‘zingiz tanlang: raqamlar, fe’l-natijalar («AVTOMATLASHDI»), murojaatlar («SIZ QATNASHMASANGIZ HAM»).
+- Yakuniy CTA: izohga kalit so‘z yozish → link (reel oxirida spikerning o‘zi aytadi).
 
 ### /kino-sarlavha
 - Gapdagi 1–2 muhim ibora ekran markazida serif kursiv (Cormorant Garamond Italic 140 px), harflar `split` bilan ketma-ket (25 ms oraliq), so‘ng 1.5 s turadi va blur-out.
@@ -37,6 +39,9 @@ Render tezligi qoidalari video-darslik skill’dagidek: katta blur/backdrop-filt
 
 ### /cta-yakun
 - Oxirgi 3–4 s: video xiralashadi (`gblur=20`, `brightness`), markazda katta CTA ("Izohga «SO‘Z» deb yozing"), ostida rangli plashka bilan taklif, pastda profil nomi/ikonka. Elementlar 150 ms oraliq bilan `up`.
+
+## Lavanda Glass formati (foydalanuvchi namunasi)
+AI mahsulot demosi uchun yorug‘ motion: dumaloq avatar + holat badgi, izometrik «AI zavod», platforma ikonkalari orbitasi, o‘sish sanagichi, gradient CTA kartasi. Tahlil: `video-darslik-v3/uslub_namunalar/KONTENT_ZAVOD_REEL.md`. Reel tuzilmasi: spiker (selfi) → ekrandagi demo → spiker isboti → izohga kalit so‘z CTA.
 
 ## Neon Jamoa formati (foydalanuvchi namunasi)
 Rollar/jamoa/jarayon haqidagi reel uchun: fotorealistik qahramonlar neon kartalarda, 3D kirish, «AI» glitch, daraxt sxema va yuguruvchi nuqta, holat chiplari, tasdiqlash chati, CTA poster. To‘liq tahlil, vaqt jadvali va prompt andozasi: `video-darslik-v3/uslub_namunalar/NEON_JAMOA.md`.

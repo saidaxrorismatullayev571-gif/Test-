@@ -219,6 +219,15 @@ Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham
 - **Qahramonlar:** belidan yuqori, studiyaviy portret, to‘q ko‘k fon, rol rangida kontur nur. Har biri o‘z ishiga oid gologramma UI ushlaydi.
 - **Imzo harakatlar:** kartaning 3D aylanib kirishi, «AI» glitch, chiziq bo‘ylab yuguruvchi nuqta, holat chiplari, tegib tasdiqlash.
 
+## 7. Lavanda Glass (yorug‘ AI/SaaS motion)
+*Manba: foydalanuvchining 2-namuna reeli (monitordagi motion-video). To‘liq tahlil: `uslub_namunalar/KONTENT_ZAVOD_REEL.md`, kadrlar: `uslub_namunalar/lavanda_glass_ekran.jpg`.*
+
+- **Fon:** och lavanda→havorang→oq gradient, yumshoq bloblar.
+- **Kartalar:** oq, katta radius (24–28px), juda yumshoq soya — yengil glassmorphism.
+- **Matn:** to‘q siyoh-ko‘k. Kalit so‘zlar binafsha→ko‘k gradientda; ogohlantirish to‘q sariq, o‘sish yashil.
+- **Imzo elementlar:** holat badgili dumaloq avatar, izometrik 3D «AI zavod» illyustratsiyasi, platforma ikonkalari orbitasi, o‘sish sanagichi (+1 → +2 486) va chizig‘i, gradient tugmali CTA kartasi.
+- **Kayfiyat:** ishonchli, zamonaviy mahsulot. Kunduzgi, «Apple/SaaS» hissi.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
@@ -229,5 +238,6 @@ Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham
 | Jarayon va bosqichlarni ko‘rsatish (onboarding) | Izometrik Ofis |
 | Kompaniya brendi, milliy ruh, taqdimot | Atlas Naqsh |
 | Reel, reklama, «AI jamoa» / rollar va jarayon | Neon Jamoa |
+| AI mahsulot/xizmat demosi, yorug‘ va ishonchli taqdimot | Lavanda Glass |
 
 Har bir uslubning namunaviy kadri `uslub_namunalar/` papkasida (bir xil sahna — «2-variant: Azizning KPI balli» — 6 xil uslubda).
