@@ -228,6 +228,21 @@ Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham
 - **Imzo elementlar:** holat badgili dumaloq avatar, izometrik 3D «AI zavod» illyustratsiyasi, platforma ikonkalari orbitasi, o‘sish sanagichi (+1 → +2 486) va chizig‘i, gradient tugmali CTA kartasi.
 - **Kayfiyat:** ishonchli, zamonaviy mahsulot. Kunduzgi, «Apple/SaaS» hissi.
 
+## 8. Claude effektlari (overlay kutubxonasi)
+*Manba: foydalanuvchining 3-namuna reeli. To‘liq tahlil: `uslub_namunalar/CLAUDE_EFFECTS_REEL.md`.*
+
+Bu to‘liq uslub emas — spiker klipi ustiga qo‘yiladigan **8 ta overlay effekt** to‘plami:
+- piksel maskot;
+- checklist;
+- frosted-glass statistika vidjetlari;
+- qidiruv qatori;
+- iOS bildirishnomalar;
+- piksel sarlavha;
+- montaj timeline;
+- izoh-javob paneli.
+
+Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika dissolve.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
@@ -239,5 +254,6 @@ Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham
 | Kompaniya brendi, milliy ruh, taqdimot | Atlas Naqsh |
 | Reel, reklama, «AI jamoa» / rollar va jarayon | Neon Jamoa |
 | AI mahsulot/xizmat demosi, yorug‘ va ishonchli taqdimot | Lavanda Glass |
+| Spiker reeliga jonli overlay, AI vosita namoyishi | Claude effektlari |
 
 Har bir uslubning namunaviy kadri `uslub_namunalar/` papkasida (bir xil sahna — «2-variant: Azizning KPI balli» — 6 xil uslubda).

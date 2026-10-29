@@ -40,6 +40,9 @@ Render tezligi qoidalari video-darslik skill’dagidek: katta blur/backdrop-filt
 ### /cta-yakun
 - Oxirgi 3–4 s: video xiralashadi (`gblur=20`, `brightness`), markazda katta CTA ("Izohga «SO‘Z» deb yozing"), ostida rangli plashka bilan taklif, pastda profil nomi/ikonka. Elementlar 150 ms oraliq bilan `up`.
 
+## Overlay effektlar (8 ta, foydalanuvchi namunasi)
+`/checklist`, `/glass-widgets`, `/search-bar`, `/notifications`, `/timeline`, `/comment-reply`, `/pixel-title`, `/mascot` — har biri spiker klipi ustiga qo‘yiladigan HTML komponent. Matnlar o‘zbekcha. Imzo o‘tish: piksel-mozaika dissolve. Har effektning ko‘rinishi, matni va harakati: `video-darslik-v3/uslub_namunalar/CLAUDE_EFFECTS_REEL.md` (2-bo‘lim jadvali).
+
 ## Lavanda Glass formati (foydalanuvchi namunasi)
 AI mahsulot demosi uchun yorug‘ motion: dumaloq avatar + holat badgi, izometrik «AI zavod», platforma ikonkalari orbitasi, o‘sish sanagichi, gradient CTA kartasi. Tahlil: `video-darslik-v3/uslub_namunalar/KONTENT_ZAVOD_REEL.md`. Reel tuzilmasi: spiker (selfi) → ekrandagi demo → spiker isboti → izohga kalit so‘z CTA.
 
