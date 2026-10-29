@@ -43,6 +43,11 @@ Render tezligi qoidalari video-darslik skill’dagidek: katta blur/backdrop-filt
 ## Overlay effektlar (8 ta, foydalanuvchi namunasi)
 `/checklist`, `/glass-widgets`, `/search-bar`, `/notifications`, `/timeline`, `/comment-reply`, `/pixel-title`, `/mascot` — har biri spiker klipi ustiga qo‘yiladigan HTML komponent. Matnlar o‘zbekcha. Imzo o‘tish: piksel-mozaika dissolve. Har effektning ko‘rinishi, matni va harakati: `video-darslik-v3/uslub_namunalar/CLAUDE_EFFECTS_REEL.md` (2-bo‘lim jadvali).
 
+Qo‘shimcha 6 ta (`kallaway-split`, `over-the-shoulder`, `backdrop-word`, `glass-widgets` v2, `spotlight`, `color-grade`): `video-darslik-v3/uslub_namunalar/CLAUDE_EFFECTS22_REEL.md`.
+
+## Neon sariq glow subtitr va Before/After (foydalanuvchi namunasi)
+Kalit so‘z `#FFE45C` neon glow (`text-shadow: 0 0 12px #FFD43B, 0 0 28px #FFB800`) yoki to‘q sariq plashka; oddiy so‘zlar oq, kichik, blur-in. Before/After kompozitsiyasi va flat-lay B-roll: `video-darslik-v3/uslub_namunalar/BEFORE_AFTER_REEL.md`.
+
 ## Lavanda Glass formati (foydalanuvchi namunasi)
 AI mahsulot demosi uchun yorug‘ motion: dumaloq avatar + holat badgi, izometrik «AI zavod», platforma ikonkalari orbitasi, o‘sish sanagichi, gradient CTA kartasi. Tahlil: `video-darslik-v3/uslub_namunalar/KONTENT_ZAVOD_REEL.md`. Reel tuzilmasi: spiker (selfi) → ekrandagi demo → spiker isboti → izohga kalit so‘z CTA.
 

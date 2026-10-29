@@ -243,6 +243,23 @@ Bu to‘liq uslub emas — spiker klipi ustiga qo‘yiladigan **8 ta overlay eff
 
 Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika dissolve.
 
+## 9. Oq minimal + lime (motion portfolio)
+*Manba: 4-namuna. Tahlil: `uslub_namunalar/MOTION_PORTFOLIO_REEL.md`.*
+
+- **Rang:** oq fon, qora qalin grotesk, yagona lime `#9BE564` aksent.
+- **Harakat:** typewriter, almashinuvchi so‘z va mini-UI, zarrachalar, % sanagich, shakl morfi, doira ochilib o‘tish.
+- **Kayfiyat:** juda toza, «Silicon Valley» portfolio.
+
+## 10. Before / After (iliq studiya)
+*Manba: 6-namuna. Tahlil: `uslub_namunalar/BEFORE_AFTER_REEL.md`.*
+
+- **Kompozitsiya:** oq va to‘q sariq yorug‘ studiya foni; ikki telefon kartasi «Before / After».
+- **Subtitr:** neon sariq glow kalit so‘zlar.
+- **B-roll:** flat-lay 3D kesmalar.
+- **Yakun:** «Comment "Edit"» CTA.
+
+*(5-namuna — 22 ta Claude effekti — 8-overlay to‘plamini to‘ldiradi: `uslub_namunalar/CLAUDE_EFFECTS22_REEL.md`.)*
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
@@ -255,5 +272,7 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 | Reel, reklama, «AI jamoa» / rollar va jarayon | Neon Jamoa |
 | AI mahsulot/xizmat demosi, yorug‘ va ishonchli taqdimot | Lavanda Glass |
 | Spiker reeliga jonli overlay, AI vosita namoyishi | Claude effektlari |
+| Shaxsiy brend, mutaxassis/spiker taqdimoti | Oq minimal + lime |
+| Xizmatni «oldin/keyin» bilan sotish | Before / After |
 
 Har bir uslubning namunaviy kadri `uslub_namunalar/` papkasida (bir xil sahna — «2-variant: Azizning KPI balli» — 6 xil uslubda).
