@@ -52,6 +52,8 @@ Yana: `freeze-frame` (stiker kontur + ism tegi), `tier-list`, `glass-graph` — 
 
 Brend zastavka/treyler (`/intro`, `/promo`, `/trailer`, `/phone`) — `BREND_PROMO_REEL.md`. Kino titr kartalari, foto bulut, ikki darajali sarlavha (`/cinematic`, `/cluster`, `/split`) — `SPLIT_CLUSTER_CINEMATIC_REEL.md`. Glass-explainer (qadam + VS solishtirish), depth-ui, cutout-grid, image-cluster — `EDITING_TEMPLATE_REEL.md`.
 
+Yana: `pov-carousel`, `match-cut` (qotgan so‘z), `screen-push-digital`, `shoulder-zoom` — `EFFECT_STACK20_REEL.md`. AI video (Google Flow / Omni / Veo) uchun referensdan prompt — `AE_VS_OMNI_REEL.md`. Kuchli CTA (ulashish + izoh + bepul qo‘llanma + obuna tugmasi) — `RAW_HASIL_EDIT_REEL.md`. Jarayon sxemasi va «51 pauza kesildi» isboti — `CAPCUT_ORNIGA_REEL.md`.
+
 ## Montaj quvuri va qoidalar fayli (15-namuna, `MONTAJ_5_QADAM_REEL.md`)
 Talking-head montaji tartibi:
 1. ASR yoki `align.py` bilan so‘z vaqtlari.
