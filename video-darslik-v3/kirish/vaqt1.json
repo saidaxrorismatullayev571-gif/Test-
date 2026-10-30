@@ -1,0 +1,132 @@
+{
+"duration": 75.4680625,
+"paras": 9,
+"sents": [
+{
+"p": 0,
+"t": "Assalomu alaykum, hurmatli rahbarlar va HR mutaxassislari.",
+"a": 0.0,
+"b": 3.003
+},
+{
+"p": 0,
+"t": "Men Arabboy Rejabboyevman.",
+"a": 3.323,
+"b": 4.853
+},
+{
+"p": 1,
+"t": "Bugun biz sotuv menejerlari uchun maosh tizimini qanday tanlash va qanday hisoblashni birga ko‘rib chiqamiz.",
+"a": 5.203,
+"b": 10.192
+},
+{
+"p": 2,
+"t": "Ko‘p korxonalarda maosh masalasi muammoga aylanadi.",
+"a": 10.982,
+"b": 13.512
+},
+{
+"p": 2,
+"t": "Kimdir hammaga bir xil oklad beradi, kimdir esa faqat foiz bilan ishlaydi.",
+"a": 14.332,
+"b": 18.172
+},
+{
+"p": 3,
+"t": "Natijada yaxshi sotuvchi o‘zini qadrsiz his qiladi, sust sotuvchi esa hech narsani o‘zgartirmaydi.",
+"a": 18.592,
+"b": 24.562
+},
+{
+"p": 3,
+"t": "Oxir-oqibat eng kuchli xodimlar ketib qoladi.",
+"a": 25.442,
+"b": 28.032
+},
+{
+"p": 4,
+"t": "To‘g‘ri maosh tizimi uchta narsaga tayanadi.",
+"a": 28.852,
+"b": 31.613
+},
+{
+"p": 4,
+"t": "Birinchisi, oklad.",
+"a": 31.912,
+"b": 32.733
+},
+{
+"p": 4,
+"t": "U xodimga xavfsizlik va barqarorlik beradi.",
+"a": 33.333,
+"b": 35.793
+},
+{
+"p": 4,
+"t": "Ikkinchisi, natijaga bog‘liq bonus.",
+"a": 36.273,
+"b": 38.163
+},
+{
+"p": 4,
+"t": "U xodimni ko‘proq sotishga undaydi.",
+"a": 38.742,
+"b": 40.492
+},
+{
+"p": 4,
+"t": "Uchinchisi, aniq ko‘rsatkichlar, ya’ni KPI.",
+"a": 41.083,
+"b": 43.503
+},
+{
+"p": 4,
+"t": "U kim qanchalik yaxshi ishlaganini adolatli o‘lchaydi.",
+"a": 43.873,
+"b": 47.183
+},
+{
+"p": 5,
+"t": "Bu darsda siz to‘rtta maosh variantini ko‘rasiz.",
+"a": 48.193,
+"b": 51.073
+},
+{
+"p": 5,
+"t": "Har birini bitta misolda, to‘rt nafar sotuvchi orqali hisoblaymiz.",
+"a": 51.503,
+"b": 55.073
+},
+{
+"p": 6,
+"t": "Qaysi variant korxonangizga mos kelishini aniqlash uchun oltita savolga javob berasiz.",
+"a": 55.503,
+"b": 59.833
+},
+{
+"p": 6,
+"t": "Shuningdek, har oy maoshni olti qadamda qanday hisoblashni va eng ko‘p uchraydigan to‘qqizta xatoni o‘rganasiz.",
+"a": 60.083,
+"b": 66.293
+},
+{
+"p": 7,
+"t": "Dars oxirida sizda tayyor tizim bo‘ladi.",
+"a": 67.103,
+"b": 69.243
+},
+{
+"p": 7,
+"t": "Uni bugunoq joriy qilishingiz va xodimga bir daqiqada tushuntirib berishingiz mumkin.",
+"a": 69.713,
+"b": 73.543
+},
+{
+"p": 8,
+"t": "Qani, boshladik.",
+"a": 74.343,
+"b": 75.468
+}
+]
+}
