@@ -54,4 +54,6 @@ Katalog: `video-darslik-v3/USLUBLAR.md` (0 Tungi Fintech, 1 Qog‘oz va Siyoh, 2
 **Foydalanuvchining ustuvor istagi:** odamlar/qahramonlar Neon Jamoa formatida bo‘lsin — fotorealistik «AI xodim» portretlari, neon ramkali kartalar, rol ranglari, gologramma UI. Batafsil: `video-darslik-v3/uslub_namunalar/NEON_JAMOA.md`. Yangi video boshlaganda shu formatni taklif qiling (oddiy SVG avatar o‘rniga). Atlas Naqsh tayyor: `video-darslik-v3/atlas/style.css`, palitra va sahna rejalari `REJA_ATLAS_NAQSH.md`. Yangi uslub uchun `style.css` ni qayta yozing, `atlas.js` dagi helperlarni (card, glass, niche, stamp, tower, gate, rosette) moslang.
 
 ## 7. Diktor klon (ixtiyoriy)
+**Rad etilgan usul:** rasmni kod bilan «gapirtirish» (jag‘ni ovoz balandligiga qarab ochish, pirpiratish) — foydalanuvchi «robotdek, yaroqsiz» deb baholagan. Uni qayta taklif qilmang. Gapiradigan avatar faqat ML lip-sync (Higgsfield, SadTalker/LivePortrait) yoki haqiqiy video bilan.
+
 Haqiqiy shaxs ovozi/yuzi faqat **uning roziligi** bilan. Bepul yo‘l — `video-darslik-v3/klon/Diktor_klon.ipynb` (Colab T4): RVC (Applio) bilan AI Studio ovozini uning ovoziga aylantirish (vaqtlar saqlanadi → animatsiya qayta moslanmaydi), SadTalker bilan portretdan gapiradigan yuz. Natija pastki chap burchakda dumaloq oynaga qo‘yiladi.
