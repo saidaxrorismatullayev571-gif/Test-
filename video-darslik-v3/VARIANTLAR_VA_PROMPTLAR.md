@@ -186,3 +186,107 @@ MATN:
 | P4 JSON | Claude | keyingi dars matni bilan |
 
 Tanlovingizdan keyin shu uslubda **5 daqiqalik namuna qism** yig‘aman: muallif oynasi, ovoz va SFX bilan. Ma’qul kelsa, shablon barcha keyingi darslar uchun doimiy bo‘ladi.
+
+---
+
+## 6-QISM. Qisqa reellardan uzun darsga nimalarni olamiz
+
+**Asosiy fikr:** reel 30 soniya ichida e’tiborni ushlaydi, dars esa 20 daqiqa ushlashi kerak. Reelning hamma effektini uzun darsga to‘kib bo‘lmaydi, tomoshabin charchaydi. Reel «energiyasini» **aniq nuqtalarga** qo‘yamiz: qism boshiga, muhim raqamga, xulosaga. Tushuntirish paytida esa sokinlik saqlanadi.
+
+### 6.1. Kutubxonadan olinadigan 15 ta usul
+
+| # | Reel usuli (kutubxonadagi namuna) | Uzun darsda qanday ishlaydi | Qayerda |
+|---|---|---|---|
+| 1 | **Ilgak (hook) birinchi 1.5 soniyada** (deyarli barcha namunalar) | Har qism savol yoki shok-raqam bilan ochiladi: «Yaxshi menejerlarning 60% i… maosh tufayli ketadi» (raqam haqiqiy bo‘lsin) | har qism boshi |
+| 2 | **Ochiq halqa (open loop)**: «oxirida ko‘rasiz» | Kirishda va’da beriladi: «3-qismda eng qimmat xatoni ko‘rsataman». Odam oxirigacha ko‘radi | kirish, qism oxiri |
+| 3 | **Ikki darajali kinetik subtitr** (Kontent zavodi, 7) | To‘liq subtitr emas, faqat **kalit ibora** katta harfda chiqadi: kichik oq «eng muhimi —» + KATTA sariq «FOIZ CHEGARASI» | muhim fikrda |
+| 4 | **Qadam hisoblagichi 1/6…6/6** (Brody 35, Montaj 5 qadam 15) | Ekran tepasida doimiy **progress**: «2-qism / 5 · Foiz tizimi», pastda ingichka chiziq. Tomoshabin qayerdaligini va qancha qolganini biladi | butun dars |
+| 5 | **Oldin → Keyin** (Before/After 11, raw/finished 13) | «Noto‘g‘ri maosh tizimi → To‘g‘ri tizim» yonma-yon. Chiziq surilib, yaxshisi ekranni egallaydi | har qismning xulosasi |
+| 6 | **Raqam sanab chiqishi va shisha grafik** (Brody: 501 611 → 699 229) | Maosh, savdo, foiz raqamlari sanab chiqadi, grafik o‘sadi | hisob-kitob |
+| 7 | **Ulkan bitta raqam yoki so‘z** (3 ta so‘z 34, Editorial bir so‘z) | «3 ta ustun», «6·6·9». Butun ekranni bitta raqam egallaydi, keyin ochiladi | qism kirishi |
+| 8 | **Bildirishnoma (notify) pop-up** (/notify 26) | Keys boshlanishi: telefonda xabar «Aziz: Men ishdan ketyapman 😔». Darhol real hayotga olib kiradi | keys sahnalari |
+| 9 | **Neon rol kartalari** (Neon Jamoa 6) | Keysdagi qahramonlar portret kartalarda tanishtiriladi: rol, maosh, KPI | keys va rollar |
+| 10 | **Match-cut** (Kun effekti 17, Effect stack 22) | Bir sahnadagi so‘z yoki shakl keyingi sahnadagi o‘sha shaklga «oqib» o‘tadi. Qismlar orasidagi o‘tishni silliq qiladi | qismlar orasi |
+| 11 | **3D karusel / pov-carousel** (22) | 4 ta maosh varianti aylanma halqada, har biri navbat bilan oldinga chiqadi | variantlarni solishtirish |
+| 12 | **«Write this → get this» formula** (36, 31) | «Shart → Natija»: «Agar oklad 70% bo‘lsa → menejer passiv». Sabab-oqibatni bir qarashda ko‘rsatadi | qoidalar |
+| 13 | **Spikerga zoom-zarba (punch-in)** (Kontent zavodi) | Muallif oynasi muhim gapda 1.0 → 1.15 ga «tortiladi» va qaytadi | urg‘u joylari |
+| 14 | **Bo‘lingan ekran** (14, 19, 24) | Kirish va xulosada: tepada grafika, pastda muallif katta. Reelga o‘xshagan jonli his beradi | kirish va xulosa |
+| 15 | **SFX ritmi** (whoosh, pop, ding, impact) | Har yangi element o‘z tovushi bilan chiqadi, lekin **ovozi 30–40% past**. 20 daqiqada qulog‘ni charchatmasin | butun dars |
+
+### 6.2. Ritm xaritasi (har 6 daqiqalik qism uchun)
+
+```
+0:00–0:15  REEL ENERGIYASI: ilgak savol + ulkan raqam + punch-in + impact SFX
+0:15–5:00  SOKIN TUSHUNTIRISH: diagramma, formula, karta
+           ↳ har 30–45 soniyada bitta «pattern interrupt»:
+             notify pop-up / raqam sanash / oldin→keyin / match-cut
+           ↳ ~2:30 da «Pauza qiling — o‘zingiz hisoblang» kartasi
+5:00–5:40  REEL ENERGIYASI: Oldin → Keyin + 1 gaplik xulosa (kinetik subtitr)
+5:40–6:00  OCHIQ HALQA: «Keyingi qismda — …» + progress 2/5 → 3/5
+```
+
+### 6.3. Qilmaslik kerak bo‘lganlar
+- Har 2–3 soniyada kesish va glitch: reel uchun yaxshi, darsda **charchatadi**.
+- To‘liq kinetik subtitr: 20 daqiqada ko‘zni toldiradi. Kerak bo‘lsa, oddiy pastki subtitr qo‘yamiz, kinetik faqat kalit iboralarda.
+- Baland musiqa: darsda musiqa faqat qism boshi va oxirida chalinadi, tushuntirish paytida yo jim, yo juda past fon.
+- Mavzuga aloqasiz effekt «chiroyli» bo‘lsa ham qo‘yilmaydi (Mayer: coherence).
+
+### 6.4. Dvigatelga qo‘shiladigan yangi bloklar (tanlasangiz yasayman)
+`PROGRESS` (qism / jami, chiziq), `HOOK` (ulkan raqam yoki savol, zarba bilan), `NOTIFY` (telefon xabari), `KEYPHRASE` (ikki darajali kinetik ibora), `BEFOREAFTER` (surilma chiziq), `PUNCH` (muallif oynasiga zoom), `LOOP` (keyingi qism tizeri), `PAUSE` («o‘zingiz hisoblang» kartasi).
+
+---
+
+## 7-QISM. Reel usullari uchun promptlar
+
+### P5. Gemini: ekspert tadqiqoti (reel usullarini uzun videoga ko‘chirish)
+
+```
+Sen YouTube retention (tomoshabinni ushlab qolish) va o‘quv video-dizayni bo‘yicha ekspertsan.
+Loyiha: o‘zbek tilida HR/savdo mavzusida 16:9, 15–25 daqiqalik animatsion videodarslar (diktor + burchakda muallifning dumaloq oynasi, animatsiya HTML/JS kodida yasaladi).
+
+Vazifa: qisqa vertikal videolarda (Reels/Shorts/TikTok) ishlaydigan usullardan qaysilarini uzun o‘quv videoga ko‘chirish foydali, qaysilari zararli — shuni aniqla.
+
+1) Haqiqiy manbalardan (YouTube Creator Academy/YouTube blog, MrBeast production hujjati, Paddy Galloway, Retention bo‘yicha maqolalar, Guo 2014 edX tadqiqoti, Mayer multimedia tamoyillari va h.k.) 15–20 ta usul top. Har biri: nomi, manba havolasi, qisqa videoda nima qiladi, uzun darsga ko‘chirsa natija (+ / − / ehtiyotkorlik bilan).
+2) "Ritm xaritasi" tuz: 6 daqiqalik bitta dars qismi uchun soniya bo‘yicha qayerda yuqori energiya, qayerda sokin tushuntirish, qancha vaqtda bir "pattern interrupt".
+3) Uzun darsda QILMASLIK kerak bo‘lgan 7 ta reel odati va nega.
+4) Har bir tavsiya etilgan usul uchun HTML/CSS animatsiyada qanday ko‘rinishi kerakligini 1–2 gapda tasvirla.
+
+Havolalarni o‘ylab topma; topolmasang "topilmadi" deb yoz. Javob Markdown jadval bilan.
+```
+
+### P6. Gemini: o‘zingiz yig‘gan reelni tahlil qilish (videoni yuklab)
+
+Gemini videoni ko‘ra oladi. Kutubxonadagi reellardan birini yuklab, quyidagini yozing:
+
+```
+Bu qisqa reelni kadrma-kadr tahlil qil. Har bir montaj/animatsiya usulini vaqt kodi bilan yoz (masalan 0:03 — ikki darajali kinetik subtitr). Keyin har usul uchun: uni 20 daqiqalik 16:9 o‘quv videodarsga ko‘chirsa bo‘ladimi (ha / yo‘q / faqat qism boshida), qanday moslashtirish kerak (tezlik, chastota, ovoz balandligi), va darsning qaysi joyida ishlatish kerak (kirish, tushuntirish, raqam, keys, xulosa, qismlar orasidagi o‘tish). Javob jadval ko‘rinishida, o‘zbek tilida.
+```
+
+### P7. ChatGPT: aniq dars uchun ritm ssenariysi (menga olib kelish uchun)
+
+```
+Quyidagi o‘zbekcha dars matni uchun "reel energiyasi" qo‘shilgan montaj rejasini tuz. Faqat JSON qaytar:
+
+{
+ "qismlar":[
+  {"nom":"...","boshlanish_ilgagi":{"tur":"savol|ulkan_raqam|notify|oldin_keyin","matn":"..."},
+   "ochiq_halqa":"qism oxirida keyingisini qiziqtiruvchi 1 gap",
+   "interruptlar":[
+     {"kalit_soz":"matndagi aniq so‘z","tur":"notify|raqam_sanash|oldin_keyin|match_cut|keyphrase|punch|pauza|karusel","ekran_matni":["1–5 so‘z"],"izoh":"nima ko‘rinadi"}
+   ],
+   "xulosa_keyphrase":{"kichik":"…","katta":"KATTA HARFLI 2–3 SO‘Z"}}
+ ]
+}
+
+Qoidalar: har qism ≤ 6 daqiqa; interruptlar orasi 30–45 soniya (≈ 80–120 so‘z); har qismda 1 ta "pauza" sahnasi; ulkan raqamlar faqat matnda bor raqamlardan; jami har qismda 6–10 ta interrupt, ko‘p emas; o‘zbek lotin imlosi (o‘, g‘).
+
+MATN:
+[SHU YERGA DARS MATNI]
+```
+
+### Menga nima olib kelasiz (qo‘shimcha)
+| Nima | Qayerdan |
+|---|---|
+| P5 javobi | Gemini |
+| P6 tahlillari (2–3 ta reel) | Gemini |
+| P7 JSON | ChatGPT (keyingi dars matni bilan) |
