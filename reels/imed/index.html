@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<title>iMed Team — reel</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root{--bg:#070B1F;--cy:#2ED3EA;--gr:#22C08A;--am:#F5A524;--vi:#9B7BFF;--tx:#FFFFFF}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:Manrope,sans-serif;color:var(--tx)}
+  #stage{position:absolute;inset:0;overflow:hidden;background:radial-gradient(900px 900px at 50% 42%,#13235A 0,#0B1233 45%,var(--bg) 75%)}
+  #grid{position:absolute;inset:-60px;opacity:.10;background:
+    repeating-linear-gradient(0deg,transparent 0 47px,rgba(46,211,234,.9) 47px 48px),
+    repeating-linear-gradient(90deg,transparent 0 47px,rgba(46,211,234,.9) 47px 48px)}
+  #glow{position:absolute;left:50%;top:42%;width:1300px;height:1300px;margin:-650px;border-radius:50%;background:radial-gradient(closest-side,rgba(46,211,234,.22),transparent)}
+  #dots i{position:absolute;width:4px;height:4px;border-radius:50%;background:#7FE9F7}
+  #cam{position:absolute;inset:0;transform-origin:540px 900px}
+  .sec{position:absolute;inset:0;opacity:0}
+  .pill{position:absolute;left:50%;top:150px;transform:translateX(-50%);background:var(--cy);color:#06122a;font-weight:800;font-size:30px;letter-spacing:.14em;padding:12px 30px;border-radius:40px;white-space:nowrap}
+  .h{position:absolute;left:0;right:0;text-align:center;font-weight:800;line-height:1.02;letter-spacing:-.02em}
+  .h .c{color:var(--cy)}
+  .card{position:absolute;width:440px;height:520px;border-radius:26px;border:3px solid var(--k);background:linear-gradient(180deg,#0E1A44,#0A1030);box-shadow:0 0 34px color-mix(in srgb,var(--k) 55%,transparent),inset 0 0 40px color-mix(in srgb,var(--k) 18%,transparent);overflow:hidden}
+  .card .ic{position:absolute;left:0;right:0;top:40px;height:300px;display:flex;align-items:center;justify-content:center}
+  .card .lb{position:absolute;left:0;right:0;bottom:0;height:150px;background:#08102E;border-top:1px solid color-mix(in srgb,var(--k) 50%,transparent);text-align:center;padding-top:26px}
+  .card .lb b{display:block;font-size:44px;font-weight:800}
+  .card .lb span{display:block;font-size:28px;font-weight:700;color:var(--k);margin-top:6px}
+  .badge{position:absolute;right:18px;top:18px;background:var(--k);color:#06122a;font-weight:800;font-size:24px;padding:4px 12px;border-radius:10px}
+  .node{position:absolute;border-radius:24px;border:3px solid var(--k);background:#0A1235;box-shadow:0 0 30px color-mix(in srgb,var(--k) 55%,transparent);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .chip{position:absolute;background:#fff;color:#0A1030;font-weight:800;font-size:30px;padding:12px 22px;border-radius:40px;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+  .chip i{font-style:normal;color:#18A957}
+  .word{position:absolute;left:0;right:0;top:760px;text-align:center;font-weight:800;font-size:190px;letter-spacing:-.03em}
+  .logo{position:absolute;left:0;right:0;text-align:center}
+  .flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+  #vign{position:absolute;inset:0;background:radial-gradient(1100px 1500px at 50% 45%,transparent 55%,rgba(2,4,14,.75) 100%);pointer-events:none}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid"></div><div id="glow"></div><div id="dots"></div>
+  <div id="cam">
+    <!-- A: yurak urishi -->
+    <div class="sec" id="A">
+      <svg id="ecg" width="1080" height="600" style="position:absolute;top:560px;left:0" viewBox="0 0 1080 600">
+        <path id="ecgp" d="M0 300 L250 300 L285 300 L305 250 L325 300 L350 300 L372 120 L398 470 L420 300 L470 300 L500 270 L530 300 L700 300 L720 300 L740 250 L760 300 L785 300 L807 120 L833 470 L855 300 L905 300 L935 270 L965 300 L1080 300"
+          fill="none" stroke="#2ED3EA" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" style="filter:drop-shadow(0 0 10px #2ED3EA)"/>
+        <circle id="ecgdot" r="12" fill="#fff" style="filter:drop-shadow(0 0 14px #2ED3EA)"/>
+      </svg>
+      <div class="h" id="a1" style="top:430px;font-size:64px;color:#9fdcf0;font-weight:700">Har bir soniya</div>
+      <div class="h" id="a2" style="top:1200px;font-size:230px">muhim<span class="c">.</span></div>
+    </div>
+    <!-- B: bir maqsad -->
+    <div class="sec" id="B">
+      <div class="pill" id="bp">● iMED TEAM</div>
+      <div class="h" id="b1" style="top:720px;font-size:150px">Bir maqsad.</div>
+      <div class="h c" id="b2" style="top:900px;font-size:150px;color:var(--cy)">Bir jamoa.</div>
+    </div>
+    <!-- C: 4 yo'nalish -->
+    <div class="sec" id="C">
+      <div class="pill" id="cp">● MENING JAMOAM</div>
+      <div class="h" id="c1" style="top:250px;font-size:92px">4 yo‘nalish.<br><span class="c">Bitta jamoa.</span></div>
+      <div id="cards"></div>
+    </div>
+    <!-- D: daraxt -->
+    <div class="sec" id="D">
+      <div class="h" id="d1" style="top:200px;font-size:88px">Har bir bemor —<br><span class="c">to‘liq yo‘l</span></div>
+      <svg id="tree" width="1080" height="1920" style="position:absolute;inset:0"></svg>
+      <div id="nodes"></div>
+    </div>
+    <!-- E: so'zlar -->
+    <div class="sec" id="E"><div class="word" id="w"></div></div>
+    <!-- F: logo -->
+    <div class="sec" id="F">
+      <div class="logo" id="lg" style="top:640px">
+        <svg width="200" height="200" viewBox="0 0 200 200" style="display:block;margin:0 auto 40px;filter:drop-shadow(0 0 24px #2ED3EA)">
+          <rect x="70" y="20" width="60" height="160" rx="14" fill="#2ED3EA"/><rect x="20" y="70" width="160" height="60" rx="14" fill="#2ED3EA"/>
+          <path d="M32 100 H72 L84 78 L98 124 L110 92 L118 100 H168" fill="none" stroke="#07122A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div id="wm" style="font-weight:800;font-size:170px;letter-spacing:-.03em;position:relative;display:inline-block">iMed <span class="c" style="color:var(--cy)">Team</span>
+          <div id="glint" style="position:absolute;top:-20px;bottom:-20px;width:120px;background:linear-gradient(100deg,transparent,rgba(255,255,255,.85),transparent);mix-blend-mode:overlay"></div></div>
+        <div id="tg" style="margin-top:34px;font-size:52px;font-weight:700;color:#cfe9f5">Sog‘lig‘ingiz — <span style="color:var(--cy)">bizning ishimiz</span></div>
+      </div>
+      <div class="pill" id="cta" style="top:1500px;font-size:38px;padding:20px 46px">Bizni kuzatib boring →</div>
+    </div>
+  </div>
+  <div class="flash" id="fl"></div>
+  <div id="vign"></div>
+</div>
+<script>
+const T = 25, FPS = 30;
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const eo = (x) => 1 - Math.pow(1 - x, 3);
+const eio = (x) => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+const back = (x) => { const c = 1.70158; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const rnd = (n) => { const s = Math.sin(n * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); };
+const $ = (id) => document.getElementById(id);
+
+// fon zarrachalari
+const D = $('dots');
+for (let i = 0; i < 60; i++) { const e = document.createElement('i'); D.appendChild(e); }
+
+// kartalar
+const ICON = {
+  steth: '<path d="M60 20 V90 a40 40 0 0 0 80 0 V20" /><path d="M100 130 V170 a40 40 0 0 0 80 0 V150"/><circle cx="180" cy="135" r="18"/><path d="M48 20 H72 M128 20 H152"/>',
+  heart: '<path d="M120 200 C40 140 20 100 40 70 C60 40 100 45 120 80 C140 45 180 40 200 70 C220 100 200 140 120 200Z"/><path d="M50 120 H90 L105 95 L122 150 L138 110 L148 120 H190"/>',
+  flask: '<path d="M95 20 H145 M105 20 V90 L55 190 a12 12 0 0 0 11 18 H174 a12 12 0 0 0 11 -18 L135 90 V20"/><path d="M72 150 H168"/><circle cx="105" cy="172" r="8"/><circle cx="140" cy="180" r="6"/>',
+  cal: '<rect x="40" y="45" width="160" height="150" rx="16"/><path d="M40 90 H200 M80 25 V60 M160 25 V60"/><path d="M85 140 L110 165 L160 115"/>'
+};
+const CARDS = [['Shifokorlar', 'Tashxis va davolash', '--cy', 'steth'], ['Hamshiralar', 'G‘amxo‘rlik', '--gr', 'heart'], ['Laboratoriya', 'Aniq tahlillar', '--am', 'flask'], ['Ma’muriyat', 'Qulay xizmat', '--vi', 'cal']];
+const CP = [[80, 600], [560, 600], [80, 1170], [560, 1170]];
+$('cards').innerHTML = CARDS.map((c, i) => `<div class="card" id="k${i}" style="--k:var(${c[2]});left:${CP[i][0]}px;top:${CP[i][1]}px">
+  <div class="badge" id="kb${i}">✓</div>
+  <div class="ic"><svg width="240" height="230" viewBox="0 0 240 230" fill="none" stroke="var(${c[2]})" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 12px var(${c[2]}))">${ICON[c[3]]}</svg></div>
+  <div class="lb"><b>${c[0]}</b><span>${c[1]}</span></div></div>`).join('');
+
+// daraxt
+const TOP = [540, 640], KIDS = [[200, 1180, '--cy', 'Tashxis', 'Aniq tashxis'], [540, 1180, '--gr', 'Davolash', 'Zamonaviy usullar'], [880, 1180, '--vi', 'Nazorat', 'Doimiy kuzatuv']];
+const tree = $('tree');
+tree.innerHTML = KIDS.map((k, i) => `<path id="br${i}" d="M${TOP[0]} ${TOP[1] + 110} V${(TOP[1] + 1080) / 2 + 40} H${k[0]} V${k[1] - 120}" fill="none" stroke="var(${k[2]})" stroke-width="6" style="filter:drop-shadow(0 0 8px var(${k[2]}))"/>
+  <circle id="bd${i}" r="11" fill="#fff" style="filter:drop-shadow(0 0 12px #fff)"/>`).join('');
+$('nodes').innerHTML = `<div class="node" id="nt" style="--k:var(--cy);left:${TOP[0] - 220}px;top:${TOP[1] - 110}px;width:440px;height:220px">
+   <div style="font-weight:800;font-size:72px">iMed <span style="color:var(--cy)">Team</span></div><div style="font-size:28px;color:#9fdcf0;font-weight:700;margin-top:4px">bemor markazda</div></div>` +
+  KIDS.map((k, i) => `<div class="node" id="nk${i}" style="--k:var(${k[2]});left:${k[0] - 150}px;top:${k[1] - 120}px;width:300px;height:240px">
+   <div style="font-weight:800;font-size:46px">${k[3]}</div><div style="font-size:26px;font-weight:700;color:var(${k[2]});margin-top:8px">${k[4]}</div></div>
+   <div class="chip" id="ck${i}" style="left:${k[0] - 140}px;top:${k[1] + 150}px"><i>✓</i> tayyor</div>`).join('');
+const WORDS = [['Bilim.', '#2ED3EA', 17.0], ['Tajriba.', '#F5A524', 18.0], ['G‘amxo‘rlik.', '#22C08A', 19.0]];
+
+// bo'lim vaqtlari [boshlanish, tugash]
+const SEC = { A: [0, 3.0], B: [3.0, 5.6], C: [5.6, 11.4], D: [11.4, 16.9], E: [16.9, 20.4], F: [20.4, T] };
+const CUTS = [3.0, 5.6, 11.4, 16.9, 20.4];
+function glitch(el, t, at, dur = 0.32, amp = 18) {
+  const u = (t - at) / dur;
+  if (u < 0 || u > 1) { el.style.textShadow = ''; el.style.clipPath = ''; return 0; }
+  const f = Math.floor(t * FPS);
+  const a = amp * (1 - u);
+  el.style.textShadow = `${-a * .5}px 0 #FF2BD6, ${a * .5}px 0 #22E1FF`;
+  const y1 = rnd(f) * 80, y2 = y1 + 8 + rnd(f + 7) * 25;
+  el.style.clipPath = rnd(f + 3) > .4 ? `inset(${y1}% 0 ${100 - y2}% 0)` : '';
+  return (rnd(f + 11) - .5) * a * 2;
+}
+function show(id, t) { const [a, b] = SEC[id]; const on = t >= a && t < b; $(id).style.opacity = on ? 1 : 0; return t - a; }
+
+window.render = (t) => {
+  // fon
+  [...D.children].forEach((e, i) => {
+    const x = (rnd(i) * 1080 + t * (8 + rnd(i + 1) * 18)) % 1080, y = (rnd(i + 9) * 1920 - t * (15 + rnd(i + 2) * 30) + 1920 * 4) % 1920;
+    e.style.transform = `translate(${x}px,${y}px)`; e.style.opacity = .25 + .5 * Math.abs(Math.sin(t * 1.3 + i));
+  });
+  $('grid').style.transform = `translateY(${(t * 24) % 48}px)`;
+  $('glow').style.opacity = .7 + .3 * Math.sin(t * 2.2);
+  // kamera: har bo'limda sekin yaqinlashish + kesimlarda zarb
+  let ci = 0; for (const c of CUTS) if (t >= c) ci = c;
+  const kick = Math.exp(-(t - ci) * 9) * (ci ? 1 : 0);
+  $('cam').style.transform = `scale(${1 + (t - ci) * 0.012 + kick * 0.06})`;
+  let fl = 0; for (const c of CUTS) { const d = t - c; if (d >= 0 && d < 0.25) fl = Math.max(fl, 0.55 * (1 - d / 0.25)); }
+  $('fl').style.opacity = fl;
+
+  // A
+  let u = show('A', t);
+  const p = $('ecgp'), L = p.getTotalLength(), k = eio(seg(u, 0.2, 2.3));
+  p.style.strokeDasharray = L; p.style.strokeDashoffset = L * (1 - k);
+  const pt = p.getPointAtLength(L * k); $('ecgdot').setAttribute('cx', pt.x); $('ecgdot').setAttribute('cy', pt.y);
+  $('a1').style.opacity = eo(seg(u, 0.4, 0.9)); $('a1').style.transform = `translateY(${(1 - eo(seg(u, .4, .9))) * 30}px)`;
+  const a2 = $('a2'); const s2 = seg(u, 2.25, 2.55);
+  a2.style.opacity = s2 > 0 ? 1 : 0; const gx = glitch(a2, t, 2.25, .45, 30);
+  a2.style.transform = `translateX(${gx}px) scale(${1.6 - 0.6 * back(s2)})`;
+
+  // B
+  u = show('B', t);
+  $('bp').style.opacity = eo(seg(u, 0, .3)); $('bp').style.transform = `translateX(-50%) scale(${.8 + .2 * back(seg(u, 0, .35))})`;
+  [['b1', .25], ['b2', .9]].forEach(([id, d]) => {
+    const e = $(id), s = seg(u, d, d + .4);
+    e.style.opacity = eo(s); const g = glitch(e, t, SEC.B[0] + d, .3, 22);
+    e.style.transform = `translateX(${g}px) translateY(${(1 - eo(s)) * 70}px)`;
+    e.style.filter = `blur(${(1 - eo(s)) * 12}px)`;
+  });
+
+  // C
+  u = show('C', t);
+  $('cp').style.opacity = eo(seg(u, 0, .3));
+  const c1 = $('c1'), sc1 = seg(u, .1, .5); c1.style.opacity = eo(sc1); c1.style.transform = `translateY(${(1 - eo(sc1)) * 50}px)`;
+  CARDS.forEach((_, i) => {
+    const e = $('k' + i), s = seg(u, .5 + i * .45, 1.1 + i * .45), q = back(s);
+    e.style.opacity = clamp(s * 2);
+    e.style.transform = `perspective(1100px) rotateY(${(1 - q) * -40}deg) rotateX(${(1 - q) * 10}deg) scale(${.9 + .1 * q}) translateY(${Math.sin(t * 1.6 + i) * 6}px)`;
+    // glitch: "AI" o'rniga tasdiq belgisi chiqadi
+    const gs = 3.6 + i * .3, gu = u - gs;
+    const inG = gu > 0 && gu < .3;
+    e.style.filter = inG ? `hue-rotate(${rnd(Math.floor(t * FPS) + i) * 300}deg) saturate(1.8)` : '';
+    e.style.clipPath = inG && rnd(Math.floor(t * FPS) + 5 * i) > .5 ? `inset(${rnd(i + t) * 60}% 0 ${rnd(i - t) * 30}% 0)` : '';
+    const b = $('kb' + i), bs = seg(u, gs + .3, gs + .55); b.style.opacity = bs > 0 ? 1 : 0; b.style.transform = `scale(${back(bs)})`;
+  });
+
+  // D
+  u = show('D', t);
+  const d1 = $('d1'), sd1 = seg(u, 0, .45); d1.style.opacity = eo(sd1); d1.style.transform = `translateY(${(1 - eo(sd1)) * 50}px)`;
+  const nt = $('nt'), snt = seg(u, .2, .7); nt.style.opacity = eo(snt); nt.style.transform = `scale(${.6 + .4 * back(snt)})`;
+  KIDS.forEach((kd, i) => {
+    const br = $('br' + i), Lb = br.getTotalLength(), sb = eio(seg(u, .8 + i * .15, 1.6 + i * .15));
+    br.style.strokeDasharray = Lb; br.style.strokeDashoffset = Lb * (1 - sb);
+    const nk = $('nk' + i), sn = seg(u, 1.5 + i * .15, 1.9 + i * .15); nk.style.opacity = eo(sn); nk.style.transform = `scale(${.7 + .3 * back(sn)})`;
+    // nuqta yuguradi: har bolaga navbat bilan
+    const st = 2.2 + i * 0.9, ru = seg(u, st, st + .7), dot = $('bd' + i);
+    dot.style.opacity = ru > 0 && ru < 1 ? 1 : 0;
+    const pp = br.getPointAtLength(Lb * eio(ru)); dot.setAttribute('cx', pp.x); dot.setAttribute('cy', pp.y);
+    const act = ru >= 1 ? Math.exp(-(u - st - .7) * 2) : 0;
+    nk.style.boxShadow = `0 0 ${30 + act * 60}px color-mix(in srgb,var(${kd[2]}) ${55 + act * 40}%,transparent)`;
+    if (sn >= 1) nk.style.transform = `scale(${1 + act * .08})`;
+    const ck = $('ck' + i), cs = seg(u, st + .7, st + .95); ck.style.opacity = cs > 0 ? 1 : 0; ck.style.transform = `scale(${back(cs)})`;
+  });
+
+  // E
+  u = show('E', t);
+  const w = $('w'); let cur = null;
+  WORDS.forEach((x) => { if (t >= x[2]) cur = x; });
+  if (cur) {
+    const s = seg(t, cur[2], cur[2] + .25);
+    w.textContent = cur[0]; w.style.color = cur[1];
+    w.style.textShadow = `0 0 40px ${cur[1]}`;
+    const g = glitch(w, t, cur[2], .25, 26); if (t - cur[2] > .25) w.style.textShadow = `0 0 40px ${cur[1]}`;
+    w.style.transform = `translateX(${g}px) scale(${1.5 - .5 * back(s) + (t - cur[2]) * .04})`;
+    w.style.opacity = 1;
+  }
+
+  // F
+  u = show('F', t);
+  const lg = $('lg'), sl = seg(u, 0, .6);
+  lg.style.opacity = eo(sl); lg.style.transform = `scale(${.7 + .3 * back(sl)})`;
+  lg.style.filter = `blur(${(1 - eo(sl)) * 14}px)`;
+  const gl = $('glint'), sg = seg(u, .8, 1.6); gl.style.left = `${-140 + sg * 1000}px`; gl.style.opacity = sg > 0 && sg < 1 ? 1 : 0;
+  const tg = $('tg'), stg = seg(u, 1.2, 1.7); tg.style.opacity = eo(stg); tg.style.transform = `translateY(${(1 - eo(stg)) * 30}px)`;
+  const cta = $('cta'), sct = seg(u, 2.0, 2.4); cta.style.opacity = eo(sct);
+  cta.style.transform = `translateX(-50%) scale(${(.8 + .2 * back(sct)) * (1 + .03 * Math.sin(u * 6) * (sct >= 1))})`;
+  cta.style.boxShadow = `0 0 ${30 + 20 * Math.sin(u * 6)}px rgba(46,211,234,.7)`;
+};
+window.TOTAL = T;
+window.render(0);
+</script>
+</body>
+</html>
