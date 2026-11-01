@@ -2,6 +2,7 @@
 
 **Holat:** g‘oya bosqichida, hali boshlanmagan (foydalanuvchi qarori: «hozir bo‘lmasa ham, kelajakda ko‘taramiz»).
 **Yozilgan sana:** 2026-10-29.
+**2026-11-01:** foydalanuvchi barcha HR audiolarini NotebookLM’ga yukladi (formati/tartibi noma’lum). Holatni aniqlash promptlari — `rejalar/NOTEBOOKLM_HOLAT_PROMPTLAR.md`. Javoblar kelgach — to‘liq reja tuziladi.
 **Eslatish qoidasi:** bu — **alohida loyiha**. Hozirgi videodarslik ishlariga aralashtirilmaydi: darslik ustida ishlayotganda eslatilmaydi va taklif qilinmaydi. Faqat foydalanuvchi o‘zi Instagram/HR profil yoki uzoq muddatli rejalar haqida gap ochsa, yoki so‘rasa ochiladi.
 
 ## Maqsad
