@@ -1,0 +1,108 @@
+{
+"duration": 43.36,
+"paras": 8,
+"sents": [
+{
+"p": 0,
+"t": "Xodimingizga «uch» qo‘ydingiz.",
+"a": 0.223,
+"b": 1.633
+},
+{
+"p": 0,
+"t": "U kirib aytadi:",
+"a": 1.952,
+"b": 2.61
+},
+{
+"p": 0,
+"t": "«Menga besh kerak edi!»",
+"a": 2.93,
+"b": 4.06
+},
+{
+"p": 0,
+"t": "Nima deysiz?",
+"a": 4.52,
+"b": 5.6
+},
+{
+"p": 1,
+"t": "Ko‘p rahbarlar xodimni ko‘ngliga qarab baholaydi.",
+"a": 5.893,
+"b": 9.172
+},
+{
+"p": 1,
+"t": "Natija: xafagarchilik va adolatsizlik.",
+"a": 9.402,
+"b": 11.492
+},
+{
+"p": 2,
+"t": "To‘g‘ri yo‘l: har bir ball uchun oldindan yozilgan mezon.",
+"a": 11.742,
+"b": 14.812
+},
+{
+"p": 3,
+"t": "Masalan, sadoqat.",
+"a": 15.202,
+"b": 16.113
+},
+{
+"p": 3,
+"t": "Besh ball: kompaniya qiyin ahvolga tushsa, o‘z ishidan tashqari ham yordam beradi.",
+"a": 16.293,
+"b": 20.482
+},
+{
+"p": 3,
+"t": "Uch ball: faqat o‘z ishini qiladi, qolganiga «bu mening ishim emas» deydi.",
+"a": 20.973,
+"b": 25.023
+},
+{
+"p": 4,
+"t": "Endi «nega uch?» degan savolga javob tayyor.",
+"a": 25.242,
+"b": 28.072
+},
+{
+"p": 5,
+"t": "Ballar qo‘shiladi, o‘rtachasi chiqadi.",
+"a": 28.652,
+"b": 30.462
+},
+{
+"p": 5,
+"t": "To‘rtdan past bo‘lsa, qizil bo‘ladi.",
+"a": 30.822,
+"b": 32.776
+},
+{
+"p": 5,
+"t": "Ana shu xodimning rivojlanish rejasi.",
+"a": 32.776,
+"b": 34.713
+},
+{
+"p": 6,
+"t": "Maslahat: hammasini emas, o‘zingizga eng muhim to‘rt-beshtasini tanlang.",
+"a": 35.273,
+"b": 39.123
+},
+{
+"p": 7,
+"t": "Tayyor shablon bepul.",
+"a": 39.623,
+"b": 41.153
+},
+{
+"p": 7,
+"t": "Izohga «BAHO» deb yozing, yuboraman.",
+"a": 41.153,
+"b": 43.053
+}
+]
+}

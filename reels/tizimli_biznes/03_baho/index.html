@@ -1,0 +1,213 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script><script src="../_fx/fx.js"></script>
+<style>
+:root{--nv:#0a1330;--cy:#38bdf8;--au:#f5b942;--rd:#ef4444;--gr:#22c55e;--wh:#eef4ff}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--nv);font-family:Manrope,sans-serif;color:var(--wh)}
+#stage{position:absolute;inset:0}
+.bg{position:absolute;inset:-40px;background-size:cover;background-position:center;opacity:0;will-change:transform,opacity,filter}
+#shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,32,.88) 0%,rgba(6,12,32,.3) 32%,rgba(6,12,32,.25) 55%,rgba(6,12,32,.9) 78%,rgba(6,12,32,.97) 100%)}
+#tint{position:absolute;inset:0;background:#7f1d1d;mix-blend-mode:multiply;opacity:0}
+#grid{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 50% 45%,#15295f 0%,#0a1330 62%),
+ repeating-linear-gradient(0deg,transparent 0 79px,rgba(56,189,248,.07) 79px 80px),repeating-linear-gradient(90deg,transparent 0 79px,rgba(56,189,248,.07) 79px 80px);background-blend-mode:screen}
+canvas{position:absolute;inset:0;pointer-events:none}
+.h{position:absolute;left:70px;right:70px;text-align:center;opacity:0}
+.sm{font-weight:600;font-size:46px;line-height:1.2;color:#cfe3ff}
+.big{font-weight:800;font-size:96px;line-height:1.04;letter-spacing:-2px;text-transform:uppercase}
+.au{color:var(--au)} .cy{color:var(--cy)} .rd{color:var(--rd)} .gr{color:var(--gr)}
+.chap{position:absolute;left:60px;top:200px;padding:12px 26px;border-radius:30px;background:rgba(10,19,48,.8);border:2px solid rgba(56,189,248,.5);font-size:30px;font-weight:800;letter-spacing:2px;color:#9fd8ff;opacity:0}
+#score{position:absolute;left:390px;top:640px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,#2a0f14,#120a14);border:12px solid var(--rd);
+ display:flex;align-items:center;justify-content:center;font-size:210px;font-weight:800;color:#fff;opacity:0;box-shadow:0 0 80px rgba(239,68,68,.6)}
+#score small{font-size:60px;color:#fca5a5;margin-top:90px}
+#bub{position:absolute;left:70px;top:1000px;padding:30px 40px;border-radius:44px 44px 44px 8px;background:#fff;color:#0b1430;font-size:56px;font-weight:800;opacity:0;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+#slot{position:absolute;left:250px;width:580px;top:700px;height:300px;display:flex;gap:30px;justify-content:center;opacity:0}
+#slot div{width:170px;height:300px;border-radius:30px;background:rgba(10,19,48,.85);border:4px solid var(--au);font-size:190px;font-weight:800;color:var(--au);
+ display:flex;align-items:center;justify-content:center;overflow:hidden}
+#dice{position:absolute;left:0;right:0;top:1040px;text-align:center;font-size:120px;opacity:0}
+#hurt{position:absolute;left:0;right:0;top:760px;display:flex;flex-direction:column;align-items:center;gap:30px}
+#hurt div{padding:24px 46px;border-radius:50px;background:rgba(239,68,68,.16);border:4px solid var(--rd);font-size:64px;font-weight:800;opacity:0}
+#scale{position:absolute;left:110px;width:860px;top:820px;height:200px;display:flex;gap:16px;opacity:0}
+#scale div{flex:1;border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:90px;font-weight:800;opacity:0}
+#scale div span{font-size:26px;font-weight:700;opacity:.8}
+#card{position:absolute;left:70px;width:940px;top:520px;border-radius:40px;background:rgba(9,17,44,.94);border:3px solid rgba(56,189,248,.45);padding:34px 40px;opacity:0;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+#card h3{font-size:56px;font-weight:800;color:var(--au);letter-spacing:2px;margin-bottom:24px}
+.row{display:flex;gap:28px;align-items:flex-start;padding:24px 0;border-top:2px solid rgba(255,255,255,.08);opacity:0;position:relative}
+.row b{flex:none;width:120px;height:120px;border-radius:28px;display:flex;align-items:center;justify-content:center;font-size:80px;font-weight:800}
+.row p{font-size:40px;font-weight:600;line-height:1.25;color:#dce8ff}
+.row q{font-weight:800;color:#fca5a5}
+#why{position:absolute;right:80px;top:1080px;padding:20px 34px;border-radius:40px;background:var(--gr);color:#06240f;font-size:44px;font-weight:800;opacity:0}
+#xl{position:absolute;left:70px;width:940px;top:440px;border-radius:30px;background:#f8fafc;color:#0b1430;opacity:0;overflow:visible;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+#xl .bar{border-radius:30px 30px 0 0;height:70px;background:#107c41;color:#fff;font-size:30px;font-weight:800;display:flex;align-items:center;padding:0 28px;gap:18px}
+#xl table{width:100%;border-collapse:collapse;font-size:36px;position:relative;z-index:5}
+#xl tr{position:relative}
+#xl td{border:2px solid #d5dbe6;padding:11px 20px;font-weight:700}
+#xl td.s{width:150px;text-align:center;font-size:44px;font-weight:800}
+#xl tr.avg td{background:#dcebff;color:#0a1330;font-weight:800}
+#plan{position:absolute;left:150px;width:780px;top:1150px;height:150px;border-radius:30px;border:4px dashed var(--au);background:rgba(10,19,48,.85);
+ display:flex;align-items:center;justify-content:center;font-size:46px;font-weight:800;color:var(--au);opacity:0}
+#chips{position:absolute;left:70px;width:940px;top:560px;display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+#chips div{padding:14px 22px;border-radius:30px;background:rgba(56,189,248,.12);border:2px solid rgba(56,189,248,.4);font-size:28px;font-weight:700;color:#cfe3ff;opacity:0}
+#file{position:absolute;left:360px;top:620px;width:360px;height:440px;opacity:0}
+#file .doc{position:absolute;inset:0;border-radius:30px;background:linear-gradient(160deg,#21a366,#107c41);box-shadow:0 30px 90px rgba(16,124,65,.6);
+ display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:180px;font-weight:800;color:#fff}
+#file .doc span{font-size:40px;letter-spacing:3px}
+#file .rib{position:absolute;right:-60px;top:30px;padding:14px 40px;background:var(--au);color:#0b1430;font-size:44px;font-weight:800;transform:rotate(18deg);border-radius:12px}
+#cbox{position:absolute;left:80px;width:920px;top:720px;height:120px;border-radius:60px;background:rgba(248,250,255,.96);color:#0b1430;display:flex;align-items:center;padding:0 40px;
+ font-size:52px;font-weight:800;opacity:0;gap:12px}
+#cbox .ph{color:#94a3b8;font-weight:600;font-size:40px}
+#cbox .send{margin-left:auto;width:84px;height:84px;border-radius:50%;background:#2563eb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:44px}
+#logo{position:absolute;left:420px;top:920px;width:240px;height:240px;border-radius:50%;background:url(rasmlar/logo.png) center/cover;opacity:0;box-shadow:0 0 0 5px rgba(56,189,248,.35),0 0 70px rgba(56,189,248,.35)}
+#handle{position:absolute;left:0;right:0;top:1190px;text-align:center;font-size:50px;font-weight:800;opacity:0}
+#sub{position:absolute;left:80px;right:140px;top:1335px;text-align:center;font-weight:700;font-size:46px;line-height:1.28;text-shadow:0 3px 14px #000}
+#sub i{font-style:normal}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+<div id="stage">
+<div class="bg" id="bgN" style="background-image:url(rasmlar/baho_nizo.jpg)"></div>
+<div class="bg" id="bgK" style="background-image:url(rasmlar/baho_kelishuv.jpg)"></div>
+<div id="grid"></div><div id="tint"></div><div id="shade"></div>
+<canvas id="cvB" width="1080" height="1920"></canvas>
+
+<div class="chap" id="ch1">1 · MUAMMO</div><div class="chap" id="ch2">2 · YECHIM</div><div class="chap" id="ch3">3 · MASLAHAT</div>
+<div class="h" id="h0" style="top:300px"><div class="sm">Xodimingizga qo‘ydingiz…</div></div>
+<div id="score">3<small>/5</small></div>
+<div id="bub">«Menga 5 kerak edi!» 😤</div>
+<div class="h" id="h3" style="top:300px"><div class="big">Nima <span class="au">deysiz?</span></div></div>
+<div class="h" id="h4" style="top:300px"><div class="sm">Ko‘p rahbarlar baholaydi…</div><div class="big rd">ko‘ngilga qarab</div></div>
+<div id="slot"><div id="s1">3</div><div id="s2">5</div><div id="s3">2</div></div>
+<div id="dice">🎲</div>
+<div class="h" id="h5" style="top:300px"><div class="sm">Natija:</div></div>
+<div id="hurt"><div>😤 Xafagarchilik</div><div>⚖️ Adolatsizlik</div></div>
+<div class="h" id="h6" style="top:300px"><div class="sm">To‘g‘ri yo‘l:</div><div class="big">har bir ball — <span class="cy">yozilgan mezon</span></div></div>
+<div id="scale"><div style="background:#7f1d1d">1<span>past</span></div><div style="background:#9a3412">2</div><div style="background:#a16207">3<span>o‘rta</span></div><div style="background:#15803d">4</div><div style="background:#166534">5<span>a’lo</span></div></div>
+<div id="card"><h3>❤️ SADOQAT</h3>
+ <div class="row" id="r5"><b style="background:rgba(34,197,94,.2);color:#22c55e">5</b><p>Kompaniya qiyin ahvolga tushsa, <span class="gr">o‘z ishidan tashqari ham</span> yordam beradi</p></div>
+ <div class="row" id="r3"><b style="background:rgba(245,185,66,.2);color:#f5b942">3</b><p>Faqat o‘z ishini qiladi: <q>«bu mening ishim emas»</q></p></div>
+</div>
+<div id="why">✓ «Nega 3?» — javob tayyor</div>
+<div id="xl"><div class="bar">▦ Baholash.xlsx <span style="opacity:.7;font-weight:600">— Aziz, Sotuv menejeri</span></div>
+ <table id="xt"></table></div>
+<div id="plan">📋 Rivojlanish rejasi</div>
+<div class="h" id="h14" style="top:300px"><div class="sm">Maslahat:</div><div class="big" style="font-size:84px">eng muhim <span class="au">4–5 tasi</span></div></div>
+<div id="chips"></div>
+<div class="h" id="h15" style="top:300px"><div class="big">Shablon <span class="gr">bepul</span> 🎁</div></div>
+<div id="file"><div class="doc">X<span>EXCEL</span></div><div class="rib">BEPUL</div></div>
+<div class="h" id="h16" style="top:300px"><div class="sm">Izohga yozing:</div><div class="big au" style="font-size:150px">«BAHO»</div></div>
+<div id="cbox"><span id="ctxt"></span><span class="ph" id="cph">Izoh yozing…</span><div class="send">➤</div></div>
+<div id="logo"></div><div id="handle">@tizimli.biznes</div>
+<canvas id="cvF" width="1080" height="1920"></canvas>
+<div id="sub"></div>
+</div>
+<div id="flash"></div>
+<canvas id="cvG" width="1080" height="1920"></canvas>
+<script>
+const { C, eo, eb, h, vis, set, headline, shake, whip, dust, burst, grain, chip } = FX;
+const $ = (id) => document.getElementById(id);
+const S = window.S, A = (i) => S[i].a;
+const WT = (i, s) => { const w = S[i].words.find((w) => w.w.toLowerCase().replace(/[«»"]/g, '').startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.8; window.TOTAL = END;
+function pop(el, t, a, b, dy = 50, sc = .85) { const o = vis(t, a, b, .2, .25); const k = eb((t - a) / .45); set(el, o, `translateY(${(1 - k) * dy}px) scale(${sc + (1 - sc) * k})`); return o; }
+// Excel jadvali
+const XR = [['Axloqiy sifatlar', 3.5], ['Shaxsiy sifatlar', 3.6], ['Intellektual', 4.3], ['Boshqaruv', 4.3], ['Tashabbuskorlik', 3.7], ['Ijro va intizom', 4.0]];
+$('xt').innerHTML = XR.map(([n], i) => `<tr id="xr${i}"><td>${n}</td><td class="s" id="xs${i}"></td></tr>`).join('') + `<tr class="avg"><td>O‘rtacha ball</td><td class="s" id="xavg">—</td></tr>`;
+const CH = ['Sadoqat', 'Halollik', 'Qadriyatlar', 'Jamoaviylik', 'Ishga munosabat', 'Samaradorlik', 'Mas’uliyat', 'Ustuvorlik', 'Adekvatlik', 'Mustaqillik', 'Muloqot', 'Fikr ifodasi',
+  'Iqtisodiy fikr', 'Intellekt', 'Karyera', 'Yetakchilik', 'Javobgarlik', 'Muammo yechish', 'Tashabbus', 'G‘oya berish', 'Yangilik', 'Ijro sifati', 'Ishtirok', 'Maqsadga intilish', 'Ish sifati'];
+const PICK = [0, 5, 6, 17, 22];
+$('chips').innerHTML = CH.map((c, i) => `<div id="c${i}">${c}</div>`).join('');
+const cB = $('cvB').getContext('2d'), cF = $('cvF').getContext('2d'), cG = $('cvG').getContext('2d');
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; el.style.color = t >= w.t ? (t < w.e + .05 ? '#f5b942' : '#eef4ff') : 'rgba(238,244,255,.45)'; });
+}
+
+window.render = function (t) {
+  const T3 = WT(0, 'uch'), B5 = WT(2, 'menga'), XAF = WT(5, 'xafagarchilik'), ADO = WT(5, 'adolatsizlik');
+  const MEZ = WT(6, 'mezon'), RED = WT(12, 'qizil'), FREE = WT(15, 'bepul'), BAHO = WT(16, 'baho');
+  $('stage').style.transform = shake(t, [[T3, 14, .5], [B5, 10, .45], [XAF, 9, .4], [ADO, 9, .4], [RED, 8, .4], [FREE, 6, .4]]) + ` scale(${1 + .006 * Math.max(0, Math.sin(t * Math.PI * 2 * 92 / 60)) * (t > A(6) ? 1 : 0)})`;
+  // --- fonlar ---
+  const bn = vis(t, 0, A(6) - .05, .2, .2);
+  const kz = t < A(4) ? 1.25 - .15 * eo(t / 2.5) : 1.1 + .04 * C((t - A(4)) / 6);
+  set($('bgN'), bn, `scale(${kz}) translateX(${(t < A(4) ? 0 : -1) * 2 * C((t - A(4)) / 6)}%)`, t > A(4) ? 'saturate(.7)' : 'none');
+  $('tint').style.opacity = .5 * vis(t, A(4), A(6) - .05, .4, .2);
+  const wk = whip(t, A(13) - .1, -1);
+  const kv = vis(t, A(13) - .1, A(14) - .05, .15, .3);
+  set($('bgK'), kv * wk.o, wk.tf, wk.f);
+  const gw = whip(t, A(6) - .05, 1);
+  set($('grid'), t < A(6) - .05 ? 0 : (t < A(13) - .1 || t > A(14) - .05 ? 1 : 1 - kv), t < A(6) + .4 ? gw.tf : '', t < A(6) + .4 ? gw.f : 'none');
+  $('flash').style.opacity = .35 * Math.max(0, 1 - Math.abs(t - (A(6) - .05)) / .12) + .3 * Math.max(0, 1 - Math.abs(t - (A(13) - .1)) / .12) + .25 * Math.max(0, 1 - (t - FREE) / .2) * (t > FREE ? 1 : 0);
+  // --- boblar ---
+  chip($('ch1'), t, .2, A(6) - .1); chip($('ch2'), t, A(6) + .1, A(14) - .1); chip($('ch3'), t, A(14) + .1, END + 1);
+  // --- ilgak ---
+  headline($('h0'), t, A(0), A(3) - .1);
+  const so = vis(t, T3 - .05, A(4) - .1, .1, .25); const sk = eo((t - T3) / .25);
+  set($('score'), so, `scale(${2.6 - 1.6 * sk}) rotate(${(1 - sk) * -20}deg)`);
+  $('score').style.top = (640 - 120 * eo((t - A(3)) / .4)) + 'px';
+  const bo = vis(t, B5, A(4) - .1, .15, .25); set($('bub'), bo, `scale(${eb((t - B5) / .45)}) rotate(${Math.sin(t * 9) * 1.5 * (t < B5 + 1.2 ? 1 : 0)}deg)`);
+  headline($('h3'), t, A(3), A(4) - .1);
+  // --- ko‘ngilga qarab ---
+  headline($('h4'), t, A(4), A(5) - .1);
+  set($('slot'), vis(t, A(4) + .3, A(5) - .1, .25, .25), `scale(${eb((t - A(4) - .3) / .45)})`);
+  ['s1', 's2', 's3'].forEach((id, k) => { const stop = A(4) + 1.6 + k * .5; const spin = t < stop;
+    $(id).textContent = spin ? 1 + Math.floor(h(Math.floor(t * 18) + k * 31) * 5) : [3, 5, 2][k];
+    $(id).style.transform = spin ? `translateY(${Math.sin(t * 40 + k) * 10}px)` : `scale(${eb((t - stop) / .3)})`; $(id).style.filter = spin ? 'blur(2px)' : 'none'; });
+  set($('dice'), vis(t, A(4) + .5, A(5) - .1, .2, .25), `rotate(${t * 360}deg) translateY(${Math.abs(Math.sin(t * 5)) * -30}px)`);
+  headline($('h5'), t, A(5), A(6) - .1);
+  [XAF, ADO].forEach((a, k) => { const el = $('hurt').children[k]; const o = vis(t, a, A(6) - .1, .12, .25); el.style.opacity = o; el.style.transform = `scale(${eb((t - a) / .4)}) rotate(${(k ? 3 : -3) * (1 - eo((t - a) / .5))}deg)`; });
+  // --- yechim: mezon ---
+  headline($('h6'), t, A(6), A(7) - .1, .06);
+  set($('scale'), vis(t, A(6) + .4, A(7) - .1, .2, .25));
+  [...$('scale').children].forEach((d, k) => { const a = A(6) + .6 + k * .15; d.style.opacity = C((t - a) / .2); d.style.transform = `translateY(${(1 - eb((t - a) / .4)) * 80}px) scale(${t > MEZ ? 1 + .08 * Math.max(0, Math.sin((t - MEZ) * 8 - k)) * (1 - C((t - MEZ) / 1.5)) : 1})`; });
+  const co = vis(t, A(7), A(11) - .1, .25, .3); set($('card'), co, `translateY(${(1 - eo((t - A(7)) / .45)) * 120}px)`);
+  [['r5', A(8)], ['r3', A(9)]].forEach(([id, a]) => { const el = $(id); el.style.opacity = C((t - a) / .25); el.style.transform = `translateX(${(1 - eo((t - a) / .4)) * -80}px)`; });
+  const hl = C((t - A(10)) / .3) * (t < A(11) ? 1 : 0); $('r3').style.background = `rgba(245,185,66,${.18 * hl})`; $('r3').style.borderRadius = '20px';
+  $('r5').style.opacity = t > A(10) ? 1 - .55 * hl : $('r5').style.opacity;
+  const wo = vis(t, WT(10, 'javob'), A(11) - .1, .2, .25); set($('why'), wo, `scale(${eb((t - WT(10, 'javob')) / .45)})`);
+  // --- Excel ---
+  const xo = vis(t, A(11) - .1, A(14) - .1, .25, .3); set($('xl'), xo, `perspective(1600px) rotateX(${(1 - eo((t - A(11) + .1) / .6)) * 25}deg) translateY(${(1 - eo((t - A(11) + .1) / .6)) * 120}px)`);
+  let sum = 0, cnt = 0;
+  XR.forEach(([n, v], i) => { const a = A(11) + .3 + i * .28; const on = t > a; const cell = $('xs' + i);
+    cell.textContent = on ? v.toFixed(1) : ''; if (on) { sum += v; cnt++; }
+    const red = t > RED && v < 4, grn = t > RED && v >= 4; const fly = t > A(13) && red ? eo((t - A(13) - .2 - i * .08) / .6) : 0;
+    $('xr' + i).style.background = red ? '#fde2e2' : grn ? '#dcfce7' : (on && t < a + .3 ? '#fff7d6' : '#fff');
+    cell.style.color = red ? '#b91c1c' : grn ? '#15803d' : '#0b1430';
+    $('xr' + i).style.transform = fly ? `translate(${fly * 40}px, ${fly * (683 - i * 64)}px) scale(${1 - .5 * fly})` : 'none';
+    $('xr' + i).style.opacity = fly > .95 ? 0 : 1; });
+  $('xavg').textContent = cnt ? (sum / cnt).toFixed(2) : '—';
+  set($('plan'), vis(t, A(13), A(14) - .1, .25, .25), `scale(${eb((t - A(13)) / .45) * (1 + .05 * Math.max(0, Math.sin((t - A(13) - .9) * 10)) * C((t - A(13) - .8) * 3) * (1 - C(t - A(13) - 1.6)))})`);
+  // --- maslahat ---
+  headline($('h14'), t, A(14), A(15) - .1);
+  const sel = WT(14, 'to‘rt');
+  CH.forEach((_, i) => { const el = $('c' + i); const a = A(14) + .2 + i * .04; const picked = PICK.includes(i);
+    const o = vis(t, a, A(15) - .1, .15, .25) * (t > sel && !picked ? .18 : 1); el.style.opacity = o;
+    el.style.transform = `scale(${eb((t - a) / .35) * (t > sel && picked ? 1.15 : 1)})`;
+    el.style.background = t > sel && picked ? 'rgba(245,185,66,.25)' : 'rgba(56,189,248,.12)'; el.style.borderColor = t > sel && picked ? '#f5b942' : 'rgba(56,189,248,.4)';
+    el.style.color = t > sel && picked ? '#fff' : '#cfe3ff'; el.textContent = (t > sel && picked ? '✓ ' : '') + CH[i]; });
+  // --- bepul ---
+  headline($('h15'), t, A(15), A(16) - .1);
+  set($('file'), vis(t, A(15) + .1, A(16) + .2, .2, .3), `rotate(${(1 - eo((t - A(15) - .1) / .6)) * -25}deg) scale(${eb((t - A(15) - .1) / .5)}) translateY(${Math.sin(t * 3) * 10}px)`);
+  // --- CTA ---
+  headline($('h16'), t, A(16), END + 1, .1);
+  const cbo = vis(t, A(16) + .2, END + 1, .25); set($('cbox'), cbo, `translateY(${(1 - eo((t - A(16) - .2) / .4)) * 80}px)`);
+  const ty = Math.floor(C((t - BAHO) / .6) * 4); $('ctxt').textContent = 'BAHO'.slice(0, ty) + (t > BAHO && Math.floor(t * 3) % 2 ? '▏' : '');
+  $('cph').style.display = ty ? 'none' : 'inline';
+  set($('logo'), vis(t, S[16].b - .2, END + 1, .3), `scale(${eb((t - S[16].b + .2) / .5)})`);
+  set($('handle'), vis(t, S[16].b, END + 1, .3));
+  
+  // --- kanvaslar ---
+  cB.clearRect(0, 0, 1080, 1920); cF.clearRect(0, 0, 1080, 1920); cG.clearRect(0, 0, 1080, 1920);
+  dust(cB, t, t < A(6) ? 50 : 35, t < A(6) ? '255,190,150' : '150,210,255', 25, 3);
+  burst(cF, t, T3, { x: 540, y: 790, n: 40, kind: 'shard', colors: ['#ef4444', '#fca5a5', '#fff'], spread: 6.3, v: 900, g: 1200, life: 1.1 });
+  burst(cF, t, WT(10, 'javob'), { x: 760, y: 1110, n: 50, spread: 2.4, v: 1000, life: 1.6 });
+  burst(cF, t, FREE, { x: 540, y: 700, n: 110, spread: 3, v: 1400, life: 2.4 });
+  burst(cF, t, BAHO + .7, { x: 540, y: 780, n: 60, spread: 6.3, v: 900, g: 900, life: 1.8, colors: ['#f5b942', '#38bdf8', '#ffffff'] });
+  grain(cG, t, .03);
+  subtitle(t);
+};
+window.render(0);
+</script>
+</body></html>
