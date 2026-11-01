@@ -1,0 +1,173 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script>
+<style>
+:root{--nv:#0a1330;--cy:#38bdf8;--au:#f5b942;--rd:#ef4444;--gr:#22c55e;--wh:#eef4ff}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--nv);font-family:Manrope,sans-serif;color:var(--wh)}
+.abs{position:absolute}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;will-change:transform,opacity}
+#shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,32,.88) 0%,rgba(6,12,32,.35) 34%,rgba(6,12,32,.25) 55%,rgba(6,12,32,.9) 78%,rgba(6,12,32,.97) 100%)}
+#grid{position:absolute;inset:0;opacity:0;background:
+ radial-gradient(circle at 50% 45%,#15295f 0%,#0a1330 60%),
+ repeating-linear-gradient(0deg,transparent 0 79px,rgba(56,189,248,.07) 79px 80px),
+ repeating-linear-gradient(90deg,transparent 0 79px,rgba(56,189,248,.07) 79px 80px);background-blend-mode:screen}
+.h{position:absolute;left:70px;right:70px;text-align:center;opacity:0;will-change:transform,opacity}
+.sm{font-weight:600;font-size:46px;line-height:1.2;color:#cfe3ff}
+.big{font-weight:800;font-size:96px;line-height:1.02;letter-spacing:-2px;text-transform:uppercase}
+.au{color:var(--au)} .cy{color:var(--cy)} .rd{color:var(--rd)} .gr{color:var(--gr)}
+.chip{display:inline-block;padding:14px 30px;border-radius:40px;background:rgba(10,19,48,.8);border:3px solid rgba(245,185,66,.6);font-size:36px;font-weight:700;color:#f5d58a}
+#sub{position:absolute;left:80px;right:140px;top:1335px;text-align:center;font-weight:700;font-size:46px;line-height:1.28;color:rgba(238,244,255,.92);text-shadow:0 3px 14px #000}
+#sub i{font-style:normal}
+#counter{position:absolute;left:0;right:0;top:1040px;text-align:center;opacity:0}
+#counter .n{font-size:150px;font-weight:800;color:var(--au);text-shadow:0 0 40px rgba(245,185,66,.5)}
+#counter .k{font-size:40px;font-weight:700;color:#cfe3ff}
+#stamp{position:absolute;left:150px;width:780px;top:820px;height:240px;border:14px solid var(--rd);border-radius:30px;color:var(--rd);
+ font-size:84px;font-weight:800;display:flex;align-items:center;justify-content:center;opacity:0;background:rgba(10,10,20,.35);letter-spacing:2px;white-space:nowrap}
+#bars{position:absolute;left:190px;width:700px;top:560px;height:620px;opacity:0}
+.bar{position:absolute;bottom:90px;width:240px;border-radius:24px 24px 0 0}
+.bl{position:absolute;bottom:20px;width:240px;text-align:center;font-size:40px;font-weight:800}
+.bv{position:absolute;width:240px;text-align:center;font-size:64px;font-weight:800}
+#chips9{position:absolute;left:0;right:0;top:1215px;display:flex;justify-content:center;gap:24px}
+#chips9 div{padding:16px 30px;border-radius:40px;background:rgba(239,68,68,.18);border:3px solid var(--rd);font-size:38px;font-weight:800;opacity:0}
+/* klaviatura */
+#pc{position:absolute;left:90px;width:900px;top:640px;height:620px;border-radius:40px;background:rgba(9,17,44,.92);border:3px solid rgba(56,189,248,.45);opacity:0;
+ box-shadow:0 30px 90px rgba(0,0,0,.55);padding:40px 44px}
+.stat{display:flex;justify-content:space-between;align-items:center;font-size:44px;font-weight:700;color:#cfe3ff;height:86px;border-bottom:2px solid rgba(255,255,255,.08)}
+.stat b{font-size:58px;font-weight:800}
+#kb{display:grid;grid-template-columns:repeat(10,1fr);gap:12px;margin-top:40px}
+#kb div{height:62px;border-radius:12px;background:#1b2b5c;border:2px solid #2e4485;color:#9fb7e6;font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center}
+#food{position:absolute;right:60px;top:-70px;font-size:120px;opacity:0}
+#rule1,#rule2{position:absolute;left:90px;width:900px;height:200px;border-radius:36px;display:flex;align-items:center;gap:30px;padding:0 40px;opacity:0}
+#rule1{top:720px;background:rgba(34,197,94,.14);border:4px solid var(--gr)}
+#rule2{top:960px;background:rgba(239,68,68,.12);border:4px solid var(--rd)}
+#rule1>span,#rule2>span{font-size:110px;font-weight:800;line-height:1}
+#rule1 p,#rule2 p{font-size:50px;font-weight:800;line-height:1.1}
+#logo{position:absolute;left:340px;top:640px;width:380px;height:380px;border-radius:50%;background:url(rasmlar/logo.png) center/cover;opacity:0;
+ box-shadow:0 0 0 6px rgba(56,189,248,.35),0 0 90px rgba(56,189,248,.35)}
+#handle{position:absolute;left:0;right:0;top:1060px;text-align:center;font-size:58px;font-weight:800;opacity:0}
+#btn{position:absolute;left:240px;width:600px;top:1160px;height:120px;border-radius:60px;background:var(--au);color:#0b1430;font-size:50px;font-weight:800;
+ display:flex;align-items:center;justify-content:center;opacity:0}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+<div class="bg" id="bgC" style="background-image:url(rasmlar/kobra_shahar.jpg)"></div>
+<div class="bg" id="bgM" style="background-image:url(rasmlar/kobra_mukofot.jpg)"></div>
+<div class="bg" id="bgF" style="background-image:url(rasmlar/kobra_ferma.jpg)"></div>
+<div id="grid"></div><div id="shade"></div>
+
+<div class="h" id="h0" style="top:330px"><div class="sm" style="font-size:54px">Ilonlarni yo‘qotish uchun</div><div class="big au">pul to‘lashdi…</div></div>
+<div class="h" id="h1" style="top:330px"><div class="sm" style="font-size:54px">natijada</div><div class="big rd" style="font-size:120px">ilonlar<br>ko‘paydi 🐍</div></div>
+<div class="h" id="h2" style="top:300px"><div class="chip">📜 Rivoyat · Mustamlaka Hindistoni</div><div class="big" style="margin-top:30px;font-size:84px">Kobralar<br><span class="rd">ko‘payib ketgan</span></div></div>
+<div class="h" id="h3" style="top:300px"><div class="sm">Hukumat e’lon qiladi:</div><div class="big" style="font-size:150px;margin-top:10px">1 🐍 = <span class="au">💰</span></div></div>
+<div class="h" id="h4" style="top:300px"><div class="sm">Odamlar esa…</div><div class="big au">kobra boqishni<br>boshladi</div></div>
+<div id="counter"><div class="n" id="cn">🐍 0</div><div class="k">topshirilgan kobra</div></div>
+<div id="stamp">✕ MUKOFOT BEKOR</div>
+<div class="h" id="h7" style="top:330px"><div class="sm">Keraksiz kobralar…</div><div class="big rd">ko‘chaga!</div></div>
+<div class="h" id="h8" style="top:330px"><div class="sm">Natija:</div><div class="big">kobralar <span class="rd">ko‘paydi</span></div></div>
+<div id="bars">
+ <div class="bar" id="b1" style="left:60px;background:#64748b"></div><div class="bv" id="v1" style="left:60px">100</div><div class="bl" style="left:60px;color:#cbd5e1">OLDIN</div>
+ <div class="bar" id="b2" style="left:400px;background:var(--rd);box-shadow:0 0 50px rgba(239,68,68,.5)"></div><div class="bv rd" id="v2" style="left:400px">300+</div><div class="bl rd" style="left:400px">KEYIN</div>
+</div>
+<div id="chips9"><div>💸 Pul ketdi</div><div>📈 Muammo kattalashdi</div></div>
+<div class="h" id="h10" style="top:700px"><div class="big rd" style="font-size:150px;line-height:.95">Kobra<br>effekti</div><div class="sm" style="margin-top:24px">yaxshi niyat + noto‘g‘ri mukofot = katta zarar</div></div>
+<div class="h" id="h11" style="top:330px"><div class="big">Biznesda<br><span class="cy">ham shunday</span></div></div>
+<div class="h" id="h12" style="top:300px"><div class="sm">Matn teruvchilarga bonus:</div><div class="big au" style="font-size:80px">har bosilgan<br>tugma uchun</div></div>
+<div id="pc"><div id="food">🍔</div>
+ <div class="stat">⌨️ Bosishlar <b class="cy" id="sKeys">0</b></div>
+ <div class="stat">💰 Bonus <b class="au" id="sBonus">0 so‘m</b></div>
+ <div class="stat">📄 Matn <b class="rd" id="sText">0 so‘z</b></div>
+ <div id="kb"></div></div>
+<div class="h" id="h14" style="top:300px"><div class="big" style="font-size:90px">Bonus <span class="au">katta</span><br>matn <span class="rd">yo‘q</span></div></div>
+<div class="h" id="h15" style="top:360px"><div class="big" style="font-size:110px">Qoida <span class="au">bitta</span></div></div>
+<div id="rule1"><span class="gr">✓</span><p>KPI <span class="gr">natijani</span><br>o‘lchasin</p></div>
+<div id="rule2"><span class="rd">✕</span><p>aldab bo‘ladigan<br><span class="rd">raqamni emas</span></p></div>
+<div class="h" id="h18" style="top:360px"><div class="sm">Sizning kompaniyangizda ham</div><div class="big">«kobra» <span class="rd">bormi?</span> 🐍</div></div>
+<div class="h" id="h19" style="top:1150px"><div class="big au" style="font-size:80px">Izohda yozing 👇</div></div>
+<div id="logo"></div><div id="handle">@tizimli.biznes</div><div id="btn">OBUNA BO‘LING</div>
+<div id="sub"></div><div id="flash"></div>
+<script>
+const $ = (id) => document.getElementById(id);
+const C = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - C(x), 3);
+const eb = (x) => { x = C(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const S = window.S, A = (i) => S[i].a;
+const WT = (i, s) => { const w = S[i].words.find((w) => w.w.toLowerCase().startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.6; window.TOTAL = END;
+function vis(t, a, b, fi = .3, fo = .3) { return Math.min(eo((t - a) / fi), 1 - C((t - b) / fo)); }
+function set(el, o, tf = '') { el.style.opacity = o; el.style.transform = tf; el.style.visibility = o > .001 ? 'visible' : 'hidden'; }
+function pop(el, t, a, b, dy = 40) { const o = vis(t, a, b, .28, .25); const k = eb((t - a) / .45); set(el, o, `translateY(${(1 - k) * dy}px) scale(${.9 + .1 * k})`); return o; }
+function noise(t) { return Math.sin(t * 91.7) * Math.sin(t * 37.3 + 1.3); }
+$('kb').innerHTML = 'QWERTYUIOPASDFGHJKL;ZXCVBNM,./'.split('').map((c, i) => `<div id="k${i}">${c}</div>`).join('');
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; el.style.color = t >= w.t ? (t < w.e + .05 ? '#f5b942' : '#eef4ff') : 'rgba(238,244,255,.45)'; });
+}
+const fmt = (n) => Math.round(n).toLocaleString('ru-RU').replace(/ /g, ' ');
+
+window.render = function (t) {
+  const z = (a, s = 1.06) => `scale(${s + .05 * C((t - a) / 10)})`;
+  // fonlar
+  set($('bgC'), Math.max(vis(t, 0, A(2) - .1, .2, .4), vis(t, A(7) - .1, A(10) - .1, .4, .3)), t < A(2) ? `scale(${1.3 - .2 * eo(t / 1.5)})` : z(A(7)));
+  set($('bgM'), vis(t, A(2) - .1, A(4) - .1, .4, .4), z(A(2)));
+  set($('bgF'), vis(t, A(4) - .1, A(7) - .1, .4, .4), z(A(4)));
+  set($('grid'), vis(t, A(10) - .15, END + 1, .3));
+  // ilgak
+  pop($('h0'), t, A(0), A(1) - .05, 60);
+  pop($('h1'), t, A(1), A(2) - .15, 60);
+  // hikoya
+  pop($('h2'), t, A(2), A(3) - .1);
+  const h3 = pop($('h3'), t, A(3), A(4) - .1);
+  if (h3 > 0) { const c = WT(3, 'pul'); $('h3').style.transform += ` scale(${1 + .08 * Math.max(0, Math.sin((t - c) * 8)) * C((t - c) * 3) * (1 - C((t - c - 1)))})`; }
+  pop($('h4'), t, A(4), A(6) - .1);
+  const co = vis(t, A(4) + .3, A(6) - .1, .3, .3); set($('counter'), co, `scale(${eb((t - A(4) - .3) / .45)})`);
+  $('cn').textContent = '🐍 ' + fmt(Math.pow(C((t - A(4) - .3) / (A(6) - A(4) - .6)), 2) * 1000);
+  const st = vis(t, WT(6, 'bekor'), A(7) - .1, .12, .3); const sk = eo((t - WT(6, 'bekor')) / .25);
+  set($('stamp'), st, `scale(${2.2 - 1.2 * sk}) rotate(-8deg)`);
+  pop($('h7'), t, A(7), A(8) - .1);
+  // natija
+  pop($('h8'), t, A(8), A(10) - .15);
+  set($('bars'), vis(t, A(8) + .2, A(10) - .15, .3, .3));
+  const g1 = eo((t - A(8) - .3) / .6), g2 = eo((t - WT(8, 'ko‘paydi')) / .9);
+  $('b1').style.height = 140 * g1 + 'px'; $('v1').style.bottom = 110 + 140 * g1 + 'px'; $('v1').style.opacity = g1;
+  $('b2').style.height = 420 * g2 + 'px'; $('v2').style.bottom = 115 + 420 * g2 + 'px'; $('v2').style.opacity = g2;
+  [WT(9, 'pul'), WT(9, 'muammo')].forEach((a, k) => { const el = $('chips9').children[k]; el.style.opacity = vis(t, a, A(10) - .15, .2, .3); el.style.transform = `scale(${eb((t - a) / .4)})`; });
+  // kobra effekti
+  const h10 = pop($('h10'), t, A(10), A(11) - .1, 0); const kb = WT(10, 'kobra');
+  if (h10 > 0) { const g = t > kb ? 1 - C((t - kb) / .7) : 0; $('h10').style.textShadow = g > 0 ? `${noise(t) * 20 * g}px 0 #38bdf8, ${-noise(t + 2) * 20 * g}px 0 #f5b942` : 'none'; $('h10').style.transform += ` scale(${1 + .1 * g})`; }
+  $('flash').style.opacity = t > kb ? .2 * (1 - C((t - kb) / .25)) : 0;
+  // biznes
+  pop($('h11'), t, A(11), A(12) - .1);
+  pop($('h12'), t, A(12), A(14) - .1);
+  const pco = vis(t, A(12) + .3, A(15) - .1, .3, .3); set($('pc'), pco, `translateY(${(1 - eo((t - A(12) - .3) / .5)) * 80}px)`);
+  const p0 = A(12) + .5, mash = A(13);
+  const keys = t < mash ? 300 * C((t - p0) / (mash - p0)) : 300 + 9000 * Math.pow(C((t - mash) / 4), 1.6);
+  $('sKeys').textContent = fmt(keys); $('sBonus').textContent = fmt(keys * 50) + ' so‘m';
+  $('sText').textContent = (t < mash ? fmt(keys / 6) : fmt(50)) + ' so‘z';
+  $('sText').style.color = t > WT(14, 'matn') ? '#ef4444' : '#cfe3ff';
+  if (t > WT(14, 'matn')) $('sText').textContent = '0 so‘z ✕';
+  for (let i = 0; i < 30; i++) { const el = $('k' + i);
+    const on = t < mash ? Math.floor(t * 9 + i * 7) % 30 === i : i === 15 && Math.floor(t * 14) % 2 === 0;
+    el.style.background = on ? '#f5b942' : '#1b2b5c'; el.style.color = on ? '#0b1430' : '#9fb7e6'; el.style.transform = on ? 'translateY(4px)' : 'none'; }
+  set($('food'), vis(t, WT(13, 'ovqat'), A(15) - .1, .2, .3), `rotate(${Math.sin(t * 5) * 8}deg) scale(${eb((t - WT(13, 'ovqat')) / .4)})`);
+  pop($('h14'), t, A(14), A(15) - .1);
+  // qoida
+  pop($('h15'), t, A(15), A(18) - .1);
+  pop($('rule1'), t, A(16), A(18) - .1, 60);
+  pop($('rule2'), t, A(17), A(18) - .1, 60);
+  // CTA
+  pop($('h18'), t, A(18), END + 1);
+  const iz = pop($('h19'), t, A(19), A(20) - .05); if (iz > 0) $('h19').style.transform += ` translateY(${Math.abs(Math.sin(t * 6)) * -16}px)`;
+  set($('logo'), vis(t, A(19) + .3, END + 1, .3), `scale(${eb((t - A(19) - .3) / .5)})`);
+  $('h18').style.top = t > A(19) + .3 ? (360 - 80 * eo((t - A(19) - .3) / .4)) + 'px' : '360px';
+  pop($('handle'), t, A(19) + .6, END + 1);
+  const bt = pop($('btn'), t, A(20), END + 1); if (bt > 0) $('btn').style.boxShadow = `0 0 ${30 + 30 * Math.abs(Math.sin(t * 4))}px rgba(245,185,66,.7)`;
+  $('h19').style.visibility = t > A(20) ? 'hidden' : $('h19').style.visibility;
+  subtitle(t);
+};
+window.render(0);
+</script>
+</body></html>

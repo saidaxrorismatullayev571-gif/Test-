@@ -1,0 +1,132 @@
+{
+"duration": 54.68,
+"paras": 8,
+"sents": [
+{
+"p": 0,
+"t": "Ilonlarni yo‘qotish uchun pul to‘lashdi...",
+"a": 0.353,
+"b": 2.483
+},
+{
+"p": 0,
+"t": "natijada ilonlar ko‘payib ketdi.",
+"a": 2.883,
+"b": 4.993
+},
+{
+"p": 1,
+"t": "Hikoya qilishlaricha, mustamlaka davridagi Hindistonda kobralar ko‘payib ketgan.",
+"a": 5.763,
+"b": 9.812
+},
+{
+"p": 1,
+"t": "Hukumat e’lon qiladi: kim o‘lik kobra olib kelsa, unga pul beriladi.",
+"a": 10.412,
+"b": 14.152
+},
+{
+"p": 2,
+"t": "Odamlar esa kobra boqishni boshlashdi.",
+"a": 14.992,
+"b": 16.683
+},
+{
+"p": 2,
+"t": "Uyda ko‘paytirib, topshirib, pul olishdi.",
+"a": 17.162,
+"b": 19.072
+},
+{
+"p": 3,
+"t": "Hukumat buni bilib, mukofotni bekor qildi.",
+"a": 19.422,
+"b": 21.962
+},
+{
+"p": 3,
+"t": "Endi keraksiz kobralarni ko‘chaga qo‘yib yuborishdi.",
+"a": 22.562,
+"b": 24.842
+},
+{
+"p": 4,
+"t": "Natija: kobralar avvalgidan ham ko‘paydi.",
+"a": 25.613,
+"b": 28.282
+},
+{
+"p": 4,
+"t": "Pul ham ketdi, muammo ham kattalashdi.",
+"a": 28.912,
+"b": 31.282
+},
+{
+"p": 4,
+"t": "Bu kobra effekti.",
+"a": 31.892,
+"b": 33.283
+},
+{
+"p": 5,
+"t": "Biznesda ham shunday.",
+"a": 33.903,
+"b": 35.172
+},
+{
+"p": 5,
+"t": "Matn teruvchilarga bosilgan tugmalar soni uchun bonus berishdi.",
+"a": 35.393,
+"b": 38.403
+},
+{
+"p": 5,
+"t": "Ular esa bir qo‘lda ovqat yeb, bir qo‘lda tugma bosib o‘tirishdi.",
+"a": 39.053,
+"b": 42.003
+},
+{
+"p": 5,
+"t": "Bonus katta, matn yo‘q.",
+"a": 42.473,
+"b": 44.21
+},
+{
+"p": 6,
+"t": "Qoida bitta:",
+"a": 45.01,
+"b": 45.74
+},
+{
+"p": 6,
+"t": "KPI natijani o‘lchasin,",
+"a": 46.25,
+"b": 47.85
+},
+{
+"p": 6,
+"t": "aldab bo‘ladigan raqamni emas.",
+"a": 48.31,
+"b": 49.86
+},
+{
+"p": 7,
+"t": "Sizning kompaniyangizda ham kobra bormi?",
+"a": 50.633,
+"b": 52.333
+},
+{
+"p": 7,
+"t": "Izohda yozing.",
+"a": 52.812,
+"b": 53.422
+},
+{
+"p": 7,
+"t": "Obuna bo‘ling.",
+"a": 53.783,
+"b": 54.303
+}
+]
+}
