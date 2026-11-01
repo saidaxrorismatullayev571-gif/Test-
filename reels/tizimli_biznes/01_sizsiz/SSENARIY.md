@@ -40,6 +40,6 @@ Savdo tushsa — muammo xodimlarda emas, tizim yo‘qligida.
 👇 Nechta savolga «HA» dedingiz? Izohda yozing.
 Har kuni 1 ta amaliy qoida — @tizimli.biznes
 
-#biznes #tizimlashtirish #rahbar #tadbirkor #biznesuz #boshqaruv #hr
+#biznes #tizimlashtirish #biznesuz #tadbirkor #rahbar
 ```
 - Joylashda: **AI label** yoqiladi (rasmlardagi odam AI), keyin **Profilga qadash**.

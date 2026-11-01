@@ -101,7 +101,7 @@ Joylagandan keyin har birida: **⋯ → Profilga qadash**.
 - **Har kuni 1 ta reel.** Vaqtni birinchi 2 hafta sinab ko‘ramiz: **08:00–09:00** yoki **20:00–21:00** (Toshkent vaqti). Keyin Instagram statistikasidagi «Auditoriya faol vaqti» bo‘yicha aniqlaymiz.
 - **Har bir reel ostiga** 1 ta story qo‘yiladi: «Yangi reel 👇» va qisqa savol yoki so‘rovnoma (poll).
 - **Caption tuzilmasi:** ilgak (1 qator) → 3 ta qisqa punkt → savol yoki CTA → 3–5 ta heshteg.
-- **Heshteglar:** `#biznes #tizimlashtirish #hr #kpi #rahbar #tadbirkor #biznesuz`.
+- **Heshteglar:** Instagram endi **ko‘pi bilan 5 ta** heshtegga ruxsat beradi: `#biznes #tizimlashtirish #biznesuz #tadbirkor` + mavzuga mos 1 ta (`#rahbar`, `#hr`, `#kpi`).
 
 ## 8. Ochish kuni cheklisti ✅
 - [ ] Username, ism va bio kiritildi
