@@ -1,4 +1,6 @@
-# HR blog: to‘liq reja (NotebookLM holat tahlili asosida)
+# «Biznesni tizimlashtirish» blogi: to‘liq reja (NotebookLM holat tahlili asosida)
+
+> **Yo‘nalish:** umuman biznesni tizimlashtirish. HR — uning eng katta qismi, lekin yagona mavzu emas.
 
 > Asos: NotebookLM’dagi 7 ta prompt javobi (2026-11-01). Promptlar: `rejalar/NOTEBOOKLM_HOLAT_PROMPTLAR.md`. Umumiy g‘oya: `rejalar/INSTAGRAM_HR_PROFIL.md`.
 
@@ -54,25 +56,41 @@
 
 ## 3. Profil pozitsiyasi
 
-- **Kim uchun (asosiy):** 5–100 xodimli **biznes egalari va rahbarlar**. «Hamma narsa menga bog‘liq, xodim o‘g‘irlaydi, ketib qoladi» deydiganlar.
-- **Ikkinchi auditoriya:** boshlovchi HRlar.
-- **Va’da (bio):** «Biznesingiz sizsiz ham ishlashi uchun: xodim, maosh, KPI va tizim. Har kuni 1 ta amaliy qoida.»
-- **Nom g‘oyalari** (band emasligini tekshirish kerak): `hr.tizim.uz` · `tizimli.biznes` · `xodim.va.tizim` · `hr_amaliyot`.
-- **Ohang:** To‘rayev uslubiga o‘xshash, samimiy ustoz, raqam va keys ko‘p. «Siz» deb murojaat qilinadi.
+> **Yo‘nalish (foydalanuvchi aniqlashtirdi, 2026-11-01):** blog **faqat HR haqida emas**. Mavzusi **umuman biznesni tizimlashtirish**. HR uning bitta, eng katta qismi. To‘rayev kursining nomi ham «HR va biznesni tizimlashtirish», ya’ni manba shu yo‘nalishga mos.
+
+- **Kim uchun (asosiy):** 5–100 xodimli **biznes egalari va rahbarlar**. «Hamma narsa menga bog‘liq, men bo‘lmasam ish to‘xtaydi, xodim o‘g‘irlaydi, ketib qoladi» deydiganlar.
+- **Ikkinchi auditoriya:** bo‘lim rahbarlari, operatsion direktorlar, HRlar.
+- **Asosiy va’da:** «Biznesingiz sizsiz ham ishlashi uchun».
+- **Bio:** «Biznesni tizimlashtirish: jarayon, xodim, maosh, KPI, nazorat. Har kuni 1 ta amaliy qoida.»
+- **Nom g‘oyalari** (band emasligini tekshirish kerak): `tizimli.biznes` · `biznes.tizimi.uz` · `sizsiz.ishlaydi` · `tizim_bor` · `soatdek.biznes`.
+- **Asosiy metafora:** «poyezd va mashina» (`_65_`). Tizimli biznes relsda yuradigan poyezdga o‘xshaydi, tizimsiz biznes esa haydovchiga bog‘liq mashinaga. Shu obrazni brend belgisi qilsa bo‘ladi.
+- **Ohang:** samimiy ustoz, raqam va keys ko‘p. «Siz» deb murojaat qilinadi.
 
 ---
 
 ## 4. Kontent ustunlari (haftalik aylanish)
 
-| Kun | Ustun | Format (kutubxonadan) |
+| Kun | Ustun | Mavzular | Format (kutubxonadan) |
+|---|---|---|---|
+| Du | ⚙️ **Tizim va jarayon** | SOP, delegatsiya, rahbarni operatsion ishdan chiqarish, «5 marta Nimaga?», 7 bosqichli model | keys, oldin → keyin |
+| Se | 👥 **Jamoa (HR)** | ishga olish, onboarding, baholash, o‘qitish | ro‘yxat, STAR, matritsa |
+| Ch | 💰 **Maosh, KPI, motivatsiya** | greyding, KPI, bonus, kobra effekti | raqamli misol, glass-explainer |
+| Pa | 🛡️ **Nazorat va nizom** | Checks & Balances, ombor, sir saqlash, qarz va kechikish nizomi, buxgalteriya nazorati | keys, telefon xabari (notify) bilan ochiladi |
+| Ju | 🧭 **Strategiya va madaniyat** | missiya, qadriyat, SMART, HR strategiyasi, SWOT | hikoya, Neon Jamoa |
+| Sh | ❌ **Rahbar xatosi / Mif** | «buni qilmang» → «buni qiling» | bo‘lingan ekran, raw → finished |
+| Ya | 🎁 **Lead-magnit / savol-javob** | shablon, cheklist, kalkulyator | «Izohga KALIT so‘z yozing», karusel |
+
+**Nisbat:** ~40% tizim, nazorat va strategiya; ~60% jamoa, maosh va KPI. Shunda profil «HR blog» emas, **«biznes tizimi» blogi** bo‘lib ko‘rinadi.
+
+### 4.1. Manbada kam bo‘lgan tizimlashtirish yo‘nalishlari (keyin to‘ldiriladi)
+| Yo‘nalish | Hozir bormi | Qayerdan olamiz |
 |---|---|---|
-| Du | 💰 Maosh va KPI | raqamli misol, glass-explainer, raqam sanash |
-| Se | 🎯 Ishga olish | ro‘yxat, oldin → keyin |
-| Ch | ⚙️ Tizim va nizom | keys, telefon xabari (notify) bilan ochiladi |
-| Pa | ❌ Mif va haqiqat | bo‘lingan ekran, raw → finished |
-| Ju | 📖 Keys va hikoya | hikoya, Neon Jamoa qahramonlari |
-| Sh | ⚠️ Rahbar xatosi | «buni qilmang» → «buni qiling» |
-| Ya | 🎁 Lead-magnit / savol-javob | «Izohga KALIT so‘z yozing», karusel |
+| Sotuv tizimi (voronka, CRM, skript, sotuvchi maoshi) | qisman (KPI darslari) | Rejabboyevning «Maosh tizimi» darsi, yangi manbalar |
+| Moliya (P&L, cash flow, budjet) | 1 ta dars (`_177_`) | yangi manba kerak |
+| Marketing tizimi | yo‘q | yangi manba kerak |
+| Avtomatlashtirish (IT, CRM, AI) | 1 bosqich sifatida (`_63_`) | yangi manba kerak |
+| SWOT va strategik tahlil | yo‘q | Rejabboyevning SWOT darsi |
+| Ishlab chiqarish va ombor jarayonlari | keyslarda bor | mavjud keyslar |
 
 ---
 
@@ -148,6 +166,15 @@ Faqat [audio__NN_.mp3] manbasidan foydalan. Quyidagilarni ber:
 2) Barcha raqamlar va ular nimani anglatishi — aynan manbadagidek.
 3) Keys/hikoya bo‘lsa — boshidan oxirigacha qisqa bayon (kim, nima bo‘ldi, natija).
 4) Manbada YO‘Q narsani qo‘shma. Ishonching komil bo‘lmasa "aniq emas" deb yoz.
+```
+
+### 8.1-b. Tizimlashtirish kontentini ajratib olish (bir marta)
+```
+Bu kurs "HR va biznesni tizimlashtirish" deb ataladi. HR dan TASHQARI bo‘lgan barcha biznesni tizimlashtirish mazmunini ajratib ber:
+1) Rahbarni operatsion ishdan chiqarish, delegatsiya, SOP, jarayonlar xaritasi, Kaizen, 7 bosqichli rivojlanish modeli, nazorat (Checks & Balances), moliya/buxgalteriya nazorati, ombor, sir saqlash, strategiya — har biri bo‘yicha: manba fayl nomi, asosiy qoida, raqam/misol, aynan iqtibos.
+2) Shulardan 30 ta reel mavzusi: sarlavha (≤ 8 so‘z), ilgak (1 gap), manba.
+3) "Biznesingiz sizsiz ishlaydimi?" degan savolga oid barcha test-savollar va mezonlar (masalan, 3 savol, 5 daqiqa qoidasi).
+Faqat manbalardan foydalan; manbada yo‘q narsani qo‘shma.
 ```
 
 ### 8.2. Bahsli mavzu uchun ikki qarash (ixtiyoriy)

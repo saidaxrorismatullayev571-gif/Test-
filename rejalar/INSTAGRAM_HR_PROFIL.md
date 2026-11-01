@@ -1,4 +1,4 @@
-# Uzoq muddatli reja: HR yo‘nalishidagi Instagram profilni ko‘tarish
+# Uzoq muddatli reja: «Biznesni tizimlashtirish» Instagram profili (HR — asosiy qismi)
 
 **Holat:** g‘oya bosqichida, hali boshlanmagan (foydalanuvchi qarori: «hozir bo‘lmasa ham, kelajakda ko‘taramiz»).
 **Yozilgan sana:** 2026-10-29.
@@ -7,6 +7,7 @@
 **Eslatish qoidasi:** bu — **alohida loyiha**. Hozirgi videodarslik ishlariga aralashtirilmaydi: darslik ustida ishlayotganda eslatilmaydi va taklif qilinmaydi. Faqat foydalanuvchi o‘zi Instagram/HR profil yoki uzoq muddatli rejalar haqida gap ochsa, yoki so‘rasa ochiladi.
 
 ## Maqsad
+**Yo‘nalish (2026-11-01 aniqlashtirildi):** faqat HR emas — **umuman biznesni tizimlashtirish** (jarayon, SOP, delegatsiya, nazorat, maosh/KPI, jamoa, strategiya). HR — eng katta ustun.
 Instagram’da HR yo‘nalishida yangi profil. **Har kuni bittadan reel.** Kontent manbai — foydalanuvchining NotebookLM’dagi darsliklari va materiallari.
 
 ## Manbalar (foydalanuvchida bor)

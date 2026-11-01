@@ -6,4 +6,4 @@
 - Videodarslik dvigateli va tartibi: `.claude/skills/video-darslik/SKILL.md`; reel montaji: `.claude/skills/reel-uslublari/SKILL.md`; diktor klon: `video-darslik-v3/klon/`.
 
 ## Uzoq muddatli rejalar (alohida loyiha — aralashtirmang)
-- `rejalar/INSTAGRAM_HR_PROFIL.md` — HR yo‘nalishidagi Instagram profil (har kuni reel). **Hozirgi videodarslik ishlariga mutlaqo aralashtirmang:** darslik ustida ishlayotganda bu rejani eslatmang, taklif qilmang, darslik materiallarini unga moslamang. Faqat foydalanuvchi o‘zi Instagram/HR profil yoki uzoq muddatli rejalar haqida gapirsa, yoki ochiqdan-ochiq so‘rasa, shu rejani oching.
+- `rejalar/INSTAGRAM_HR_PROFIL.md` — «Biznesni tizimlashtirish» Instagram profili (HR — asosiy qismi; har kuni reel; to‘liq reja: `rejalar/HR_BLOG_TOLIQ_REJA.md`). **Hozirgi videodarslik ishlariga mutlaqo aralashtirmang:** darslik ustida ishlayotganda bu rejani eslatmang, taklif qilmang, darslik materiallarini unga moslamang. Faqat foydalanuvchi o‘zi Instagram/HR/biznes-tizimlashtirish blogi yoki uzoq muddatli rejalar haqida gapirsa, yoki ochiqdan-ochiq so‘rasa, shu rejani oching.
