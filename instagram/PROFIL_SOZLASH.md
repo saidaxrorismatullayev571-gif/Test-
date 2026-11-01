@@ -1,13 +1,14 @@
 # @tizimli.biznes: Instagram profilini sozlash (qadamma-qadam)
 
 > Yo‘nalish: **biznesni tizimlashtirish**, HR uning asosiy qismi. Profil shaxsiz brend sifatida yuritiladi.
+> **Holat (2026-11-01):** Instagram `@tizimli.biznes` ochildi; Telegram kanal: `t.me/tizimli_biznes_uz`.
 > Tayyor rasmlar: `instagram/chiqish/` (avatar: `av2.png` yoki `av3.png`; highlight muqovalari: `hl_*.png`).
 
 ---
 
 ## 0. Ochishdan oldin (5 daqiqa)
 1. **Username band emasligini tekshiring:** `tizimli.biznes`. Band bo‘lsa, quyidagilardan birini oling (tartib bo‘yicha): `tizimli.biznes.uz` → `tizimli_biznes` → `tizimlibiznes`.
-2. **Telegram’da ham shu nomni band qiling** (kanal yoki bot: `@tizimli_biznes`). Bepul shablonlar o‘sha yerda beriladi.
+2. **Telegram’da ham shu nomni band qiling** (kanal yoki bot: `@tizimli_biznes_uz`). Bepul shablonlar o‘sha yerda beriladi.
 3. **Alohida email** oching (masalan `tizimli.biznes@gmail.com`), keyinchalik Meta Business va boshqa xizmatlarga ulash uchun.
 
 ## 0.5. Facebook sahifasi (Instagram’dan keyin, o‘sha kuni)
@@ -59,7 +60,7 @@ Jarayon · Jamoa · Maosh · KPI · Nazorat
 📌 Har kuni 1 qoida + bepul shablonlar 👇
 ```
 
-**Havola (Link):** Telegram kanal yoki bot, masalan `t.me/tizimli_biznes`. Keyinchalik bir nechta havola kerak bo‘lsa, Instagram’ning o‘zida 5 tagacha havola qo‘shish mumkin.
+**Havola (Link):** Telegram kanal yoki bot, masalan `t.me/tizimli_biznes_uz`. Keyinchalik bir nechta havola kerak bo‘lsa, Instagram’ning o‘zida 5 tagacha havola qo‘shish mumkin.
 
 **Avatar:** `chiqish/av2.png` (tizim tugunlari, tavsiya) yoki `chiqish/av3.png` (TB monogrammasi).
 
