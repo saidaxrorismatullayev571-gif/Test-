@@ -10,6 +10,17 @@
 2. **Telegram’da ham shu nomni band qiling** (kanal yoki bot: `@tizimli_biznes`). Bepul shablonlar o‘sha yerda beriladi.
 3. **Alohida email** oching (masalan `tizimli.biznes@gmail.com`), keyinchalik Meta Business va boshqa xizmatlarga ulash uchun.
 
+## 0.5. Facebook sahifasi (Instagram’dan keyin, o‘sha kuni)
+- **Tartib:** avval Instagram’da username band qilinadi, keyin **Facebook sahifasi (Page)** ochiladi va ikkalasi bog‘lanadi.
+- **Shaxsiy profil emas, Sahifa** ochiladi: «Tizimli Biznes». Sahifani sizning haqiqiy shaxsiy Facebook akkauntingiz boshqaradi. Meta soxta shaxsiy profillarni bloklaydi, shuning uchun brend uchun alohida «shaxsiy» akkaunt ochilmaydi.
+- **Bog‘lash:** Instagram → Sozlamalar → **Hisoblar markazi (Accounts Center)** → Facebook sahifasini qo‘shish. Yoki **Meta Business Suite** orqali.
+- **Nima beradi:**
+  1. **Meta Business Suite:** reel va post’larni oldindan rejalashtirish (bepul). Haftalik partiyani bir kunda joylab qo‘yish mumkin.
+  2. **Reel’lar Facebook’ga ham avtomatik chiqadi:** qo‘shimcha bepul qamrov.
+  3. **Reklama (keyinchalik):** Ads Manager orqali to‘liq sozlash.
+  4. **ManyChat va boshqa avtomatlashtirish xizmatlari** bilan ulanish osonlashadi.
+- **Sahifa maydonlari:** nom `Tizimli Biznes`, kategoriya «Biznes maslahatchisi», avatar va bio Instagram’dagidek.
+
 ## 1. Hisob turi
 - **Sozlamalar** → **Hisob turi va vositalar** → **Professional hisobga o‘tish**.
 - **Tur: «Muallif» (Creator)**.
