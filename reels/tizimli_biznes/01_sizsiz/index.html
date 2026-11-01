@@ -1,0 +1,260 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script>
+<style>
+:root{--nv:#0a1330;--cy:#38bdf8;--au:#f5b942;--rd:#ef4444;--gr:#22c55e;--wh:#eef4ff}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--nv);font-family:Manrope,sans-serif;color:var(--wh)}
+.abs{position:absolute}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;will-change:transform,opacity}
+#shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,32,.85) 0%,rgba(6,12,32,.35) 34%,rgba(6,12,32,.25) 55%,rgba(6,12,32,.9) 78%,rgba(6,12,32,.97) 100%)}
+#grid{position:absolute;inset:0;opacity:0;background:
+ radial-gradient(circle at 50% 45%,#15295f 0%,#0a1330 60%),
+ repeating-linear-gradient(0deg,transparent 0 79px,rgba(56,189,248,.07) 79px 80px),
+ repeating-linear-gradient(90deg,transparent 0 79px,rgba(56,189,248,.07) 79px 80px);background-blend-mode:screen}
+#tint{position:absolute;inset:0;background:#7f1d1d;mix-blend-mode:multiply;opacity:0}
+.h{position:absolute;left:70px;right:70px;text-align:center;opacity:0;will-change:transform,opacity}
+.sm{font-weight:600;font-size:46px;line-height:1.2;color:#cfe3ff}
+.big{font-weight:800;font-size:96px;line-height:1.02;letter-spacing:-2px;text-transform:uppercase}
+.au{color:var(--au)} .cy{color:var(--cy)} .rd{color:var(--rd)} .gr{color:var(--gr)}
+/* savol tabletkalari */
+#pills{position:absolute;left:0;right:0;top:250px;display:flex;justify-content:center;gap:26px;opacity:0}
+.pill{width:250px;height:250px;border-radius:40px;border:4px solid rgba(56,189,248,.5);background:rgba(10,19,48,.75);
+ display:flex;flex-direction:column;align-items:center;justify-content:center;transform-origin:50% 0}
+.pill b{font-size:120px;font-weight:800;line-height:1;color:var(--cy)} .pill span{font-size:30px;font-weight:700;letter-spacing:3px;color:#9fb7e6}
+/* subtitr */
+#sub{position:absolute;left:80px;right:140px;top:1335px;text-align:center;font-weight:700;font-size:46px;line-height:1.28;color:rgba(238,244,255,.92);text-shadow:0 3px 14px #000}
+#sub i{font-style:normal;transition:none}
+/* bildirishnoma */
+.nt{position:absolute;left:90px;width:900px;height:150px;border-radius:34px;background:rgba(248,250,255,.94);color:#0b1430;
+ display:flex;align-items:center;gap:26px;padding:0 30px;box-shadow:0 18px 50px rgba(0,0,0,.45);opacity:0}
+.nt .ic{width:92px;height:92px;border-radius:24px;flex:none;display:flex;align-items:center;justify-content:center;font-size:52px}
+.nt b{display:block;font-size:30px;font-weight:800} .nt p{font-size:34px;font-weight:600;color:#26324f}
+#badge{position:absolute;right:70px;top:640px;min-width:140px;height:96px;border-radius:48px;background:var(--rd);color:#fff;font-size:54px;font-weight:800;
+ display:flex;align-items:center;justify-content:center;padding:0 26px;opacity:0;box-shadow:0 0 40px rgba(239,68,68,.7)}
+/* jarayon zanjiri */
+#chain{position:absolute;left:90px;top:900px;width:900px;height:200px;opacity:0}
+/* grafik */
+#chart{position:absolute;left:90px;top:760px;width:900px;height:520px;opacity:0}
+#cal{position:absolute;left:340px;top:760px;width:400px;height:430px;border-radius:44px;background:rgba(248,250,255,.95);color:#0b1430;opacity:0;overflow:hidden;
+ box-shadow:0 30px 80px rgba(0,0,0,.5);text-align:center}
+#cal .top{height:110px;background:var(--rd);color:#fff;font-size:44px;font-weight:800;line-height:110px;letter-spacing:4px}
+#cal .n{font-size:200px;font-weight:800;line-height:240px} #cal .k{font-size:40px;font-weight:700;color:#5b6785;margin-top:-30px}
+/* tarmoq */
+#web{position:absolute;left:90px;top:640px;width:900px;height:720px;opacity:0}
+#face{position:absolute;left:390px;top:910px;width:300px;height:300px;border-radius:50%;border:6px solid var(--rd);
+ background:url(rasmlar/direktor_charchagan.jpg) 52% 28%/360% auto no-repeat;opacity:0;box-shadow:0 0 60px rgba(239,68,68,.6)}
+#check{position:absolute;left:790px;top:960px;width:200px;height:200px;opacity:0}
+#logo{position:absolute;left:340px;top:560px;width:400px;height:400px;border-radius:50%;background:url(rasmlar/logo.png) center/cover;opacity:0;
+ box-shadow:0 0 0 6px rgba(56,189,248,.35),0 0 90px rgba(56,189,248,.35)}
+#btn{position:absolute;left:240px;width:600px;top:1130px;height:120px;border-radius:60px;background:var(--au);color:#0b1430;font-size:50px;font-weight:800;
+ display:flex;align-items:center;justify-content:center;opacity:0;letter-spacing:1px}
+#handle{position:absolute;left:0;right:0;top:1010px;text-align:center;font-size:58px;font-weight:800;opacity:0}
+#tick3{position:absolute;left:0;right:0;top:820px;display:flex;justify-content:center;gap:40px;opacity:0}
+#tick3 div{width:200px;height:200px;border-radius:36px;border:6px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;
+ font-size:120px;font-weight:800;color:var(--gr)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+</style></head><body>
+<div class="bg" id="bg1" style="background-image:url(rasmlar/direktor_charchagan.jpg)"></div>
+<div class="bg" id="bg2" style="background-image:url(rasmlar/direktor_telefon_band.jpg)"></div>
+<div class="bg" id="bg3" style="background-image:url(rasmlar/direktor_xotirjam.jpg)"></div>
+<div id="grid"></div><div id="tint"></div><div id="shade"></div>
+
+<div class="h" id="h0a" style="top:330px"><div class="sm">Bir oyga yo‘qolib qolsangiz…</div><div class="big au" style="font-size:230px;letter-spacing:-6px;margin-top:10px">1 OY</div></div>
+<div class="h" id="h0b" style="top:360px"><div class="big">Biznesingiz<br>nima bo‘ladi<span class="au">?</span></div></div>
+<div class="h" id="h2" style="top:330px"><div class="big"><span class="cy">3 ta</span> savol</div><div class="sm" style="margin-top:14px">hozir tekshiramiz</div></div>
+<div id="pills"><div class="pill"><b>1</b><span>SAVOL</span></div><div class="pill"><b>2</b><span>SAVOL</span></div><div class="pill"><b>3</b><span>SAVOL</span></div></div>
+
+<div class="h" id="h4" style="top:470px"><div class="sm">Siz aralashmasangiz…</div><div class="big">ish <span class="rd">to‘xtaydimi?</span></div></div>
+<svg id="chain" viewBox="0 0 900 200"></svg>
+
+<div class="h" id="h6" style="top:470px"><div class="sm">Har bir mayda ish uchun…</div><div class="big">sizdan <span class="au">ruxsatmi?</span></div></div>
+<div class="nt" id="n1"><div class="ic" style="background:#dbeafe">💸</div><div><b>Sotuv · Anvar</b><p>Mijozga 15% chegirma bersam bo‘ladimi?</p></div></div>
+<div class="nt" id="n2"><div class="ic" style="background:#dcfce7">🕔</div><div><b>Ombor · Aziz</b><p>Bugun erta ketsam maylimi?</p></div></div>
+<div class="nt" id="n3"><div class="ic" style="background:#fef3c7">🏖️</div><div><b>HR · Malika</b><p>Keyingi hafta ta’tilga chiqsam?</p></div></div>
+<div id="badge">+27</div>
+<div class="h" id="h8" style="top:470px"><div class="big">Hammasi —<br><span class="au">siz orqali</span></div></div>
+
+<div class="h" id="h10" style="top:470px"><div class="sm">Kompaniyani tashlab ketsangiz…</div><div class="big">savdo <span class="cy">nima bo‘ladi?</span></div></div>
+<div id="cal"><div class="top">SIZSIZ</div><div class="n" id="caln">1</div><div class="k">kun</div></div>
+<svg id="chart" viewBox="0 0 900 520"></svg>
+
+<div class="h" id="h13" style="top:470px"><div class="big">Hamma narsa<br><span class="rd">sizga bog‘langan</span></div></div>
+<svg id="web" viewBox="0 0 900 720"></svg><div id="face"></div>
+<div class="h" id="h14" style="top:880px"><div class="sm" style="font-size:54px">Aybdor —</div><div class="big" style="font-size:110px;position:relative;display:inline-block">xodimlar<div id="strike" class="abs" style="left:-10px;top:52%;height:14px;background:var(--rd);border-radius:7px;width:0"></div></div><div class="sm" style="font-size:54px">emas</div></div>
+<div class="h" id="h15" style="top:820px"><div class="sm" style="font-size:54px">Sabab bitta:</div><div class="big rd" style="font-size:160px">tizim yo‘q</div></div>
+
+<div class="h" id="h16" style="top:430px"><div class="sm">Natija joyida qolsa…</div><div class="big gr">tabriklayman!</div></div>
+<svg id="check" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="none" stroke="#22c55e" stroke-width="14" id="ckc" stroke-dasharray="817" stroke-dashoffset="817"/><path d="M90 155 l42 42 l80 -92" fill="none" stroke="#22c55e" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" id="ckp" stroke-dasharray="200" stroke-dashoffset="200"/></svg>
+<div class="h" id="h17" style="top:1080px"><div class="big" style="font-size:84px">Biznesingiz<br><span class="gr">tizimli ✓</span></div></div>
+
+<div class="h" id="h18" style="top:420px"><div class="sm">Nechta savolga</div><div class="big">«<span class="gr">ha</span>» dedingiz?</div></div>
+<div id="tick3"><div>✓</div><div>✓</div><div>✓</div></div>
+<div class="h" id="h19" style="top:1110px"><div class="big au" style="font-size:80px">Izohda yozing 👇</div></div>
+<div id="logo"></div><div id="handle">@tizimli.biznes</div>
+<div class="h" id="h20" style="top:330px"><div class="sm" style="font-size:50px">Biznesni tizimlashtirish</div><div class="big" style="font-size:78px">har kuni<br><span class="au">1 ta amaliy qoida</span></div></div>
+<div id="btn">OBUNA BO‘LING</div>
+
+<div id="sub"></div>
+<div id="flash"></div>
+<script>
+const $ = (id) => document.getElementById(id);
+const C = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - C(x), 3);
+const eb = (x) => { x = C(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const S = window.S;
+const A = (i) => S[i].a;
+const W = (i, k) => S[i].words[k].t;
+// so‘zni matn bo‘yicha topish (birinchi mos kelgan)
+const WT = (i, s) => { const w = S[i].words.find((w) => w.w.toLowerCase().startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.6;
+window.TOTAL = END;
+// ko‘rinish: a da kirib, b da chiqadi
+function vis(t, a, b, fi = .3, fo = .3) { return Math.min(eo((t - a) / fi), 1 - C((t - b) / fo)); }
+function set(el, o, tf = '') { el.style.opacity = o; el.style.transform = tf; el.style.visibility = o > .001 ? 'visible' : 'hidden'; }
+function pop(el, t, a, b, dy = 40) { const o = vis(t, a, b, .28, .25); const k = eb((t - a) / .45); set(el, o, `translateY(${(1 - k) * dy}px) scale(${.9 + .1 * k})`); return o; }
+function noise(t) { return Math.sin(t * 91.7) * Math.sin(t * 37.3 + 1.3); }
+
+// ---- zanjir (1-savol) ----
+const ch = $('chain'); const CN = 6;
+ch.innerHTML = `<line x1="60" y1="100" x2="840" y2="100" stroke="#38bdf8" stroke-width="8" id="cl"/>` +
+  [...Array(CN)].map((_, i) => `<circle cx="${60 + i * 156}" cy="100" r="${i == 2 ? 46 : 30}" fill="#0a1330" stroke="#38bdf8" stroke-width="8" id="cn${i}"/>`).join('') +
+  [...Array(5)].map((_, i) => `<circle r="10" fill="#f5b942" id="cd${i}" cy="100"/>`).join('') +
+  `<text x="372" y="112" text-anchor="middle" font-size="40" font-weight="800" fill="#38bdf8" id="cme">SIZ</text>` +
+  `<g id="cpause" opacity="0"><rect x="420" y="10" width="60" height="60" rx="14" fill="#ef4444"/><rect x="437" y="24" width="9" height="32" fill="#fff"/><rect x="454" y="24" width="9" height="32" fill="#fff"/></g>`;
+// ---- grafik (3-savol) ----
+const cr = $('chart');
+const P0 = [70, 280];
+const LN = [['up', '#22c55e', 'o‘sadi', [[260, 250], [460, 190], [640, 120], [830, 40]]],
+            ['flat', '#f5b942', 'joyida', [[260, 285], [460, 270], [640, 285], [830, 275]]],
+            ['down', '#ef4444', 'tushadi', [[260, 300], [460, 360], [640, 400], [830, 480]]]];
+cr.innerHTML = `<line x1="70" y1="500" x2="860" y2="500" stroke="rgba(255,255,255,.25)" stroke-width="3"/><line x1="70" y1="20" x2="70" y2="500" stroke="rgba(255,255,255,.25)" stroke-width="3"/>` +
+  LN.map(([id, c, lb, pts]) => `<polyline id="l_${id}" fill="none" stroke="${c}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" points="${[P0, ...pts].map((p) => p.join(',')).join(' ')}"/>` +
+    `<text id="t_${id}" x="${pts[3][0] - 10}" y="${pts[3][1] + (id == 'down' ? -26 : id == 'up' ? 60 : -30)}" text-anchor="end" font-size="44" font-weight="800" fill="${c}">${lb}</text>`).join('') +
+  `<circle cx="70" cy="280" r="16" fill="#fff"/>`;
+const LL = {}; LN.forEach(([id]) => { const el = $('l_' + id); const L = el.getTotalLength(); LL[id] = L; el.style.strokeDasharray = L; });
+// ---- tarmoq ----
+const wb = $('web'); const WN = ['Sotuv', 'Ombor', 'Moliya', 'HR', 'Chegirma', 'Ta’til', 'Xarid', 'Mijoz'];
+const WC = [450, 420];
+wb.innerHTML = WN.map((n, i) => { const a = -Math.PI / 2 + i * Math.PI * 2 / WN.length; const x = WC[0] + Math.cos(a) * 360, y = WC[1] + Math.sin(a) * 300;
+  return `<line id="wl${i}" x1="${WC[0]}" y1="${WC[1]}" x2="${x}" y2="${y}" stroke="#ef4444" stroke-width="5" stroke-dasharray="12 10"/>` +
+    `<g id="wn${i}"><rect x="${x - 95}" y="${y - 36}" width="190" height="72" rx="36" fill="#0a1330" stroke="#ef4444" stroke-width="4"/><text x="${x}" y="${y + 13}" text-anchor="middle" font-size="34" font-weight="700" fill="#fff">${n}</text></g>`; }).join('');
+
+// ---- subtitr ----
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (t > S[S.length - 1].b + .6) i = -1;
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; const on = t >= w.t; el.style.color = on ? (t < w.e + .05 ? '#f5b942' : '#eef4ff') : 'rgba(238,244,255,.45)'; });
+  sub.style.opacity = vis(t, S[i].a - .1, 999, .15);
+}
+
+window.render = function (t) {
+  // --- fonlar ---
+  const z = (a) => `scale(${1.06 + .04 * C((t - a) / 12)})`;
+  set($('bg1'), Math.max(vis(t, 0, A(5) - .1, .4, .35), vis(t, A(13) + .2, A(16) - .1, .5, .4) * .55), z(0));
+  set($('bg2'), vis(t, A(5) - .1, A(9) - .1, .35, .35), z(A(5)));
+  set($('bg3'), vis(t, A(16) - .1, A(18) + .1, .5, .5), z(A(16)));
+  set($('grid'), Math.max(vis(t, A(9) - .1, A(13) + .6, .35, .5), vis(t, A(18), END + 1, .5)));
+  $('tint').style.opacity = .55 * vis(t, A(13) + .2, A(16) - .1, .5, .4);
+  // hook: tez zoom
+  if (t < 1.2) $('bg1').style.transform = `scale(${1.35 - .25 * eo(t / 1.2)})`;
+
+  // --- hook ---
+  pop($('h0a'), t, A(0), A(1) - .05, 60);
+  const hb = pop($('h0b'), t, A(1), A(2) - .1, 60);
+  // --- 3 ta savol -> tabletkalar ---
+  pop($('h2'), t, A(2), A(3) - .1);
+  const pills = $('pills'); const po = vis(t, A(2) + .3, A(13) - .1, .3, .4);
+  const small = eo((t - (A(3) - .25)) / .4); // kichrayish
+  set(pills, po, `translateY(${(1 - small) * 400}px) scale(${1 - .55 * small})`);
+  const act = t < A(5) ? 0 : t < A(9) ? 1 : 2;
+  [...pills.children].forEach((p, k) => {
+    const appear = eb((t - (A(2) + .3 + k * .22)) / .4);
+    const on = small > .5 && k === act, done = small > .5 && k < act;
+    p.style.transform = `scale(${appear * (on ? 1.12 : 1)})`;
+    p.style.borderColor = on ? '#f5b942' : done ? '#22c55e' : 'rgba(56,189,248,.5)';
+    p.style.boxShadow = on ? '0 0 50px rgba(245,185,66,.55)' : 'none';
+    p.children[0].style.color = on ? '#f5b942' : done ? '#22c55e' : '#38bdf8';
+    p.children[0].textContent = done ? '✓' : k + 1;
+  });
+
+  // --- 1-savol ---
+  pop($('h4'), t, A(4), A(5) - .1);
+  const cho = vis(t, A(4) + .2, A(5) - .1, .35, .3); set(ch, cho);
+  const stop = WT(4, 'to‘xtab'); const stopped = t > stop;
+  for (let i = 0; i < 5; i++) { const ph = ((t * .45 + i / 5) % 1); const x = 60 + ph * 780; const d = $('cd' + i);
+    const sx = stopped ? Math.min(x, 60 + ((stop * .45 + i / 5) % 1) * 780) : x; d.setAttribute('cx', stopped ? 60 + ((stop * .45 + i / 5) % 1) * 780 : sx); d.setAttribute('fill', stopped ? '#ef4444' : '#f5b942'); }
+  const red = eo((t - stop) / .3);
+  $('cl').setAttribute('stroke', red > .5 ? '#ef4444' : '#38bdf8');
+  for (let i = 0; i < CN; i++) $('cn' + i).setAttribute('stroke', i == 2 ? (red > .5 ? '#64748b' : '#f5b942') : red > .5 ? '#ef4444' : '#38bdf8');
+  $('cme').setAttribute('fill', red > .5 ? '#64748b' : '#f5b942'); $('cme').textContent = red > .5 ? '—' : 'SIZ';
+  $('cpause').setAttribute('opacity', red); $('cpause').setAttribute('transform', `translate(450 40) scale(${.6 + .4 * eb((t - stop) / .4)}) translate(-450 -40)`);
+
+  // --- 2-savol ---
+  pop($('h6'), t, A(6), A(8) - .1);
+  const nts = [['n1', WT(7, 'chegirma'), 700], ['n2', WT(7, 'erta'), 880], ['n3', WT(7, 'ta’til'), 1060]];
+  nts.forEach(([id, a, y]) => { const el = $(id); const k = eo((t - a) / .35); const o = vis(t, a, A(9) - .15, .2, .3);
+    const shake = t > A(8) ? noise(t + y) * 6 : 0;
+    el.style.top = y + 'px'; set(el, o, `translateX(${(1 - k) * 700 + shake}px)`); });
+  const bo = vis(t, A(8), A(9) - .15, .2, .3); const bk = eb((t - A(8)) / .4);
+  set($('badge'), bo, `scale(${bk})`); $('badge').textContent = '+' + Math.round(3 + 24 * C((t - A(8)) / 1.5));
+  pop($('h8'), t, A(8), A(9) - .1);
+
+  // --- 3-savol ---
+  pop($('h10'), t, A(10), A(13) - .1);
+  const co = vis(t, A(10) + .3, A(11) - .15, .3, .25); const ck = eb((t - A(10) - .3) / .5);
+  set($('cal'), co, `scale(${ck}) rotate(${(1 - ck) * -8}deg)`);
+  $('caln').textContent = Math.max(1, Math.min(30, Math.round(1 + 29 * C((t - A(10) - .5) / (A(11) - A(10) - 1.2)))));
+  set(cr, vis(t, A(11) - .1, A(13) + 2.6, .3, .4));
+  const lt = { up: WT(11, 'o‘sadimi'), flat: WT(11, 'joyida'), down: WT(12, 'tushib') };
+  LN.forEach(([id]) => { const el = $('l_' + id); const k = eo((t - lt[id]) / .7); el.style.strokeDashoffset = LL[id] * (1 - k);
+    const dim = id !== 'down' && t > A(13) ? .15 : 1; el.style.opacity = dim; $('t_' + id).style.opacity = C((t - lt[id] - .4) / .3) * dim; });
+  if (t > A(13)) { const g = 1 + .5 * Math.max(0, Math.sin((t - A(13)) * 6)) * (1 - C((t - A(13)) / 2)); $('l_down').style.strokeWidth = 12 * g; }
+
+  // --- xulosa: bog‘langan ---
+  const hm = WT(13, 'hamma');
+  pop($('h13'), t, hm - .1, A(14) - .1);
+  const wo = vis(t, hm, A(14) - .1, .3, .3);
+  set(cr, Math.min(parseFloat(cr.style.opacity) || 0, 1 - C((t - hm + .2) / .3)));
+  set(wb, wo); set($('face'), wo, `scale(${eb((t - hm) / .45)})`);
+  WN.forEach((_, i) => { const k = eo((t - hm - .1 - i * .08) / .3); $('wn' + i).style.opacity = k; $('wl' + i).style.opacity = k; $('wl' + i).style.strokeDashoffset = -t * 40; });
+  // aybdor xodimlar emas
+  pop($('h14'), t, A(14), A(15) - .05);
+  $('strike').style.width = (C((t - WT(14, 'emas')) / .25) * 105) + '%';
+  // tizim yo‘q — zarba + glitch
+  const hz = pop($('h15'), t, A(15), A(16) - .1, 0);
+  if (hz > 0) { const g = (1 - C((t - WT(15, 'tizim')) / .6)) * (t > WT(15, 'tizim') ? 1 : 0);
+    $('h15').style.textShadow = g > 0 ? `${noise(t) * 18 * g}px 0 #38bdf8, ${-noise(t + 2) * 18 * g}px 0 #f5b942` : 'none';
+    $('h15').style.transform += ` scale(${1 + .12 * g})`; }
+  $('flash').style.opacity = .18 * (1 - C((t - WT(15, 'tizim')) / .25)) * (t > WT(15, 'tizim') ? 1 : 0);
+
+  // --- ijobiy ---
+  const tb = WT(16, 'tabriklayman');
+  pop($('h16'), t, A(16), A(18) - .1);
+  $('h16').children[1].style.opacity = C((t - tb + .1) / .25);
+  set($('check'), vis(t, tb, A(18) - .1, .2, .3), `scale(${eb((t - tb) / .5)})`);
+  $('ckc').style.strokeDashoffset = 817 * (1 - eo((t - tb) / .6));
+  $('ckp').style.strokeDashoffset = 200 * (1 - eo((t - tb - .3) / .4));
+  pop($('h17'), t, A(17), A(18) - .1);
+
+  // --- CTA ---
+  pop($('h18'), t, A(18), A(20) - .1);
+  set($('tick3'), vis(t, A(18) + .2, A(19) + .4, .3, .3));
+  [...$('tick3').children].forEach((d, k) => { const a = WT(18, '«ha»') + k * .25; d.style.color = t > a ? '#22c55e' : 'transparent'; d.style.borderColor = t > a ? '#22c55e' : 'rgba(255,255,255,.55)'; d.style.transform = `scale(${t > a ? eb((t - a) / .35) : 1})`; });
+  const iz = pop($('h19'), t, A(19), A(20) - .1); if (iz > 0) $('h19').style.transform += ` translateY(${Math.abs(Math.sin(t * 6)) * -16}px)`;
+  pop($('h20'), t, A(20), END + 1);
+  set($('logo'), vis(t, A(20), END + 1, .3), `scale(${eb((t - A(20)) / .5)}) rotate(${(1 - eo((t - A(20)) / .7)) * -40}deg)`);
+  pop($('handle'), t, A(20) + .4, END + 1);
+  const bt = pop($('btn'), t, A(21) - .1, END + 1);
+  if (bt > 0) $('btn').style.boxShadow = `0 0 ${30 + 30 * Math.abs(Math.sin(t * 4))}px rgba(245,185,66,.7)`;
+
+  subtitle(t);
+  document.body.style.opacity = 1 - C((t - (END - .5)) / .5) * 0; // oxiri — ushlab turiladi
+};
+window.render(0);
+</script>
+</body></html>

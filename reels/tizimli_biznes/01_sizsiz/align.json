@@ -1,0 +1,138 @@
+{
+"duration": 47.8,
+"paras": 8,
+"sents": [
+{
+"p": 0,
+"t": "Bir oyga yo‘qolib qolsangiz...",
+"a": 0.233,
+"b": 1.732
+},
+{
+"p": 0,
+"t": "biznesingiz nima bo‘ladi?",
+"a": 1.942,
+"b": 2.963
+},
+{
+"p": 1,
+"t": "Keling, uchta savol bilan hozir tekshirib ko‘ramiz.",
+"a": 3.473,
+"b": 6.213
+},
+{
+"p": 2,
+"t": "Birinchi savol.",
+"a": 6.803,
+"b": 7.442
+},
+{
+"p": 2,
+"t": "Siz aralashmasangiz, ish to‘xtab qoladimi?",
+"a": 7.743,
+"b": 9.862
+},
+{
+"p": 3,
+"t": "Ikkinchi savol.",
+"a": 10.332,
+"b": 11.372
+},
+{
+"p": 3,
+"t": "Xodimlar har bir mayda ish uchun sizning oldingizga kiradimi?",
+"a": 11.602,
+"b": 14.292
+},
+{
+"p": 3,
+"t": "Chegirma berishmi, erta ketishmi, ta’tilmi...",
+"a": 14.643,
+"b": 17.255
+},
+{
+"p": 3,
+"t": "hammasiga sizdan ruxsat so‘raladimi?",
+"a": 17.255,
+"b": 19.223
+},
+{
+"p": 4,
+"t": "Uchinchi savol.",
+"a": 19.683,
+"b": 20.822
+},
+{
+"p": 4,
+"t": "Bir oyga kompaniyani tashlab ketsangiz, savdo nima bo‘ladi?",
+"a": 21.043,
+"b": 24.002
+},
+{
+"p": 4,
+"t": "O‘sadimi, joyida qoladimi...",
+"a": 24.562,
+"b": 26.613
+},
+{
+"p": 4,
+"t": "yoki tushib ketadimi?",
+"a": 26.922,
+"b": 29.392
+},
+{
+"p": 5,
+"t": "Agar savdo tushib ketsa, demak, hamma narsa sizga bog‘langan.",
+"a": 29.562,
+"b": 32.733
+},
+{
+"p": 5,
+"t": "Aybdor xodimlar emas.",
+"a": 32.922,
+"b": 33.573
+},
+{
+"p": 5,
+"t": "Sabab bitta: tizim yo‘q.",
+"a": 34.043,
+"b": 34.613
+},
+{
+"p": 6,
+"t": "Agar natija kamida joyida qolsa, tabriklayman.",
+"a": 34.903,
+"b": 37.973
+},
+{
+"p": 6,
+"t": "Biznesingiz tizimli.",
+"a": 38.413,
+"b": 39.312
+},
+{
+"p": 7,
+"t": "Uchta savoldan nechtasiga «ha» dedingiz?",
+"a": 39.693,
+"b": 41.823
+},
+{
+"p": 7,
+"t": "Izohda yozing.",
+"a": 42.163,
+"b": 42.793
+},
+{
+"p": 7,
+"t": "Biznesni tizimlashtirish bo‘yicha har kuni bitta amaliy qoida.",
+"a": 43.223,
+"b": 46.443
+},
+{
+"p": 7,
+"t": "Obuna bo‘ling.",
+"a": 46.873,
+"b": 47.413
+}
+]
+}
