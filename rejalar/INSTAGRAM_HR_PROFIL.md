@@ -4,6 +4,7 @@
 **Yozilgan sana:** 2026-10-29.
 **2026-11-01:** foydalanuvchi barcha HR audiolarini NotebookLM’ga yukladi (formati/tartibi noma’lum). Holatni aniqlash promptlari — `rejalar/NOTEBOOKLM_HOLAT_PROMPTLAR.md`. Javoblar kelgach — to‘liq reja tuziladi.
 **2026-11-01 (2):** NotebookLM tahlili tugadi → **to‘liq reja: `rejalar/HR_BLOG_TOLIQ_REJA.md`**. Muhim: darslar spikeri — **Kozimxon To‘rayev** (182 qismli kurs, ~181 noyob mp3, 14 dublikat). Mualliflik roziligi va «kim nomidan» savoli hal qilinishi kerak.
+**2026-11-01 (3):** Profil ochildi — **@tizimli.biznes** (shaxsiz brend, Creator, Business Consultant), Telegram **t.me/tizimli_biznes_uz**. Diktor ovozi: AI Studio Voice Design «Tizimli Biznes diktor 2» (Gemini 3.8 Flash TTS). **1-reel joylandi:** «Biznesingiz sizsiz ishlaydimi?» (`reels/tizimli_biznes/01_sizsiz/`). Navbatda: 2-reel «Kobra effekti», 3-reel «BAHO» shabloni. Heshteglar — ko‘pi bilan 5 ta.
 **Eslatish qoidasi:** bu — **alohida loyiha**. Hozirgi videodarslik ishlariga aralashtirilmaydi: darslik ustida ishlayotganda eslatilmaydi va taklif qilinmaydi. Faqat foydalanuvchi o‘zi Instagram/HR profil yoki uzoq muddatli rejalar haqida gap ochsa, yoki so‘rasa ochiladi.
 
 ## Maqsad
