@@ -1,0 +1,31 @@
+Assalomu alaykum! Bugungi darsimiz — fazoviy statistika va DBSCAN klasterlash algoritmi.
+
+Fazoviy statistika — nuqtalarning yer yuzidagi tarqalishini o'rganish va ular orasidagi bog'lanishlarni aniqlash usullari. Biz shunchaki nuqtalar qo'yib qolmasdan, ularning zich to'planish joylarini aniqlaymiz.
+
+DBSCAN — Density-Based Spatial Clustering of Applications with Noise. Bu zichlikka asoslangan klasterlash algoritmi. Uning ikki asosiy parametri bor.
+
+Birinchisi — Eps, ya'ni Epsilon. Bu qo'shnilarni qidirish radiusi. Bizning misolda 200 metr. Ya'ni, har bir nuqtaning 200 metr radiusidagi boshqa nuqtalar uning qo'shnilari hisoblanadi.
+
+Ikkinchisi — MinPts. Klaster hosil qilish uchun zarur bo'lgan eng kam nuqtalar soni. Biz 5 deb belgiladik. Mos kelmaydigan nuqtalar esa shovqin deb nomlanadi.
+
+Amaliy ishga o'tamiz. QGIS'da yangi loyiha ochamiz va CrimePoints nomli nuqtaviy qatlam yuklaymiz. Bu qatlamda jinoyat sodir bo'lgan joylarning koordinatalari bor. Xaritada ular qizil nuqtalar sifatida tarqalib ko'rinadi.
+
+Processing Toolbox oynasini ochamiz. Qidiruv satriga DBSCAN clustering deb yozamiz va vositani ishga tushiramiz.
+
+Parametrlarni kiritamiz. Input layer — CrimePoints. Eps qiymati — 200 metr. Minimum points — 5 ta.
+
+Algoritm bajarilib, har bir nuqtaga CLUSTER_ID maydoni biriktiriladi. Bu maydon har bir nuqtaning qaysi klasterga tegishli ekanligini ko'rsatadi. Minus bir qiymati esa shovqin nuqtalarini bildiradi.
+
+Endi klasterlarni xaritada ajratib ko'rsatamiz. Layer Properties oynasini ochamiz, Symbology bo'limiga o'tamiz. Tasniflash usuli sifatida Categorized tanlaymiz, kategoriya ustuni — CLUSTER_ID.
+
+Classify tugmasini bosamiz. Natijada har bir klaster o'z rangiga ega bo'ladi. Bizning misolda 3 ta klaster aniqlandi.
+
+Birinchi klaster — qizil rangda, birinchi kriminogen o'choq. Ikkinchi klaster — yashil rangda, ikkinchi kriminogen hudud. Uchinchi klaster — ko'k rangda.
+
+CLUSTER_ID minus bir bo'lgan nuqtalar kulrang rangda ajratildi — bu shovqin, ya'ni hech qaysi klasterga kirmagan alohida nuqtalar. Xaritaga bir qarashdayoq jinoyatlarning qayerlarda zich to'plangani ko'rinadi.
+
+Yakuniy tematik xaritani rasmiylashtirish uchun Print Layout yaratamiz. Xaritaga sarlavha, klasterlar legendasi, masshtab va shimol ko'rsatkichini qo'shamiz.
+
+DBSCAN patrullash yo'nalishlarini belgilash va qaror qabul qilishda qo'llaniladi. Shuningdek, epidemiologiya, yo'l-transport hodisalari va ekologik monitoring uchun ham samarali.
+
+E'tiboringiz uchun rahmat!

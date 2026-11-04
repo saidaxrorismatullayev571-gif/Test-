@@ -1,0 +1,339 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script><script src="../../reels/tizimli_biznes/_fx/fx.js"></script>
+<style>
+:root{--nv:#0b1224;--cy:#38bdf8;--au:#f5b942;--rd:#ef4444;--gr:#22c55e;--bl:#3b82f6;--wh:#eef4ff;--mu:#93a4c7}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--nv);font-family:Manrope,sans-serif;color:var(--wh)}
+#bg{position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,#1d1a3d 0%,#0b1224 60%),repeating-linear-gradient(0deg,transparent 0 59px,rgba(245,185,66,.04) 59px 60px),repeating-linear-gradient(90deg,transparent 0 59px,rgba(245,185,66,.04) 59px 60px);background-blend-mode:screen}
+.o{position:absolute;opacity:0}
+.chip{font-size:22px;font-weight:800;letter-spacing:3px;color:var(--au);padding:10px 22px;border:2px solid rgba(245,185,66,.45);border-radius:30px;background:rgba(12,20,44,.8)}
+#tTitle{left:110px;top:300px;width:900px}
+#tTitle .k{font-size:28px;font-weight:800;letter-spacing:4px;color:var(--au)}
+#tTitle h1{font-size:92px;font-weight:800;line-height:1;letter-spacing:-2px;margin-top:18px}
+#tTitle p{font-size:34px;color:var(--mu);margin-top:22px;font-weight:600}
+.th{left:110px;top:150px;width:780px}
+.th h2{font-size:56px;font-weight:800;line-height:1.08;letter-spacing:-1px}
+.th p{font-size:29px;color:var(--mu);margin-top:16px;font-weight:600;line-height:1.35}
+#acr{left:110px;top:420px;width:800px;font-size:40px;font-weight:700;line-height:1.5}
+#acr span{display:inline-block;opacity:0}
+#acr b{color:var(--au);font-size:52px}
+.prm{position:absolute;left:110px;width:780px;height:170px;border-radius:26px;background:rgba(18,28,58,.9);border:3px solid rgba(147,164,199,.25);padding:24px 30px;opacity:0}
+.prm .k{font-size:22px;letter-spacing:3px;font-weight:800;color:var(--mu)}
+.prm b{display:block;font-size:46px;font-weight:800;margin-top:6px}
+.prm span{font-size:26px;color:var(--mu);font-weight:600}
+.prm .v{position:absolute;right:30px;top:40px;font-size:64px;font-weight:800;color:var(--au)}
+#mapCard{left:960px;top:150px;width:860px;height:640px;border-radius:30px;overflow:hidden;border:3px solid rgba(245,185,66,.35);box-shadow:0 30px 90px rgba(0,0,0,.55)}
+#mapCard svg{width:100%;height:100%}
+#win{left:40px;top:28px;width:1840px;height:904px;border-radius:14px;overflow:hidden;background:#e9ecf1;box-shadow:0 40px 120px rgba(0,0,0,.6);color:#1f2633}
+#tb{height:36px;background:#d9dde5;display:flex;align-items:center;padding:0 16px;font-size:17px;font-weight:700;color:#3a4458;gap:10px}
+#tb .dots span{display:inline-block;width:13px;height:13px;border-radius:50%;margin-right:7px}
+#mb{height:34px;background:#f4f6f9;border-bottom:1px solid #c9ced9;display:flex;align-items:center;font-size:17px;font-weight:600;color:#253047}
+#mb div{padding:0 12px;height:34px;line-height:34px}
+#tools{height:48px;background:#eef1f5;border-bottom:1px solid #c9ced9;display:flex;align-items:center;gap:6px;padding:0 14px}
+.tbtn{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#3d4a63;border:1px solid transparent}
+.tbtn.on{background:#fde68a;border-color:#d97706}
+.sep{width:1px;height:30px;background:#c4cad6;margin:0 6px}
+#lp{position:absolute;left:0;top:118px;width:300px;bottom:28px;background:#f7f8fa;border-right:1px solid #c9ced9}
+#lp h4{font-size:16px;font-weight:800;color:#3a4458;padding:10px 14px;border-bottom:1px solid #d7dbe3;background:#eceff4}
+.lyr{display:none;align-items:center;gap:10px;padding:10px 14px;font-size:18px;font-weight:600;color:#253047;height:44px}
+.lyr .cb{width:16px;height:16px;border:2px solid #2563eb;border-radius:3px;background:#2563eb}
+.lyr .sw{width:16px;height:16px;border-radius:50%}
+.leg{display:none;align-items:center;gap:10px;padding:4px 14px 4px 50px;font-size:16px;font-weight:600}
+.leg i{width:12px;height:12px;border-radius:50%}
+#cv{position:absolute;left:300px;top:118px;right:0;bottom:28px;background:#fff;overflow:hidden}
+#cv svg{position:absolute;inset:0;width:100%;height:100%}
+#sb{position:absolute;left:0;right:0;bottom:0;height:28px;background:#eceff4;border-top:1px solid #c9ced9;font-size:15px;color:#4a5670;display:flex;align-items:center;gap:30px;padding:0 16px;font-weight:600}
+.menu{position:absolute;background:#fff;border:1px solid #b9c0cd;box-shadow:0 10px 30px rgba(0,0,0,.25);border-radius:6px;padding:4px 0;font-size:17px;opacity:0;z-index:20}
+.menu div{padding:7px 18px;white-space:nowrap}
+.menu div.hi{background:#2563eb;color:#fff}
+.dlg{position:absolute;background:#f4f6f9;border:1px solid #a9b1c0;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.35);opacity:0;z-index:15;overflow:hidden}
+.dlg .hd{height:38px;background:#dde2ea;font-size:17px;font-weight:800;color:#2b3550;display:flex;align-items:center;padding:0 16px}
+.fld{display:flex;align-items:center;gap:14px;padding:9px 20px;font-size:18px}
+.fld label{width:200px;color:#4a5670;font-weight:700}
+.fld .in{flex:1;height:36px;border:1px solid #b9c0cd;border-radius:6px;background:#fff;display:flex;align-items:center;padding:0 12px;font-weight:700;color:#14213d;font-family:monospace;font-size:18px}
+.fld .in.act{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.25)}
+.btns{display:flex;justify-content:flex-end;gap:12px;padding:12px 20px}
+.btns span{padding:8px 26px;border-radius:6px;border:1px solid #9aa4b5;font-weight:700;font-size:17px;background:#fff}
+.btns span.ok{background:#2563eb;color:#fff;border-color:#1d4ed8}
+#pbar{height:14px;margin:4px 20px 0;border-radius:7px;background:#dde2ea;overflow:hidden}
+#pbar i{display:block;height:100%;width:0;background:#22c55e}
+#tbx{position:absolute;right:0;top:118px;width:420px;bottom:28px;background:#f7f8fa;border-left:1px solid #c9ced9;opacity:0;z-index:10}
+#tbx h4{font-size:16px;font-weight:800;color:#3a4458;padding:10px 14px;background:#eceff4;border-bottom:1px solid #d7dbe3}
+#tbx .srch{margin:12px;height:40px;border:2px solid #2563eb;border-radius:8px;background:#fff;display:flex;align-items:center;padding:0 12px;font-family:monospace;font-size:19px;font-weight:700}
+#tbx .tr div{padding:7px 18px;font-size:17px;font-weight:600;color:#253047;opacity:0}
+#tbx .tr div.hi{background:#2563eb;color:#fff}
+#atab{position:absolute;left:300px;right:0;bottom:28px;height:310px;background:#fff;border-top:2px solid #94a3b8;opacity:0;z-index:12}
+#atab .hd{height:34px;background:#e6eaf0;font-size:16px;font-weight:800;display:flex;align-items:center;padding:0 14px;color:#2b3550}
+#atab table{width:100%;border-collapse:collapse;font-size:16px}
+#atab td,#atab th{border:1px solid #d5dae2;padding:5px 12px;text-align:left;font-family:monospace}
+#atab th{background:#f1f3f7;font-family:Manrope}
+#atab td.cid{font-weight:800;text-align:center;width:150px}
+#lprop{left:520px;top:150px;width:860px}
+#lprop .side{position:absolute;left:0;top:38px;bottom:0;width:200px;background:#e6eaf0;border-right:1px solid #c9ced9}
+#lprop .side div{padding:10px 16px;font-size:17px;font-weight:700;color:#3a4458}
+#lprop .side div.hi{background:#2563eb;color:#fff}
+#lprop .main{margin-left:200px;padding:10px 0 0}
+#cats{margin:6px 20px;border:1px solid #c9ced9;background:#fff;height:210px}
+#cats .cr{display:flex;align-items:center;gap:14px;padding:7px 14px;font-size:17px;font-weight:700;border-bottom:1px solid #eef0f4;opacity:0}
+#cats .cr i{width:20px;height:20px;border-radius:50%;border:1px solid #555}
+#toast{position:absolute;right:40px;bottom:60px;padding:14px 26px;border-radius:10px;background:#16a34a;color:#fff;font-size:20px;font-weight:800;opacity:0;z-index:16}
+#step{position:absolute;left:330px;top:136px;padding:10px 20px;border-radius:12px;background:rgba(11,18,36,.9);color:#fff;font-size:22px;font-weight:800;opacity:0;z-index:11;border-left:6px solid var(--au)}
+#step small{display:block;font-size:15px;color:#fcd98a;letter-spacing:2px;font-weight:800}
+#call{position:absolute;padding:10px 18px;border-radius:12px;background:#0b1224;color:#fff;font-size:20px;font-weight:800;opacity:0;z-index:30;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+#call b{color:var(--au)}
+#cur{position:absolute;left:0;top:0;width:34px;height:34px;z-index:40;opacity:0;filter:drop-shadow(0 3px 4px rgba(0,0,0,.4))}
+#ripple{position:absolute;width:60px;height:60px;border-radius:50%;border:4px solid #f5b942;z-index:39;opacity:0}
+#lay{left:160px;top:60px;width:1600px;height:860px;z-index:45;background:#cfd4dd;border-radius:14px;box-shadow:0 40px 120px rgba(0,0,0,.6);overflow:hidden}
+#lay .hd{height:40px;background:#d9dde5;font-size:18px;font-weight:800;color:#2b3550;display:flex;align-items:center;padding:0 18px}
+#page{position:absolute;left:150px;top:70px;width:1300px;height:760px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+#pmap{position:absolute;left:40px;top:110px;width:900px;height:600px;border:2px solid #333;overflow:hidden}
+#pmap svg{width:100%;height:100%}
+#ptitle{position:absolute;left:40px;top:28px;font-size:44px;font-weight:800;color:#111;opacity:0}
+#plegend{position:absolute;left:980px;top:110px;width:280px;border:2px solid #333;padding:16px;opacity:0;color:#111}
+#plegend h5{font-size:22px;font-weight:800;margin-bottom:10px}
+#plegend div{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:600;padding:5px 0}
+#plegend i{width:18px;height:18px;border-radius:50%}
+#pscale{position:absolute;left:980px;top:520px;opacity:0;color:#111;font-size:18px;font-weight:700}
+#pscale .bar{display:flex;width:240px;height:14px;border:2px solid #111;margin-bottom:6px}
+#pscale .bar i{flex:1}#pscale .bar i:nth-child(odd){background:#111}
+#pnorth{position:absolute;left:1180px;top:590px;width:80px;height:110px;opacity:0}
+#apps{left:160px;top:250px;width:1600px;display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+#apps div{width:290px;height:250px;border-radius:28px;background:rgba(18,28,58,.92);border:3px solid rgba(245,185,66,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;font-size:28px;font-weight:800;text-align:center;opacity:0}
+#apps div span{font-size:76px}
+#appsH{left:0;right:0;top:120px;text-align:center}
+#appsH h2{font-size:58px;font-weight:800}
+#end{left:0;top:0;width:1920px;height:1080px;z-index:60;background:radial-gradient(circle at 50% 45%,#1d1a3d,#0b1224 65%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+#end .ck{width:150px;height:150px;border-radius:50%;border:8px solid var(--au);display:flex;align-items:center;justify-content:center;font-size:90px;color:var(--au);font-weight:800}
+#end h2{font-size:72px;font-weight:800} #end p{font-size:32px;color:var(--mu);font-weight:600}
+#sub{position:absolute;left:160px;right:160px;top:952px;text-align:center;font-weight:700;font-size:34px;line-height:1.3;text-shadow:0 3px 12px #000;z-index:70}
+#sub i{font-style:normal}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:80;pointer-events:none}
+</style></head><body>
+<div id="bg"></div>
+<!-- NAZARIYA -->
+<div class="o" id="tTitle"><div class="k">MAVZU 13 · QGIS AMALIY VIDEODARS</div><h1>Fazoviy statistika<br><span style="color:var(--au)">va DBSCAN</span></h1><p>Zichlikka asoslangan klasterlash algoritmi</p></div>
+<div class="o chip" id="tChip" style="left:110px;top:70px">1 · NAZARIY ASOS</div>
+<div class="o th" id="th1"><h2>Fazoviy statistika</h2><p>Nuqtalar qayerda <span style="color:var(--au)">zich to‘planganini</span><br>topish usullari</p></div>
+<div class="o th" id="th2"><h2><span style="color:var(--au)">DBSCAN</span> — zichlikka<br>asoslangan klasterlash</h2></div>
+<div class="o" id="acr"><span><b>D</b>ensity-</span> <span><b>B</b>ased</span> <span><b>S</b>patial</span> <span><b>C</b>lustering</span><br><span>of <b>A</b>pplications</span> <span>with <b>N</b>oise</span></div>
+<div class="prm" id="p1" style="top:430px"><div class="k">1-PARAMETR · EPS (ε)</div><b>Qidirish radiusi</b><span>shu doiradagi nuqtalar — qo‘shnilar</span><div class="v">200 m</div></div>
+<div class="prm" id="p2" style="top:620px"><div class="k">2-PARAMETR · MINPTS</div><b>Eng kam nuqtalar soni</b><span>kam bo‘lsa — <span style="color:#cbd5e1">shovqin</span></span><div class="v">5</div></div>
+<div class="o" id="mapCard"><svg viewBox="0 0 674 396" preserveAspectRatio="xMidYMid slice">
+ <image href="rasmlar/viloyat.jpg" width="674" height="396" preserveAspectRatio="none"/>
+ <rect width="674" height="396" fill="#0b1224" opacity=".15"/>
+ <g id="tPts"></g>
+ <g id="tEps" opacity="0"><circle id="tEc" cx="0" cy="0" r="0" fill="rgba(245,185,66,.18)" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 4"/><line id="tEl" x1="0" y1="0" x2="0" y2="0" stroke="#b45309" stroke-width="2.5"/><text id="tEt" font-size="15" font-weight="800" fill="#7c2d12" stroke="#fff" stroke-width="3" paint-order="stroke">ε = 200 m</text></g>
+ <g id="tCnt" opacity="0"><rect id="tCr" width="120" height="34" rx="17" fill="#0b1224"/><text id="tCn" font-size="18" font-weight="800" fill="#f5b942" text-anchor="middle"></text></g>
+</svg></div>
+<!-- QGIS -->
+<div class="o" id="win">
+ <div id="tb"><span class="dots"><span style="background:#ef4444"></span><span style="background:#f59e0b"></span><span style="background:#22c55e"></span></span><span id="wt">QGIS 3.34</span></div>
+ <div id="mb"><div id="mProject">Project</div><div>Edit</div><div>View</div><div>Layer</div><div>Settings</div><div>Plugins</div><div>Vector</div><div>Raster</div><div>Database</div><div>Web</div><div>Mesh</div><div id="mProc">Processing</div><div>Help</div></div>
+ <div id="tools"><div class="tbtn">🗋</div><div class="tbtn">📂</div><div class="tbtn">💾</div><div class="sep"></div><div class="tbtn" id="bAdd">＋</div><div class="tbtn" id="bTbx">⚙</div><div class="tbtn" id="bAttr">▦</div><div class="sep"></div><div class="tbtn" id="bLay">🖨</div><div class="tbtn">🔍</div><div class="tbtn">✋</div></div>
+ <div id="lp"><h4>Layers</h4><div class="lyr" id="lyC"><span class="cb"></span><span class="sw" style="background:#ef4444"></span><span id="lyCn">CrimePoints</span></div><div id="legs"></div><div class="lyr" id="lyO"><span class="cb"></span><span class="sw" style="background:#a3d9a5;border-radius:3px"></span>OpenStreetMap</div></div>
+ <div id="cv"><svg viewBox="0 0 674 396" preserveAspectRatio="xMidYMid slice" id="cvs"><rect width="674" height="396" fill="#fff"/>
+   <g id="gMap" opacity="0"><image href="rasmlar/viloyat.jpg" width="674" height="396" preserveAspectRatio="none"/></g>
+   <g id="gHull"></g><g id="gPts"></g><g id="gLab"></g></svg>
+  <div id="step"><small id="stepK"></small><span id="stepT"></span></div></div>
+ <div id="tbx"><h4>Processing Toolbox</h4><div class="srch"><span id="srch"></span></div><div class="tr"><div>▸ Vector analysis</div><div>▾ Vector analysis › Clustering</div><div id="tDb">&nbsp;&nbsp;&nbsp;⚙ DBSCAN clustering</div><div>&nbsp;&nbsp;&nbsp;⚙ K-means clustering</div><div>&nbsp;&nbsp;&nbsp;⚙ ST-DBSCAN clustering</div></div></div>
+ <div id="atab"><div class="hd">Clusters — Features Total: 60</div><table id="aT"></table></div>
+ <div id="sb"><span>Coordinate 71.7841, 40.3864</span><span>Scale 1:250 000</span><span>⊕ EPSG:4326</span></div>
+ <div class="menu" id="menuP" style="left:4px;top:70px;width:230px"><div id="miNew">New</div><div>Open…</div><div>Save</div></div>
+ <div class="dlg" id="dlg" style="left:560px;top:180px;width:720px"><div class="hd">DBSCAN clustering</div>
+  <div class="fld"><label>Input layer</label><div class="in" id="fIn"></div></div>
+  <div class="fld"><label>Minimum cluster size</label><div class="in" id="fMin"></div></div>
+  <div class="fld"><label>Maximum distance (Eps)</label><div class="in" id="fEps"></div></div>
+  <div class="fld"><label>Cluster field name</label><div class="in">CLUSTER_ID</div></div>
+  <div id="pbar"><i id="pb"></i></div>
+  <div class="btns"><span>Close</span><span class="ok" id="dRun">Run</span></div></div>
+ <div class="dlg" id="lprop"><div class="hd">Layer Properties — Clusters</div>
+  <div class="side"><div>Information</div><div>Source</div><div id="sSym">Symbology</div><div>Labels</div><div>Fields</div></div>
+  <div class="main"><div class="fld"><label>Renderer</label><div class="in" id="fRen">Single Symbol</div></div>
+   <div class="fld"><label>Value</label><div class="in" id="fVal"></div></div>
+   <div id="cats"></div>
+   <div class="btns"><span id="bCls">Classify</span><span class="ok">OK</span></div></div></div>
+ <div id="toast">✓ Algorithm finished — 3 clusters</div>
+</div>
+<div class="o" id="lay"><div class="hd">Print Layout — DBSCAN_xarita</div><div id="page">
+ <div id="ptitle">Jinoyatlar zich hududlari (DBSCAN, ε = 200 m)</div>
+ <div id="pmap"><svg viewBox="0 0 674 396" preserveAspectRatio="xMidYMid slice"><image href="rasmlar/viloyat.jpg" width="674" height="396" preserveAspectRatio="none"/><g id="pmPts"></g></svg></div>
+ <div id="plegend"><h5>Klasterlar</h5><div><i style="background:#ef4444"></i>1-klaster</div><div><i style="background:#22c55e"></i>2-klaster</div><div><i style="background:#3b82f6"></i>3-klaster</div><div><i style="background:#9ca3af"></i>Shovqin (−1)</div></div>
+ <div id="pscale"><div class="bar"><i></i><i></i><i></i><i></i></div>0 &nbsp; 5 &nbsp; 10 &nbsp; 15 &nbsp; 20 km</div>
+ <svg id="pnorth" viewBox="0 0 80 110"><polygon points="40,6 62,80 40,66 18,80" fill="#111"/><text x="40" y="104" text-anchor="middle" font-size="26" font-weight="800">N</text></svg>
+</div></div>
+<div class="o" id="appsH"><h2>DBSCAN qayerda <span style="color:var(--au)">qo‘llaniladi?</span></h2></div>
+<div class="o" id="apps" style="opacity:1"><div><span>🚓</span>Patrullash<br>yo‘nalishlari</div><div><span>🧭</span>Qaror<br>qabul qilish</div><div><span>🦠</span>Epidemiologiya</div><div><span>🚗</span>YTH tahlili</div><div><span>🌿</span>Ekologik<br>monitoring</div></div>
+<div class="o" id="end"><div class="ck">✓</div><h2>E’tiboringiz uchun rahmat!</h2><p>Mavzu 13 — videodars tugadi · Xasanova Mahliyo · QGIS amaliy mashg‘ulot</p></div>
+<div id="call"></div><div id="ripple"></div>
+<svg id="cur" viewBox="0 0 24 24"><path d="M3 2 L3 19 L8 14.5 L11.5 22 L14.5 20.6 L11 13.4 L18 13.4 Z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>
+<div id="sub"></div><div id="flash"></div>
+<script>
+const { C, eo, eb, h, vis, set, headline } = FX;
+const $ = (id) => document.getElementById(id);
+const S = window.S, A = (i) => S[i].a, Bn = (i) => S[i].b;
+const norm = (s) => s.toLowerCase().replace(/[«»"'’‘—:,.!?]/g, '');
+const WT = (i, s) => { const w = S[i].words.find((w) => norm(w.w).startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.8; window.TOTAL = END;
+function pop(el, t, a, b, dy = 30) { const o = vis(t, a, b, .25, .3); const k = eb((t - a) / .45); set(el, o, `translateY(${(1 - k) * dy}px) scale(${.94 + .06 * k})`); return o; }
+const typed = (txt, t, a, cps = 18) => txt.slice(0, Math.max(0, Math.floor((t - a) * cps)));
+const ns = 'http://www.w3.org/2000/svg';
+const mk = (tag, at, par) => { const e = document.createElementNS(ns, tag); for (const k in at) e.setAttribute(k, at[k]); par.appendChild(e); return e; };
+// --- nuqtalar: 3 klaster + shovqin ---
+const CL = [{ c: [300, 150], col: '#ef4444', n: 16, r: 26 }, { c: [470, 205], col: '#22c55e', n: 14, r: 24 }, { c: [195, 262], col: '#3b82f6', n: 14, r: 24 }];
+const P = [];
+CL.forEach((k, ci) => { for (let i = 0; i < k.n; i++) { const a = h(ci * 50 + i) * 6.283, d = Math.sqrt(h(ci * 50 + i + 7)) * k.r; P.push({ x: k.c[0] + Math.cos(a) * d, y: k.c[1] + Math.sin(a) * d * .85, cl: ci + 1 }); } });
+for (let i = 0; i < 16; i++) { let x, y, ok; let s = 0; do { x = 40 + h(900 + i + s) * 600; y = 40 + h(700 + i + s) * 320; ok = CL.every((k) => Math.hypot(x - k.c[0], y - k.c[1]) > k.r + 30); s += 13; } while (!ok); P.push({ x, y, cl: -1 }); }
+const order = P.map((_, i) => i).sort((a, b) => h(a + 333) - h(b + 333));
+const COL = { 1: '#ef4444', 2: '#22c55e', 3: '#3b82f6', '-1': '#9ca3af' };
+// nazariya kartasi nuqtalari
+P.forEach((p, i) => mk('circle', { id: 'tp' + i, cx: p.x, cy: p.y, r: 4.5, fill: '#334155', stroke: '#fff', 'stroke-width': 1.5, opacity: 0 }, $('tPts')));
+// QGIS nuqtalari
+CL.forEach((k, ci) => { mk('ellipse', { id: 'hl' + ci, cx: k.c[0], cy: k.c[1], rx: k.r + 12, ry: (k.r + 12) * .88, fill: k.col, 'fill-opacity': .12, stroke: k.col, 'stroke-width': 2.5, 'stroke-dasharray': '6 4', opacity: 0 }, $('gHull'));
+  const tx = mk('text', { id: 'hlt' + ci, x: k.c[0], y: k.c[1] - k.r - 18, 'text-anchor': 'middle', 'font-size': 15, 'font-weight': 800, fill: k.col, stroke: '#fff', 'stroke-width': 3.5, 'paint-order': 'stroke', opacity: 0 }, $('gLab')); tx.textContent = (ci + 1) + '-klaster'; });
+P.forEach((p, i) => { mk('circle', { id: 'qp' + i, cx: p.x, cy: p.y, r: 4.5, fill: '#ef4444', stroke: '#fff', 'stroke-width': 1.5, opacity: 0 }, $('gPts')); mk('circle', { cx: p.x, cy: p.y, r: 4.5, fill: COL[p.cl], stroke: '#fff', 'stroke-width': 1.5 }, $('pmPts')); });
+// atribut jadvali
+$('aT').innerHTML = '<tr><th>fid</th><th>tur</th><th>sana</th><th>CLUSTER_ID</th></tr>' + [0, 3, 17, 22, 33, 46, 50, 41].map((pi, j) => `<tr><td>${pi + 1}</td><td>${['o‘g‘irlik', 'bezorilik', 'firibgarlik'][j % 3]}</td><td>2026-0${1 + j % 9}-1${j}</td><td class="cid" id="cid${j}" data-v="${P[pi].cl}"></td></tr>`).join('');
+$('cats').innerHTML = [[1, '1-klaster'], [2, '2-klaster'], [3, '3-klaster'], [-1, 'shovqin']].map(([v, n], j) => `<div class="cr" id="cr${j}"><i style="background:${COL[v]}"></i><span style="width:60px">${v}</span>${n}</div>`).join('');
+$('legs').innerHTML = [[1, '1'], [2, '2'], [3, '3'], [-1, '-1']].map(([v, n], j) => `<div class="leg" id="lg${j}"><i style="background:${COL[v]}"></i>${n}</div>`).join('');
+// eps namoyishi uchun markaz nuqta
+const E0 = P[4];
+// subtitr
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; el.style.color = t >= w.t ? (t < w.e + .05 ? '#f5b942' : '#eef4ff') : 'rgba(238,244,255,.45)'; });
+}
+// kursor
+let CK = null, CLK = [];
+function buildCursor() {
+  const k = [], c = []; const Pk = (t, x, y, cl) => { k.push([t, x, y]); if (cl) c.push([t, x, y]); };
+  Pk(A(16) - .2, 900, 600); Pk(WT(16, 'yangi'), 102, 83, 1); Pk(WT(16, 'loyiha') + .2, 90, 116, 1); Pk(WT(16, 'crimepoints') - .2, 216, 124, 1); Pk(A(17) + .5, 900, 500);
+  Pk(A(19) - .1, 900, 500); Pk(WT(19, 'toolbox'), 256, 124, 1); Pk(A(20) + .2, 1660, 210, 1); Pk(WT(20, 'vositani') + .3, 1600, 302, 1);
+  Pk(A(22), 1100, 300, 1); Pk(A(23) + .1, 1100, 400, 1); Pk(A(24) + .1, 1100, 350, 1); Pk(Bn(24) - .1, 1235, 552, 1);
+  Pk(A(26), 1000, 600); Pk(A(28) + .5, 900, 400); Pk(A(29) + .2, 600, 260, 1); Pk(WT(29, 'symbology'), 640, 268, 1);
+  Pk(WT(30, 'categorized'), 1000, 210, 1); Pk(WT(30, 'cluster_id'), 1000, 260, 1); Pk(A(31) + .2, 1150, 578, 1); Pk(A(32) + 1, 1300, 600);
+  Pk(A(39), 900, 500); Pk(WT(39, 'print'), 334, 124, 1); Pk(A(40) - .2, 1200, 700);
+  CK = k.sort((a, b) => a[0] - b[0]); CLK = c;
+}
+function cursor(t) {
+  if (!CK) buildCursor();
+  let i = CK.findIndex((p) => p[0] > t); if (i < 0) i = CK.length; const a = CK[Math.max(0, i - 1)], b = CK[Math.min(CK.length - 1, i)];
+  const k = b[0] === a[0] ? 1 : eo(C((t - a[0]) / Math.min(.55, b[0] - a[0]))); const x = a[1] + (b[1] - a[1]) * k, y = a[2] + (b[2] - a[2]) * k;
+  const on = vis(t, A(16) - .1, A(39) + 1, .3, .3); set($('cur'), on, `translate(${x - 4}px,${y - 2}px)`);
+  const cl = CLK.filter((c) => t >= c[0] && t < c[0] + .45).pop(); const r = $('ripple');
+  if (cl && on > .5) { const k2 = (t - cl[0]) / .45; r.style.opacity = 1 - k2; r.style.transform = `translate(${cl[1] - 30}px,${cl[2] - 30}px) scale(${.3 + k2})`; } else r.style.opacity = 0;
+}
+window.getClicks = () => { if (!CK) buildCursor(); return CLK.map((c) => c[0]); };
+function call(t, items) { const c = $('call'); const it = items.find(([a, b]) => t >= a && t < b); if (!it) { c.style.opacity = 0; return; }
+  c.innerHTML = it[2]; c.style.opacity = vis(t, it[0], it[1], .2, .25); c.style.left = it[3] + 'px'; c.style.top = it[4] + 'px'; c.style.transform = `scale(${eb((t - it[0]) / .4)})`; }
+
+window.render = function (t) {
+  const TQ = A(16) - .4;
+  // ---------- NAZARIYA ----------
+  headline($('tTitle'), t, .3, A(2) - .2, .08);
+  set($('tChip'), vis(t, A(2), TQ, .3, .3));
+  headline($('th1'), t, A(2), A(4) - .1, .05);
+  headline($('th2'), t, A(4), A(7) - .1, .05);
+  [...$('acr').children].filter((e) => e.tagName === 'SPAN').forEach((sp, j) => { const a = A(4) + .2 + j * .55; sp.style.opacity = vis(t, a, A(7) - .1, .2, .3); sp.style.transform = `translateY(${(1 - eb((t - a) / .4)) * 30}px)`; });
+  set($('acr'), t > A(4) && t < A(7) ? 1 : 0);
+  const mc = vis(t, A(2) + .2, TQ, .35, .4); set($('mapCard'), mc, `perspective(1800px) rotateY(${(1 - eo((t - A(2) - .2) / .7)) * -18}deg) scale(${1 + .06 * C((t - TQ + .6) / .6)})`);
+  // nuqtalar tushadi (fazoviy statistika), keyin zich joylar
+  const zich = WT(3, 'zich');
+  P.forEach((p, i) => { const a = A(2) + .6 + order.indexOf(i) * .06; const el = $('tp' + i); el.setAttribute('opacity', C((t - a) / .2));
+    let col = '#334155';
+    if (t > zich && t < A(4)) col = p.cl > 0 ? COL[p.cl] : '#94a3b8';
+    if (t > A(7)) { // eps/minpts bosqichi
+      const dd = Math.hypot(p.x - E0.x, p.y - E0.y); col = '#475569';
+      if (t > WT(10, 'qoshnilari') - .3 && dd < 26 && dd > 0) col = '#f59e0b';
+      if (p === E0) col = '#b91c1c';
+      if (t > A(12)) col = p.cl > 0 ? COL[p.cl] : '#475569';
+      if (t > WT(14, 'shovqin') && p.cl < 0) col = '#cbd5e1'; }
+    el.setAttribute('fill', col); el.setAttribute('r', (p === E0 && t > A(7) && t < A(12)) ? 7 : 4.5); });
+  // Eps doirasi
+  const eo1 = vis(t, WT(8, 'radiusi') - .2, A(12), .3, .4); $('tEps').setAttribute('opacity', eo1);
+  const rr = 26 * eo((t - WT(8, 'radiusi') + .2) / .8); $('tEc').setAttribute('cx', E0.x); $('tEc').setAttribute('cy', E0.y); $('tEc').setAttribute('r', rr);
+  $('tEl').setAttribute('x1', E0.x); $('tEl').setAttribute('y1', E0.y); $('tEl').setAttribute('x2', E0.x + rr); $('tEl').setAttribute('y2', E0.y);
+  $('tEt').setAttribute('x', E0.x + 4); $('tEt').setAttribute('y', E0.y - rr - 8); $('tEt').setAttribute('opacity', C((t - A(9)) / .3));
+  // MinPts sanog‘i
+  const nb = P.filter((p) => p !== E0 && Math.hypot(p.x - E0.x, p.y - E0.y) < 26).length;
+  const cnt = Math.min(nb, Math.floor(C((t - A(12) + .2) / 2.5) * nb + .001));
+  $('tCnt').setAttribute('opacity', vis(t, A(11), A(15), .3, .3)); $('tCr').setAttribute('x', E0.x - 60); $('tCr').setAttribute('y', E0.y + 34);
+  $('tCn').setAttribute('x', E0.x); $('tCn').setAttribute('y', E0.y + 57); $('tCn').textContent = t > A(12) ? `${Math.max(cnt, t > A(13) ? 5 : 0)} ≥ 5 ✓` : 'MinPts = 5';
+  pop($('p1'), t, A(7), TQ, 40); pop($('p2'), t, A(11), TQ, 40);
+  $('p1').style.borderColor = t > A(7) && t < A(11) ? '#f5b942' : 'rgba(147,164,199,.25)'; $('p2').style.borderColor = t > A(11) && t < A(15) ? '#f5b942' : 'rgba(147,164,199,.25)';
+  set($('th2'), t > A(7) ? 0 : parseFloat($('th2').style.opacity) || 0);
+  // ---------- QGIS ----------
+  const wo = vis(t, TQ, A(39) + .4, .4, .5); set($('win'), wo, `scale(${.92 + .08 * eo((t - TQ) / .6)})`);
+  $('flash').style.opacity = .25 * Math.max(0, 1 - Math.abs(t - TQ) / .15) + .2 * Math.max(0, 1 - Math.abs(t - WT(31, 'classify') - .3) / .15);
+  $('wt').textContent = t < WT(16, 'loyiha') ? 'QGIS 3.34' : 'DBSCAN_mavzu13.qgz — QGIS';
+  set($('menuP'), vis(t, WT(16, 'yangi') + .1, WT(16, 'loyiha') + .35, .12, .12)); $('miNew').className = t > WT(16, 'loyiha') - .1 ? 'hi' : '';
+  $('gMap').setAttribute('opacity', C((t - WT(16, 'loyiha') - .3) / .5));
+  $('lyO').style.display = t > WT(16, 'loyiha') + .3 ? 'flex' : 'none';
+  const lc = WT(16, 'crimepoints'); $('lyC').style.display = t > lc ? 'flex' : 'none';
+  $('lyCn').textContent = t > A(25) + .8 ? 'Clusters (DBSCAN)' : 'CrimePoints';
+  const classT = WT(31, 'classify') + .4;
+  P.forEach((p, i) => { const a = lc + .3 + order.indexOf(i) * .05; const el = $('qp' + i); el.setAttribute('opacity', C((t - a) / .2));
+    let col = '#ef4444';
+    if (t > classT) { const ord = [1, 2, 3, -1].indexOf(p.cl); col = t > classT + ord * .35 ? COL[p.cl] : '#ef4444'; }
+    const foc = [[A(34), Bn(34), 1], [A(35), Bn(35), 2], [A(36), Bn(36) + .3, 3], [A(37), WT(37, 'xaritaga'), -1]].find(([a2, b2]) => t >= a2 && t < b2);
+    el.setAttribute('r', foc && foc[2] === p.cl ? 6.5 + Math.sin(t * 8) : 4.5); el.setAttribute('fill', col);
+    el.setAttribute('opacity', foc && foc[2] !== p.cl && t > A(34) ? .35 : C((t - a) / .2)); });
+  CL.forEach((_, ci) => { const a = WT(34 + ci, ['birinchi', 'ikkinchi', 'uchinchi'][ci]); $('hl' + ci).setAttribute('opacity', vis(t, a, A(39), .4, .4)); $('hlt' + ci).setAttribute('opacity', vis(t, a + .3, A(39), .3, .4)); });
+  // toolbox
+  set($('tbx'), vis(t, WT(19, 'toolbox') + .2, Bn(20) + .6, .3, .3), `translateX(${(1 - eo((t - WT(19, 'toolbox') - .2) / .4)) * 120}px)`);
+  $('srch').textContent = typed('DBSCAN clustering', t, WT(20, 'dbscan'), 14) + (Math.floor(t * 3) % 2 ? '▏' : '');
+  [...$('tbx').querySelectorAll('.tr div')].forEach((d, j) => d.style.opacity = C((t - WT(20, 'clustering') - j * .12) / .2));
+  $('tDb').className = t > WT(20, 'vositani') ? 'hi' : '';
+  $('bTbx').className = 'tbtn' + (t > WT(19, 'toolbox') && t < A(21) ? ' on' : '');
+  // dialog
+  const d0 = A(21) - .2, d1 = A(25) + .8;
+  set($('dlg'), vis(t, d0, d1, .2, .25), `scale(${.9 + .1 * eb((t - d0) / .4)})`);
+  $('fIn').textContent = t > A(22) + .2 ? 'CrimePoints [EPSG:4326]' : ''; $('fEps').textContent = t > A(23) + .3 ? '200 m' : ''; $('fMin').textContent = t > A(24) + .3 ? '5' : '';
+  [['fIn', A(22)], ['fEps', A(23)], ['fMin', A(24)]].forEach(([id, a]) => $(id).className = 'in' + (t > a && t < a + 1.2 ? ' act' : ''));
+  $('pb').style.width = (C((t - Bn(24)) / 1.2) * 100) + '%';
+  set($('toast'), vis(t, A(25) + .4, A(26) + 1.5, .2, .3), `translateY(${(1 - eo((t - A(25) - .4) / .35)) * 30}px)`);
+  // atribut jadvali
+  const at = vis(t, A(25) + 1, A(28) + .3, .3, .3); set($('atab'), at, `translateY(${(1 - eo((t - A(25) - 1) / .4)) * 310}px)`); $('bAttr').className = 'tbtn' + (at > .5 ? ' on' : '');
+  [...document.querySelectorAll('#aT .cid')].forEach((c, j) => { const a = WT(25, 'cluster_id') + .3 + j * .25; const v = +c.dataset.v; c.textContent = t > a ? v : '';
+    c.style.background = t > a ? (t > WT(27, 'minus') && v < 0 ? '#fde68a' : '#fff') : '#fff'; c.style.color = v < 0 ? '#b45309' : '#1d4ed8'; });
+  // layer properties
+  const lp0 = A(29), lp1 = A(32) + .6;
+  set($('lprop'), vis(t, lp0, lp1, .25, .3), `scale(${.9 + .1 * eb((t - lp0) / .4)})`);
+  $('sSym').className = t > WT(29, 'symbology') ? 'hi' : '';
+  $('fRen').textContent = t > WT(30, 'categorized') ? 'Categorized' : 'Single Symbol'; $('fVal').textContent = t > WT(30, 'cluster_id') ? 'CLUSTER_ID' : '';
+  [['fRen', WT(30, 'categorized')], ['fVal', WT(30, 'cluster_id')]].forEach(([id, a]) => $(id).className = 'in' + (t > a && t < a + 1.2 ? ' act' : ''));
+  $('bCls').style.background = t > WT(31, 'classify') && t < WT(31, 'classify') + .5 ? '#dbeafe' : '#fff';
+  [0, 1, 2, 3].forEach((j) => { const a = classT + j * .15; $('cr' + j).style.opacity = C((t - a) / .2); $('lg' + j).style.display = t > classT + 1 ? 'flex' : 'none'; });
+  // bosqich
+  const STP = [[A(16), A(19), 'MA’LUMOT', 'CrimePoints — jinoyat nuqtalari'], [A(19), A(25), 'TAHLIL', 'Processing › DBSCAN clustering'], [A(25), A(28), 'NATIJA', 'CLUSTER_ID maydoni'],
+    [A(28), A(33), 'VIZUALIZATSIYA', 'Symbology › Categorized'], [A(33), A(39), 'KLASTERLAR', '3 ta klaster + shovqin']];
+  const st = STP.find(([a, b]) => t >= a && t < b); if (st) { $('stepK').textContent = st[2]; $('stepT').textContent = st[3]; $('step').style.opacity = vis(t, st[0] + .2, st[1], .3, .25); } else $('step').style.opacity = 0;
+  call(t, [[A(18), Bn(18) + .3, '🔴 Har nuqta = <b>1 ta jinoyat</b> joyi', 1300, 180],
+    [WT(23, 'eps'), Bn(24) + .2, 'ε = <b>200 m</b> · MinPts = <b>5</b>', 1300, 150],
+    [WT(27, 'minus'), Bn(27) + .3, '<b>−1</b> = shovqin (hech qaysi klasterga kirmagan)', 1160, 560],
+    [A(33), Bn(33) + .8, '✅ <b>3 ta klaster</b> aniqlandi', 1400, 180],
+    [A(34), Bn(34), '🔴 1-klaster — <b>1-kriminogen o‘choq</b>', 1300, 180],
+    [A(35), Bn(35), '🟢 2-klaster — <b>2-kriminogen hudud</b>', 1300, 180],
+    [A(36), Bn(36) + .3, '🔵 3-klaster', 1500, 180],
+    [A(37), WT(37, 'xaritaga'), '⚪ CLUSTER_ID = <b>−1</b> → shovqin', 1300, 180]]);
+  // ---------- PRINT LAYOUT ----------
+  const lo = vis(t, A(39) + .6, A(41) - .2, .4, .4); set($('lay'), lo, `scale(${.9 + .1 * eb((t - A(39) - .6) / .5)})`);
+  $('ptitle').style.opacity = C((t - WT(40, 'sarlavha')) / .3);
+  $('plegend').style.opacity = C((t - WT(40, 'legendasi')) / .3); $('plegend').style.transform = `translateX(${(1 - eo((t - WT(40, 'legendasi')) / .4)) * 60}px)`;
+  $('pscale').style.opacity = C((t - WT(40, 'masshtab')) / .3); $('pnorth').style.opacity = C((t - WT(40, 'shimol')) / .3);
+  $('pnorth').style.transform = `rotate(${(1 - eb((t - WT(40, 'shimol')) / .6)) * -90}deg)`;
+  // ---------- QO‘LLANILISH ----------
+  headline($('appsH'), t, A(41), A(43) - .1, .05);
+  const AW = [WT(41, 'patrullash'), WT(41, 'qaror'), WT(42, 'epidemiologiya'), WT(42, 'yol'), WT(42, 'ekologik')];
+  [...$('apps').children].forEach((d, j) => { const o = vis(t, AW[j], A(43) - .1, .25, .3); d.style.opacity = o; d.style.transform = `translateY(${(1 - eb((t - AW[j]) / .45)) * 60}px)`;
+    d.style.borderColor = t > AW[j] && t < AW[j] + 1.2 ? '#f5b942' : 'rgba(245,185,66,.35)'; });
+  set($('end'), vis(t, A(43) - .1, END + 1, .5));
+  cursor(t); subtitle(t);
+};
+window.render(0);
+</script>
+</body></html>
