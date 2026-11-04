@@ -1,0 +1,15 @@
+Assalomu alaykum, hurmatli tinglovchilar! Bugungi darsimiz — GATda vektor ma'lumotlar modeli.
+Vektor modeli — fazoviy obyektlarni aniq koordinatalar, ya'ni X va Y qiymatlari orqali ifodalash usuli. Har bir obyektning yer yuzidagi joylashuvi raqamlar bilan aniqlanadi.
+Vektor modelida uchta geometriya turi bor. Birinchisi — nuqta, ya'ni Point. Bu bitta koordinataga ega obyektlar: maktab, bino, bankomat.
+Ikkinchisi — chiziq, ya'ni LineString. Bu bir nechta nuqtalarni bog'laydigan obyektlar: daryolar, ko'chalar, muhandislik tarmoqlari.
+Uchinchisi — poligon, ya'ni Polygon. Bu yopiq chegarali maydon: mahalla, blok, yer uchastkasi. Keling, bularni QGIS'da amaliy ko'rsatamiz.
+QGIS'da Project menyusidan yangi loyiha ochamiz. Bazaviy xarita sifatida OpenStreetMap yuklanadi.
+Endi nuqtali qatlam yaratamiz. Layer menyusidan Create Layer, keyin New GeoPackage Layer tanlaymiz. Fayl nomi — maktablar.gpkg. Geometriya turi — Point. Koordinata tizimi — EPSG:4326, ya'ni WGS 84 standarti.
+Toggle Editing yoqiladi va xaritaga maktablarni joylashtirishni boshlaymiz. Har bir bosish bilan nuqtaning koordinatasi avtomatik yoziladi. Atribut jadvaliga maktab nomini kiritamiz. Farg'ona vodiysida 7 ta maktabni joylashtirdik — xaritada ular ko'k markerlar sifatida ko'rinadi.
+Navbatdagi qadam — chiziqli qatlam. Yangi daryolar.gpkg faylini ochamiz, geometriya turi LineString. Atribut jadvaliga uzunligi va turi maydonlarini qo'shamiz.
+Add Line Feature vositasi bilan xaritada daryo o'zanini nuqtama-nuqta chizamiz. Marg'ilonsoy va Sho'xrudsoyni chizdik — xaritada ular ko'k chiziqlar sifatida ko'rinadi.
+Endi poligon qatlam. bloklar.gpkg faylini yaratamiz, geometriya turi Polygon. Mahalla hududlarining konturini chizamiz. Muhimi — oxirgi nuqta birinchisiga tutashishi kerak, shunda yopiq maydon hosil bo'ladi.
+To'rtta mahallani xaritaga tushirdik. Barcha ma'lumotlarni Save Layer Edits orqali saqlaymiz.
+Open Attribute Table orqali barcha yozuvlarni tekshiramiz. Symbology sozlamalaridan maktablarga ko'k marker, daryoga ko'k chiziq, bloklarga yashil fon beramiz.
+Labels menyusi orqali har bir obyektning nomini xaritada aks ettiramiz. Xulosa: vektor modeli shaharsozlik va fazoviy tahlillarda yuqori aniqlik beradi.
+E'tiboringiz uchun rahmat!

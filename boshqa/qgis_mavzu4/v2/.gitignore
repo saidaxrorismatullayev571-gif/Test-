@@ -1,0 +1,5 @@
+build/
+stills/
+stills2/
+*.wav
+video.mp4

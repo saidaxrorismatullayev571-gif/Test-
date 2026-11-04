@@ -1,0 +1,362 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script><script src="../../../reels/tizimli_biznes/_fx/fx.js"></script>
+<style>
+:root{--nv:#0b1224;--pn:#121a30;--cy:#38bdf8;--au:#f5b942;--rd:#ef4444;--gr:#22c55e;--wh:#eef4ff;--mu:#93a4c7}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--nv);font-family:Manrope,sans-serif;color:var(--wh)}
+#bg{position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,#16244d 0%,#0b1224 60%),repeating-linear-gradient(0deg,transparent 0 59px,rgba(56,189,248,.05) 59px 60px),repeating-linear-gradient(90deg,transparent 0 59px,rgba(56,189,248,.05) 59px 60px);background-blend-mode:screen}
+.o{position:absolute;opacity:0}
+.chip{font-size:22px;font-weight:800;letter-spacing:3px;color:var(--cy);padding:10px 22px;border:2px solid rgba(56,189,248,.45);border-radius:30px;background:rgba(12,20,44,.8)}
+/* nazariya */
+#tTitle{left:110px;top:300px;width:900px}
+#tTitle .k{font-size:28px;font-weight:800;letter-spacing:4px;color:var(--cy)}
+#tTitle h1{font-size:92px;font-weight:800;line-height:1;letter-spacing:-2px;margin-top:18px}
+#tTitle p{font-size:34px;color:var(--mu);margin-top:22px;font-weight:600}
+#tHead{left:110px;top:150px;width:780px}
+#tHead h2{font-size:58px;font-weight:800;line-height:1.08;letter-spacing:-1px}
+#tHead p{font-size:30px;color:var(--mu);margin-top:16px;font-weight:600;line-height:1.35}
+.card3{position:absolute;left:110px;width:760px;height:150px;border-radius:26px;background:rgba(18,28,58,.88);border:3px solid rgba(147,164,199,.25);display:flex;align-items:center;gap:28px;padding:0 30px;opacity:0}
+.card3 .ic{width:96px;height:96px;flex:none;border-radius:22px;display:flex;align-items:center;justify-content:center;background:rgba(56,189,248,.12)}
+.card3 b{font-size:40px;font-weight:800;display:block} .card3 span{font-size:26px;color:var(--mu);font-weight:600}
+.card3 .ex{display:flex;gap:10px;margin-top:8px}
+.card3 .ex i{font-style:normal;font-size:22px;font-weight:700;padding:6px 14px;border-radius:16px;background:rgba(245,185,66,.14);color:#f8d58f;opacity:0}
+#mapCard{left:960px;top:150px;width:860px;height:640px;border-radius:30px;overflow:hidden;border:3px solid rgba(56,189,248,.35);box-shadow:0 30px 90px rgba(0,0,0,.55)}
+#mapCard svg{width:100%;height:100%}
+#coord{left:1000px;top:690px;font-family:monospace;font-size:30px;font-weight:700;padding:12px 22px;border-radius:14px;background:rgba(11,18,36,.88);border:2px solid var(--cy);color:#c8ecff}
+/* QGIS oynasi */
+#win{left:40px;top:28px;width:1840px;height:904px;border-radius:14px;overflow:hidden;background:#e9ecf1;box-shadow:0 40px 120px rgba(0,0,0,.6);color:#1f2633;font-family:Manrope,sans-serif}
+#tb{height:36px;background:#d9dde5;display:flex;align-items:center;padding:0 16px;font-size:17px;font-weight:700;color:#3a4458;gap:10px}
+#tb .dots span{display:inline-block;width:13px;height:13px;border-radius:50%;margin-right:7px}
+#mb{height:34px;background:#f4f6f9;border-bottom:1px solid #c9ced9;display:flex;align-items:center;font-size:17px;font-weight:600;color:#253047}
+#mb div{padding:0 12px;height:34px;line-height:34px}
+#tools{height:48px;background:#eef1f5;border-bottom:1px solid #c9ced9;display:flex;align-items:center;gap:6px;padding:0 14px}
+.tbtn{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#3d4a63;border:1px solid transparent}
+.tbtn.on{background:#fde68a;border-color:#d97706}
+.sep{width:1px;height:30px;background:#c4cad6;margin:0 6px}
+#lp{position:absolute;left:0;top:118px;width:300px;bottom:28px;background:#f7f8fa;border-right:1px solid #c9ced9}
+#lp h4{font-size:16px;font-weight:800;color:#3a4458;padding:10px 14px;border-bottom:1px solid #d7dbe3;background:#eceff4}
+.lyr{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:18px;font-weight:600;color:#253047;opacity:0;height:44px}
+.lyr .cb{width:16px;height:16px;border:2px solid #2563eb;border-radius:3px;background:#2563eb}
+.lyr .sw{width:22px;height:16px;border-radius:3px}
+#cv{position:absolute;left:300px;top:118px;right:0;bottom:28px;background:#fff;overflow:hidden}
+#cv svg{position:absolute;inset:0;width:100%;height:100%}
+#sb{position:absolute;left:0;right:0;bottom:0;height:28px;background:#eceff4;border-top:1px solid #c9ced9;font-size:15px;color:#4a5670;display:flex;align-items:center;gap:30px;padding:0 16px;font-weight:600}
+.menu{position:absolute;background:#fff;border:1px solid #b9c0cd;box-shadow:0 10px 30px rgba(0,0,0,.25);border-radius:6px;padding:4px 0;font-size:17px;color:#1f2633;opacity:0;z-index:20}
+.menu div{padding:7px 18px;white-space:nowrap;display:flex;justify-content:space-between;gap:30px}
+.menu div.hi{background:#2563eb;color:#fff}
+.dlg{position:absolute;background:#f4f6f9;border:1px solid #a9b1c0;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.35);opacity:0;z-index:15;overflow:hidden}
+.dlg .hd{height:38px;background:#dde2ea;font-size:17px;font-weight:800;color:#2b3550;display:flex;align-items:center;padding:0 16px}
+.fld{display:flex;align-items:center;gap:14px;padding:9px 20px;font-size:18px}
+.fld label{width:170px;color:#4a5670;font-weight:700}
+.fld .in{flex:1;height:36px;border:1px solid #b9c0cd;border-radius:6px;background:#fff;display:flex;align-items:center;padding:0 12px;font-weight:700;color:#14213d;font-family:monospace;font-size:18px}
+.fld .in.act{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.25)}
+.btns{display:flex;justify-content:flex-end;gap:12px;padding:12px 20px}
+.btns span{padding:8px 26px;border-radius:6px;border:1px solid #9aa4b5;font-weight:700;font-size:17px;background:#fff}
+.btns span.ok{background:#2563eb;color:#fff;border-color:#1d4ed8}
+#ftab{width:100%;border-collapse:collapse;font-size:16px}
+#ftab td,#ftab th{border:1px solid #cdd3dd;padding:6px 10px;text-align:left}
+#ftab th{background:#e6eaf0}
+#atab{position:absolute;left:300px;right:0;bottom:28px;height:300px;background:#fff;border-top:2px solid #94a3b8;opacity:0;z-index:12}
+#atab .hd{height:34px;background:#e6eaf0;font-size:16px;font-weight:800;display:flex;align-items:center;padding:0 14px;color:#2b3550}
+#atab table{width:100%;border-collapse:collapse;font-size:16px}
+#atab td,#atab th{border:1px solid #d5dae2;padding:5px 12px;text-align:left;font-family:monospace}
+#atab th{background:#f1f3f7;font-family:Manrope}
+#sym{position:absolute;right:30px;top:140px;width:420px;opacity:0;z-index:13}
+.symr{display:flex;align-items:center;gap:14px;padding:12px 18px;font-size:18px;font-weight:700;border-bottom:1px solid #dde1e8}
+.symr .sw{width:46px;height:26px;border-radius:5px;border:1px solid #8892a6}
+#toast{position:absolute;right:40px;bottom:60px;padding:14px 26px;border-radius:10px;background:#16a34a;color:#fff;font-size:20px;font-weight:800;opacity:0;z-index:16}
+#step{position:absolute;left:330px;top:136px;padding:10px 20px;border-radius:12px;background:rgba(11,18,36,.9);color:#fff;font-size:22px;font-weight:800;opacity:0;z-index:11;border-left:6px solid var(--cy)}
+#step small{display:block;font-size:15px;color:#9fd8ff;letter-spacing:2px;font-weight:800}
+#call{position:absolute;padding:10px 18px;border-radius:12px;background:#0b1224;color:#fff;font-size:20px;font-weight:800;opacity:0;z-index:30;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+#call b{color:var(--au)}
+#cur{position:absolute;left:0;top:0;width:34px;height:34px;z-index:40;opacity:0;filter:drop-shadow(0 3px 4px rgba(0,0,0,.4))}
+#ripple{position:absolute;width:60px;height:60px;border-radius:50%;border:4px solid #f5b942;z-index:39;opacity:0}
+/* xulosa, yakun */
+#sum{left:260px;top:200px;width:1400px;height:560px;border-radius:34px;background:rgba(11,18,36,.94);border:3px solid rgba(56,189,248,.4);z-index:50;text-align:center;padding-top:60px;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+#sum h3{font-size:30px;letter-spacing:5px;color:var(--cy);font-weight:800}
+#sum h2{font-size:62px;font-weight:800;margin-top:16px}
+#sumRow{display:flex;justify-content:center;gap:40px;margin-top:60px}
+#sumRow div{width:330px;padding:30px 20px;border-radius:24px;background:rgba(56,189,248,.08);border:2px solid rgba(56,189,248,.35);font-size:30px;font-weight:800;opacity:0}
+#sumRow div span{display:block;font-size:64px;margin-bottom:12px}
+#end{left:0;top:0;width:1920px;height:1080px;z-index:60;background:radial-gradient(circle at 50% 45%,#16244d,#0b1224 65%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+#end .ck{width:150px;height:150px;border-radius:50%;border:8px solid var(--cy);display:flex;align-items:center;justify-content:center;font-size:90px;color:var(--cy);font-weight:800}
+#end h2{font-size:72px;font-weight:800} #end p{font-size:32px;color:var(--mu);font-weight:600}
+#sub{position:absolute;left:160px;right:160px;top:952px;text-align:center;font-weight:700;font-size:34px;line-height:1.3;text-shadow:0 3px 12px #000;z-index:70}
+#sub i{font-style:normal}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:80;pointer-events:none}
+</style></head><body>
+<div id="bg"></div>
+
+<!-- ======== NAZARIYA ======== -->
+<div class="o" id="tTitle"><div class="k">MAVZU 4 · QGIS AMALIY VIDEODARS</div><h1>GATda vektor<br><span style="color:var(--cy)">ma’lumotlar modeli</span></h1><p>Nuqta · Chiziq · Poligon — nazariya va amaliyot</p></div>
+<div class="o chip" id="tChip" style="left:110px;top:70px">1 · NAZARIY TUSHUNCHA</div>
+<div class="o" id="tHead"><h2>Vektor modeli =<br><span style="color:var(--cy)">aniq koordinatalar</span></h2><p>Har bir obyektning yer yuzidagi joylashuvi<br>X va Y raqamlari bilan aniqlanadi</p></div>
+<div class="card3" id="c1" style="top:470px"><div class="ic"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="12" fill="#38bdf8"/><circle cx="28" cy="28" r="20" fill="none" stroke="#38bdf8" stroke-width="3" opacity=".5"/></svg></div><div><b>Nuqta <span>· Point</span></b><span>bitta koordinata</span><div class="ex"><i>🏫 maktab</i><i>🏢 bino</i><i>🏧 bankomat</i></div></div></div>
+<div class="card3" id="c2" style="top:640px"><div class="ic"><svg width="56" height="56" viewBox="0 0 56 56"><polyline points="6,44 20,22 34,32 50,10" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><g fill="#fff"><circle cx="6" cy="44" r="4"/><circle cx="20" cy="22" r="4"/><circle cx="34" cy="32" r="4"/><circle cx="50" cy="10" r="4"/></g></svg></div><div><b>Chiziq <span>· LineString</span></b><span>nuqtalarni bog‘laydi</span><div class="ex"><i>🌊 daryolar</i><i>🛣️ ko‘chalar</i><i>🔌 tarmoqlar</i></div></div></div>
+<div class="card3" id="c3" style="top:810px"><div class="ic"><svg width="56" height="56" viewBox="0 0 56 56"><polygon points="8,16 40,8 50,40 16,48" fill="rgba(34,197,94,.45)" stroke="#22c55e" stroke-width="4" stroke-linejoin="round"/></svg></div><div><b>Poligon <span>· Polygon</span></b><span>yopiq chegarali maydon</span><div class="ex"><i>🏘️ mahalla</i><i>▦ blok</i><i>🌾 uchastka</i></div></div></div>
+<div class="o" id="mapCard"><svg viewBox="0 0 674 396" preserveAspectRatio="xMidYMid slice">
+ <image href="rasmlar/shahar.jpg" x="0" y="0" width="674" height="396" preserveAspectRatio="none"/>
+ <rect width="674" height="396" fill="#0b1224" id="mcDim" opacity="0"/>
+ <g id="axes" opacity="0" stroke="#0b1224" stroke-width="1.2"><line x1="20" y1="380" x2="660" y2="380"/><line x1="20" y1="380" x2="20" y2="14"/>
+  <text x="648" y="372" font-size="16" font-weight="800" fill="#0b1224" stroke="none">X</text><text x="28" y="26" font-size="16" font-weight="800" fill="#0b1224" stroke="none">Y</text>
+  <line id="gx" x1="0" x2="0" y1="380" y2="0" stroke-dasharray="4 4" stroke="#2563eb" stroke-width="2"/><line id="gy" x1="20" x2="0" y1="0" y2="0" stroke-dasharray="4 4" stroke="#2563eb" stroke-width="2"/>
+  <text x="320" y="394" text-anchor="middle" font-size="13" font-weight="800" fill="#1d4ed8" stroke="#fff" stroke-width="3" paint-order="stroke">X = 71.7864</text>
+  <text x="26" y="170" font-size="13" font-weight="800" fill="#1d4ed8" stroke="#fff" stroke-width="3" paint-order="stroke">Y = 40.3842</text>
+  <circle id="gpt" cx="320" cy="174" r="8" fill="#ef4444" stroke="#fff" stroke-width="3"/><circle id="gpr" cx="320" cy="174" r="8" fill="none" stroke="#ef4444" stroke-width="2"/></g>
+ <g id="dPts"></g>
+ <polyline id="dLine" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="51,175 166,211 301,241 546,209"/>
+ <g id="dLineV"></g>
+ <polygon id="dPoly" points="128,157 252,152 256,262 124,258" fill="rgba(34,197,94,0)" stroke="#16a34a" stroke-width="3.5" stroke-linejoin="round"/>
+</svg></div>
+<div class="o" id="coord">X: 71.7864° · Y: 40.3842°</div>
+
+<!-- ======== QGIS ======== -->
+<div class="o" id="win">
+ <div id="tb"><span class="dots"><span style="background:#ef4444"></span><span style="background:#f59e0b"></span><span style="background:#22c55e"></span></span><span id="wt">QGIS 3.34</span></div>
+ <div id="mb"><div id="mProject">Project</div><div>Edit</div><div>View</div><div id="mLayer">Layer</div><div>Settings</div><div>Plugins</div><div>Vector</div><div>Raster</div><div>Database</div><div>Web</div><div>Mesh</div><div>Processing</div><div>Help</div></div>
+ <div id="tools"><div class="tbtn">🗋</div><div class="tbtn">📂</div><div class="tbtn">💾</div><div class="sep"></div><div class="tbtn" id="bEdit">✎</div><div class="tbtn" id="bSave">🖫</div><div class="sep"></div><div class="tbtn" id="bPt">•</div><div class="tbtn" id="bLn">〰</div><div class="tbtn" id="bPg">⬠</div><div class="sep"></div><div class="tbtn" id="bAttr">▦</div><div class="tbtn" id="bLab">abc</div><div class="tbtn">🔍</div><div class="tbtn">✋</div></div>
+ <div id="lp"><h4>Layers</h4><div id="lyrs"></div></div>
+ <div id="cv"><svg viewBox="0 0 674 396" preserveAspectRatio="xMidYMid slice" id="cvs">
+   <rect width="674" height="396" fill="#ffffff"/>
+   <g id="gCity" opacity="0"><image href="rasmlar/shahar.jpg" width="674" height="396" preserveAspectRatio="none"/>
+     <g id="gBlocks"></g><polyline id="cRiver" fill="none" stroke="#2563eb" stroke-width="3" opacity="0" points="51,175 166,211 301,241 546,209"/><g id="gSchools"></g><g id="gLabels"></g></g>
+   <g id="gReg" opacity="0"><image href="rasmlar/viloyat.jpg" width="674" height="396" preserveAspectRatio="none"/><g id="gRivers"></g></g>
+ </svg>
+ <div id="step"><small id="stepK">AMALIYOT</small><span id="stepT"></span></div></div>
+ <div id="atab"><div class="hd">maktablar — Features Total: 7, Filtered: 7, Selected: 0</div><table id="aT"></table></div>
+ <div id="sb"><span id="sCoord">Coordinate  71.7841, 40.3864</span><span>Scale 1:5 000</span><span>Rotation 0.0°</span><span>⊕ EPSG:4326</span></div>
+ <div class="menu" id="menuP" style="left:4px;top:70px;width:230px"><div id="miNew">New <span>Ctrl+N</span></div><div>Open… <span>Ctrl+O</span></div><div>Save</div><div>Save As…</div><div>Properties…</div></div>
+ <div class="menu" id="menuL" style="left:176px;top:70px;width:290px"><div>Data Source Manager</div><div id="miCreate">Create Layer <span>▸</span></div><div>Add Layer <span>▸</span></div><div id="miTog">Toggle Editing</div><div>Save Layer Edits</div><div>Open Attribute Table</div></div>
+ <div class="menu" id="menuC" style="left:466px;top:108px;width:320px"><div id="miGpkg">New GeoPackage Layer…</div><div>New Shapefile Layer…</div><div>New SpatiaLite Layer…</div><div>New Temporary Scratch Layer…</div></div>
+ <div class="dlg" id="dlg" style="left:640px;top:200px;width:640px">
+  <div class="hd">New GeoPackage Layer</div>
+  <div class="fld"><label>Database</label><div class="in" id="fDb"></div></div>
+  <div class="fld"><label>Table name</label><div class="in" id="fTn"></div></div>
+  <div class="fld"><label>Geometry type</label><div class="in" id="fGt"></div></div>
+  <div class="fld"><label>CRS</label><div class="in" id="fCrs"></div></div>
+  <div style="padding:6px 20px 0"><table id="ftab"><tr><th>Name</th><th>Type</th><th>Length</th></tr></table></div>
+  <div class="btns"><span>Cancel</span><span class="ok" id="dOk">OK</span></div></div>
+ <div class="dlg" id="afrm" style="left:900px;top:300px;width:460px"><div class="hd">maktablar — Feature Attributes</div>
+  <div class="fld"><label>fid</label><div class="in" id="aFid">Autogenerate</div></div><div class="fld"><label>nom</label><div class="in act" id="aNom"></div></div>
+  <div class="btns"><span>Cancel</span><span class="ok">OK</span></div></div>
+ <div class="dlg" id="sym" style="right:30px;top:160px;width:430px;left:auto"><div class="hd">Layer Styling — Symbology</div><div id="symRows"></div></div>
+ <div id="toast">✓ Layer edits saved</div>
+</div>
+<div id="call"></div>
+<div id="ripple"></div>
+<svg id="cur" viewBox="0 0 24 24"><path d="M3 2 L3 19 L8 14.5 L11.5 22 L14.5 20.6 L11 13.4 L18 13.4 Z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>
+
+<!-- ======== XULOSA / YAKUN ======== -->
+<div class="o" id="sum"><h3>XULOSA</h3><h2>Vektor modeli — <span style="color:var(--cy)">yuqori aniqlik</span></h2>
+ <div id="sumRow"><div><span>🏙️</span>Shaharsozlik</div><div><span>🗺️</span>Fazoviy tahlil</div><div><span>🎯</span>Yuqori aniqlik</div></div></div>
+<div class="o" id="end"><div class="ck">✓</div><h2>E’tiboringiz uchun rahmat!</h2><p>Mavzu 4 — videodars tugadi · Xasanova Mahliyo · QGIS amaliy videodars</p></div>
+<div id="sub"></div><div id="flash"></div>
+<script>
+const { C, eo, eb, vis, set, headline } = FX;
+const $ = (id) => document.getElementById(id);
+const S = window.S, A = (i) => S[i].a, Bn = (i) => S[i].b;
+const norm = (s) => s.toLowerCase().replace(/[«»"'’‘—:,.!?]/g, '');
+const WT = (i, s) => { const w = S[i].words.find((w) => norm(w.w).startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.8; window.TOTAL = END;
+function pop(el, t, a, b, dy = 30) { const o = vis(t, a, b, .25, .3); const k = eb((t - a) / .45); set(el, o, `translateY(${(1 - k) * dy}px) scale(${.94 + .06 * k})`); return o; }
+const typed = (txt, t, a, cps = 22) => txt.slice(0, Math.max(0, Math.floor((t - a) * cps)));
+// xarita koordinatasi -> ekran (canvas: x 340..1880, y 146..904)
+const CV = { x: 340, y: 146, w: 1540, h: 758 }; const SC = Math.max(CV.w / 674, CV.h / 396), OX = CV.x + (CV.w - 674 * SC) / 2, OY = CV.y + (CV.h - 396 * SC) / 2;
+const M = (mx, my) => [OX + mx * SC, OY + my * SC];
+const SCH = [[210, 131], [320, 174], [438, 243], [152, 278], [379, 104], [505, 304], [270, 330]];
+const RIV = { a: [[168, 70], [235, 124], [298, 187], [318, 231], [342, 284], [362, 347]], b: [[68, 105], [150, 156], [270, 191], [355, 214], [410, 223], [470, 227], [510, 217], [572, 209]] };
+const BLK = [[[128, 157], [252, 152], [256, 262], [124, 258]], [[338, 175], [471, 178], [468, 295], [341, 292]], [[478, 40], [600, 32], [628, 140], [505, 158]], [[22, 300], [130, 292], [142, 388], [30, 392]]];
+const ll = (mx, my) => [(71.7752 + mx * 0.000031).toFixed(4), (40.3891 - my * 0.000024).toFixed(4)];
+const ns = 'http://www.w3.org/2000/svg';
+const mk = (tag, at, par) => { const e = document.createElementNS(ns, tag); for (const k in at) e.setAttribute(k, at[k]); par.appendChild(e); return e; };
+// sahna elementlari
+SCH.forEach(([x, y], i) => { const g = mk('g', { id: 'sc' + i, opacity: 0 }, $('gSchools')); mk('circle', { cx: x, cy: y, r: 7, fill: '#2563eb', stroke: '#fff', 'stroke-width': 2.4, id: 'scc' + i }, g); mk('circle', { cx: x, cy: y, r: 7, fill: 'none', stroke: '#2563eb', 'stroke-width': 2, id: 'scr' + i }, g); });
+SCH.forEach(([x, y], i) => { const tx = mk('text', { x: x + 11, y: y + 5, 'font-size': 13, 'font-weight': 800, fill: '#0b2a6b', stroke: '#fff', 'stroke-width': 3, 'paint-order': 'stroke', id: 'scl' + i, opacity: 0 }, $('gLabels')); tx.textContent = (i + 1) + '-maktab'; });
+BLK.forEach((p, i) => { mk('polygon', { id: 'bk' + i, points: p.map((q) => q.join(',')).join(' '), fill: 'rgba(253,186,116,.45)', stroke: '#c2410c', 'stroke-width': 2.4, opacity: 0, 'stroke-linejoin': 'round' }, $('gBlocks'));
+  const cx = p.reduce((s, q) => s + q[0], 0) / 4, cy = p.reduce((s, q) => s + q[1], 0) / 4; const tx = mk('text', { x: cx, y: cy + 5, 'text-anchor': 'middle', 'font-size': 14, 'font-weight': 800, fill: '#14532d', stroke: '#fff', 'stroke-width': 3, 'paint-order': 'stroke', id: 'bkl' + i, opacity: 0 }, $('gLabels')); tx.textContent = (i + 1) + '-mahalla'; });
+mk('polyline', { id: 'bkDraw', fill: 'none', stroke: '#c2410c', 'stroke-width': 2.6, 'stroke-dasharray': '6 4' }, $('gBlocks'));
+const dlab = mk('text', { x: 300, y: 236, 'font-size': 14, 'font-weight': 800, fill: '#1e40af', stroke: '#fff', 'stroke-width': 3, 'paint-order': 'stroke', id: 'rvl', opacity: 0 }, $('gLabels')); dlab.textContent = 'Daryo';
+['a', 'b'].forEach((k) => { mk('polyline', { id: 'rv' + k, fill: 'none', stroke: '#2563eb', 'stroke-width': 3.6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, $('gRivers'));
+  RIV[k].forEach(([x, y], j) => mk('circle', { id: `rv${k}${j}`, cx: x, cy: y, r: 4, fill: '#fff', stroke: '#c2410c', 'stroke-width': 2, opacity: 0 }, $('gRivers'))); });
+const rl1 = mk('text', { x: 302, y: 190, 'font-size': 15, 'font-weight': 800, fill: '#1e3a8a', stroke: '#fff', 'stroke-width': 3, 'paint-order': 'stroke', id: 'rla', opacity: 0 }, $('gRivers')); rl1.textContent = 'Marg‘ilonsoy';
+const rl2 = mk('text', { x: 360, y: 205, 'font-size': 15, 'font-weight': 800, fill: '#1e3a8a', stroke: '#fff', 'stroke-width': 3, 'paint-order': 'stroke', id: 'rlb', opacity: 0 }, $('gRivers')); rl2.textContent = 'Sho‘xrudsoy';
+// nazariya demo nuqtalari
+const DP = [[210, 131, '🏫'], [438, 243, '🏢'], [152, 278, '🏧']];
+DP.forEach(([x, y, e], i) => { const g = mk('g', { id: 'dp' + i, opacity: 0 }, $('dPts')); mk('circle', { cx: x, cy: y, r: 9, fill: '#2563eb', stroke: '#fff', 'stroke-width': 3 }, g); const tx = mk('text', { x: x + 12, y: y - 8, 'font-size': 20 }, g); tx.textContent = e; });
+[[51, 175], [166, 211], [301, 241], [546, 209]].forEach(([x, y], j) => mk('circle', { id: 'dv' + j, cx: x, cy: y, r: 5, fill: '#fff', stroke: '#2563eb', 'stroke-width': 2.5, opacity: 0 }, $('dLineV')));
+const dl = $('dLine'), DLL = dl.getTotalLength(); dl.style.strokeDasharray = DLL;
+const dpg = $('dPoly'), DPL = dpg.getTotalLength(); dpg.style.strokeDasharray = DPL;
+// qatlamlar paneli
+const LY = [['bloklar', 'rgba(253,186,116,.9)', '#c2410c'], ['daryolar', '#2563eb', '#2563eb'], ['maktablar', '#2563eb', '#fff'], ['OpenStreetMap', '#a3d9a5', '#a3d9a5']];
+$('lyrs').innerHTML = LY.map(([n, f, s], i) => `<div class="lyr" id="ly${i}"><span class="cb"></span><span class="sw" id="lysw${i}" style="background:${f};border:2px solid ${s}"></span>${n}</div>`).join('');
+// atribut jadvali
+$('aT').innerHTML = '<tr><th>fid</th><th>nom</th><th>turi</th><th>X (lon)</th><th>Y (lat)</th></tr>' + SCH.map(([x, y], i) => { const [lo, la] = ll(x, y); return `<tr id="ar${i}"><td>${i + 1}</td><td>${i + 1}-maktab</td><td>umumta’lim</td><td>${lo}</td><td>${la}</td></tr>`; }).join('');
+$('symRows').innerHTML = [['maktablar', 'sy0'], ['daryolar', 'sy1'], ['bloklar', 'sy2']].map(([n, id]) => `<div class="symr"><span class="sw" id="${id}"></span>${n}</div>`).join('');
+
+// subtitr
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; el.style.color = t >= w.t ? (t < w.e + .05 ? '#f5b942' : '#eef4ff') : 'rgba(238,244,255,.45)'; });
+}
+// kursor yo‘li
+let CK = null, CLK = [];
+function buildCursor() {
+  const k = [], c = [];
+  const P = (t, x, y, click) => { k.push([t, x, y]); if (click) c.push([t, x, y]); };
+  const mP = [102, 83], mL = [216, 83];
+  P(A(12) - .2, 900, 600); P(WT(12, 'project'), mP[0], mP[1], 1); P(WT(12, 'yangi'), 90, 116, 1); P(A(13) + .3, 700, 500);
+  P(A(15), 650, 500); P(WT(15, 'layer') + .1, mL[0], mL[1], 1); P(WT(15, 'create'), 260, 158); P(WT(15, 'new') - .1, 520, 158); P(WT(15, 'tanlaymiz'), 560, 160, 1);
+  P(A(16), 1000, 300, 1); P(A(17), 1000, 360, 1); P(A(18), 1000, 410, 1); P(Bn(18) - .1, 1235, 640, 1);
+  P(A(19), 900, 520); P(WT(19, 'toggle') + .2, 268, 124, 1); P(WT(19, 'maktablarni'), 400, 124, 1);
+  const pts = SCH.map(([x, y]) => M(x, y)); const t0 = A(20), t1 = A(22) - .2;
+  pts.forEach(([x, y], i) => { const tt = t0 + (t1 - t0) * i / 6; P(tt - .25, x + 30, y + 30); P(tt, x, y, 1); });
+  P(A(23), 1200, 600); P(A(24) + .4, 1000, 300, 1); P(A(25) + .2, 1000, 360, 1); P(Bn(25) - .2, 1235, 700, 1);
+  P(A(26) - .1, 900, 500); P(WT(26, 'add') + .1, 452, 124, 1);
+  const ra = RIV.a.map(([x, y]) => M(x, y)), rb = RIV.b.map(([x, y]) => M(x, y)); const r0 = WT(26, 'xaritada'), r1 = A(27) - .1, r2 = A(27) + .1, r3 = WT(27, 'chizdik');
+  ra.forEach(([x, y], i) => P(r0 + (r1 - r0) * i / (ra.length - 1), x, y, 1)); rb.forEach(([x, y], i) => P(r2 + (r3 - r2) * i / (rb.length - 1), x, y, 1));
+  P(A(28) + .3, 1100, 600); P(A(29) + .4, 1000, 300, 1); P(A(29) + 1.4, 1000, 360, 1); P(Bn(29) - .1, 1235, 640, 1);
+  P(A(30) - .2, 520, 124, 1);
+  const bp = BLK[0].map(([x, y]) => M(x, y)); const b0 = WT(30, 'konturini'), b1 = A(31) + .3;
+  bp.forEach(([x, y], i) => P(b0 + (b1 - b0) * i / 3, x, y, 1)); P(WT(31, 'birinchisiga') + .2, bp[0][0], bp[0][1], 1);
+  P(A(33), 700, 400); P(WT(33, 'save'), 228, 124, 1);
+  P(A(34) + .1, 600, 300); P(WT(34, 'open') + .3, 412, 124, 1);
+  P(A(35) + .2, 1500, 260); P(WT(35, 'maktablarga'), 1500, 284, 1); P(WT(35, 'daryoga'), 1500, 334, 1); P(WT(35, 'bloklarga'), 1500, 384, 1);
+  P(A(36) + .1, 700, 300); P(WT(36, 'labels') + .2, 456, 124, 1); P(A(37) - .3, 1300, 700);
+  CK = k.sort((a, b) => a[0] - b[0]); CLK = c;
+}
+function cursor(t) {
+  if (!CK) buildCursor();
+  let i = CK.findIndex((p) => p[0] > t); if (i < 0) i = CK.length; const a = CK[Math.max(0, i - 1)], b = CK[Math.min(CK.length - 1, i)];
+  const k = b[0] === a[0] ? 1 : FX.eo(C((t - a[0]) / Math.min(.55, b[0] - a[0]))) ; const x = a[1] + (b[1] - a[1]) * k, y = a[2] + (b[2] - a[2]) * k;
+  const on = vis(t, A(12) - .1, A(37) - .2, .3, .3); set($('cur'), on, `translate(${x - 4}px,${y - 2}px)`);
+  const cl = CLK.filter((c) => t >= c[0] && t < c[0] + .45).pop(); const r = $('ripple');
+  if (cl && on > .5) { const k2 = (t - cl[0]) / .45; r.style.opacity = 1 - k2; r.style.transform = `translate(${cl[1] - 30}px,${cl[2] - 30}px) scale(${.3 + k2})`; } else r.style.opacity = 0;
+}
+function call(t, items) { const c = $('call'); const it = items.find(([a, b]) => t >= a && t < b); if (!it) { c.style.opacity = 0; return; }
+  c.innerHTML = it[2]; const o = vis(t, it[0], it[1], .2, .25); c.style.opacity = o; c.style.left = it[3] + 'px'; c.style.top = it[4] + 'px'; c.style.transform = `scale(${eb((t - it[0]) / .4)})`; }
+
+window.render = function (t) {
+  // ---------- NAZARIYA (0 – A12) ----------
+  const TQ = A(12) - .3; // QGIS ga o‘tish
+  headline($('tTitle'), t, .3, A(2) - .2, .08);
+  set($('tChip'), vis(t, A(2), TQ, .3, .3));
+  headline($('tHead'), t, A(2), A(4) - .1, .05);
+  const mc = vis(t, A(2) + .2, TQ, .35, .4); set($('mapCard'), mc, `perspective(1800px) rotateY(${(1 - eo((t - A(2) - .2) / .7)) * -18}deg) scale(${(.96 + .04 * eo((t - A(2)) / .7)) * (1 + .06 * C((t - TQ + .6) / .6))})`);
+  // koordinata o‘qlari
+  const ax = vis(t, WT(2, 'koordinatalar'), A(4) + .2, .3, .3); $('axes').setAttribute('opacity', ax);
+  const px = 320, py = 174, gk = eo((t - WT(2, 'x')) / .8);
+  $('gx').setAttribute('x1', px); $('gx').setAttribute('x2', px); $('gx').setAttribute('y2', 380 - (380 - py) * gk);
+  $('gpr').setAttribute('r', 8 + 16 * ((t * .9) % 1)); $('gpr').setAttribute('opacity', 1 - ((t * .9) % 1)); $('gy').setAttribute('y1', py); $('gy').setAttribute('y2', py); $('gy').setAttribute('x2', 20 + (px - 20) * gk);
+  set($('coord'), vis(t, WT(3, 'raqamlar') - .2, A(4) + .2, .3, .3), `translateY(${(1 - eo((t - WT(3, 'raqamlar') + .2) / .4)) * 20}px)`);
+  $('coord').textContent = typed('X: 71.7864° · Y: 40.3842°', t, WT(3, 'raqamlar') - .1, 30) + (Math.floor(t * 3) % 2 ? '▏' : '');
+  // 3 karta
+  [['c1', A(4) + .3, 5, A(7)], ['c2', A(4) + .55, 7, A(9)], ['c3', A(4) + .8, 9, TQ + .5]].forEach(([id, a, si, sEnd], k) => {
+    const el = $(id); const o = vis(t, a, TQ, .3, .3); const act = t >= A(si) && t < sEnd;
+    el.style.opacity = o * (t >= A(5) && !act ? .45 : 1); el.style.transform = `translateX(${(1 - eo((t - a) / .45)) * -80}px) scale(${act ? 1.03 : 1})`;
+    el.style.borderColor = act ? '#38bdf8' : 'rgba(147,164,199,.25)'; el.style.boxShadow = act ? '0 0 40px rgba(56,189,248,.35)' : 'none';
+    const ex = [...el.querySelectorAll('.ex i')]; const wds = [['maktab', 'bino', 'bankomat'], ['daryolar', 'kochalar', 'muhandislik'], ['mahalla', 'blok', 'yer']][k];
+    ex.forEach((e, j) => { const wt = WT(si + 1, wds[j]); e.style.opacity = C((t - wt) / .2); e.style.transform = `scale(${eb((t - wt) / .35)})`; }); });
+  set($('tHead'), t < A(4) - .1 ? parseFloat($('tHead').style.opacity) || 0 : 0);
+  // demo: nuqtalar, chiziq, poligon
+  DP.forEach((_, i) => { const wt = WT(6, ['maktab', 'bino', 'bankomat'][i]); const o = vis(t, wt - .1, TQ, .15, .3); $('dp' + i).setAttribute('opacity', o);
+    $('dp' + i).setAttribute('transform', `translate(0 ${-(1 - eb((t - wt + .1) / .45)) * 40})`); });
+  const lk = eo((t - WT(8, 'nuqtalarni')) / 2.2); dl.style.strokeDashoffset = DLL * (1 - lk); dl.style.opacity = t > A(7) ? 1 : 0;
+  [0, 1, 2, 3].forEach((j) => $('dv' + j).setAttribute('opacity', t > A(7) && lk > j / 3 - .02 ? 1 : 0));
+  const pk = eo((t - WT(10, 'yopiq')) / 1.4); dpg.style.strokeDashoffset = DPL * (1 - pk); dpg.style.opacity = t > A(9) ? 1 : 0;
+  dpg.setAttribute('fill', `rgba(34,197,94,${.45 * C((t - WT(10, 'maydon')) / .5)})`);
+  // ---------- QGIS (A12 –) ----------
+  const wo = vis(t, TQ, A(37) + .4, .4, .5); set($('win'), wo, `scale(${.92 + .08 * eo((t - TQ) / .6)})`);
+  $('flash').style.opacity = .25 * Math.max(0, 1 - Math.abs(t - TQ) / .15);
+  $('wt').textContent = t < WT(12, 'yangi') ? 'QGIS 3.34' : t < A(16) ? 'Untitled Project — QGIS' : 'Vektor_mavzu4.qgz — QGIS';
+  // menyular
+  set($('menuP'), vis(t, WT(12, 'project') + .1, WT(12, 'yangi') + .25, .12, .12)); $('miNew').className = t > WT(12, 'yangi') - .3 ? 'hi' : '';
+  set($('menuL'), vis(t, WT(15, 'layer') + .2, WT(15, 'tanlaymiz') + .2, .12, .12)); $('miCreate').className = t > WT(15, 'create') - .1 ? 'hi' : '';
+  set($('menuC'), vis(t, WT(15, 'create') + .1, WT(15, 'tanlaymiz') + .2, .12, .12)); $('miGpkg').className = t > WT(15, 'new') ? 'hi' : '';
+  // xaritalar
+  const city = Math.max(vis(t, WT(13, 'openstreetmap'), A(23) + .3, .6, .5), vis(t, A(28) + .1, END + 1, .5)); $('gCity').setAttribute('opacity', city);
+  const reg = vis(t, A(23), A(28) + .4, .5, .5); $('gReg').setAttribute('opacity', reg);
+  const zin = t > A(23) && t < A(23) + .8 ? 1.15 - .15 * eo((t - A(23)) / .8) : t > A(28) && t < A(28) + .8 ? .88 + .12 * eo((t - A(28)) / .8) : 1;
+  $('cvs').style.transform = `scale(${zin})`;
+  // qatlamlar
+  [[3, WT(13, 'openstreetmap')], [2, Bn(18) - .1], [1, Bn(25) - .2], [0, Bn(29) - .1]].forEach(([i, a]) => { const el = $('ly' + i); el.style.display = t > a ? 'flex' : 'none'; el.style.opacity = C((t - a) / .25); el.style.transform = `translateX(${(1 - eo((t - a) / .4)) * -40}px)`; });
+  // dialog
+  const dlgs = [[A(16) - .3, Bn(18) - .05, 'maktablar.gpkg', 'maktablar', 'Point', [A(16), A(17), A(18)], []],
+    [A(24) + .2, Bn(25) - .15, 'daryolar.gpkg', 'daryolar', 'LineString', [A(24) + .4, WT(24, 'linestring') - .3, A(24) + 1.5], [['uzunligi', 'Decimal number', '10', WT(25, 'uzunligi')], ['turi', 'Text (string)', '50', WT(25, 'turi')]]],
+    [A(29) + .2, Bn(29) - .05, 'bloklar.gpkg', 'bloklar', 'Polygon', [A(29) + .3, WT(29, 'polygon') - .3, A(29) + 1.2], [['nom', 'Text (string)', '80', A(29) + 1.6]]]];
+  const d = dlgs.find(([a, b]) => t >= a - .1 && t < b + .3);
+  if (d) { const [a, b, db, tn, gt, ts, fl] = d; set($('dlg'), vis(t, a, b, .2, .2), `scale(${.9 + .1 * eb((t - a) / .4)})`);
+    $('fDb').textContent = typed(db, t, ts[0], 26); $('fTn').textContent = t > ts[0] + .4 ? tn : ''; $('fGt').textContent = t > ts[1] ? gt : '';
+    $('fCrs').textContent = t > ts[2] ? 'EPSG:4326 — WGS 84' : '';
+    ['fDb', 'fGt', 'fCrs'].forEach((id, k) => $(id).className = 'in' + (t > ts[k] && t < ts[k] + 1.2 ? ' act' : ''));
+    $('ftab').innerHTML = '<tr><th>Name</th><th>Type</th><th>Length</th></tr>' + fl.filter((f) => t > f[3]).map((f) => `<tr><td>${f[0]}</td><td>${f[1]}</td><td>${f[2]}</td></tr>`).join('');
+    $('dOk').style.background = t > b - .25 ? '#1e40af' : '#2563eb'; } else set($('dlg'), 0);
+  // tahrirlash rejimi
+  const edit = (t > WT(19, 'toggle') + .2 && t < WT(33, 'save')); $('bEdit').className = 'tbtn' + (edit ? ' on' : '');
+  $('bPt').className = 'tbtn' + (t > WT(19, 'maktablarni') && t < A(23) ? ' on' : ''); $('bLn').className = 'tbtn' + (t > WT(26, 'add') && t < A(28) ? ' on' : '');
+  $('bPg').className = 'tbtn' + (t > A(30) && t < A(33) ? ' on' : ''); $('bAttr').className = 'tbtn' + (t > WT(34, 'open') && t < A(35) + .5 ? ' on' : '');
+  $('bLab').className = 'tbtn' + (t > WT(36, 'labels') ? ' on' : ''); $('bSave').className = 'tbtn' + (t > WT(33, 'save') && t < WT(33, 'save') + .6 ? ' on' : '');
+  // maktablar
+  const p0 = A(20), p1 = A(22) - .2;
+  SCH.forEach(([x, y], i) => { const tt = p0 + (p1 - p0) * i / 6; const g = $('sc' + i); g.setAttribute('opacity', t > tt ? 1 : 0);
+    const k = C((t - tt) / .6); $('scr' + i).setAttribute('r', 7 + 18 * k); $('scr' + i).setAttribute('opacity', t > tt ? 1 - k : 0);
+    const sym = C((t - WT(35, 'maktablarga')) / .4); $('scc' + i).setAttribute('r', 7 + 3 * sym + (t > WT(22, 'kok') && t < WT(22, 'kok') + .6 ? 3 * Math.sin((t - WT(22, 'kok')) * 10) : 0)); });
+  const lastPt = SCH.map((_, i) => p0 + (p1 - p0) * i / 6).filter((tt) => t > tt).length - 1;
+  if (lastPt >= 0 && t < A(23)) { const [lo, la] = ll(...SCH[lastPt]); $('sCoord').textContent = `Coordinate  ${lo}, ${la}`; }
+  // atribut formasi
+  const af = vis(t, WT(21, 'atribut'), A(22) - .1, .2, .2); set($('afrm'), af, `scale(${.9 + .1 * eb((t - WT(21, 'atribut')) / .4)})`);
+  $('aNom').textContent = typed('3-maktab', t, WT(21, 'maktab'), 12) + (Math.floor(t * 3) % 2 ? '▏' : '');
+  // daryolar
+  ['a', 'b'].forEach((k) => { const pts = RIV[k]; const r0 = k === 'a' ? WT(26, 'xaritada') : A(27) + .1, r1 = k === 'a' ? A(27) - .1 : WT(27, 'chizdik');
+    const n = pts.length; const prog = C((t - r0) / (r1 - r0)) * (n - 1); const vis2 = []; for (let j = 0; j < n; j++) if (prog >= j - .001) vis2.push(pts[j]);
+    if (prog < n - 1 && prog > 0) { const j = Math.floor(prog), f = prog - j; vis2.push([pts[j][0] + (pts[j + 1][0] - pts[j][0]) * f, pts[j][1] + (pts[j + 1][1] - pts[j][1]) * f]); }
+    $('rv' + k).setAttribute('points', t > r0 ? vis2.map((q) => q.join(',')).join(' ') : ''); pts.forEach((_, j) => $(`rv${k}${j}`).setAttribute('opacity', t > r0 && prog >= j && t < A(28) ? 1 : 0));
+    $('rl' + k).setAttribute('opacity', C((t - r1 - .2) / .3)); });
+  // bloklar
+  const b0 = WT(30, 'konturini'), b1 = A(31) + .3, bc = WT(31, 'birinchisiga') + .2;
+  const bp = BLK[0]; const bprog = C((t - b0) / (b1 - b0)) * 3; const bv = []; for (let j = 0; j <= 3; j++) if (bprog >= j - .001) bv.push(bp[j]);
+  if (t > bc) bv.push(bp[0]);
+  $('bkDraw').setAttribute('points', t > b0 && t < WT(31, 'yopiq') + .3 ? bv.map((q) => q.join(',')).join(' ') : '');
+  const closed = WT(31, 'yopiq'); $('bk0').setAttribute('opacity', C((t - closed) / .3));
+  [1, 2, 3].forEach((i) => $('bk' + i).setAttribute('opacity', C((t - A(32) - .3 - (i - 1) * .4) / .3)));
+  const green = C((t - WT(35, 'yashil')) / .5);
+  BLK.forEach((_, i) => { $('bk' + i).setAttribute('fill', green > 0 ? `rgba(${Math.round(253 - 219 * green)},${Math.round(186 + 11 * green)},${Math.round(116 - 22 * green)},${.45 + .1 * green})` : 'rgba(253,186,116,.45)'); $('bk' + i).setAttribute('stroke', green > .5 ? '#15803d' : '#c2410c'); });
+  $('lysw0').style.background = green > .5 ? 'rgba(34,197,94,.8)' : 'rgba(253,186,116,.9)';
+  // shahar daryosi (simbologiyada)
+  const cr = C((t - WT(35, 'daryoga')) / .6); $('cRiver').setAttribute('opacity', cr); $('cRiver').setAttribute('stroke-width', 3 + 1.5 * cr);
+  // saqlash
+  set($('toast'), vis(t, WT(33, 'save') + .3, WT(33, 'save') + 2.6, .2, .3), `translateY(${(1 - eo((t - WT(33, 'save') - .3) / .35)) * 30}px)`);
+  // atribut jadvali
+  const at = vis(t, WT(34, 'open') + .4, A(35) + .3, .3, .3); set($('atab'), at, `translateY(${(1 - eo((t - WT(34, 'open') - .4) / .4)) * 300}px)`);
+  SCH.forEach((_, i) => { const hl = WT(34, 'barcha') + i * .35; $('ar' + i).style.background = t > hl && t < hl + .5 ? '#fde68a' : '#fff'; });
+  // simbologiya
+  const sy = vis(t, A(35) + .1, A(36) + .2, .3, .3); set($('sym'), sy, `translateX(${(1 - eo((t - A(35) - .1) / .4)) * 120}px)`);
+  [['sy0', 'maktablarga', '#2563eb', '#a855f7'], ['sy1', 'daryoga', '#2563eb', '#94a3b8'], ['sy2', 'bloklarga', '#22c55e', '#fdba74']].forEach(([id, w, c1, c0]) => { $(id).style.background = t > WT(35, w) ? c1 : c0; $(id).style.transform = `scale(${t > WT(35, w) ? eb((t - WT(35, w)) / .35) : 1})`; });
+  // yorliqlar
+  const lb = WT(36, 'nomini'); SCH.forEach((_, i) => $('scl' + i).setAttribute('opacity', C((t - lb - i * .08) / .25)));
+  BLK.forEach((_, i) => $('bkl' + i).setAttribute('opacity', C((t - lb - .6 - i * .1) / .25))); $('rvl').setAttribute('opacity', C((t - lb - 1) / .25));
+  // bosqich kartasi
+  const STP = [[A(12), A(14), 'TAYYORGARLIK', 'Yangi loyiha + OpenStreetMap'], [A(14), A(23), '1-QATLAM · NUQTA', 'maktablar.gpkg · Point'], [A(23), A(28), '2-QATLAM · CHIZIQ', 'daryolar.gpkg · LineString'],
+    [A(28), A(34), '3-QATLAM · POLIGON', 'bloklar.gpkg · Polygon'], [A(34), A(37), 'YAKUNLASH', 'Atributlar · Symbology · Labels']];
+  const st = STP.find(([a, b]) => t >= a && t < b); if (st) { $('stepK').textContent = st[2]; $('stepT').textContent = st[3]; $('step').style.opacity = vis(t, st[0] + .2, st[1], .3, .25); $('step').style.transform = `translateX(${(1 - eo((t - st[0] - .2) / .4)) * -40}px)`; } else $('step').style.opacity = 0;
+  // izoh pufakchalari
+  call(t, [[WT(18, 'epsg'), Bn(18), '🌐 <b>EPSG:4326</b> = WGS 84 — GPS koordinatalari', 1290, 470],
+    [WT(19, 'toggle') + .3, A(20) - .1, '✎ <b>Toggle Editing</b> — tahrirlash yoqildi', 300, 168],
+    [A(20) + .2, A(21), '🖱️ Har bosish = <b>1 nuqta</b> (X, Y yoziladi)', 1300, 180],
+    [WT(22, '7'), Bn(22) + .3, '✅ <b>7 ta maktab</b> joylashtirildi', 1360, 180],
+    [WT(31, 'muhimi'), WT(31, 'yopiq') + .6, '⚠️ Oxirgi nuqta = <b>birinchi nuqta</b> → yopiq maydon', 1100, 180],
+    [A(32) + .1, A(33), '🏘️ <b>4 ta mahalla</b> chizildi', 1360, 180]]);
+  // xulosa / yakun
+  const so = vis(t, A(37), A(38) - .1, .35, .4); set($('sum'), so, `scale(${.9 + .1 * eb((t - A(37)) / .5)})`);
+  [...$('sumRow').children].forEach((d2, i) => { const w = WT(37, ['shaharsozlik', 'fazoviy', 'yuqori'][i]); d2.style.opacity = C((t - w) / .25); d2.style.transform = `translateY(${(1 - eb((t - w) / .45)) * 50}px)`; });
+  set($('end'), vis(t, A(38) - .1, END + 1, .5));
+  cursor(t); subtitle(t);
+};
+window.getClicks = () => { if (!CK) buildCursor(); return CLK.map((c) => c[0]); };
+window.render(0);
+</script>
+</body></html>
