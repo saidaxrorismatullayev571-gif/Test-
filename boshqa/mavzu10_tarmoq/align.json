@@ -1,120 +1,120 @@
 {
-"duration": 71.2,
+"duration": 69.96,
 "paras": 13,
 "sents": [
 {
 "p": 0,
 "t": "Assalomu alaykum, hurmatli tinglovchilar!",
-"a": 0.263,
-"b": 2.653
+"a": 0.0,
+"b": 2.193
 },
 {
 "p": 0,
 "t": "Bugungi darsimiz — GIS'da tarmoq tahlili.",
-"a": 3.223,
-"b": 6.333
+"a": 2.363,
+"b": 5.732
 },
 {
 "p": 1,
 "t": "Tarmoq tahlili — yo'l/quvur tarmoqlari bo'ylab fazoviy tahlil.",
-"a": 7.333,
-"b": 11.393
+"a": 5.942,
+"b": 11.812
 },
 {
 "p": 2,
 "t": "Elementlar: tugunlar (nodes), qirralar (edges), og'irlik (masofa/vaqt).",
-"a": 11.922,
-"b": 16.973
+"a": 12.102,
+"b": 18.316
 },
 {
 "p": 3,
 "t": "Topologik model: tugunlar va qirralar bog'lanishlari.",
-"a": 17.192,
-"b": 21.633
+"a": 18.316,
+"b": 21.973
 },
 {
 "p": 4,
 "t": "Eng qisqa marshrut — Dijkstra algoritmi.",
-"a": 22.473,
-"b": 24.762
+"a": 22.203,
+"b": 25.703
 },
 {
 "p": 4,
 "t": "QGIS Shortest Path vositasi.",
-"a": 25.152,
-"b": 27.002
+"a": 26.142,
+"b": 27.383
 },
 {
 "p": 5,
 "t": "Service Area — vaqt/masofada yetib borish hududlari.",
-"a": 27.812,
-"b": 31.127
+"a": 27.793,
+"b": 31.692
 },
 {
 "p": 5,
 "t": "Tez yordam 10 daqiqada.",
-"a": 31.127,
-"b": 33.013
+"a": 32.333,
+"b": 34.033
 },
 {
 "p": 6,
 "t": "Closest Facility — eng yaqin xizmat obyekti.",
-"a": 33.812,
-"b": 36.703
+"a": 34.233,
+"b": 37.172
 },
 {
 "p": 6,
 "t": "Oqim tahlili — tarmoqda oqim modeli.",
-"a": 37.363,
-"b": 39.643
+"a": 37.463,
+"b": 40.203
 },
 {
 "p": 7,
 "t": "QGIS: Network Analysis guruhida Shortest Path, Service Area.",
-"a": 40.293,
-"b": 44.183
+"a": 40.443,
+"b": 45.553
 },
 {
 "p": 7,
 "t": "pgRouting — PostGIS kengaytma.",
-"a": 44.513,
-"b": 46.853
+"a": 45.803,
+"b": 47.953
 },
 {
 "p": 8,
 "t": "Transport, tez yordam, logistika — eng tez marshrut topish.",
-"a": 47.793,
-"b": 51.833
+"a": 48.123,
+"b": 51.773
 },
 {
 "p": 9,
 "t": "Andijon shahri: tez yordam stansiyasidan 5, 10, 15 daqiqalik zonalar.",
-"a": 52.573,
-"b": 57.413
+"a": 52.123,
+"b": 57.373
 },
 {
 "p": 10,
 "t": "Hayotiy ahamiyat: tez yordam, o't o'chirish uchun vaqt tejash.",
-"a": 58.203,
-"b": 62.283
+"a": 57.812,
+"b": 61.913
 },
 {
 "p": 10,
 "t": "Biznes: xarajat kamaytirish.",
-"a": 62.713,
-"b": 64.443
+"a": 62.293,
+"b": 64.013
 },
 {
 "p": 11,
 "t": "Xulosa: tarmoq tahlili GIS'ning eng amaliy yo'nalishi.",
-"a": 65.222,
-"b": 68.823
+"a": 64.383,
+"b": 68.172
 },
 {
 "p": 12,
 "t": "E'tiboringiz uchun rahmat!",
-"a": 69.543,
-"b": 70.832
+"a": 68.722,
+"b": 69.773
 }
 ]
 }
