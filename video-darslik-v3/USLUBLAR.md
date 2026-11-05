@@ -276,6 +276,16 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 
 *(9-namuna — bo‘lingan ekran va progress dok — uslub emas, kompozitsiya: `uslub_namunalar/SPLIT_TOOL_STACK_REEL.md`.)*
 
+## 13. Boshqaruv markazi — real dashboard demo
+
+*Manba: foydalanuvchi yuborgan 60 soniyalik vertikal video. To'liq tahlil: `uslub_namunalar/BOSHQARUV_MARKAZI_REAL_DEMO.md`.*
+
+- **G'oya:** qorong'i boshqaruv dashboardini real ish stolida ko'rsatish; qo'l ishorasi orqali tomoshabinning diqqati kerakli KPI yoki modulga yo'naltiriladi.
+- **UI:** yuqorida yirik KPI kartalari, markazda tushum trendi, pastda voronka va mahsulotlar, o'ngda to'lovlar/agentlar/tasdiqlar. Qorong'i navy fon, yashil — faol yoki ijobiy holat, qizil — risk, loyiha uchun alohida ranglar.
+- **Montaj:** sekin yaqinlashish, pan va crop; pastda bir so'zli oq subtitr hamda doimiy CTA pill.
+- **Qachon ishlatiladi:** CRM, ERP, operatsion dashboard, marketing analytics, jamoani boshqarish va vebinar mahsuloti demonstratsiyasi.
+- **Bizning kombinatsiya:** dashboardning real isboti + Kontent zavodi ikki qavatli subtitri + Claude effektlaridan chart/checklist overlayi. Batafsil kadrlar: `uslub_namunalar/boshqaruv_markazi/`.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
