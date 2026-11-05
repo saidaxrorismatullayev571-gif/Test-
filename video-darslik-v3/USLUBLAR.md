@@ -286,6 +286,23 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 - **Qachon ishlatiladi:** CRM, ERP, operatsion dashboard, marketing analytics, jamoani boshqarish va vebinar mahsuloti demonstratsiyasi.
 - **Bizning kombinatsiya:** dashboardning real isboti + Kontent zavodi ikki qavatli subtitri + Claude effektlaridan chart/checklist overlayi. Batafsil kadrlar: `uslub_namunalar/boshqaruv_markazi/`.
 
+## 14. Qisqa AI-visual reklamalar to'plami
+
+*Manba: foydalanuvchi yuborgan 7 ta vertikal namuna. To'liq kartalar `uslub_namunalar/` papkasida.*
+
+| Uslub | Asosiy formula | Mos mavzu |
+|---|---|---|
+| Izometrik uy | bitta 3D makon → bo'limlarga zoom | tizim, jarayon, tuzilma |
+| Noutbuk vitrinası | real stol → ekran ichida jonli mahsulot | sayt, ilova, bot demo |
+| Premium hero-sahna | markazdagi mahsulot + qatlamli dekor | premium xizmat/kurs promo |
+| Prompt → storyboard → final | ishlab chiqish jarayoni bilan isbot | AI reklama, portfolio |
+| Mitti ishchilar macro | ulkan obyekt + mayda jamoa | metafora, badiiy B-roll |
+| Predmetli mini-hikoya | bitta harakat → bitta foyda | 6–10 soniyalik reklama |
+| Fasad → interyer | tashqi ko'rinish → mijoz tajribasi | klinika, salon, markaz, do'kon |
+
+- Bu to'plamdagi 3D motion, UI va subtitrlarni HTML/CSS/Canvas asosida tayyor video sifatida yig'ish mumkin.
+- Fotorealistik macro, dron, fasad va interyer lavhalari alohida AI video generatsiyasi bilan tayyorlanadi; keyin ularning matni, ritmi, kadrlar ketma-ketligi va brend qatlamlari bitta rolikda yig'iladi.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
