@@ -1,0 +1,197 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script><script src="../../reels/tizimli_biznes/_fx/fx.js"></script>
+<style>
+:root{--bg:#081a33;--ac:#38bdf8;--au:#f5b942;--gr:#22c55e;--rd:#ef4444;--wh:#eef6ff;--mu:#9db6d6;--pn:rgba(12,34,66,.9)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Manrope,sans-serif;color:var(--wh)}
+#bg{position:absolute;inset:0;background:radial-gradient(circle at 75% 25%,#14457a 0%,#081a33 62%),repeating-linear-gradient(0deg,transparent 0 59px,rgba(56,189,248,.05) 59px 60px),repeating-linear-gradient(90deg,transparent 0 59px,rgba(56,189,248,.05) 59px 60px);background-blend-mode:screen}
+.o{position:absolute;opacity:0}
+.chap{position:absolute;left:110px;top:70px;font-size:22px;font-weight:800;letter-spacing:3px;color:var(--ac);padding:10px 22px;border:2px solid rgba(56,189,248,.45);border-radius:30px;background:var(--pn);opacity:0}
+.hd{position:absolute;left:110px;top:150px;width:780px;opacity:0}
+.hd h2{font-size:60px;font-weight:800;line-height:1.06;letter-spacing:-1px}
+.hd p{font-size:30px;color:var(--mu);margin-top:14px;font-weight:600;line-height:1.35}
+#title{left:0;right:0;top:330px;text-align:center}
+#title .k{font-size:28px;font-weight:800;letter-spacing:5px;color:var(--ac)}
+#title h1{font-size:110px;font-weight:800;line-height:1;letter-spacing:-2px;margin-top:22px}
+#title h1 span{color:var(--ac)}
+.list{position:absolute;left:110px;top:380px;width:780px;display:flex;flex-direction:column;gap:18px}
+.it{display:flex;align-items:center;gap:22px;padding:18px 26px;border-radius:22px;background:var(--pn);border:3px solid rgba(157,182,214,.2);font-size:34px;font-weight:800;opacity:0}
+.it .ic{width:70px;height:70px;flex:none;border-radius:18px;background:rgba(56,189,248,.14);display:flex;align-items:center;justify-content:center;font-size:38px}
+.it span{font-size:24px;color:var(--mu);font-weight:600;display:block}
+#net{left:960px;top:110px;width:880px;height:760px;border-radius:28px;background:#0c2547;border:3px solid rgba(56,189,248,.3);box-shadow:0 30px 90px rgba(0,0,0,.55);overflow:hidden}
+#net svg{width:100%;height:100%}
+#tbx{left:110px;top:380px;width:780px;border-radius:20px;background:#eef2f7;color:#1f2b40;box-shadow:0 20px 60px rgba(0,0,0,.45);overflow:hidden}
+#tbx h4{font-size:22px;font-weight:800;padding:14px 20px;background:#d9e1ec}
+#tbx div{padding:12px 24px;font-size:26px;font-weight:700;opacity:0}
+#tbx div.hi{background:#2563eb;color:#fff}
+#pg{left:110px;top:760px;padding:16px 28px;border-radius:18px;background:#1e3a5f;border:3px solid #60a5fa;font-size:30px;font-weight:800}
+.big{position:absolute;top:380px;width:520px;height:300px;border-radius:26px;background:var(--pn);border:3px solid rgba(56,189,248,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font-size:38px;font-weight:800;text-align:center;opacity:0}
+.big span{font-size:96px}
+.big small{font-size:24px;color:var(--mu);font-weight:600}
+#zleg{left:110px;top:340px;display:flex;gap:16px}
+#zleg div{padding:12px 26px;border-radius:24px;font-size:30px;font-weight:800;color:#06192e}
+#end{left:0;top:0;width:1920px;height:1080px;z-index:60;background:radial-gradient(circle at 50% 45%,#14457a,#081a33 65%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+#end .ck{width:150px;height:150px;border-radius:50%;border:8px solid var(--ac);display:flex;align-items:center;justify-content:center;font-size:90px;color:var(--ac);font-weight:800}
+#end h2{font-size:76px;font-weight:800} #end p{font-size:32px;color:var(--mu);font-weight:600}
+#sub{position:absolute;left:160px;right:160px;top:952px;text-align:center;font-weight:700;font-size:34px;line-height:1.3;text-shadow:0 3px 12px #000;z-index:70}
+#sub i{font-style:normal}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:80;pointer-events:none}
+</style></head><body>
+<div id="bg"></div>
+<div class="o" id="title"><div class="k">MAVZU 10 · GAT AMALIY TAHLIL</div><h1>GIS’da <span>tarmoq tahlili</span></h1></div>
+<div class="chap" id="chap"></div>
+<div class="hd" id="h2"><h2>Tarmoq tahlili</h2><p>Yo‘l va quvur tarmoqlari bo‘ylab<br>fazoviy tahlil</p></div>
+<div class="list" id="l2"><div class="it"><div class="ic">🛣️</div>Yo‘l tarmoqlari</div><div class="it"><div class="ic">🚰</div>Quvur tarmoqlari</div></div>
+<div class="hd" id="h3"><h2>Tarmoq <span style="color:var(--ac)">elementlari</span></h2></div>
+<div class="list" id="l3"><div class="it"><div class="ic">⬤</div><div>Tugunlar<span>nodes — chorrahalar</span></div></div><div class="it"><div class="ic">━</div><div>Qirralar<span>edges — yo‘l bo‘laklari</span></div></div><div class="it"><div class="ic">⚖️</div><div>Og‘irlik<span>masofa yoki vaqt</span></div></div></div>
+<div class="hd" id="h4"><h2>Topologik <span style="color:var(--ac)">model</span></h2><p>Qaysi tugun qaysi qirra orqali<br>bog‘langani saqlanadi</p></div>
+<div class="hd" id="h5"><h2>Eng qisqa <span style="color:var(--au)">marshrut</span></h2><p>Dijkstra algoritmi · QGIS <b style="color:var(--wh)">Shortest Path</b></p></div>
+<div class="list" id="l5" style="top:420px"><div class="it"><div class="ic">1</div><div>Boshlang‘ich tugun<span>masofa = 0</span></div></div><div class="it"><div class="ic">2</div><div>Eng yaqin qo‘shnilar<span>masofalar yangilanadi</span></div></div><div class="it"><div class="ic">3</div><div>Manzilga yetguncha<span>eng kichik yig‘indi</span></div></div></div>
+<div class="hd" id="h7"><h2><span style="color:var(--gr)">Service Area</span></h2><p>Belgilangan vaqt yoki masofada<br>yetib boriladigan hudud</p></div>
+<div class="big" id="b8" style="left:110px;top:430px;width:780px;height:260px"><span>🚑</span>Tez yordam — 10 daqiqa</div>
+<div class="hd" id="h9"><h2><span style="color:var(--au)">Closest Facility</span></h2><p>Eng yaqin xizmat obyekti</p></div>
+<div class="hd" id="h10" style="top:520px"><h2>Oqim <span style="color:var(--ac)">tahlili</span></h2><p>Tarmoqda harakat oqimi modeli</p></div>
+<div class="hd" id="h11"><h2>QGIS <span style="color:var(--ac)">vositalari</span></h2></div>
+<div class="o" id="tbx"><h4>⚙ Processing Toolbox</h4><div>▾ Network Analysis</div><div id="tS">&nbsp;&nbsp;⚙ Shortest path (point to point)</div><div id="tA">&nbsp;&nbsp;⚙ Service area (from point)</div></div>
+<div class="o" id="pg">🐘 pgRouting — PostGIS kengaytmasi</div>
+<div class="hd" id="h13" style="left:0;right:0;width:auto;text-align:center"><h2>Qayerda <span style="color:var(--ac)">qo‘llaniladi?</span></h2></div>
+<div class="big" id="u0" style="left:130px"><span>🚌</span>Transport<small>marshrutlar</small></div>
+<div class="big" id="u1" style="left:700px"><span>🚑</span>Tez yordam<small>eng tez yo‘l</small></div>
+<div class="big" id="u2" style="left:1270px"><span>📦</span>Logistika<small>yetkazib berish</small></div>
+<div class="hd" id="h14"><h2>Andijon shahri</h2><p>Tez yordam stansiyasidan<br>5 · 10 · 15 daqiqalik zonalar</p></div>
+<div class="o" id="zleg"><div style="background:#22c55e">5 daq</div><div style="background:#facc15">10 daq</div><div style="background:#fb923c">15 daq</div></div>
+<div class="hd" id="h15"><h2>Hayotiy <span style="color:var(--au)">ahamiyat</span></h2></div>
+<div class="list" id="l15" style="top:330px"><div class="it"><div class="ic">🚑</div><div>Tez yordam<span>daqiqalar hayot saqlaydi</span></div></div><div class="it"><div class="ic">🚒</div><div>O‘t o‘chirish<span>vaqt tejaladi</span></div></div><div class="it"><div class="ic">💼</div><div>Biznes<span>xarajat kamayadi ↓</span></div></div></div>
+<div class="hd" id="h17" style="left:0;right:0;width:auto;text-align:center;top:360px"><h2>Tarmoq tahlili —<br><span style="color:var(--ac)">GIS’ning eng amaliy yo‘nalishi</span></h2></div>
+<div class="o" id="net"><svg viewBox="0 0 880 760" id="ns">
+ <defs><filter id="zb" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="22"/></filter></defs>
+ <g id="zones"></g><g id="edges"></g><g id="wts"></g><g id="path"></g><g id="flow"></g><g id="nodes"></g><g id="labs"></g><g id="icons"></g>
+</svg></div>
+<div class="o" id="end"><div class="ck">✓</div><h2>E’tiboringiz uchun rahmat!</h2><p>Mavzu 10 — GIS’da tarmoq tahlili</p></div>
+<div id="sub"></div><div id="flash"></div>
+<script>
+const { C, eo, eb, h, vis, set, headline } = FX;
+const $ = (id) => document.getElementById(id);
+const S = window.S, A = (i) => S[i].a, Bn = (i) => S[i].b;
+const norm = (s) => s.toLowerCase().replace(/[«»"'’‘—:,.!?=()\/]/g, '');
+const WT = (i, s) => { const w = S[i].words.find((w) => norm(w.w).startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.8; window.TOTAL = END;
+const ns = 'http://www.w3.org/2000/svg';
+const mk = (tag, at, par) => { const e = document.createElementNS(ns, tag); for (const k in at) e.setAttribute(k, at[k]); par.appendChild(e); return e; };
+// --- graf ---
+const COLS = 5, ROWS = 5, N = [];
+for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) N.push([90 + c * 175 + (h(r * 9 + c) - .5) * 70, 90 + r * 145 + (h(r * 7 + c + 40) - .5) * 60]);
+const E = [];
+const id = (r, c) => r * COLS + c;
+for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) { if (c < COLS - 1 && h(r * 3 + c + 99) > .08) E.push([id(r, c), id(r, c + 1)]); if (r < ROWS - 1 && h(r * 5 + c + 199) > .1) E.push([id(r, c), id(r + 1, c)]);
+  if (r < ROWS - 1 && c < COLS - 1 && h(r * 11 + c + 7) > .72) E.push([id(r, c), id(r + 1, c + 1)]); }
+const W = E.map(([a, b]) => Math.round(Math.hypot(N[a][0] - N[b][0], N[a][1] - N[b][1]) / 30 * (0.7 + h(a * 31 + b) * .7)));
+// Dijkstra
+function dijkstra(src) { const d = N.map(() => Infinity), p = N.map(() => -1), done = []; d[src] = 0; const vis2 = new Set();
+  while (vis2.size < N.length) { let u = -1; N.forEach((_, i) => { if (!vis2.has(i) && (u < 0 || d[i] < d[u])) u = i; }); if (d[u] === Infinity) break; vis2.add(u); done.push(u);
+    E.forEach(([a, b], k) => { const v = a === u ? b : b === u ? a : -1; if (v >= 0 && d[u] + W[k] < d[v]) { d[v] = d[u] + W[k]; p[v] = u; } }); } return { d, p, done }; }
+const SRC = 0, DST = 24; const DJ = dijkstra(SRC);
+const route = []; for (let v = DST; v >= 0; v = DJ.p[v]) route.unshift(v);
+const ST = 12; const SA = dijkstra(ST); const maxD = Math.max(...SA.d.filter(isFinite));
+E.forEach(([a, b], k) => { mk('line', { id: 'e' + k, x1: N[a][0], y1: N[a][1], x2: N[b][0], y2: N[b][1], stroke: '#5b7ba6', 'stroke-width': 7, 'stroke-linecap': 'round' }, $('edges'));
+  const mx = (N[a][0] + N[b][0]) / 2, my = (N[a][1] + N[b][1]) / 2; const g = mk('g', { id: 'w' + k, opacity: 0 }, $('wts'));
+  mk('rect', { x: mx - 20, y: my - 15, width: 40, height: 28, rx: 8, fill: '#0c2547', stroke: '#f5b942', 'stroke-width': 2 }, g); const tx = mk('text', { x: mx, y: my + 6, 'text-anchor': 'middle', 'font-size': 17, 'font-weight': 800, fill: '#f5b942' }, g); tx.textContent = W[k]; });
+N.forEach(([x, y], i) => { mk('circle', { id: 'n' + i, cx: x, cy: y, r: 13, fill: '#38bdf8', stroke: '#e0f2fe', 'stroke-width': 3 }, $('nodes'));
+  const tx = mk('text', { id: 'nd' + i, x: x, y: y - 22, 'text-anchor': 'middle', 'font-size': 18, 'font-weight': 800, fill: '#fff', stroke: '#0c2547', 'stroke-width': 4, 'paint-order': 'stroke', opacity: 0 }, $('labs')); });
+const EL = E.map((_, k) => $('e' + k).getTotalLength());
+E.forEach((_, k) => { $('e' + k).style.strokeDasharray = EL[k]; });
+// marshrut chizig‘i
+const rp = mk('polyline', { points: route.map((v) => N[v].join(',')).join(' '), fill: 'none', stroke: '#f5b942', 'stroke-width': 13, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: 0 }, $('path'));
+const RL = rp.getTotalLength(); rp.style.strokeDasharray = RL;
+// ikonlar
+const ic = (txt, x, y, idn) => { const t = mk('text', { id: idn, x, y: y + 12, 'text-anchor': 'middle', 'font-size': 40, opacity: 0 }, $('icons')); t.textContent = txt; };
+ic('🏁', N[SRC][0], N[SRC][1] - 30, 'iA'); ic('📍', N[DST][0], N[DST][1] - 30, 'iB'); ic('🚑', N[ST][0], N[ST][1] - 32, 'iS');
+const HOS = [4, 20, 18], INC = 7; HOS.forEach((v, j) => ic('🏥', N[v][0] + 30, N[v][1] - 26, 'ih' + j)); ic('⚠️', N[INC][0], N[INC][1] - 30, 'iI');
+const CF = dijkstra(INC); const near = HOS.reduce((b, v) => CF.d[v] < CF.d[b] ? v : b, HOS[0]);
+const cr = []; for (let v = near; v >= 0; v = CF.p[v]) cr.unshift(v);
+const cp = mk('polyline', { points: cr.map((v) => N[v].join(',')).join(' '), fill: 'none', stroke: '#22c55e', 'stroke-width': 12, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: 0 }, $('path')); const CL = cp.getTotalLength(); cp.style.strokeDasharray = CL;
+// zonalar (Andijon): tugunlar atrofida doiralar
+const ZC = ['#22c55e', '#facc15', '#fb923c'];
+[2, 1, 0].forEach((z) => { const g = mk('g', { id: 'z' + z, opacity: 0, filter: 'url(#zb)' }, $('zones')); N.forEach(([x, y], i) => { if (SA.d[i] <= maxD * [.3, .55, .8][z] + .01) mk('circle', { cx: x, cy: y, r: 85, fill: ZC[z] }, g); }); g.setAttribute('style', 'mix-blend-mode:normal'); });
+// oqim zarrachalari
+for (let i = 0; i < 40; i++) mk('circle', { id: 'f' + i, r: 6, fill: '#e0f2fe', opacity: 0 }, $('flow'));
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; el.style.color = t >= w.t ? (t < w.e + .05 ? '#f5b942' : '#eef6ff') : 'rgba(238,246,255,.45)'; });
+}
+function items(list, t, times, b) { [...$(list).children].forEach((el, j) => { const tt = times[j]; el.style.opacity = vis(t, tt, b, .2, .3);
+  el.style.transform = `translateX(${(1 - eo((t - tt) / .45)) * -70}px)`; el.style.borderColor = t > tt && t < tt + 1.2 ? '#38bdf8' : 'rgba(157,182,214,.2)'; }); }
+const op = (i, v) => $(i).setAttribute('opacity', v);
+function big(idn, t, a, b) { const el = $(idn); el.style.opacity = vis(t, a, b, .25, .3); el.style.transform = `translateY(${(1 - eb((t - a) / .5)) * 70}px)`; }
+
+window.render = function (t) {
+  headline($('title'), t, .3, A(2) - .2, .08);
+  const CH = [[A(2), A(3), '1 · TUSHUNCHA'], [A(3), A(5), '2 · ELEMENTLAR'], [A(5), A(7), '3 · ENG QISQA YO‘L'], [A(7), A(9), '4 · SERVICE AREA'], [A(9), A(11), '5 · CLOSEST FACILITY'],
+    [A(11), A(13), '6 · QGIS'], [A(13), A(14), '7 · QO‘LLANILISH'], [A(14), A(15), '8 · AMALIY MISOL'], [A(15), A(17), '9 · AHAMIYATI'], [A(17), A(18), 'XULOSA']];
+  const ch = CH.find(([a, b]) => t >= a && t < b); $('chap').style.opacity = ch ? vis(t, ch[0], ch[1], .25, .2) : 0; if (ch) $('chap').textContent = ch[2];
+  [['h2', 2, 3], ['h3', 3, 4], ['h4', 4, 5], ['h5', 5, 7], ['h7', 7, 8], ['h9', 9, 11], ['h11', 11, 13], ['h13', 13, 14], ['h14', 14, 15], ['h15', 15, 17], ['h17', 17, 18]].forEach(([i, a, b]) => headline($(i), t, A(a), A(b) - .15, .05));
+  headline($('h10'), t, A(10), A(11) - .15, .05);
+  items('l2', t, [WT(2, 'yolquvur') , WT(2, 'yolquvur') + .4], A(3) - .15);
+  items('l3', t, [WT(3, 'tugunlar'), WT(3, 'qirralar'), WT(3, 'ogirlik')], A(4) - .15);
+  items('l5', t, [WT(5, 'dijkstra'), WT(5, 'dijkstra') + .7, A(6) - .2], A(7) - .15);
+  items('l15', t, [WT(15, 'tez'), WT(15, 'ot'), WT(16, 'biznes')], A(17) - .15);
+  big('b8', t, A(8), A(9) - .15);
+  // panel ko‘rinishi
+  const netOn = Math.max(vis(t, A(2), A(11) - .1, .4, .35), vis(t, A(14), A(15) - .1, .4, .35));
+  set($('net'), netOn, `scale(${.96 + .04 * eo((t - A(2)) / .6)})`);
+  // qirralar chizilishi
+  const draw0 = A(2) + .2;
+  E.forEach((_, k) => { const e = $('e' + k); const a = draw0 + (h(k + 5) * 2.2); e.style.strokeDashoffset = EL[k] * (1 - eo((t - a) / .7));
+    let col = '#5b7ba6', w = 7;
+    if (t > WT(3, 'qirralar') && t < WT(3, 'qirralar') + 1.4) { col = '#7dd3fc'; w = 9; }
+    if (t > A(4) && t < A(5)) { const ph = (t * 1.5 + k * .13) % 1; col = ph < .3 ? '#7dd3fc' : '#5b7ba6'; }
+    e.setAttribute('stroke', col); e.setAttribute('stroke-width', w); });
+  // tugunlar
+  const nodeIn = WT(3, 'tugunlar');
+  N.forEach((_, i) => { const n = $('n' + i); let r = t > A(2) + 1 ? 13 : 13 * C((t - A(2) - .5 - i * .03) / .3); let col = '#38bdf8';
+    if (t > nodeIn && t < nodeIn + 1.2) r = 13 + 5 * Math.max(0, Math.sin((t - nodeIn) * 10 - i * .3));
+    // dijkstra kengayishi
+    const dj0 = WT(5, 'dijkstra'), dj1 = A(6) + .6;
+    if (t > dj0 && t < A(7)) { const ord = DJ.done.indexOf(i); const tt = dj0 + (dj1 - dj0) * ord / N.length; if (t > tt) col = '#a78bfa'; }
+    if (t > A(6) + .6 && t < A(7) && route.includes(i)) col = '#f5b942';
+    // service area
+    const sa0 = WT(7, 'service'), sa1 = Bn(8);
+    if (t > sa0 && t < A(9)) { const reach = maxD * C((t - sa0) / (sa1 - sa0)); if (SA.d[i] <= reach) col = SA.d[i] <= maxD * .66 ? '#22c55e' : '#94a3b8'; if (t > A(8) && SA.d[i] > maxD * .66) col = '#475569'; }
+    if (t > A(9) && t < A(11) && cr.includes(i) && t > A(9) + .8) col = '#22c55e';
+    n.setAttribute('r', r); n.setAttribute('fill', col);
+    // masofa yorliqlari
+    const lab = $('nd' + i); const showD = t > dj0 && t < A(6) + .6 && t > dj0 + (dj1 - dj0) * DJ.done.indexOf(i) / N.length;
+    lab.setAttribute('opacity', showD ? 1 : 0); lab.textContent = DJ.d[i]; });
+  // og‘irliklar
+  const wt0 = WT(3, 'ogirlik'); E.forEach((_, k) => op('w' + k, vis(t, wt0 + k * .02, A(4) - .1, .2, .3) * .95));
+  // marshrut
+  op('iA', vis(t, A(5), A(7), .3, .3)); op('iB', vis(t, A(5), A(7), .3, .3));
+  rp.setAttribute('opacity', vis(t, A(6) + .5, A(7), .2, .3)); rp.style.strokeDashoffset = RL * (1 - eo((t - A(6) - .5) / 1.2));
+  $('flash').style.opacity = .12 * Math.max(0, 1 - Math.abs(t - A(6) - .5) / .15);
+  // service area va closest facility
+  op('iS', Math.max(vis(t, A(7), A(9), .3, .3), vis(t, A(14), A(15), .3, .3)));
+  [0, 1, 2].forEach((j) => op('ih' + j, vis(t, A(9) + .1 * j, A(11), .3, .3))); op('iI', vis(t, A(9), A(11), .3, .3));
+  cp.setAttribute('opacity', vis(t, WT(9, 'eng'), A(10) + .2, .2, .3)); cp.style.strokeDashoffset = CL * (1 - eo((t - WT(9, 'eng')) / 1));
+  // oqim
+  for (let i = 0; i < 40; i++) { const f = $('f' + i); const on = vis(t, A(10), A(11) - .1, .3, .3); const k = Math.floor(h(i * 3) * E.length); const [a, b] = E[k]; const ph = (t * .6 + h(i)) % 1;
+    f.setAttribute('cx', N[a][0] + (N[b][0] - N[a][0]) * ph); f.setAttribute('cy', N[a][1] + (N[b][1] - N[a][1]) * ph); f.setAttribute('opacity', on); }
+  // QGIS toolbox
+  set($('tbx'), vis(t, A(11), A(13) - .15, .3, .3), `translateY(${(1 - eo((t - A(11)) / .4)) * 50}px)`);
+  [...$('tbx').querySelectorAll('div')].forEach((d, j) => d.style.opacity = C((t - A(11) - .3 - j * .2) / .2));
+  $('tS').className = t > WT(11, 'shortest') && t < WT(11, 'service') ? 'hi' : ''; $('tA').className = t > WT(11, 'service') && t < A(12) + .5 ? 'hi' : '';
+  set($('pg'), vis(t, A(12), A(13) - .15, .3, .3), `scale(${eb((t - A(12)) / .45)})`);
+  [WT(13, 'transport'), WT(13, 'tez'), WT(13, 'logistika')].forEach((a, j) => big('u' + j, t, a, A(14) - .15));
+  // Andijon zonalari
+  [0, 1, 2].forEach((z) => { const a = WT(14, ['5', '10', '15'][z]); op('z' + z, vis(t, a, A(15) - .1, .4, .3) * .55); });
+  set($('zleg'), vis(t, WT(14, '5'), A(15) - .1, .3, .3));
+  set($('end'), vis(t, A(18) - .1, END + 1, .5));
+  subtitle(t);
+};
+window.render(0);
+</script>
+</body></html>

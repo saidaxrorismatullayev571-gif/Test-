@@ -1,0 +1,25 @@
+Assalomu alaykum, hurmatli tinglovchilar! Bugungi darsimiz — GIS'da tarmoq tahlili.
+
+Tarmoq tahlili — yo'l/quvur tarmoqlari bo'ylab fazoviy tahlil.
+
+Elementlar: tugunlar (nodes), qirralar (edges), og'irlik (masofa/vaqt).
+
+Topologik model: tugunlar va qirralar bog'lanishlari.
+
+Eng qisqa marshrut — Dijkstra algoritmi. QGIS Shortest Path vositasi.
+
+Service Area — vaqt/masofada yetib borish hududlari. Tez yordam 10 daqiqada.
+
+Closest Facility — eng yaqin xizmat obyekti. Oqim tahlili — tarmoqda oqim modeli.
+
+QGIS: Network Analysis guruhida Shortest Path, Service Area. pgRouting — PostGIS kengaytma.
+
+Transport, tez yordam, logistika — eng tez marshrut topish.
+
+Andijon shahri: tez yordam stansiyasidan 5, 10, 15 daqiqalik zonalar.
+
+Hayotiy ahamiyat: tez yordam, o't o'chirish uchun vaqt tejash. Biznes: xarajat kamaytirish.
+
+Xulosa: tarmoq tahlili GIS'ning eng amaliy yo'nalishi.
+
+E'tiboringiz uchun rahmat!
