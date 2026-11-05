@@ -1,0 +1,222 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="timing.js"></script><script src="../../reels/tizimli_biznes/_fx/fx.js"></script>
+<style>
+:root{--bg:#07201a;--ac:#34d399;--au:#f5b942;--wh:#eefaf4;--mu:#9cc7b6;--pn:rgba(10,40,32,.88)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Manrope,sans-serif;color:var(--wh)}
+#bg{position:absolute;inset:0;background:radial-gradient(circle at 75% 25%,#0f4a3a 0%,#07201a 62%),repeating-linear-gradient(0deg,transparent 0 59px,rgba(52,211,153,.05) 59px 60px),repeating-linear-gradient(90deg,transparent 0 59px,rgba(52,211,153,.05) 59px 60px);background-blend-mode:screen}
+.o{position:absolute;opacity:0}
+.chap{position:absolute;left:110px;top:70px;font-size:22px;font-weight:800;letter-spacing:3px;color:var(--ac);padding:10px 22px;border:2px solid rgba(52,211,153,.45);border-radius:30px;background:var(--pn);opacity:0}
+.hd{position:absolute;left:110px;top:150px;width:760px;opacity:0}
+.hd h2{font-size:62px;font-weight:800;line-height:1.05;letter-spacing:-1px}
+.hd p{font-size:30px;color:var(--mu);margin-top:14px;font-weight:600;line-height:1.35}
+#title{left:0;right:0;top:330px;text-align:center}
+#title .k{font-size:28px;font-weight:800;letter-spacing:5px;color:var(--ac)}
+#title h1{font-size:104px;font-weight:800;line-height:1;letter-spacing:-2px;margin-top:22px}
+#title h1 span{color:var(--ac)}
+/* chap ustun ro‘yxati */
+.list{position:absolute;left:110px;top:330px;width:760px;display:flex;flex-direction:column;gap:18px}
+.it{display:flex;align-items:center;gap:22px;padding:18px 26px;border-radius:22px;background:var(--pn);border:3px solid rgba(156,199,182,.2);font-size:36px;font-weight:800;opacity:0}
+.it .ic{width:70px;height:70px;flex:none;border-radius:18px;background:rgba(52,211,153,.14);display:flex;align-items:center;justify-content:center;font-size:40px}
+.it span{font-size:24px;color:var(--mu);font-weight:600;display:block}
+/* o‘ng tomondagi xarita varag‘i */
+#sheet{left:960px;top:120px;width:860px;height:720px;border-radius:24px;background:#fbfaf6;box-shadow:0 30px 90px rgba(0,0,0,.55);overflow:hidden}
+#sheet svg{width:100%;height:100%}
+.ramp{display:flex;height:60px;border-radius:12px;overflow:hidden;margin-top:12px}
+.ramp i{flex:1}
+.cr{position:absolute;left:110px;width:760px;padding:20px 26px;border-radius:22px;background:var(--pn);border:3px solid rgba(156,199,182,.2);opacity:0}
+.cr b{font-size:34px;font-weight:800} .cr span{font-size:24px;color:var(--mu);font-weight:600;margin-left:12px}
+#fonts{left:960px;top:200px;width:860px;padding:50px;border-radius:24px;background:#fbfaf6;color:#0f2a22;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+#fonts div{opacity:0}
+#tools{left:960px;top:120px;width:860px;height:84px;border-radius:18px;background:#e7ece9;display:flex;align-items:center;gap:12px;padding:0 18px;box-shadow:0 20px 60px rgba(0,0,0,.45);color:#183b30}
+#tools div{padding:10px 14px;border-radius:10px;font-size:19px;white-space:nowrap;font-weight:800;border:2px solid #b9c7c0;background:#fff}
+#tools div.on{background:#fde68a;border-color:#d97706}
+.tm{position:absolute;top:400px;width:520px;height:470px;border-radius:24px;background:#fbfaf6;box-shadow:0 30px 90px rgba(0,0,0,.5);overflow:hidden;opacity:0}
+.tm svg{width:100%;height:390px}
+.tm h4{height:80px;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:#0f2a22;background:#e7ece9}
+.sw{position:absolute;top:420px;width:380px;height:300px;border-radius:26px;background:var(--pn);border:3px solid rgba(52,211,153,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;font-size:36px;font-weight:800;opacity:0}
+.sw span{font-size:90px}
+.sw small{font-size:22px;color:var(--mu);font-weight:600}
+#end{left:0;top:0;width:1920px;height:1080px;z-index:60;background:radial-gradient(circle at 50% 45%,#0f4a3a,#07201a 65%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+#end .ck{width:150px;height:150px;border-radius:50%;border:8px solid var(--ac);display:flex;align-items:center;justify-content:center;font-size:90px;color:var(--ac);font-weight:800}
+#end h2{font-size:76px;font-weight:800} #end p{font-size:32px;color:var(--mu);font-weight:600}
+#sub{position:absolute;left:160px;right:160px;top:952px;text-align:center;font-weight:700;font-size:34px;line-height:1.3;text-shadow:0 3px 12px #000;z-index:70}
+#sub i{font-style:normal}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:80;pointer-events:none}
+</style></head><body>
+<div id="bg"></div>
+<div class="o" id="title"><div class="k">MAVZU 7 · GAT VA KARTOGRAFIYA</div><h1>Kartografik dizayn<br><span>tamoyillari</span></h1></div>
+<div class="chap" id="chap"></div>
+
+<!-- 1. Ta’rif -->
+<div class="hd" id="h2"><h2>Kartografik dizayn —<br><span style="color:var(--ac)">xaritani san’atga</span> aylantirish</h2></div>
+<div class="list" id="l2" style="top:420px"><div class="it"><div class="ic">💡</div><div>Tushunarli<span>bir qarashda o‘qiladi</span></div></div><div class="it"><div class="ic">🎨</div><div>Chiroyli<span>ko‘zga yoqimli</span></div></div><div class="it"><div class="ic">📊</div><div>Informativ<span>ma’lumot beradi</span></div></div></div>
+<!-- 2. Elementlar -->
+<div class="hd" id="h3"><h2>Xaritaning <span style="color:var(--ac)">5 elementi</span></h2></div>
+<div class="list" id="l3" style="top:280px;gap:14px"><div class="it"><div class="ic">🗺️</div>Xarita maydoni</div><div class="it"><div class="ic">🔤</div>Sarlavha</div><div class="it"><div class="ic">📋</div>Legenda</div><div class="it"><div class="ic">📏</div>Masshtab</div><div class="it"><div class="ic">🧭</div>Shimol ko‘rsatkichi</div></div>
+<!-- 3. Tamoyillar -->
+<div class="hd" id="h4"><h2>4 ta <span style="color:var(--ac)">tamoyil</span></h2></div>
+<div class="list" id="l4"><div class="it"><div class="ic">◻️</div><div>Oddiylik<span>ortiqcha narsa yo‘q</span></div></div><div class="it"><div class="ic">⚖️</div><div>Muvozanat<span>elementlar teng taqsimlangan</span></div></div><div class="it"><div class="ic">◐</div><div>Kontrastlik<span>muhimi ajralib turadi</span></div></div><div class="it"><div class="ic">🎼</div><div>Uyg‘unlik<span>ranglar va shriftlar mos</span></div></div></div>
+<!-- 4. Ranglar -->
+<div class="hd" id="h5"><h2>Rang <span style="color:var(--ac)">sxemalari</span></h2></div>
+<div class="cr" id="r1" style="top:330px"><b>Sequential</b><span>gradatsiya: kamdan → ko‘pga</span><div class="ramp"><i style="background:#ecfdf5"></i><i style="background:#a7f3d0"></i><i style="background:#34d399"></i><i style="background:#059669"></i><i style="background:#064e3b"></i></div></div>
+<div class="cr" id="r2" style="top:530px"><b>Diverging</b><span>qarama-qarshi: − ← 0 → +</span><div class="ramp"><i style="background:#b91c1c"></i><i style="background:#f87171"></i><i style="background:#f8fafc"></i><i style="background:#60a5fa"></i><i style="background:#1d4ed8"></i></div></div>
+<div class="cr" id="r3" style="top:730px"><b>Qualitative</b><span>kategoriyalar: turlar</span><div class="ramp"><i style="background:#ef4444"></i><i style="background:#f59e0b"></i><i style="background:#22c55e"></i><i style="background:#3b82f6"></i><i style="background:#a855f7"></i></div></div>
+<!-- 5. Belgilar -->
+<div class="hd" id="h6"><h2>Shartli <span style="color:var(--ac)">belgilar</span></h2></div>
+<div class="list" id="l6"><div class="it"><div class="ic"><svg width="44" height="44"><circle cx="22" cy="22" r="10" fill="#f5b942"/></svg></div><div>Nuqtali<span>maktab, shifoxona</span></div></div><div class="it"><div class="ic"><svg width="44" height="44"><path d="M4 34 Q16 6 26 24 T42 10" stroke="#60a5fa" stroke-width="5" fill="none"/></svg></div><div>Chiziqli<span>daryo, yo‘l</span></div></div><div class="it"><div class="ic"><svg width="44" height="44"><polygon points="6,12 36,6 40,36 10,38" fill="#86efac" stroke="#16a34a" stroke-width="3"/></svg></div><div>Maydonli<span>park, mahalla</span></div></div></div>
+<!-- 6. Shriftlar -->
+<div class="hd" id="h8"><h2>Shrift <span style="color:var(--ac)">ierarxiyasi</span></h2><p>2–3 ta shrift yetarli</p></div>
+<div class="o" id="fonts"><div style="font-size:84px;font-weight:800;line-height:1">Sarlavha <span style="font-size:26px;color:#059669">· katta</span></div>
+ <div style="font-size:44px;font-weight:700;margin-top:34px">Asosiy matn <span style="font-size:24px;color:#059669">· o‘rtacha</span></div>
+ <div style="font-size:26px;font-weight:600;margin-top:30px;color:#4b6b60">Eslatma, manba, sana <span style="font-size:22px;color:#059669">· kichik</span></div>
+ <div style="margin-top:40px;display:flex;gap:16px"><span style="padding:10px 22px;border-radius:24px;background:#d1fae5;font-weight:800;font-size:26px">Manrope</span><span style="padding:10px 22px;border-radius:24px;background:#d1fae5;font-weight:800;font-size:26px;font-family:'Cormorant Garamond',serif">Cormorant</span><span style="padding:10px 22px;border-radius:24px;background:#fee2e2;font-weight:800;font-size:26px;text-decoration:line-through">+5 ta shrift</span></div></div>
+<!-- 7. Kompozitsiya / Print Layout -->
+<div class="hd" id="h10"><h2><span style="color:var(--ac)">Kompozitsiya</span></h2><p>Xarita katta · legenda pastda · sarlavha yuqorida</p></div>
+<div class="hd" id="h11"><h2>QGIS <span style="color:var(--ac)">Print Layout</span></h2><p>Elementlar asboblar paneli orqali qo‘shiladi</p></div>
+<div class="o" id="tools"><div id="tb0">🗺 Add Map</div><div id="tb1">📋 Legend</div><div id="tb2">📏 Scale Bar</div><div id="tb3">🧭 North Arrow</div><div id="tb4">T Label</div></div>
+
+<div class="o" id="sheet"><svg viewBox="0 0 860 720">
+ <rect width="860" height="720" fill="#fbfaf6"/>
+ <g id="mapG">
+  <rect id="mapFrame" x="40" y="110" width="780" height="440" fill="#f3efe4" stroke="#1f3b33" stroke-width="3"/>
+  <clipPath id="clip"><rect x="40" y="110" width="780" height="440"/></clipPath>
+  <g clip-path="url(#clip)" id="mapIn">
+   <g id="dists"></g>
+   <path id="river" d="M40 300 C 170 250, 260 360, 390 320 S 620 250, 820 300" stroke="#94a3b8" stroke-width="22" fill="none"/>
+   <g id="parks"><ellipse cx="610" cy="200" rx="70" ry="42" fill="#cbd5e1"/><ellipse cx="200" cy="470" rx="80" ry="40" fill="#cbd5e1"/></g>
+   <g id="roads" stroke="#fff" stroke-width="7" fill="none"><path d="M40 410 L820 380"/><path d="M300 110 L360 550"/><path d="M560 110 L520 550"/></g>
+   <g id="pois"></g><g id="dots"></g><g id="props"></g>
+  </g>
+ </g>
+ <text id="eTitle" x="40" y="78" font-size="44" font-weight="800" fill="#0f2a22" font-family="Manrope">Shahar xaritasi: aholi zichligi</text>
+ <g id="eLeg"><rect x="40" y="575" width="420" height="120" rx="10" fill="#fff" stroke="#1f3b33" stroke-width="2"/>
+  <text x="60" y="605" font-size="20" font-weight="800" fill="#0f2a22">Legenda</text>
+  <rect x="60" y="620" width="26" height="18" fill="#a7f3d0"/><text x="94" y="635" font-size="17" fill="#0f2a22">past</text>
+  <rect x="150" y="620" width="26" height="18" fill="#34d399"/><text x="184" y="635" font-size="17" fill="#0f2a22">o‘rta</text>
+  <rect x="245" y="620" width="26" height="18" fill="#059669"/><text x="279" y="635" font-size="17" fill="#0f2a22">yuqori</text>
+  <rect x="60" y="652" width="26" height="12" fill="#60a5fa"/><text x="94" y="664" font-size="17" fill="#0f2a22">suv</text>
+  <ellipse cx="163" cy="658" rx="13" ry="8" fill="#86efac"/><text x="184" y="664" font-size="17" fill="#0f2a22">o‘simlik</text>
+  <circle cx="258" cy="658" r="7" fill="#f5b942" stroke="#92400e" stroke-width="2"/><text x="279" y="664" font-size="17" fill="#0f2a22">maktab</text></g>
+ <g id="eScale"><rect x="520" y="620" width="40" height="12" fill="#0f2a22"/><rect x="560" y="620" width="40" height="12" fill="#fff" stroke="#0f2a22" stroke-width="2"/><rect x="600" y="620" width="40" height="12" fill="#0f2a22"/>
+  <text x="520" y="656" font-size="17" fill="#0f2a22">0       1       2 km</text></g>
+ <g id="eNorth"><polygon points="770,590 792,660 770,646 748,660" fill="#0f2a22"/><text x="770" y="690" text-anchor="middle" font-size="24" font-weight="800" fill="#0f2a22">N</text></g>
+ <g id="eNote"><text x="820" y="710" text-anchor="end" font-size="14" fill="#4b6b60">Manba: OpenStreetMap, 2026</text></g>
+ <g id="guides" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10 6" fill="none" opacity="0"><rect x="30" y="30" width="800" height="70"/><rect x="30" y="102" width="800" height="458"/><rect x="30" y="566" width="440" height="138"/></g>
+</svg></div>
+
+<!-- 8. Tematik -->
+<div class="hd" id="h12"><h2>Tematik <span style="color:var(--ac)">xaritalar</span></h2></div>
+<div class="tm" id="tm0" style="left:90px"><svg viewBox="0 0 520 390" id="tmS0"></svg><h4>Xoropleth</h4></div>
+<div class="tm" id="tm1" style="left:700px"><svg viewBox="0 0 520 390" id="tmS1"></svg><h4>Nuqtali zichlik</h4></div>
+<div class="tm" id="tm2" style="left:1310px"><svg viewBox="0 0 520 390" id="tmS2"></svg><h4>Proporsional belgilar</h4></div>
+<!-- 9. Dasturlar -->
+<div class="hd" id="h13" style="left:0;right:0;width:auto;text-align:center"><h2>Zamonaviy <span style="color:var(--ac)">dasturlar</span></h2></div>
+<div class="sw" id="sw0" style="left:110px"><span>🗺️</span>QGIS<small>Print Layout</small></div>
+<div class="sw" id="sw1" style="left:530px"><span>🎨</span>Mapbox<small>Studio</small></div>
+<div class="sw" id="sw2" style="left:950px"><span>🍃</span>Leaflet<small>veb xaritalar</small></div>
+<div class="sw" id="sw3" style="left:1370px"><span>🌐</span>OpenLayers<small>veb xaritalar</small></div>
+<!-- 10. Xulosa -->
+<div class="hd" id="h14"><h2>Xulosa</h2><p>Professional xarita = </p></div>
+<div class="list" id="l14"><div class="it"><div class="ic">🎨</div>To‘g‘ri ranglar</div><div class="it"><div class="ic">📋</div>Aniq legenda</div><div class="it"><div class="ic">⚖️</div>Muvozanatli kompozitsiya</div></div>
+<div class="o" id="end"><div class="ck">✓</div><h2>E’tiboringiz uchun rahmat!</h2><p>Mavzu 7 — Kartografik dizayn tamoyillari</p></div>
+<div id="sub"></div><div id="flash"></div>
+<script>
+const { C, eo, eb, h, vis, set, headline } = FX;
+const $ = (id) => document.getElementById(id);
+const S = window.S, A = (i) => S[i].a, Bn = (i) => S[i].b;
+const norm = (s) => s.toLowerCase().replace(/[«»"'’‘—:,.!?=]/g, '');
+const WT = (i, s) => { const w = S[i].words.find((w) => norm(w.w).startsWith(s)); return w ? w.t : S[i].a; };
+const END = window.AUDIO + 1.8; window.TOTAL = END;
+const ns = 'http://www.w3.org/2000/svg';
+const mk = (tag, at, par) => { const e = document.createElementNS(ns, tag); for (const k in at) e.setAttribute(k, at[k]); par.appendChild(e); return e; };
+// tumanlar (6 ta), zichlik qiymati
+const DIS = [['40,110 300,110 290,300 40,300', 1], ['300,110 560,110 540,320 290,300', 3], ['560,110 820,110 820,300 540,320', 2], ['40,300 290,300 330,550 40,550', 2], ['290,300 540,320 520,550 330,550', 4], ['540,320 820,300 820,550 520,550', 1]];
+const DC = ['#ecfdf5', '#a7f3d0', '#34d399', '#059669', '#064e3b'];
+DIS.forEach(([p, v], i) => mk('polygon', { id: 'ds' + i, points: p, fill: '#ede9df', stroke: '#c9c2b0', 'stroke-width': 2 }, $('dists')));
+[[180, 200], [430, 210], [680, 420], [150, 380], [420, 450]].forEach(([x, y], i) => mk('circle', { id: 'poi' + i, cx: x, cy: y, r: 9, fill: '#f5b942', stroke: '#92400e', 'stroke-width': 2.5, opacity: 0 }, $('pois')));
+// tematik minikartalar
+const TP = [['0,0 180,0 170,180 0,190', 0], ['180,0 360,0 350,200 170,180', 3], ['360,0 520,0 520,190 350,200', 1], ['0,190 170,180 200,390 0,390', 2], ['170,180 350,200 340,390 200,390', 4], ['350,200 520,190 520,390 340,390', 2]];
+[0, 1, 2].forEach((k) => { const g = $('tmS' + k); mk('rect', { width: 520, height: 390, fill: '#f3efe4' }, g);
+  TP.forEach(([p, v], i) => mk('polygon', { points: p, id: `tp${k}_${i}`, fill: k === 0 ? '#f3efe4' : '#f3efe4', stroke: '#9ca3af', 'stroke-width': 2 }, g)); });
+for (let i = 0; i < 160; i++) { const r = TP[Math.floor(h(i) * 6)]; const pts = r[0].split(' ').map((q) => q.split(',').map(Number));
+  const cx = pts.reduce((s, q) => s + q[0], 0) / 4, cy = pts.reduce((s, q) => s + q[1], 0) / 4; if (h(i + 50) * 5 > r[1] + .6) continue;
+  mk('circle', { id: 'td' + i, cx: cx + (h(i + 9) - .5) * 140, cy: cy + (h(i + 19) - .5) * 140, r: 3.5, fill: '#065f46', opacity: 0 }, $('tmS1')); }
+TP.forEach(([p, v], i) => { const pts = p.split(' ').map((q) => q.split(',').map(Number)); const cx = pts.reduce((s, q) => s + q[0], 0) / 4, cy = pts.reduce((s, q) => s + q[1], 0) / 4;
+  mk('circle', { id: 'tpc' + i, cx, cy, r: 0, fill: 'rgba(245,158,11,.75)', stroke: '#92400e', 'stroke-width': 2 }, $('tmS2')); });
+const sub = $('sub'); let curS = -1;
+function subtitle(t) {
+  let i = S.findIndex((s, k) => t >= s.a - .05 && t < (k + 1 < S.length ? S[k + 1].a - .05 : s.b + .6));
+  if (i !== curS) { curS = i; sub.innerHTML = i < 0 ? '' : S[i].words.map((w) => `<i>${w.w}</i>`).join(' '); }
+  if (i < 0) return;
+  [...sub.children].forEach((el, k) => { const w = S[i].words[k]; el.style.color = t >= w.t ? (t < w.e + .05 ? '#f5b942' : '#eefaf4') : 'rgba(238,250,244,.45)'; });
+}
+function items(list, t, times, a, b) { [...$(list).children].forEach((el, j) => { const tt = times[j]; const o = vis(t, tt, b, .2, .3); el.style.opacity = o;
+  el.style.transform = `translateX(${(1 - eo((t - tt) / .45)) * -70}px) scale(${t > tt && t < tt + .9 ? 1.03 : 1})`;
+  el.style.borderColor = t > tt && t < tt + 1.2 ? '#34d399' : 'rgba(156,199,182,.2)'; }); }
+const op = (id, v) => $(id).setAttribute('opacity', v);
+
+window.render = function (t) {
+  headline($('title'), t, .3, A(2) - .2, .08);
+  // bob belgisi
+  const CH = [[A(2), A(3), '1 · TUSHUNCHA'], [A(3), A(4), '2 · ELEMENTLAR'], [A(4), A(5), '3 · TAMOYILLAR'], [A(5), A(6), '4 · RANGLAR'], [A(6), A(8), '5 · BELGILAR'],
+    [A(8), A(10), '6 · SHRIFTLAR'], [A(10), A(11), '7 · KOMPOZITSIYA'], [A(11), A(12), '8 · PRINT LAYOUT'], [A(12), A(13), '9 · TEMATIK'], [A(13), A(14), '10 · DASTURLAR'], [A(14), A(15), 'XULOSA']];
+  const ch = CH.find(([a, b]) => t >= a && t < b); $('chap').style.opacity = ch ? vis(t, ch[0], ch[1], .25, .2) : 0; if (ch) $('chap').textContent = ch[2];
+  // sarlavhalar
+  [['h2', 2, 3], ['h3', 3, 4], ['h4', 4, 5], ['h5', 5, 6], ['h6', 6, 8], ['h8', 8, 10], ['h10', 10, 11], ['h11', 11, 12], ['h12', 12, 13], ['h13', 13, 14], ['h14', 14, 15]].forEach(([id, a, b]) => headline($(id), t, A(a), A(b) - .15, .05));
+  items('l2', t, [WT(2, 'tushunarli'), WT(2, 'chiroyli'), WT(2, 'informativ')], 0, A(3) - .15);
+  items('l3', t, [WT(3, 'xarita'), WT(3, 'sarlavha'), WT(3, 'legenda'), WT(3, 'masshtab'), WT(3, 'shimol')], 0, A(4) - .15);
+  items('l4', t, [WT(4, 'oddiylik'), WT(4, 'muvozanat'), WT(4, 'kontrastlik'), WT(4, 'uygunlik')], 0, A(5) - .15);
+  items('l6', t, [WT(6, 'nuqtali'), WT(6, 'chiziqli'), WT(6, 'maydonli')], 0, A(8) - .15);
+  items('l14', t, [WT(14, 'ranglar'), WT(14, 'legenda'), WT(14, 'kompozitsiya')], 0, A(15) - .15);
+  [['r1', WT(5, 'sequential')], ['r2', WT(5, 'diverging')], ['r3', WT(5, 'qualitative')]].forEach(([id, a]) => { const el = $(id); el.style.opacity = vis(t, a, A(6) - .15, .25, .3);
+    el.style.transform = `translateY(${(1 - eo((t - a) / .45)) * 40}px)`; [...el.querySelectorAll('.ramp i')].forEach((r, j) => r.style.transform = `scaleY(${eb((t - a - .2 - j * .08) / .4)})`); });
+  // fonts
+  const fo = vis(t, A(8), A(10) - .15, .3, .3); FX.set($('fonts'), fo, `translateY(${(1 - eo((t - A(8)) / .5)) * 50}px)`);
+  [WT(8, 'sarlavha'), WT(8, 'asosiy'), WT(8, 'eslatma'), A(9)].forEach((a, j) => { const d = $('fonts').children[j]; d.style.opacity = C((t - a) / .25); d.style.transform = `translateX(${(1 - eo((t - a) / .4)) * -40}px)`; });
+  // ----- XARITA VARAG‘I -----
+  const shOn = Math.max(vis(t, A(2) + .3, A(8) - .1, .4, .35), vis(t, A(10) - .1, A(12) - .1, .35, .35), vis(t, A(14) + .2, A(15) - .1, .4, .4));
+  const toolsOn = t > A(11) && t < A(12) - .1;
+  set($('sheet'), shOn, `translateY(${toolsOn ? 60 : 0}px) scale(${toolsOn ? .92 : 1})`);
+  set($('tools'), vis(t, A(11), A(12) - .1, .3, .3), `translateY(${(1 - eo((t - A(11)) / .4)) * -40}px)`);
+  const TW = [WT(11, 'add'), WT(11, 'legend'), WT(11, 'scale'), WT(11, 'north'), WT(11, 'label')];
+  TW.forEach((a, j) => $('tb' + j).className = t > a && t < a + 1.1 ? 'on' : '');
+  // elementlar ko‘rinishi: ta’rifda hammasi; elementlar bosqichida birma-bir; print layoutda qaytadan birma-bir
+  const inPL = t > A(11) - .1 && t < A(12);
+  const elT = { map: inPL ? TW[0] : WT(3, 'xarita'), title: inPL ? TW[4] : WT(3, 'sarlavha'), leg: inPL ? TW[1] : WT(3, 'legenda'), sc: inPL ? TW[2] : WT(3, 'masshtab'), n: inPL ? TW[3] : WT(3, 'shimol') };
+  const full = (t > A(2) && t < A(3) - .1) || t > A(4) - .1 && !inPL;
+  const ev = (k) => full ? 1 : C((t - elT[k]) / .3);
+  op('mapG', ev('map')); op('eTitle', ev('title')); op('eLeg', ev('leg')); op('eScale', ev('sc')); op('eNorth', ev('n')); op('eNote', full ? 1 : 0);
+  const pul = (k) => t > elT[k] && t < elT[k] + .7 && (t < A(4) || inPL) ? 1 + .05 * Math.sin((t - elT[k]) * 9) : 1;
+  ['eTitle', 'eLeg', 'eScale', 'eNorth'].forEach((id, j) => { const k = ['title', 'leg', 'sc', 'n'][j]; const g = $(id); const bb = g.getBBox(); const cx = bb.x + bb.width / 2, cy = bb.y + bb.height / 2;
+    g.setAttribute('transform', `translate(${cx} ${cy}) scale(${pul(k)}) translate(${-cx} ${-cy})`); });
+  // tuman ranglari: rang bosqichidan keyin sequential
+  const colorOn = t > WT(5, 'sequential');
+  DIS.forEach(([p, v], i) => $('ds' + i).setAttribute('fill', colorOn ? DC[v] : '#ede9df'));
+  const simb = t > WT(7, 'kok'); $('river').setAttribute('stroke', simb ? '#60a5fa' : '#94a3b8');
+  [...$('parks').children].forEach((e) => e.setAttribute('fill', t > WT(7, 'yashil') ? '#86efac' : '#cbd5e1'));
+  [0, 1, 2, 3, 4].forEach((i) => op('poi' + i, t > WT(6, 'nuqtali') ? 1 : 0));
+  // muvozanat yo‘riqchilari
+  const gd = Math.max(vis(t, WT(4, 'muvozanat'), WT(4, 'kontrastlik'), .2, .2), vis(t, A(10), A(11) - .1, .3, .3)); op('guides', gd);
+  // kompozitsiya: elementlar joyiga "uchib" keladi
+  if (t > A(10) - .1 && t < A(11)) { [['eTitle', 'sarlavha', -120], ['eLeg', 'legenda', 160], ['mapG', 'xarita', 0]].forEach(([id, w, dy]) => { const k = eo((t - WT(10, w)) / .6);
+    if (id !== 'mapG') $(id).setAttribute('transform', `translate(0 ${(1 - k) * dy})`); op(id, C((t - WT(10, w) + .1) / .25)); }); }
+  // xulosa: tekshiruv
+  // ----- TEMATIK -----
+  [0, 1, 2].forEach((k) => { const a = WT(12, ['xoropleth', 'nuqtali', 'proporsional'][k]); const el = $('tm' + k); el.style.opacity = vis(t, a, A(13) - .15, .25, .3);
+    el.style.transform = `translateY(${(1 - eb((t - a) / .5)) * 80}px)`; });
+  TP.forEach(([p, v], i) => { $('tp0_' + i).setAttribute('fill', t > WT(12, 'xoropleth') + .3 + i * .1 ? DC[v] : '#f3efe4');
+    $('tpc' + i).setAttribute('r', 14 + v * 14 * eb((t - WT(12, 'proporsional') - .3 - i * .1) / .5)); });
+  for (let i = 0; i < 160; i++) { const e = $('td' + i); if (e) e.setAttribute('opacity', C((t - WT(12, 'nuqtali') - .2 - i * .008) / .15)); }
+  // ----- DASTURLAR -----
+  [WT(13, 'qgis'), WT(13, 'mapbox'), WT(13, 'leaflet'), WT(13, 'openlayers')].forEach((a, j) => { const el = $('sw' + j); el.style.opacity = vis(t, a, A(14) - .15, .25, .3);
+    el.style.transform = `translateY(${(1 - eb((t - a) / .5)) * 70}px)`; el.style.borderColor = t > a && t < a + 1 ? '#f5b942' : 'rgba(52,211,153,.35)'; });
+  $('flash').style.opacity = .15 * Math.max(0, 1 - Math.abs(t - A(14)) / .15);
+  set($('end'), vis(t, A(15) - .1, END + 1, .5));
+  subtitle(t);
+};
+window.render(0);
+</script>
+</body></html>

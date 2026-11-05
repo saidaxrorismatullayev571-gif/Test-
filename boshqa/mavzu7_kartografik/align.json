@@ -1,0 +1,102 @@
+{
+"duration": 79.24,
+"paras": 13,
+"sents": [
+{
+"p": 0,
+"t": "Assalomu alaykum, hurmatli tinglovchilar!",
+"a": 0.243,
+"b": 2.433
+},
+{
+"p": 0,
+"t": "Bugungi darsimiz — kartografik dizayn tamoyillari.",
+"a": 3.003,
+"b": 6.513
+},
+{
+"p": 1,
+"t": "Kartografik dizayn — xaritani tushunarli, chiroyli va informativ qilish san'ati.",
+"a": 6.933,
+"b": 14.832
+},
+{
+"p": 2,
+"t": "Elementlar: xarita maydoni, sarlavha, legenda, masshtab, shimol ko'rsatkichi.",
+"a": 15.072,
+"b": 22.552
+},
+{
+"p": 3,
+"t": "Tamoyillar: oddiylik, muvozanat, kontrastlik, uyg'unlik.",
+"a": 22.832,
+"b": 26.723
+},
+{
+"p": 4,
+"t": "Ranglar: sequential — gradatsiya, diverging — qarama-qarshi, qualitative — kategoriyalar.",
+"a": 27.062,
+"b": 35.933
+},
+{
+"p": 5,
+"t": "Belgilar: nuqtali, chiziqli, maydonli.",
+"a": 36.422,
+"b": 38.533
+},
+{
+"p": 5,
+"t": "Ko'k = suv, yashil = o'simlik.",
+"a": 39.233,
+"b": 41.113
+},
+{
+"p": 6,
+"t": "Shriftlar: sarlavha katta, asosiy o'rtacha, eslatma kichik.",
+"a": 41.413,
+"b": 45.703
+},
+{
+"p": 6,
+"t": "2-3 ta shrift yetarli.",
+"a": 46.523,
+"b": 47.174
+},
+{
+"p": 7,
+"t": "Kompozitsiya: xarita maydoni katta, legenda pastda, sarlavha yuqorida.",
+"a": 47.174,
+"b": 51.773
+},
+{
+"p": 8,
+"t": "QGIS Print Layout: Add Map, Legend, Scale Bar, North Arrow, Label vositalari.",
+"a": 52.573,
+"b": 59.233
+},
+{
+"p": 9,
+"t": "Tematik: xoropleth, nuqtali zichlik, proporsional belgilar.",
+"a": 60.003,
+"b": 63.922
+},
+{
+"p": 10,
+"t": "Dasturlar: QGIS Print Layout, Mapbox Studio, Leaflet, OpenLayers.",
+"a": 64.603,
+"b": 69.683
+},
+{
+"p": 11,
+"t": "Xulosa: to'g'ri ranglar, aniq legenda va muvozanatli kompozitsiya xaritani professional qiladi.",
+"a": 70.343,
+"b": 76.953
+},
+{
+"p": 12,
+"t": "E'tiboringiz uchun rahmat!",
+"a": 77.603,
+"b": 79.002
+}
+]
+}

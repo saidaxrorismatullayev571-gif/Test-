@@ -1,0 +1,25 @@
+Assalomu alaykum, hurmatli tinglovchilar! Bugungi darsimiz — kartografik dizayn tamoyillari.
+
+Kartografik dizayn — xaritani tushunarli, chiroyli va informativ qilish san'ati.
+
+Elementlar: xarita maydoni, sarlavha, legenda, masshtab, shimol ko'rsatkichi.
+
+Tamoyillar: oddiylik, muvozanat, kontrastlik, uyg'unlik.
+
+Ranglar: sequential — gradatsiya, diverging — qarama-qarshi, qualitative — kategoriyalar.
+
+Belgilar: nuqtali, chiziqli, maydonli. Ko'k = suv, yashil = o'simlik.
+
+Shriftlar: sarlavha katta, asosiy o'rtacha, eslatma kichik. 2-3 ta shrift yetarli.
+
+Kompozitsiya: xarita maydoni katta, legenda pastda, sarlavha yuqorida.
+
+QGIS Print Layout: Add Map, Legend, Scale Bar, North Arrow, Label vositalari.
+
+Tematik: xoropleth, nuqtali zichlik, proporsional belgilar.
+
+Dasturlar: QGIS Print Layout, Mapbox Studio, Leaflet, OpenLayers.
+
+Xulosa: to'g'ri ranglar, aniq legenda va muvozanatli kompozitsiya xaritani professional qiladi.
+
+E'tiboringiz uchun rahmat!
