@@ -303,6 +303,14 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 - Bu to'plamdagi 3D motion, UI va subtitrlarni HTML/CSS/Canvas asosida tayyor video sifatida yig'ish mumkin.
 - Fotorealistik macro, dron, fasad va interyer lavhalari alohida AI video generatsiyasi bilan tayyorlanadi; keyin ularning matni, ritmi, kadrlar ketma-ketligi va brend qatlamlari bitta rolikda yig'iladi.
 
+## 15. Oq-coral audio darsi va qora-qizil HyperFrames
+
+*Manba: foydalanuvchi yuborgan 2 ta vertikal namuna. To'liq tahlil: `uslub_namunalar/EARS_HOT_OZBEK_REEL.md` va `uslub_namunalar/HYPERFRAMES_UZ_REEL.md`.*
+
+- **Earshot:** oq fon, coral urg'u, qora sans-serif + kursiv serif, bob markeri, timeline maketi va bitta so'zli CTA. Ovoz effekti, montaj va AI-vosita darslari uchun.
+- **HyperFrames:** qora fon, qizil gradient/glow, markazdagi telefon/kod karta, 3D kub, yirik raqamli isbot, kod → render zanjiri va 3 qadamli CTA. Kod orqali video yaratish, portfolio va xizmat reeli uchun.
+- **Bizning kombinatsiya:** o'quv videoda Earshotning axborot iyerarxiyasi; reklama yoki portfolio reeli uchun HyperFramesning qorong'i texno estetikasi ishlatiladi.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
