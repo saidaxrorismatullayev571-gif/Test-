@@ -321,6 +321,14 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 - **Qachon ishlatiladi:** klinika, kurs, salon, do'kon va xizmat landing sahifasi; “oddiy sayt → premium tajriba” reeli.
 - **Bog'lanish:** UI UX Pro Max dizayn tizimini tanlaydi; HyperFrames shu saytning manba ma'lumotidan promo MP4 yaratadi.
 
+## 17. Arcads — 15 edit uslubi
+
+*Manba: Arcads’ning “15 Claude edit styles” screenshoti va namuna reeli. To'liq tahlil: `uslub_namunalar/ARCADS_15_CLAUDE_EDIT_STYLES.md`.*
+
+- **G'oya:** bitta raw talking-head klipga slash-buyruq orqali turli tayyor editlarni qo'llash.
+- **Muhim to'plam:** liquid glass, cinematic trailer, 3D kartalar, news, scrapbook, depth title, neon, infinite zoom, explainer panel, cutout grid, kinetic captions, glitch HUD, UI depth, Swiss grid, S–D ranking.
+- **Bizga moslari:** explainer panel, kinetic captions, UI depth, ranking, cutout grid va neon outline.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
