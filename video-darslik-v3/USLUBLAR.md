@@ -311,6 +311,16 @@ Rang: Claude coral `#D97757` + ko‘mir-qora UI. Imzo o‘tish: piksel-mozaika d
 - **HyperFrames:** qora fon, qizil gradient/glow, markazdagi telefon/kod karta, 3D kub, yirik raqamli isbot, kod → render zanjiri va 3 qadamli CTA. Kod orqali video yaratish, portfolio va xizmat reeli uchun.
 - **Bizning kombinatsiya:** o'quv videoda Earshotning axborot iyerarxiyasi; reklama yoki portfolio reeli uchun HyperFramesning qorong'i texno estetikasi ishlatiladi.
 
+## 16. UI UX Pro Max — premium dizayn orqali promo
+
+*Manba: UI UX Pro Max qo'llanmasi va 53 soniyalik o'zbekcha reel. To'liq tahlil: `uslub_namunalar/UI_UX_PRO_MAX_OZBEK_REEL.md`.*
+
+- **G'oya:** avval biznes brifi va haqiqiy rasmlar, keyin uslub/shrift/UX bazasidan tanlash, tuzatish va premium landing natijasi.
+- **Rang:** qora-ko'mir fon, coral/qizil-bordo gradient, oq matn, yashil tasdiq belgilari.
+- **Harakat:** telefon va screenshot kartalari, bazadan tanlov ro'yxatlari, katta statistikalar, yakunda GitHub/skill kartasi.
+- **Qachon ishlatiladi:** klinika, kurs, salon, do'kon va xizmat landing sahifasi; “oddiy sayt → premium tajriba” reeli.
+- **Bog'lanish:** UI UX Pro Max dizayn tizimini tanlaydi; HyperFrames shu saytning manba ma'lumotidan promo MP4 yaratadi.
+
 ## Uslubni tanlash bo‘yicha qisqa maslahat
 
 | Vazifa | Tavsiya |
