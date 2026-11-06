@@ -68,9 +68,9 @@ Quyidagi yo'l videodarsliklar uchun asosiy yo'l bo'ladi: **HTML/CSS/SVG/Canvas +
 4. **Color-grade ko'rsatishi:** reference karta → 4–5 palitra nuqtasi → oldin/keyin. Buni darsda "namuna → qoida → natija" shaklida ishlatamiz.
 5. **CTA formati:** oxirgi 2 soniyada bitta harakat: "Keyingi qadam", "Namuna", "Tekshirib ko'ring". Bitta kadrda bir nechta CTA bo'lmaydi.
 
-## 6. Qo'shilgan vizual dalillar
+## 6. Tekshiruv dalillari
 
-Har video uchun 12–20 ta tekshiruv kadri `free_namunalar/` papkasida saqlangan. Asl MP4 fayllar saqlanmaydi.
+Har bir video 12–20 ta tekshiruv kadri bo'yicha tahlil qilindi. Asl MP4 fayllar repozitoriyga saqlanmaydi; quyidagi MD5 qiymatlar ularni aynan qayta topish va dublikatni aniqlash uchun berildi.
 
 | Fayl | MD5 |
 |---|---|
