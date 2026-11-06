@@ -11,7 +11,7 @@ Har bir uslubning nomi bor. Yangi video uchun shunchaki **«… uslubida qil»**
 | 2 | **Pop Stiker** | yorqin, dadil, o‘yinqaroq | yosh sotuvchilar, motivatsiya |
 | 3 | **Keynote Oq** | minimal, nafis, yirik tipografiya | rahbariyat taqdimoti, investorlar |
 | 4 | **Izometrik Ofis** | pastel 3D dunyo, hikoyaviy | onboarding, jarayonlarni ko‘rsatish |
-| 5 | **Atlas Naqsh** | milliy, hashamatli, oltin va indigo | o‘zbek auditoriyasi, brend obro‘si |
+| 5 | **Atlas Naqsh** | milliy, hashamatli, oltin va indigo | o‘zbek auditoriyasi, brend obro‘si |\n| 49 | **Free va ochiq manbalar xaritasi** | kodli motion, UI demo, color-grade, tekshiriladigan AI kreditlari | tekin usulni tanlash va namuna asosida dars/reel yaratish |
 
 Barchasi: 16:9, 1920×1080, 30 fps (Pop Stiker va Izometrik Ofis 60 fps’da ham chiroyli), xavfsiz maydon 120 px chet / 130 px yuqori.
 
